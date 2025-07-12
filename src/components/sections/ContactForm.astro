@@ -1,0 +1,107 @@
+---
+import GlassCard from '../ui/GlassCard.tsx';
+import GlassButton from '../ui/GlassButton.tsx';
+---
+
+<section class="section-padding bg-cream" id="contact-form">
+  <div class="container-padding max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="heading-lg text-espresso mb-4">
+        Get in Touch
+      </h2>
+      <p class="body-text text-warm-gray">
+        Let's discuss how we can help create your perfect space
+      </p>
+    </div>
+    
+    <GlassCard client:visible variant="white">
+      <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-6"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>
+            Don't fill this out if you're human: <input name="bot-field" />
+          </label>
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label for="name" class="block text-sm font-semibold text-espresso">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="form-input"
+              placeholder="Your name"
+            />
+          </div>
+          
+          <div class="space-y-2">
+            <label for="email" class="block text-sm font-semibold text-espresso">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="form-input"
+              placeholder="your@email.com"
+            />
+          </div>
+        </div>
+        
+        <div class="space-y-2">
+          <label for="subject" class="block text-sm font-semibold text-espresso">
+            Subject
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            class="form-input"
+            placeholder="How can we help?"
+          />
+        </div>
+        
+        <div class="space-y-2">
+          <label for="message" class="block text-sm font-semibold text-espresso">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="form-input resize-none"
+            placeholder="Tell us about your project..."
+          ></textarea>
+        </div>
+        
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="px-10 py-4 rounded-full font-bold transition-all duration-300 
+                   bg-terra-cotta/60 text-soft-white hover:bg-terra-cotta/70 
+                   backdrop-blur-md border border-terra-cotta/20
+                   shadow-glass hover:shadow-lg
+                   transform hover:-translate-y-0.5
+                   relative overflow-hidden"
+          >
+            <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+            <span class="relative z-10">Send Message</span>
+          </button>
+        </div>
+      </form>
+    </GlassCard>
+  </div>
+</section>

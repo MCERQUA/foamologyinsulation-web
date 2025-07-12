@@ -1,0 +1,145 @@
+---
+import GlassCard from '../ui/GlassCard.tsx';
+import GlassButton from '../ui/GlassButton.tsx';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const services = [
+  {
+    title: 'Attic Insulation',
+    description: 'Complete attic insulation solutions to keep your home comfortable year-round.',
+    features: ['Energy savings up to 40%', 'Professional installation', 'Premium materials'],
+    image: atticImage
+  },
+  {
+    title: 'Crawl Space',
+    description: 'Protect your home from below with proper crawl space insulation.',
+    features: ['Prevent moisture damage', 'Improve air quality', 'Pest deterrent'],
+    image: crawlSpaceImage
+  },
+  {
+    title: 'Wall Insulation',
+    description: 'Advanced wall insulation techniques for maximum thermal efficiency.',
+    features: ['Reduced noise', 'Temperature control', 'Moisture protection'],
+    image: wallImage
+  }
+];
+---
+
+<section class="section-padding bg-cream" id="services">
+  <div class="container-padding max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="heading-lg text-espresso mb-4">
+        Our Services
+      </h2>
+      <p class="body-text text-warm-gray max-w-2xl mx-auto">
+        Professional insulation solutions tailored to Arizona homes
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      {services.map((service, index) => (
+        <div 
+          class="animate-slide-up" 
+          style={`animation-delay: ${index * 0.15}s`}
+        >
+          <!-- Modern card with darker background and shadow -->
+          <div class="
+            group relative h-full
+            bg-taupe/40 
+            rounded-3xl p-4
+            shadow-lg hover:shadow-xl 
+            transition-all duration-500 
+            transform hover:-translate-y-1
+            overflow-hidden
+          ">
+            <!-- Glass effect border -->
+            <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
+            
+            <!-- Inner container -->
+            <div class="relative h-full flex flex-col">
+              <!-- Service Image -->
+              <div class="relative mb-4 overflow-hidden rounded-2xl aspect-[4/3]">
+                <img 
+                  src={service.image.src} 
+                  alt={`${service.title} service`}
+                  class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <!-- Subtle overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent opacity-40"></div>
+              </div>
+              
+              <!-- Content container - fixed bottom styling -->
+              <div class="bg-soft-white rounded-2xl p-5 sm:p-6 flex-grow shadow-inner">
+                <div class="space-y-4">
+                  <h3 class="text-xl sm:text-2xl font-bold text-espresso">
+                    {service.title}
+                  </h3>
+                  
+                  <p class="text-warm-gray leading-relaxed">
+                    {service.description}
+                  </p>
+                  
+                  <div class="pt-2">
+                    <ul class="space-y-2.5">
+                      {service.features.map((feature) => (
+                        <li class="flex items-start gap-3">
+                          <span class="text-terra-cotta mt-0.5 flex-shrink-0">✓</span>
+                          <span class="text-warm-gray text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="text-center mt-16">
+      <p class="text-warm-gray mb-6 text-lg">
+        Ready to improve your home's comfort and efficiency?
+      </p>
+      <GlassButton 
+        href="#contact-form"
+        variant="primary"
+        size="lg"
+        client:visible
+      >
+        Get Your Free Estimate
+      </GlassButton>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Ensure consistent card heights */
+  .grid > div {
+    display: flex;
+  }
+  
+  .grid > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Enhanced shadow effects */
+  .shadow-lg {
+    box-shadow: 0 10px 25px -5px rgba(74, 63, 54, 0.3), 0 10px 10px -5px rgba(74, 63, 54, 0.15);
+  }
+  
+  .shadow-xl:hover {
+    box-shadow: 0 20px 35px -5px rgba(74, 63, 54, 0.35), 0 15px 15px -5px rgba(74, 63, 54, 0.2);
+  }
+  
+  /* Smooth animations */
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+</style>

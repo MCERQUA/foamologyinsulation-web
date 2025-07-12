@@ -1,0 +1,62 @@
+/* Comfort Insulation - Color Palette Reference */
+
+/* Primary Colors */
+:root {
+  /* Backgrounds & Base */
+  --cream: #FAF7F2;        /* Main light background */
+  --sand: #E8DCC4;         /* Warm accent, cards */
+  --khaki: #C8B89E;        /* Medium tone, borders */
+  --taupe: #A69580;        /* Darker accent */
+  
+  /* Text Colors */
+  --espresso: #4A3F36;     /* Primary text */
+  --charcoal: #2C2826;     /* High contrast text */
+  --warm-gray: #8B8680;    /* Secondary text */
+  
+  /* Accent Colors */
+  --terra-cotta: #C17767;  /* CTAs, links, buttons */
+  --soft-white: #FEFDFB;   /* Pure white elements */
+  --light-gray: #F5F2ED;   /* Section backgrounds */
+  
+  /* Reserved for Eco Sections */
+  --sage-accent: #8B9D83;  /* Use sparingly */
+}
+
+/* Usage Examples */
+
+/* Backgrounds */
+.bg-primary { background-color: var(--cream); }
+.bg-section { background-color: var(--light-gray); }
+.bg-card { background-color: var(--sand); }
+.bg-footer { background-color: var(--charcoal); }
+
+/* Text */
+.text-primary { color: var(--espresso); }
+.text-secondary { color: var(--warm-gray); }
+.text-accent { color: var(--terra-cotta); }
+
+/* Buttons */
+.btn-primary { 
+  background-color: var(--terra-cotta);
+  color: var(--soft-white);
+}
+
+.btn-secondary {
+  background-color: var(--khaki);
+  color: var(--soft-white);
+}
+
+/* Borders */
+.border-subtle { border-color: var(--khaki); }
+.border-strong { border-color: var(--taupe); }
+
+/* Glass Effects */
+.glass-warm {
+  background: rgba(250, 247, 242, 0.90); /* Cream with opacity */
+  border: 1px solid rgba(200, 184, 158, 0.3); /* Khaki with opacity */
+}
+
+/* Shadows */
+.shadow-warm {
+  box-shadow: 0 8px 32px rgba(74, 63, 54, 0.12); /* Espresso shadow */
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placeholder Logo Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .logo-generator {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            margin: 10px;
+        }
+        .instructions {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        code {
+            background: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Placeholder Logo Generator</h2>
+        <p>This page generates placeholder logos for the Comfort Insulation website.</p>
+        <p>To use these logos:</p>
+        <ol>
+            <li>Right-click on each canvas below</li>
+            <li>Select "Save image as..."</li>
+            <li>Save with the filename shown below each logo</li>
+            <li>Save all logos to: <code>public/images/logos/</code></li>
+        </ol>
+        <p><strong>Note:</strong> These are temporary placeholders. Replace with actual company logos when available.</p>
+    </div>
+
+    <div class="logo-generator">
+        <h3>SPFA Logo</h3>
+        <canvas id="spfa" width="200" height="100"></canvas>
+        <p>Save as: <code>spfa-logo.png</code></p>
+    </div>
+
+    <div class="logo-generator">
+        <h3>Contractors Choice Logo</h3>
+        <canvas id="contractors" width="200" height="100"></canvas>
+        <p>Save as: <code>contractors-choice-logo.png</code></p>
+    </div>
+
+    <div class="logo-generator">
+        <h3>Huntsman Logo</h3>
+        <canvas id="huntsman" width="200" height="100"></canvas>
+        <p>Save as: <code>huntsman-logo.png</code></p>
+    </div>
+
+    <div class="logo-generator">
+        <h3>Energy Star Logo</h3>
+        <canvas id="energy-star" width="200" height="100"></canvas>
+        <p>Save as: <code>energy-star-logo.png</code></p>
+    </div>
+
+    <div class="logo-generator">
+        <h3>Better Buildings Logo</h3>
+        <canvas id="better-buildings" width="200" height="100"></canvas>
+        <p>Save as: <code>better-buildings-logo.png</code></p>
+    </div>
+
+    <script>
+        function createPlaceholderLogo(canvasId, text, fontSize = 24) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Set text properties
+            ctx.font = `bold ${fontSize}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // Draw black text (will be inverted to white by CSS)
+            ctx.fillStyle = '#000000';
+            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+        }
+
+        // Create all placeholder logos
+        createPlaceholderLogo('spfa', 'SPFA', 36);
+        createPlaceholderLogo('contractors', 'Contractors\nChoice', 20);
+        createPlaceholderLogo('huntsman', 'HUNTSMAN', 24);
+        createPlaceholderLogo('energy-star', 'ENERGY\nSTAR', 24);
+        createPlaceholderLogo('better-buildings', 'Better\nBuildings', 22);
+
+        // Handle multi-line text
+        function createMultiLineLogo(canvasId, lines, fontSize = 24) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = `bold ${fontSize}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = '#000000';
+            
+            const lineHeight = fontSize * 1.2;
+            const startY = canvas.height / 2 - ((lines.length - 1) * lineHeight) / 2;
+            
+            lines.forEach((line, index) => {
+                ctx.fillText(line, canvas.width / 2, startY + index * lineHeight);
+            });
+        }
+
+        // Update multi-line logos
+        createMultiLineLogo('contractors', ['Contractors', 'Choice'], 24);
+        createMultiLineLogo('energy-star', ['ENERGY', 'STAR'], 28);
+        createMultiLineLogo('better-buildings', ['Better', 'Buildings'], 24);
+    </script>
+</body>
+</html>

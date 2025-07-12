@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-cream text-espresso;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8B89E;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A69580;
+}
+
+/* Glass morphism with warm tones */
+.glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(200, 184, 158, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(74, 63, 54, 0.08);
+}
+
+.glass-warm {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(250, 247, 242, 0.90);
+  border: 1px solid rgba(200, 184, 158, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(74, 63, 54, 0.12);
+}
+
+.glass-dark {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(44, 40, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced glass effect for navbar */
+.glass-navbar {
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  background: rgba(123, 94, 72, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Enhanced glass navbar with more depth */
+.glass-navbar-enhanced {
+  position: relative;
+  isolation: isolate;
+}
+
+.glass-navbar-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Mobile-first responsive utilities */
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+/* Elegant shadow effects */
+.shadow-elegant {
+  box-shadow: 0 10px 40px rgba(74, 63, 54, 0.1);
+}
+
+.shadow-elegant-hover {
+  transition: all 0.3s ease;
+}
+
+.shadow-elegant-hover:hover {
+  box-shadow: 0 15px 50px rgba(74, 63, 54, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Text shadow for readability */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-dark {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Button hover effects */
+.button-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.button-hover:hover {
+  @apply transform -translate-y-0.5;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-out;
+}
+
+/* Professional typography */
+.heading-xl {
+  @apply text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight;
+}
+
+.heading-lg {
+  @apply text-4xl sm:text-5xl font-bold leading-tight;
+}
+
+.heading-md {
+  @apply text-3xl sm:text-4xl font-semibold leading-snug;
+}
+
+.body-text {
+  @apply text-base sm:text-lg leading-relaxed;
+}
+
+/* Form styling */
+.form-input {
+  @apply w-full px-5 py-3 rounded-2xl bg-soft-white/50 backdrop-blur-sm 
+         border border-khaki/20 text-espresso placeholder-warm-gray
+         focus:outline-none focus:border-terra-cotta/50 focus:ring-2 
+         focus:ring-terra-cotta/20 transition-all duration-300;
+}
+
+/* Card styling */
+.card-elegant {
+  @apply bg-soft-white rounded-3xl shadow-soft hover:shadow-medium 
+         transition-all duration-300;
+}
