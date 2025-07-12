@@ -1,0 +1,74 @@
+---
+import TestimonialSection from '../ui/TestimonialSection.tsx';
+
+const testimonials = [
+  {
+    id: 1,
+    testimonial: "Comfort Insulation transformed our home! Our energy bills dropped by 35% and the house stays perfectly cool even in Arizona summers.",
+    author: "Sarah Johnson",
+    company: "Phoenix Homeowner"
+  },
+  {
+    id: 2,
+    testimonial: "Professional, efficient, and knowledgeable team. They completed our attic insulation in one day and the difference is remarkable.",
+    author: "Michael Chen",
+    company: "Scottsdale Resident"
+  },
+  {
+    id: 3,
+    testimonial: "Best investment we've made in our home. The crawl space insulation eliminated our moisture problems completely.",
+    author: "Jennifer Martinez",
+    company: "Tempe Homeowner"
+  },
+  {
+    id: 4,
+    testimonial: "Outstanding service from start to finish. They explained everything clearly and delivered exactly what they promised.",
+    author: "Robert Davis",
+    company: "Mesa Property Owner"
+  },
+  {
+    id: 5,
+    testimonial: "The wall insulation made such a difference in noise reduction. We can't hear the street traffic anymore!",
+    author: "Emily Thompson",
+    company: "Chandler Resident"
+  }
+];
+---
+
+<section class="relative py-20 sm:py-24 bg-brown-tint overflow-hidden">
+  {/* Background pattern */}
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);"></div>
+  </div>
+  
+  <div class="container-padding max-w-7xl mx-auto relative">
+    {/* Section header */}
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold text-soft-white mb-4">
+        What Our Clients Say
+      </h2>
+      <p class="text-lg text-sand max-w-2xl mx-auto">
+        Trusted by homeowners across Arizona for quality insulation solutions
+      </p>
+    </div>
+    
+    {/* Testimonial cards container */}
+    <div class="relative h-[500px] sm:h-[550px] flex items-center justify-center">
+      <div class="relative w-[320px] sm:w-[350px] h-[400px] sm:h-[450px]">
+        <TestimonialSection testimonials={testimonials} client:load />
+      </div>
+    </div>
+    
+    {/* Instructions */}
+    <div class="text-center mt-8">
+      <p class="text-sand/70 text-sm">
+        <span class="hidden sm:inline">Drag the cards to see more reviews</span>
+        <span class="sm:hidden">Swipe to see more reviews</span>
+      </p>
+    </div>
+    
+    {/* Decorative elements */}
+    <div class="absolute top-10 left-10 w-20 h-20 bg-terra-cotta/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-32 h-32 bg-sand/10 rounded-full blur-3xl"></div>
+  </div>
+</section>

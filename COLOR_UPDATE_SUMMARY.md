@@ -64,9 +64,8 @@
    - Wall insulation image
 
 2. **New Card Design**:
-   - Outer container with khaki/sand color (bg-khaki/30)
-   - Glass effect border with gradient
-   - Inner sand-colored container with backdrop blur
+   - Outer container with taupe color (bg-taupe/40) 
+   - Enhanced shadows for depth
    - White content area for text
    - Rounded corners throughout
 
@@ -79,6 +78,27 @@
 
 4. **Service Order**: Attic Insulation → Crawl Space → Wall Insulation
 
+### Testimonial Section Addition
+1. **New Components**:
+   - `TestimonialCard.tsx` - Interactive draggable cards
+   - `TestimonialSection.tsx` - State management for cards
+   - `TestimonialSection.astro` - Section wrapper
+
+2. **Features**:
+   - Dark contrasting background (bg-brown-tint)
+   - Stacked card layout with rotation effect
+   - Drag-to-shuffle functionality (swipe on mobile)
+   - Glass effect on cards with backdrop blur
+   - 5 client testimonials from Arizona homeowners
+
+3. **Color Scheme**:
+   - Background: brown-tint (#7B5E48)
+   - Cards: khaki/20 with glass effect
+   - Text: soft-white, cream, and sand
+   - Consistent with site's warm palette
+
+4. **Placement**: Between Services and Blog sections
+
 ### Files Modified
 - `tailwind.config.mjs` - Updated colors, animations, added sand-dark
 - `src/components/ui/FloatingContactButton.tsx` - Added glass effect
@@ -88,6 +108,10 @@
 - `src/components/sections/Services.astro` - Complete redesign with images and modern styling
 - `src/components/sections/ContactForm.astro` - Added glass effect to submit button
 - `src/components/ui/LogoScroller.tsx` - New component for scrolling logos
+- `src/components/ui/TestimonialCard.tsx` - New draggable card component
+- `src/components/ui/TestimonialSection.tsx` - New testimonial management component
+- `src/components/sections/TestimonialSection.astro` - New section component
+- `src/pages/index.astro` - Added TestimonialSection
 - `public/images/logos/` - Added placeholder SVG logos
 
 ### Visual Changes Summary
@@ -100,3 +124,5 @@
 - Logos display in white with black shadow/glow for visibility on hero image
 - Services section now features modern cards with images and sophisticated styling
 - Service cards have layered design with glass effects and smooth hover animations
+- New testimonial section provides social proof with interactive draggable cards
+- Dark contrasting section breaks up the page flow effectively
