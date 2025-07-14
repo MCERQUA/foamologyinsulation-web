@@ -39,14 +39,16 @@ const benefits = [
   
   <!-- Animated hand with money - behind cards but visible -->
   <div 
-    id="money-hand" 
+    id="money-hand-wrapper"
     class="absolute right-0 top-1/3 w-64 md:w-80 lg:w-96 transform translate-x-full transition-transform duration-1000 ease-out z-20"
   >
-    <img 
-      src="/images/money-hand.png" 
-      alt="Save money with insulation" 
-      class="w-full h-auto opacity-40 md:opacity-50"
-    />
+    <div id="money-hand" class="bobbing-animation">
+      <img 
+        src="/images/money-hand.png" 
+        alt="Save money with insulation" 
+        class="w-full h-auto opacity-40 md:opacity-50"
+      />
+    </div>
   </div>
   
   <div class="relative container-padding max-w-7xl mx-auto">
@@ -173,66 +175,80 @@ const benefits = [
     }
   }
   
-  #money-hand {
-    animation: bobbing 3s ease-in-out infinite;
-  }
-  
-  #money-hand.in-view {
-    transform: translateX(60%) !important;
-  }
-  
-  @media (min-width: 768px) {
-    #money-hand.in-view {
-      transform: translateX(40%) !important;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    #money-hand.in-view {
-      transform: translateX(20%) !important;
-    }
+  .bobbing-animation {
+    animation: bobbing 4s ease-in-out infinite;
   }
 </style>
 
 <script>
-  // Intersection Observer for scroll-triggered animation
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: [0, 0.25, 0.5, 0.75, 1]
-  };
-
-  const handleIntersection = (entries) => {
-    entries.forEach(entry => {
-      const moneyHand = document.getElementById('money-hand');
-      if (!moneyHand) return;
-      
-      if (entry.isIntersecting) {
-        // Calculate how far to move based on scroll position
-        const scrollProgress = entry.intersectionRatio;
-        
-        if (scrollProgress > 0.3) {
-          moneyHand.classList.add('in-view');
-          
-          // Progressive movement based on scroll
-          if (scrollProgress > 0.7) {
-            moneyHand.style.transform = 'translateX(10%)';
-          } else if (scrollProgress > 0.5) {
-            moneyHand.style.transform = 'translateX(30%)';
-          }
-        }
-      } else if (entry.boundingClientRect.top > 0) {
-        // Reset when scrolling back up
-        moneyHand.classList.remove('in-view');
-        moneyHand.style.transform = 'translateX(100%)';
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(handleIntersection, observerOptions);
-  
+  // Get section and hand elements
   const section = document.getElementById('eco-savings-section');
-  if (section) {
+  const handWrapper = document.getElementById('money-hand-wrapper');
+  
+  if (section && handWrapper) {
+    // Create intersection observer with continuous updates
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Get the center of the viewport
+          const viewportHeight = window.innerHeight;
+          const sectionRect = section.getBoundingClientRect();
+          const sectionCenter = sectionRect.top + (sectionRect.height / 2);
+          const viewportCenter = viewportHeight / 2;
+          
+          // Calculate how close we are to the center (0 = at edges, 1 = at center)
+          const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+          const maxDistance = viewportHeight / 2;
+          const centerProgress = 1 - Math.min(distanceFromCenter / maxDistance, 1);
+          
+          // Calculate translation based on center proximity
+          // More visible (less translateX) when closer to center
+          const minTranslate = 10; // Most visible position
+          const maxTranslate = 80; // Least visible position
+          const currentTranslate = maxTranslate - (centerProgress * (maxTranslate - minTranslate));
+          
+          handWrapper.style.transform = `translateX(${currentTranslate}%)`;
+        } else {
+          // Reset when section is not visible
+          handWrapper.style.transform = 'translateX(100%)';
+        }
+      });
+    }, {
+      threshold: Array.from({length: 20}, (_, i) => i * 0.05), // More granular updates
+      rootMargin: '-10% 0px -10% 0px' // Start animation slightly before section enters
+    });
+    
     observer.observe(section);
+    
+    // Also add scroll listener for smoother updates
+    let ticking = false;
+    function updateHandPosition() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const sectionRect = section.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+          const sectionCenter = sectionRect.top + (sectionRect.height / 2);
+          const viewportCenter = viewportHeight / 2;
+          
+          // Only update if section is in view
+          if (sectionRect.top < viewportHeight && sectionRect.bottom > 0) {
+            const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
+            const maxDistance = viewportHeight / 2;
+            const centerProgress = 1 - Math.min(distanceFromCenter / maxDistance, 1);
+            
+            const minTranslate = 10;
+            const maxTranslate = 80;
+            const currentTranslate = maxTranslate - (centerProgress * (maxTranslate - minTranslate));
+            
+            handWrapper.style.transform = `translateX(${currentTranslate}%)`;
+          }
+          
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+    
+    window.addEventListener('scroll', updateHandPosition);
   }
 </script>
