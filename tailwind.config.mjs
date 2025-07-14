@@ -19,6 +19,7 @@ export default {
         
         // Accent colors (use sparingly)
         'sage-accent': '#8B9D83',     // Muted sage for eco sections only
+        'sage-mist': '#9FA897',       // Sage green for eco/savings sections
         'terra-cotta': '#B8946F',     // Changed to tan/brown for CTAs
         'soft-white': '#FEFDFB',      // Pure soft white
         
