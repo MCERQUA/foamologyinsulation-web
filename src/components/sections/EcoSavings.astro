@@ -1,0 +1,146 @@
+---
+import { Leaf, DollarSign, TrendingDown, Home } from 'lucide-react';
+
+const benefits = [
+  {
+    icon: DollarSign,
+    title: "Save Up to 50%",
+    subtitle: "On Energy Bills",
+    description: "Reduce heating and cooling costs with superior insulation that pays for itself"
+  },
+  {
+    icon: Leaf,
+    title: "Eco-Friendly",
+    subtitle: "Reduce Carbon Footprint",
+    description: "Lower energy consumption means less environmental impact for future generations"
+  },
+  {
+    icon: TrendingDown,
+    title: "Less Waste",
+    subtitle: "Sustainable Solution",
+    description: "Spray foam lasts decades, reducing replacement waste and material consumption"
+  },
+  {
+    icon: Home,
+    title: "Increase Value",
+    subtitle: "Home Investment",
+    description: "Energy-efficient homes sell faster and for higher prices in today's market"
+  }
+];
+---
+
+<section class="relative py-20 overflow-hidden">
+  <!-- Background with subtle pattern -->
+  <div class="absolute inset-0 bg-sage-mist/10"></div>
+  
+  <!-- Decorative elements -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-sage-mist/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-sage-mist/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+  
+  <div class="relative container-padding max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <div class="w-12 h-[1px] bg-sage-mist"></div>
+        <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">Sustainability & Savings</span>
+        <div class="w-12 h-[1px] bg-sage-mist"></div>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-espresso mb-4">
+        Good for Your Wallet.<br class="hidden md:block" />
+        <span class="text-sage-mist">Great for the Planet.</span>
+      </h2>
+      <p class="text-lg text-espresso/70 max-w-2xl mx-auto">
+        Modern spray foam insulation isn't just about comfort—it's an investment in your future and our environment.
+      </p>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      {benefits.map((benefit, index) => (
+        <div class="group relative">
+          <!-- Card -->
+          <div class="relative bg-white rounded-2xl p-6 shadow-sm border border-sage-mist/20 overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-sage-mist/40">
+            <!-- Hover gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            
+            <!-- Icon -->
+            <div class="relative mb-4">
+              <div class="w-14 h-14 bg-sage-mist/20 rounded-xl flex items-center justify-center group-hover:bg-sage-mist/30 transition-colors duration-300">
+                <benefit.icon className="w-7 h-7 text-sage-mist" />
+              </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative">
+              <h3 class="text-xl font-bold text-espresso mb-1">{benefit.title}</h3>
+              <p class="text-sm font-medium text-sage-mist mb-3">{benefit.subtitle}</p>
+              <p class="text-sm text-espresso/60 leading-relaxed">{benefit.description}</p>
+            </div>
+            
+            <!-- Decorative corner accent -->
+            <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-sage-mist/10 rounded-tl-3xl"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- ROI Calculator CTA -->
+    <div class="relative">
+      <div class="bg-gradient-to-r from-sage-mist/20 via-sage-mist/10 to-sage-mist/20 rounded-3xl p-8 md:p-12">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-sage-mist/20 rounded-full">
+            <TrendingDown className="w-5 h-5 text-sage-mist" />
+            <span class="text-sage-mist font-medium text-sm">Average ROI: 2-5 Years</span>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-espresso mb-4">
+            See How Much You Could Save
+          </h3>
+          <p class="text-espresso/70 mb-8 max-w-xl mx-auto">
+            Every home is different. Get a personalized estimate of your energy savings and environmental impact.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="#contact-form" 
+              class="inline-flex items-center justify-center px-8 py-3 bg-sage-mist text-white font-medium rounded-full hover:bg-sage-mist/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Calculate My Savings
+            </a>
+            <a 
+              href="#contact-form" 
+              class="inline-flex items-center justify-center px-8 py-3 bg-white text-sage-mist font-medium rounded-full hover:bg-soft-white border-2 border-sage-mist/30 transition-all duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating stats -->
+    <div class="absolute -right-4 top-1/4 hidden lg:block">
+      <div class="bg-white rounded-2xl shadow-xl p-4 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div class="text-3xl font-bold text-sage-mist">50%</div>
+        <div class="text-sm text-espresso/60">Energy Saved</div>
+      </div>
+    </div>
+    <div class="absolute -left-4 bottom-1/4 hidden lg:block">
+      <div class="bg-white rounded-2xl shadow-xl p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div class="text-3xl font-bold text-sage-mist">30%</div>
+        <div class="text-sm text-espresso/60">Carbon Reduced</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add to global CSS or component styles */
+  .bg-sage-mist {
+    background-color: #9FA897;
+  }
+  .text-sage-mist {
+    color: #9FA897;
+  }
+  .border-sage-mist {
+    border-color: #9FA897;
+  }
+</style>
