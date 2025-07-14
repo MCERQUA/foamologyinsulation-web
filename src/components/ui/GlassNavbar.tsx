@@ -72,21 +72,15 @@ const GlassNavbar: React.FC = () => {
               
               <div className="relative z-10 flex items-center justify-between">
                 {/* Logo */}
-                <a href="/" className="flex items-center gap-2 group">
-                  <div className={`text-2xl font-bold transition-all duration-300 ${
-                    isScrolled ? 'text-espresso' : 'text-soft-white'
-                  }`} style={{
-                    textShadow: isScrolled ? '0 1px 2px rgba(0, 0, 0, 0.1)' : '0 2px 8px rgba(0, 0, 0, 0.5)'
-                  }}>
-                    Comfort
-                  </div>
-                  <div className={`text-sm transition-all duration-300 ${
-                    isScrolled ? 'text-terra-cotta' : 'text-soft-white/80'
-                  }`} style={{
-                    textShadow: isScrolled ? '0 1px 2px rgba(0, 0, 0, 0.1)' : '0 2px 8px rgba(0, 0, 0, 0.5)'
-                  }}>
-                    Insulation
-                  </div>
+                <a href="/" className="flex items-center group">
+                  <img 
+                    src="/images/logos/SPRAY-COMFORT-INSULAITON-ARIZONA-LG-LOGO2.png" 
+                    alt="Comfort Insulation" 
+                    className="h-10 md:h-12 w-auto transition-all duration-300"
+                    style={{
+                      filter: isScrolled ? 'none' : 'brightness(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5))'
+                    }}
+                  />
                 </a>
 
                 {/* Desktop Menu */}
