@@ -37,22 +37,22 @@ const benefits = [
   <div class="absolute top-0 left-0 w-96 h-96 bg-sage-mist/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
   <div class="absolute bottom-0 right-0 w-96 h-96 bg-sage-mist/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
   
-  <!-- Animated hand with money - starts off screen -->
+  <!-- Animated hand with money - behind cards but visible -->
   <div 
     id="money-hand" 
-    class="absolute right-0 top-1/3 w-64 md:w-80 lg:w-96 transform translate-x-full transition-transform duration-1000 ease-out z-0"
+    class="absolute right-0 top-1/3 w-64 md:w-80 lg:w-96 transform translate-x-full transition-transform duration-1000 ease-out z-20"
     style="animation: bobbing 3s ease-in-out infinite;"
   >
     <img 
-      src="/images/hand-money.png" 
+      src="/images/money-hand.png" 
       alt="Save money with insulation" 
-      class="w-full h-auto opacity-50 md:opacity-60"
+      class="w-full h-auto opacity-40 md:opacity-50"
     />
   </div>
   
   <div class="relative container-padding max-w-7xl mx-auto">
     <!-- Section Header -->
-    <div class="text-center mb-12 md:mb-16">
+    <div class="text-center mb-12 md:mb-16 relative z-10">
       <div class="inline-flex items-center gap-2 mb-4">
         <div class="w-12 h-[1px] bg-sage-mist"></div>
         <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">Sustainability & Savings</span>
@@ -69,28 +69,28 @@ const benefits = [
 
     <!-- Benefits Grid with floating stats -->
     <div class="relative">
-      <!-- Mobile floating stat - top right -->
-      <div class="absolute -top-4 -right-2 sm:-right-4 z-10 lg:hidden">
+      <!-- Mobile floating stat - top right with higher z-index -->
+      <div class="absolute -top-4 -right-2 sm:-right-4 z-40 lg:hidden">
         <div class="bg-white rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-3 transform rotate-3">
           <div class="text-xl sm:text-2xl font-bold text-sage-mist">50%</div>
           <div class="text-xs text-espresso/60">Energy Saved</div>
         </div>
       </div>
       
-      <!-- Mobile floating stat - positioned at bottom edge of last card -->
-      <div class="absolute -bottom-8 left-4 z-10 lg:hidden">
+      <!-- Mobile floating stat - positioned at bottom edge with higher z-index -->
+      <div class="absolute -bottom-8 left-4 z-40 lg:hidden">
         <div class="bg-white rounded-2xl shadow-xl px-3 py-2 sm:px-4 sm:py-3 transform -rotate-6">
           <div class="text-xl sm:text-2xl font-bold text-sage-mist">30%</div>
           <div class="text-xs text-espresso/60">Carbon Reduced</div>
         </div>
       </div>
 
-      <!-- Benefits Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-16 relative z-10">
+      <!-- Benefits Grid with transparent backgrounds -->
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-16 relative z-30">
         {benefits.map((benefit, index) => (
           <div class="group relative">
-            <!-- Card - transparent white background -->
-            <div class="relative bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm border border-sage-mist/20 overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-sage-mist/40 hover:bg-white/95">
+            <!-- Card - more transparent background -->
+            <div class="relative bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm border border-sage-mist/20 overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-sage-mist/40 hover:bg-white/90">
               <!-- Hover gradient -->
               <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
@@ -117,7 +117,7 @@ const benefits = [
     </div>
 
     <!-- ROI Calculator CTA -->
-    <div class="relative z-10">
+    <div class="relative z-30">
       <div class="bg-gradient-to-r from-sage-mist/20 via-sage-mist/10 to-sage-mist/20 rounded-3xl p-6 sm:p-8 md:p-12">
         <div class="max-w-3xl mx-auto text-center">
           <div class="inline-flex items-center gap-2 mb-4 px-3 sm:px-4 py-2 bg-sage-mist/20 rounded-full">
@@ -148,14 +148,14 @@ const benefits = [
       </div>
     </div>
 
-    <!-- Desktop floating stats - positioned higher to avoid overlap -->
-    <div class="absolute right-0 xl:-right-4 top-1/4 hidden lg:block">
+    <!-- Desktop floating stats - with higher z-index -->
+    <div class="absolute right-0 xl:-right-4 top-1/4 hidden lg:block z-40">
       <div class="bg-white rounded-2xl shadow-xl p-4 transform rotate-3 hover:rotate-0 transition-transform duration-300">
         <div class="text-3xl font-bold text-sage-mist">50%</div>
         <div class="text-sm text-espresso/60">Energy Saved</div>
       </div>
     </div>
-    <div class="absolute left-0 xl:-left-4 top-1/2 hidden lg:block">
+    <div class="absolute left-0 xl:-left-4 top-1/2 hidden lg:block z-40">
       <div class="bg-white rounded-2xl shadow-xl p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
         <div class="text-3xl font-bold text-sage-mist">30%</div>
         <div class="text-sm text-espresso/60">Carbon Reduced</div>
@@ -167,15 +167,15 @@ const benefits = [
 <style>
   @keyframes bobbing {
     0%, 100% {
-      transform: translateX(calc(100% - 60px)) translateY(0);
+      transform: translateX(calc(100% - 80px)) translateY(0);
     }
     50% {
-      transform: translateX(calc(100% - 60px)) translateY(-10px);
+      transform: translateX(calc(100% - 80px)) translateY(-15px);
     }
   }
   
   .money-hand-visible {
-    transform: translateX(calc(100% - 60px)) !important;
+    transform: translateX(calc(100% - 80px)) !important;
   }
 </style>
 
