@@ -40,6 +40,10 @@ const GlassButton: React.FC<GlassButtonProps> = ({
         transform hover:-translate-y-1 hover:scale-105
         ${sizeClasses[size]} ${variantClasses[variant]} ${className}
       `}
+      style={{
+        filter: 'drop-shadow(0 0 20px rgba(123, 167, 217, 0.4)) drop-shadow(0 0 40px rgba(123, 167, 217, 0.2))',
+        boxShadow: '0 0 30px rgba(123, 167, 217, 0.3), 0 8px 32px rgba(0, 0, 0, 0.1)'
+      }}
     >
       {/* Enhanced glass light effect overlay */}
       <div
