@@ -20,30 +20,34 @@ const footerLinks = {
 
 <footer class="bg-charcoal text-soft-white py-16">
   <div class="container-padding max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-      <!-- Brand -->
-      <div class="space-y-4">
-        <a href="/" class="inline-block">
-          <img 
-            src="/images/logos/foamology-logo.png" 
-            alt="Foamology Insulation" 
-            class="h-16 w-auto brightness-110"
-          />
-        </a>
-        <p class="text-cream/70 text-sm">
-          Professional spray foam and insulation solutions for Alaska homes.
-        </p>
-      </div>
-      
+    <!-- Massive Logo Section -->
+    <div class="text-center mb-12">
+      <a href="/" class="inline-block">
+        <img 
+          src="/images/logos/foamology-logo.png" 
+          alt="Foamology Insulation" 
+          class="h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] w-auto mx-auto transition-all duration-500 hover:scale-105 cursor-pointer"
+          style="
+            filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.6));
+          "
+        />
+      </a>
+      <p class="text-cream/80 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mt-6 font-medium">
+        Professional spray foam and insulation solutions for Alaska homes.
+      </p>
+    </div>
+
+    <!-- 3-Column Layout for Mobile and Desktop -->
+    <div class="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12">
       <!-- Company Links -->
-      <div>
-        <h3 class="font-semibold mb-4 text-cream">Company</h3>
+      <div class="text-center">
+        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Company</h3>
         <ul class="space-y-2">
           {footerLinks.company.map((link) => (
             <li>
               <a 
                 href={link.href}
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-sm"
+                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
               >
                 {link.label}
               </a>
@@ -53,14 +57,14 @@ const footerLinks = {
       </div>
       
       <!-- Support Links -->
-      <div>
-        <h3 class="font-semibold mb-4 text-cream">Support</h3>
+      <div class="text-center">
+        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Support</h3>
         <ul class="space-y-2">
           {footerLinks.support.map((link) => (
             <li>
               <a 
                 href={link.href}
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-sm"
+                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
               >
                 {link.label}
               </a>
@@ -70,8 +74,8 @@ const footerLinks = {
       </div>
       
       <!-- Social Links -->
-      <div>
-        <h3 class="font-semibold mb-4 text-cream">Connect</h3>
+      <div class="text-center">
+        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Connect</h3>
         <ul class="space-y-2">
           {footerLinks.social.map((link) => (
             <li>
@@ -79,7 +83,7 @@ const footerLinks = {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-sm"
+                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
               >
                 {link.label}
               </a>
@@ -89,14 +93,27 @@ const footerLinks = {
       </div>
     </div>
     
+    <!-- Contact Information -->
+    <div class="text-center mb-8">
+      <a 
+        href="tel:+19073103000" 
+        class="inline-block text-2xl sm:text-3xl md:text-4xl font-bold text-cream hover:text-soft-white transition-colors duration-300 mb-2"
+      >
+        (907) 310-3000
+      </a>
+      <p class="text-cream/60 text-sm sm:text-base">
+        Serving Anchorage, Palmer, Wasilla & Kenai Peninsula
+      </p>
+    </div>
+    
     <!-- Divider -->
     <div class="border-t border-cream/20 pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-cream/50 text-sm">
+      <div class="flex flex-col items-center gap-4 text-center">
+        <p class="text-cream/50 text-xs sm:text-sm">
           © {currentYear} Foamology Insulation. All rights reserved.
         </p>
-        <p class="text-cream/50 text-sm">
-          Licensed • Bonded • Insured
+        <p class="text-cream/50 text-xs sm:text-sm font-medium">
+          Licensed • Bonded • Insured • ROC #123456
         </p>
       </div>
     </div>
