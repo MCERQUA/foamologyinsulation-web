@@ -44,7 +44,7 @@ const GlassNavbar: React.FC = () => {
             
             {/* Main glass container */}
             <div
-              className={`relative rounded-3xl px-6 py-4 transition-all duration-700 overflow-hidden ${
+              className={`relative rounded-3xl px-6 py-2 transition-all duration-700 overflow-hidden ${
                 isScrolled ? 'glass-navbar-enhanced' : 'bg-transparent'
               }`}
               style={{
@@ -76,9 +76,11 @@ const GlassNavbar: React.FC = () => {
                   <img 
                     src="/images/logos/foamology-logo.png" 
                     alt="Foamology Insulation" 
-                    className="h-14 sm:h-16 md:h-14 lg:h-16 w-auto transition-all duration-300"
+                    className="h-12 sm:h-14 md:h-12 lg:h-14 w-auto transition-all duration-300"
                     style={{
-                      filter: isScrolled ? 'none' : 'brightness(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5))'
+                      filter: isScrolled 
+                        ? 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))' 
+                        : 'brightness(1.1) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 12px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.2))'
                     }}
                   />
                 </a>
