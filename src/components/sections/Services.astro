@@ -38,7 +38,7 @@ const services = [
       </p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+    <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
       {services.map((service, index) => (
         <div 
           class="animate-slide-up" 
@@ -48,7 +48,7 @@ const services = [
           <div class="
             group relative h-full
             bg-taupe/40 
-            rounded-3xl p-4
+            rounded-2xl sm:rounded-3xl p-2 sm:p-3 md:p-4
             shadow-lg hover:shadow-xl 
             transition-all duration-500 
             transform hover:-translate-y-1
@@ -60,7 +60,7 @@ const services = [
             <!-- Inner container -->
             <div class="relative h-full flex flex-col">
               <!-- Service Image -->
-              <div class="relative mb-4 overflow-hidden rounded-2xl aspect-[4/3]">
+              <div class="relative mb-2 sm:mb-3 md:mb-4 overflow-hidden rounded-xl sm:rounded-2xl aspect-[4/3]">
                 <img 
                   src={service.image.src} 
                   alt={`${service.title} service`}
@@ -71,23 +71,23 @@ const services = [
                 <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent opacity-40"></div>
               </div>
               
-              <!-- Content container - fixed bottom styling -->
-              <div class="bg-soft-white rounded-2xl p-5 sm:p-6 flex-grow shadow-inner">
-                <div class="space-y-4">
-                  <h3 class="text-xl sm:text-2xl font-bold text-espresso">
+              <!-- Content container - mobile-optimized sizing -->
+              <div class="bg-soft-white rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-5 lg:p-6 flex-grow shadow-inner">
+                <div class="space-y-2 sm:space-y-3 md:space-y-4">
+                  <h3 class="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-espresso leading-tight">
                     {service.title}
                   </h3>
                   
-                  <p class="text-warm-gray leading-relaxed">
+                  <p class="text-warm-gray text-xs sm:text-sm md:text-base leading-relaxed hidden sm:block">
                     {service.description}
                   </p>
                   
-                  <div class="pt-2">
-                    <ul class="space-y-2.5">
+                  <div class="pt-1 sm:pt-2">
+                    <ul class="space-y-1 sm:space-y-2">
                       {service.features.map((feature) => (
-                        <li class="flex items-start gap-3">
-                          <span class="text-terra-cotta mt-0.5 flex-shrink-0">✓</span>
-                          <span class="text-warm-gray text-sm">{feature}</span>
+                        <li class="flex items-start gap-1 sm:gap-2 md:gap-3">
+                          <span class="text-terra-cotta mt-0.5 flex-shrink-0 text-xs sm:text-sm">✓</span>
+                          <span class="text-warm-gray text-xs sm:text-sm md:text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
