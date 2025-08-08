@@ -91,8 +91,9 @@ const benefits = [
         {benefits.map((benefit, index) => (
           <div class="group relative">
             <!-- Card - more transparent background -->
-            <div class="relative bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-sm border border-sage-mist/20 overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-sage-mist/40 hover:bg-white/90">
-              <!-- Hover gradient -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg border border-white/30 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-sage-mist/20 hover:border-white/50 hover:bg-white/40 transform hover:-translate-y-1">
+              <!-- Enhanced glass effects -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-xl sm:rounded-2xl"></div>
               <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <!-- Icon - smaller on mobile -->
@@ -119,8 +120,11 @@ const benefits = [
 
     <!-- ROI Calculator CTA -->
     <div class="relative z-30">
-      <div class="bg-gradient-to-r from-sage-mist/20 via-sage-mist/10 to-sage-mist/20 rounded-3xl p-6 sm:p-8 md:p-12">
-        <div class="max-w-3xl mx-auto text-center">
+      <div class="relative bg-gradient-to-r from-sage-mist/20 via-sage-mist/10 to-sage-mist/20 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg overflow-hidden">
+        <!-- Glass effect overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-sage-mist/5 rounded-3xl"></div>
+        <div class="relative z-10">
+          <div class="max-w-3xl mx-auto text-center">
           <div class="inline-flex items-center gap-2 mb-4 px-3 sm:px-4 py-2 bg-sage-mist/20 rounded-full">
             <TrendingDown className="w-4 h-4 sm:w-5 sm:h-5 text-sage-mist" />
             <span class="text-sage-mist font-medium text-xs sm:text-sm">Average ROI: 2-5 Years</span>
@@ -145,6 +149,7 @@ const benefits = [
               Learn More
             </a>
           </div>
+        </div>
         </div>
       </div>
     </div>

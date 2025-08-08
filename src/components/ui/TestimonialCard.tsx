@@ -52,13 +52,19 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
         absolute left-0 top-0 
         h-[400px] w-[320px] sm:h-[450px] sm:w-[350px]
         select-none rounded-3xl 
-        border-2 border-sand-dark/30
-        bg-khaki/20 backdrop-blur-md
-        p-6 sm:p-8 shadow-xl
+        border-2 border-white/30
+        bg-khaki/20 backdrop-blur-lg
+        p-6 sm:p-8 shadow-2xl
         flex flex-col items-center justify-center gap-6
         ${isFront ? "cursor-grab active:cursor-grabbing" : ""}
       `}
     >
+      {/* Glass effect overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-khaki/10 to-transparent rounded-3xl pointer-events-none"></div>
+      
+      {/* Content wrapper */}
+      <div className="relative z-10 flex flex-col items-center justify-center gap-6 h-full">
       {/* Avatar */}
       <div className="relative">
         <div className="h-28 w-28 sm:h-32 sm:w-32 rounded-full bg-sand/30 p-1">
@@ -87,6 +93,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
             {company}
           </p>
         )}
+      </div>
       </div>
     </motion.div>
   );

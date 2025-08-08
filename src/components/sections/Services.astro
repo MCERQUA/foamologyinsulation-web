@@ -47,15 +47,17 @@ const services = [
           <!-- Modern card with darker background and shadow -->
           <div class="
             group relative h-full
-            bg-taupe/40 
+            bg-taupe/30 backdrop-blur-md
             rounded-2xl sm:rounded-3xl p-2 sm:p-3 md:p-4
-            shadow-lg hover:shadow-xl 
+            shadow-lg hover:shadow-xl hover:shadow-taupe/20
+            border border-white/20
             transition-all duration-500 
-            transform hover:-translate-y-1
+            transform hover:-translate-y-1 hover:scale-105
             overflow-hidden
           ">
-            <!-- Glass effect border -->
-            <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"></div>
+            <!-- Enhanced glass effect border -->
+            <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-2xl sm:rounded-3xl"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-taupe/10 to-transparent rounded-2xl sm:rounded-3xl"></div>
             
             <!-- Inner container -->
             <div class="relative h-full flex flex-col">

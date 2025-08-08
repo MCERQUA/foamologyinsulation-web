@@ -122,6 +122,11 @@ const GlassNavbar: React.FC = () => {
                     isScrolled ? 'hover:bg-espresso/10' : 'hover:bg-soft-white/10'
                   }`}
                   aria-label="Toggle menu"
+                  style={{
+                    filter: isScrolled 
+                      ? 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.3))' 
+                      : 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'
+                  }}
                 >
                   {isOpen ? (
                     <X className={`w-6 h-6 ${isScrolled ? 'text-espresso' : 'text-soft-white'}`} />
@@ -147,16 +152,28 @@ const GlassNavbar: React.FC = () => {
                           ? 'text-espresso hover:bg-espresso/10' 
                           : 'text-soft-white hover:bg-soft-white/10'
                       }`}
+                      style={{
+                        textShadow: isScrolled 
+                          ? '0 1px 3px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.4)' 
+                          : '0 2px 4px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 255, 255, 0.3)'
+                      }}
                     >
                       {item.label}
                     </a>
                   ))}
-                  <button className="
-                    w-full px-4 py-3 rounded-2xl font-medium transition-all duration-300
-                    bg-terra-cotta/60 text-soft-white hover:bg-terra-cotta/70 
-                    backdrop-blur-sm border border-terra-cotta/20 shadow-glass
-                    relative overflow-hidden
-                  ">
+                  <button 
+                    className="
+                      w-full px-4 py-3 rounded-2xl font-medium transition-all duration-300
+                      bg-terra-cotta/60 text-soft-white hover:bg-terra-cotta/70 
+                      backdrop-blur-sm border border-terra-cotta/20 shadow-glass
+                      relative overflow-hidden
+                    "
+                    style={{
+                      textShadow: isScrolled 
+                        ? '0 1px 3px rgba(0, 0, 0, 0.3), 0 0 8px rgba(255, 255, 255, 0.4)' 
+                        : '0 2px 4px rgba(0, 0, 0, 0.5), 0 0 12px rgba(255, 255, 255, 0.3)'
+                    }}
+                  >
                     <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
                     <span className="relative z-10">Get Quote</span>
                   </button>

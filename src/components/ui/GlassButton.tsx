@@ -36,16 +36,17 @@ const GlassButton: React.FC<GlassButtonProps> = ({
         relative font-semibold overflow-hidden cursor-pointer 
         transition-all duration-300 rounded-full
         backdrop-blur-md border
-        shadow-glass hover:shadow-lg
-        transform hover:-translate-y-0.5
+        shadow-glass hover:shadow-xl hover:shadow-terra-cotta/20
+        transform hover:-translate-y-1 hover:scale-105
         ${sizeClasses[size]} ${variantClasses[variant]} ${className}
       `}
     >
-      {/* Glass light effect overlay */}
+      {/* Enhanced glass light effect overlay */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 rounded-full"
         style={{
-          background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, transparent 70%)',
+          background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 40%, transparent 70%)',
+          boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
         }}
       />
       
