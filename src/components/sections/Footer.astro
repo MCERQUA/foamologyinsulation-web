@@ -18,8 +18,13 @@ const footerLinks = {
 };
 ---
 
-<footer class="bg-charcoal text-soft-white py-16">
-  <div class="container-padding max-w-7xl mx-auto">
+<footer class="relative bg-charcoal text-soft-white py-16">
+  <!-- Subtle background pattern -->
+  <div 
+    class="absolute inset-0 opacity-5"
+    style="background-image: url('/images/footer-bg-small.png'); background-repeat: repeat; background-size: 100px 100px;"
+  ></div>
+  <div class="relative z-10 container-padding max-w-7xl mx-auto">
     <!-- Massive Logo Section -->
     <div class="text-center mb-12">
       <a href="/" class="inline-block">
