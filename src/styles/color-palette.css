@@ -1,25 +1,25 @@
-/* Comfort Insulation - Color Palette Reference */
+/* Foamology Insulation - Alaska Color Palette Reference */
 
 /* Primary Colors */
 :root {
   /* Backgrounds & Base */
-  --cream: #FAF7F2;        /* Main light background */
-  --sand: #E8DCC4;         /* Warm accent, cards */
-  --khaki: #C8B89E;        /* Medium tone, borders */
-  --taupe: #A69580;        /* Darker accent */
+  --cream: #E3F2FD;        /* Glacier Blue - main light background */
+  --sand: #BBDEFB;         /* Alaska Sky - soft sky blue */
+  --khaki: #64B5F6;        /* Medium blue, borders */
+  --taupe: #42A5F5;        /* Deeper blue accent */
   
   /* Text Colors */
-  --espresso: #4A3F36;     /* Primary text */
-  --charcoal: #2C2826;     /* High contrast text */
-  --warm-gray: #8B8680;    /* Secondary text */
+  --espresso: #1565C0;     /* Deep blue primary text */
+  --charcoal: #0D47A1;     /* Navy blue high contrast text */
+  --warm-gray: #546E7A;    /* Blue-gray secondary text */
   
   /* Accent Colors */
-  --terra-cotta: #C17767;  /* CTAs, links, buttons */
+  --terra-cotta: #AB47BC;  /* Purple accent for CTAs, links, buttons */
   --soft-white: #FEFDFB;   /* Pure white elements */
-  --light-gray: #F5F2ED;   /* Section backgrounds */
+  --light-gray: #F3E5F5;   /* Very light purple-blue section backgrounds */
   
   /* Reserved for Eco Sections */
-  --sage-accent: #8B9D83;  /* Use sparingly */
+  --sage-accent: #D1C4E9;  /* Twilight Blue - gentle purple-blue */
 }
 
 /* Usage Examples */
@@ -52,11 +52,11 @@
 
 /* Glass Effects */
 .glass-warm {
-  background: rgba(250, 247, 242, 0.90); /* Cream with opacity */
-  border: 1px solid rgba(200, 184, 158, 0.3); /* Khaki with opacity */
+  background: rgba(227, 242, 253, 0.90); /* Glacier Blue with opacity */
+  border: 1px solid rgba(100, 181, 246, 0.3); /* Medium blue with opacity */
 }
 
 /* Shadows */
 .shadow-warm {
-  box-shadow: 0 8px 32px rgba(74, 63, 54, 0.12); /* Espresso shadow */
+  box-shadow: 0 8px 32px rgba(21, 101, 192, 0.12); /* Deep blue shadow */
 }

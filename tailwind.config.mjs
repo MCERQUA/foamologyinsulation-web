@@ -7,25 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Main palette - warm, comfortable, professional
-        'cream': '#FAF7F2',           // Light cream background
-        'sand': '#E8DCC4',            // Warm sand
-        'sand-dark': '#D4C4A8',       // Darker sand for cards
-        'khaki': '#C8B89E',           // Medium khaki
-        'taupe': '#A69580',           // Darker taupe
-        'espresso': '#4A3F36',        // Dark brown for text
-        'charcoal': '#2C2826',        // Almost black for high contrast
-        'brown-tint': '#7B5E48',      // Brown for glass tint
+        // Alaska-themed palette - glacier blues and mountain tones
+        'cream': '#E3F2FD',           // Glacier Blue - very light blue like fresh snow
+        'sand': '#BBDEFB',            // Alaska Sky - soft sky blue from mountain scene
+        'sand-dark': '#90CAF9',       // Darker sky blue for cards
+        'khaki': '#64B5F6',           // Medium blue
+        'taupe': '#42A5F5',           // Deeper blue
+        'espresso': '#1565C0',        // Deep blue for text (readable on light backgrounds)
+        'charcoal': '#0D47A1',        // Navy blue for high contrast
+        'brown-tint': '#1976D2',      // Blue for glass tint
         
         // Accent colors (use sparingly)
-        'sage-accent': '#8B9D83',     // Muted sage for eco sections only
-        'sage-mist': '#9FA897',       // Sage green for eco/savings sections
-        'terra-cotta': '#B8946F',     // Changed to tan/brown for CTAs
+        'sage-accent': '#D1C4E9',     // Twilight Blue - gentle purple-blue from evening sky
+        'sage-mist': '#CE93D8',       // Soft purple for eco/savings sections
+        'terra-cotta': '#AB47BC',     // Purple accent for CTAs
         'soft-white': '#FEFDFB',      // Pure soft white
         
         // Functional colors
-        'warm-gray': '#8B8680',       // For secondary text
-        'light-gray': '#F5F2ED',      // For backgrounds
+        'warm-gray': '#546E7A',       // Blue-gray for secondary text
+        'light-gray': '#F3E5F5',      // Very light purple-blue for backgrounds
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],

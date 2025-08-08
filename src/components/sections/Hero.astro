@@ -2,7 +2,6 @@
 // Import components with proper paths
 import GlassButton from '../ui/GlassButton.tsx';
 import LogoScroller from '../ui/LogoScroller.tsx';
-import heroImage from '@assets/images/Comfort-Insulation-Arizona-hero1.png';
 ---
 
 <section 
@@ -11,18 +10,18 @@ import heroImage from '@assets/images/Comfort-Insulation-Arizona-hero1.png';
   <!-- Static Hero Background -->
   <div 
     class="absolute inset-0 z-0"
-    style={`background-image: url(${heroImage.src}); background-size: cover; background-repeat: no-repeat;`}
+    style="background-image: url('/images/hero2.jpg'); background-size: cover; background-repeat: no-repeat;"
   >
     <!-- Responsive background positioning -->
     <style>
       @media (max-width: 768px) {
         section > div:first-child {
-          background-position: 65% center !important; /* Shows more of the woman's face on mobile */
+          background-position: center center !important; /* Center the mountain landscape on mobile */
         }
       }
       @media (min-width: 769px) {
         section > div:first-child {
-          background-position: 85% center !important; /* Shifts image more to the right on desktop */
+          background-position: center center !important; /* Center the mountain landscape on desktop */
         }
       }
     </style>
