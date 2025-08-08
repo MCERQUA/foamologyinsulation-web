@@ -31,10 +31,24 @@ import LogoScroller from '../ui/LogoScroller.tsx';
   </div>
   
   <!-- Content -->
-  <div class="relative z-10 w-full px-6 md:px-12 lg:px-16 pb-32 pt-32 md:pt-40">
-    <div class="max-w-7xl mx-auto">
-      <div class="animate-fade-in max-w-xl lg:max-w-2xl">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-soft-white" style="text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.1);">
+  <div class="relative z-10 w-full px-6 md:px-12 lg:px-16 pb-32 pt-24 md:pt-32">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="animate-fade-in">
+        <!-- Logo above hero text -->
+        <div class="mb-8 md:mb-12">
+          <img 
+            src="/images/logos/foamology-logo.png" 
+            alt="Foamology Insulation" 
+            class="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mx-auto transition-all duration-300"
+            style="
+              filter: brightness(1.2) drop-shadow(0 4px 16px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.2));
+              text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+            "
+          />
+        </div>
+        
+        <!-- Centered hero title -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-soft-white" style="text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.6), 0 0 50px rgba(255, 255, 255, 0.2);">
           Anchorage
           <br />
           Insulation
@@ -42,11 +56,13 @@ import LogoScroller from '../ui/LogoScroller.tsx';
           <span class="text-soft-white/90">Experts</span>
         </h1>
         
-        <p class="text-lg sm:text-xl lg:text-2xl text-soft-white/90 mb-8 max-w-lg font-medium" style="text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.1);">
+        <!-- Centered subtext -->
+        <p class="text-lg sm:text-xl lg:text-2xl text-soft-white/90 mb-8 max-w-2xl mx-auto font-medium" style="text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.15);">
           Tailored spray foam and insulation solutions serving Anchorage and surrounding areas.
         </p>
         
-        <div class="flex flex-col sm:flex-row gap-4">
+        <!-- Centered button -->
+        <div class="flex justify-center">
           <GlassButton 
             href="#contact-form" 
             size="lg"
