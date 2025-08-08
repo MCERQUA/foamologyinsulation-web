@@ -71,11 +71,11 @@ const GlassNavbar: React.FC = () => {
               )}
               
               <div className="relative z-10 flex items-center justify-between">
-                {/* Logo - Adjusted sizes: smaller on desktop, same on mobile */}
+                {/* Logo */}
                 <a href="/" className="flex items-center group">
                   <img 
-                    src="/images/logos/SPRAY-COMFORT-INSULAITON-ARIZONA-LG-LOGO2.png" 
-                    alt="Comfort Insulation" 
+                    src="/images/logos/foamology-logo.png" 
+                    alt="Foamology Insulation" 
                     className="h-14 sm:h-16 md:h-14 lg:h-16 w-auto transition-all duration-300"
                     style={{
                       filter: isScrolled ? 'none' : 'brightness(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5))'

@@ -36,7 +36,7 @@ const FloatingContactButton: React.FC = () => {
             
             <div className="space-y-4">
               <a
-                href="tel:+1234567890"
+                href="tel:+19073103000"
                 className="flex items-center gap-4 p-4 rounded-2xl bg-cream hover:bg-sand/30 transition-colors group"
               >
                 <div className="p-3 rounded-full bg-terra-cotta/10 group-hover:bg-terra-cotta/20 transition-colors">
@@ -44,7 +44,7 @@ const FloatingContactButton: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold text-espresso">Call Us</p>
-                  <p className="text-sm text-warm-gray">(123) 456-7890</p>
+                  <p className="text-sm text-warm-gray">(907) 310-3000</p>
                 </div>
               </a>
               
