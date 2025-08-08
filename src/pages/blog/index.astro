@@ -34,7 +34,20 @@ const sortedPosts = posts.sort((a, b) =>
           <article class="animate-slide-up">
             <GlassCard client:visible variant="white">
               <div class="space-y-4">
-                <div class="aspect-video bg-gradient-to-br from-sand to-khaki rounded-2xl"></div>
+                <div class="aspect-video bg-gradient-to-br from-sand to-khaki rounded-2xl overflow-hidden">
+                  {post.data.featuredImage ? (
+                    <img 
+                      src={post.data.featuredImage} 
+                      alt={post.data.featuredImageAlt || post.data.title}
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="w-full h-full flex items-center justify-center">
+                      <span class="text-espresso/60 font-medium">Blog Image</span>
+                    </div>
+                  )}
+                </div>
                 
                 <div class="space-y-3">
                   <div class="flex items-center gap-4 text-sm text-warm-gray">
