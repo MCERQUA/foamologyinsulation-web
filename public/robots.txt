@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://foamologyinsulation.com/sitemap.xml
+
+# Block unnecessary crawling
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_astro/
+
+# Allow crawling of images
+Allow: /images/
+Allow: /favicon.svg

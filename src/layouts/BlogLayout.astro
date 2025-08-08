@@ -13,7 +13,12 @@ export interface Props {
 const { title, description, pubDate, author = 'Foamology Insulation Team', tags = [] } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout 
+  title={title}
+  description={description}
+  keywords="insulation blog, spray foam tips, Alaska insulation, energy efficiency, home insulation advice"
+  ogImage="/images/blog-background.jpg"
+>
   <article class="relative min-h-screen pt-32 pb-16 overflow-hidden">
     <!-- Background image -->
     <div 
