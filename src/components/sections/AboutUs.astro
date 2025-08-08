@@ -1,0 +1,182 @@
+---
+import { Users, Award, Clock, Shield } from 'lucide-react';
+
+const stats = [
+  {
+    icon: Users,
+    number: "1000+",
+    label: "Happy Customers",
+    description: "Trusted by Anchorage homeowners"
+  },
+  {
+    icon: Award,
+    number: "Top 10",
+    label: "Yelp Rated",
+    description: "Best spray foam contractors"
+  },
+  {
+    icon: Clock,
+    number: "Same Week",
+    label: "Service",
+    description: "Fast, reliable scheduling"
+  },
+  {
+    icon: Shield,
+    number: "Licensed",
+    label: "& Insured",
+    description: "ROC certified professionals"
+  }
+];
+---
+
+<section class="relative py-20 overflow-hidden" id="about">
+  <!-- Background with subtle pattern -->
+  <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+  
+  <!-- Decorative elements -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+  
+  <div class="relative container-padding max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 mb-4">
+        <div class="w-12 h-[1px] bg-sage-mist"></div>
+        <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">About Foamology</span>
+        <div class="w-12 h-[1px] bg-sage-mist"></div>
+      </div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-espresso mb-6">
+        Alaska's Trusted <br class="hidden md:block" />
+        <span class="text-sage-mist">Insulation Experts</span>
+      </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+      <!-- Content Side -->
+      <div class="relative">
+        <!-- Glass card container -->
+        <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-xl border border-white/30 overflow-hidden">
+          <!-- Glass effects -->
+          <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-sage-mist/5 to-transparent rounded-3xl"></div>
+          
+          <!-- Content -->
+          <div class="relative z-10">
+            <h3 class="text-2xl md:text-3xl font-bold text-espresso mb-6">
+              Keeping Anchorage Homes Comfortable Since Day One
+            </h3>
+            
+            <div class="space-y-4 text-base md:text-lg text-espresso/80 leading-relaxed">
+              <p>
+                At <strong class="text-espresso">Foamology Insulation</strong>, we understand Alaska's unique climate challenges. Located in Anchorage, we specialize in providing comprehensive insulation solutions that help homeowners reduce energy costs and improve indoor comfort year-round.
+              </p>
+              
+              <p>
+                Our team of <strong class="text-sage-mist">licensed, bonded, and insured professionals</strong> brings expertise in closed cell spray foam, thermal inspections, and insulation removal. We're committed to delivering quality workmanship that stands up to Alaska's harsh winters.
+              </p>
+              
+              <p>
+                From the Kenai Peninsula to Palmer and Wasilla, we serve the greater Anchorage area with personalized service, competitive pricing, and solutions tailored to your home's specific needs.
+              </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                <span class="text-espresso font-medium">Licensed & Insured</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                <span class="text-espresso font-medium">Free Estimates</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                <span class="text-espresso font-medium">Energy Efficient Solutions</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                <span class="text-espresso font-medium">Alaska Climate Experts</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Decorative corner accent -->
+          <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-sage-mist/10 rounded-tl-3xl"></div>
+        </div>
+      </div>
+
+      <!-- Image/Visual Side -->
+      <div class="relative">
+        <!-- Main image container with glass effect -->
+        <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-6 shadow-xl border border-white/30 overflow-hidden">
+          <!-- Glass effects -->
+          <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+          
+          <!-- Image placeholder for now - could be team photo or facility -->
+          <div class="relative aspect-[4/3] bg-gradient-to-br from-sage-mist/20 to-sage-mist/10 rounded-2xl overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-sage-mist/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-sage-mist" />
+                </div>
+                <h4 class="text-xl font-bold text-espresso mb-2">Professional Team</h4>
+                <p class="text-espresso/70">Expert insulation contractors serving Anchorage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating contact info -->
+        <div class="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-white/50">
+          <div class="text-center">
+            <p class="text-sm font-medium text-espresso/70">Call Today</p>
+            <p class="text-lg font-bold text-sage-mist">(907) 310-3000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="relative">
+      <!-- Glass background -->
+      <div class="relative bg-gradient-to-r from-sage-mist/10 via-sage-mist/5 to-sage-mist/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-12 shadow-lg overflow-hidden">
+        <!-- Glass effect overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-sage-mist/5 rounded-3xl"></div>
+        
+        <div class="relative z-10">
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div class="text-center group">
+                <!-- Icon -->
+                <div class="w-16 h-16 bg-sage-mist/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-sage-mist/30 transition-colors duration-300">
+                  <stat.icon className="w-8 h-8 text-sage-mist" />
+                </div>
+                
+                <!-- Number -->
+                <div class="text-2xl md:text-3xl font-bold text-espresso mb-1">
+                  {stat.number}
+                </div>
+                
+                <!-- Label -->
+                <div class="text-base md:text-lg font-semibold text-sage-mist mb-1">
+                  {stat.label}
+                </div>
+                
+                <!-- Description -->
+                <div class="text-sm text-espresso/70">
+                  {stat.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Corner accents -->
+        <div class="absolute top-0 left-0 w-20 h-20 bg-white/10 rounded-br-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-20 h-20 bg-white/10 rounded-tl-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
