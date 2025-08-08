@@ -3,7 +3,7 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = {
   company: [
-    { label: 'About', href: '#' },
+    { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Blog', href: '/blog' },
   ],
@@ -13,9 +13,7 @@ const footerLinks = {
     { label: 'Privacy', href: '#' },
   ],
   social: [
-    { label: 'Facebook', href: '#' },
-    { label: 'Instagram', href: '#' },
-    { label: 'LinkedIn', href: '#' },
+    { label: 'Facebook', href: 'https://www.facebook.com/61566246782622' },
   ]
 };
 ---
@@ -79,6 +77,8 @@ const footerLinks = {
             <li>
               <a 
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 class="text-cream/60 hover:text-cream transition-colors duration-300 text-sm"
               >
                 {link.label}
