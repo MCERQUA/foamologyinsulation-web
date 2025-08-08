@@ -18,14 +18,14 @@ export default {
         'brown-tint': '#1976D2',      // Blue for glass tint
         
         // Accent colors (use sparingly)
-        'sage-accent': '#D1C4E9',     // Twilight Blue - gentle purple-blue from evening sky
-        'sage-mist': '#CE93D8',       // Soft purple for eco/savings sections
-        'terra-cotta': '#AB47BC',     // Purple accent for CTAs
+        'sage-accent': '#81C784',     // Mountain Green - gentle green from alpine trees
+        'sage-mist': '#A5D6A7',       // Soft green for eco/savings sections
+        'terra-cotta': '#2196F3',     // Bright blue accent for CTAs
         'soft-white': '#FEFDFB',      // Pure soft white
         
         // Functional colors
         'warm-gray': '#546E7A',       // Blue-gray for secondary text
-        'light-gray': '#F3E5F5',      // Very light purple-blue for backgrounds
+        'light-gray': '#E8F5E8',      // Very light green for backgrounds
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],

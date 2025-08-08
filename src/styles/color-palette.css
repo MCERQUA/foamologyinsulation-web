@@ -14,12 +14,12 @@
   --warm-gray: #546E7A;    /* Blue-gray secondary text */
   
   /* Accent Colors */
-  --terra-cotta: #AB47BC;  /* Purple accent for CTAs, links, buttons */
+  --terra-cotta: #2196F3;  /* Bright blue accent for CTAs, links, buttons */
   --soft-white: #FEFDFB;   /* Pure white elements */
-  --light-gray: #F3E5F5;   /* Very light purple-blue section backgrounds */
+  --light-gray: #E8F5E8;   /* Very light green section backgrounds */
   
   /* Reserved for Eco Sections */
-  --sage-accent: #D1C4E9;  /* Twilight Blue - gentle purple-blue */
+  --sage-accent: #81C784;  /* Mountain Green - gentle green from alpine trees */
 }
 
 /* Usage Examples */
