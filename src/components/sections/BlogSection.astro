@@ -1,17 +1,13 @@
 ---
 import GlassCard from '../ui/GlassCard.tsx';
 import GlassButton from '../ui/GlassButton.tsx';
+import { getCollection } from 'astro:content';
 
-// For now, we'll have a placeholder blog post
-const blogPosts = [
-  {
-    slug: 'welcome-to-comfort-insulation',
-    title: 'Welcome to Comfort Insulation',
-    excerpt: 'Discover how proper insulation can transform your Arizona home into a comfortable, energy-efficient sanctuary.',
-    date: new Date().toLocaleDateString(),
-    readTime: '5 min read'
-  }
-];
+// Get latest blog posts (limit to 3 for homepage)
+const allPosts = await getCollection('blog');
+const blogPosts = allPosts
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 3);
 ---
 
 <section class="section-padding bg-light-gray" id="blog">
@@ -26,30 +22,55 @@ const blogPosts = [
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {blogPosts.map((post) => (
-        <div class="animate-slide-up">
+      {blogPosts.map((post, index) => (
+        <div class="animate-slide-up" style={`animation-delay: ${index * 0.1}s`}>
           <GlassCard client:visible variant="white">
             <article class="space-y-4">
               <div class="aspect-video bg-gradient-to-br from-sand to-khaki rounded-2xl overflow-hidden group">
-                <div class="w-full h-full flex items-center justify-center">
-                  <span class="text-soft-white/80 font-medium">Blog Image</span>
-                </div>
+                {post.data.featuredImage ? (
+                  <img 
+                    src={post.data.featuredImage} 
+                    alt={post.data.featuredImageAlt || post.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center">
+                    <span class="text-soft-white/80 font-medium">Blog Image</span>
+                  </div>
+                )}
               </div>
               
               <div class="space-y-3">
                 <div class="flex items-center gap-4 text-sm text-warm-gray">
-                  <span>{post.date}</span>
+                  <time datetime={post.data.pubDate.toISOString()}>
+                    {new Date(post.data.pubDate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                  </time>
                   <span class="text-khaki">•</span>
-                  <span>{post.readTime}</span>
+                  <span>{post.data.readTime || '5 min read'}</span>
                 </div>
                 
                 <h3 class="text-2xl font-bold text-espresso">
-                  {post.title}
+                  {post.data.title}
                 </h3>
                 
                 <p class="text-warm-gray">
-                  {post.excerpt}
+                  {post.data.description}
                 </p>
+                
+                {post.data.tags && (
+                  <div class="flex flex-wrap gap-2">
+                    {post.data.tags.slice(0, 3).map((tag: string) => (
+                      <span class="text-xs px-2 py-1 bg-sand/30 rounded-full text-taupe">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
               
               <GlassButton
@@ -66,9 +87,9 @@ const blogPosts = [
         </div>
       ))}
       
-      <!-- Coming Soon Cards -->
-      {[1, 2].map((i) => (
-        <div class="animate-slide-up" style={`animation-delay: ${i * 0.1}s`}>
+      <!-- Coming Soon Cards - only show if we have fewer than 3 posts -->
+      {blogPosts.length < 3 && Array.from({length: 3 - blogPosts.length}, (_, i) => (
+        <div class="animate-slide-up" style={`animation-delay: ${(blogPosts.length + i) * 0.1}s`}>
           <GlassCard client:visible variant="warm">
             <article class="space-y-4 opacity-60">
               <div class="aspect-video bg-gradient-to-br from-cream to-sand rounded-2xl flex items-center justify-center">
