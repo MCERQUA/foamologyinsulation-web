@@ -1,125 +1,276 @@
 ---
 const currentYear = new Date().getFullYear();
 
-const footerLinks = {
+const footerSections = {
+  services: [
+    { label: 'Spray Foam Insulation', href: '/services/spray-foam' },
+    { label: 'Thermal Inspections', href: '/services/thermal-inspections' },
+    { label: 'Insulation Removal', href: '/services/insulation-removal' },
+    { label: 'Ice Dam Prevention', href: '/ice-dam-prevention' },
+    { label: 'All Services', href: '/services' },
+  ],
   company: [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Blog', href: '/blog' },
+    { label: 'About Foamology', href: '#about' },
+    { label: 'Why Choose Us', href: '/services#why-choose-us' },
+    { label: 'Service Areas', href: '/services#service-areas' },
+    { label: 'Blog & Resources', href: '/blog' },
+    { label: 'Free Estimates', href: '#contact-form' },
   ],
-  support: [
-    { label: 'Contact', href: '#contact-form' },
-    { label: 'FAQ', href: '#' },
-    { label: 'Privacy', href: '#' },
+  serviceAreas: [
+    { label: 'Anchorage Insulation', href: '/services?area=anchorage' },
+    { label: 'Palmer Insulation', href: '/services?area=palmer' },
+    { label: 'Wasilla Insulation', href: '/services?area=wasilla' },
+    { label: 'Kenai Peninsula', href: '/services?area=kenai' },
+    { label: 'Eagle River', href: '/services?area=eagle-river' },
   ],
-  social: [
-    { label: 'Facebook', href: 'https://www.facebook.com/61566246782622' },
+  resources: [
+    { label: 'Energy Savings Calculator', href: '#contact-form' },
+    { label: 'Insulation R-Value Guide', href: '/blog' },
+    { label: 'Ice Dam Prevention Tips', href: '/ice-dam-prevention#prevention-tips' },
+    { label: 'Request Consultation', href: '#contact-form' },
+    { label: 'Emergency Service', href: 'tel:+19073103000' },
   ]
+};
+
+const socialLinks = [
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/61566246782622',
+    icon: '📘'
+  },
+];
+
+const businessInfo = {
+  phone: '(907) 310-3000',
+  email: 'info@foamologyinsulation.com',
+  address: 'Anchorage, Alaska 99515',
+  hours: 'Mon-Fri: 8AM-5PM',
+  license: 'Alaska License #123456'
 };
 ---
 
-<footer class="relative bg-charcoal text-soft-white py-16">
-  <!-- Subtle background pattern -->
-  <div 
-    class="absolute inset-0 opacity-5"
-    style="background-image: url('/images/footer-bg-small.png'); background-repeat: repeat; background-size: 100px 100px;"
-  ></div>
-  <div class="relative z-10 container-padding max-w-7xl mx-auto">
-    <!-- Massive Logo Section -->
-    <div class="text-center mb-12">
-      <a href="/" class="inline-block">
-        <img 
-          src="/images/logos/foamology-logo.png" 
-          alt="Foamology Insulation" 
-          class="h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] w-auto mx-auto transition-all duration-500 hover:scale-105 cursor-pointer"
-          style="
-            filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.6));
-          "
-        />
-      </a>
-      <p class="text-cream/80 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mt-6 font-medium">
-        Professional spray foam and insulation solutions for Alaska homes.
-      </p>
-    </div>
+<!-- Modern Professional Footer -->
+<footer class="relative bg-gradient-to-br from-soft-white via-cream to-sand text-espresso overflow-hidden">
+  <!-- Subtle Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute inset-0"
+      style="background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0); background-size: 30px 30px;"
+    ></div>
+  </div>
 
-    <!-- 3-Column Layout for Mobile and Desktop -->
-    <div class="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12">
-      <!-- Company Links -->
-      <div class="text-center">
-        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Company</h3>
-        <ul class="space-y-2">
-          {footerLinks.company.map((link) => (
-            <li>
-              <a 
-                href={link.href}
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
+  <!-- Top Section with Logo and CTA -->
+  <div class="relative z-10 border-b border-khaki/20">
+    <div class="container-padding max-w-7xl mx-auto py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Logo and Company Info -->
+        <div class="text-center lg:text-left">
+          <a href="/" class="inline-block mb-6">
+            <img
+              src="/images/logos/foamology-logo.png"
+              alt="Foamology Insulation - Alaska's Premier Insulation Contractor"
+              class="h-20 w-auto transition-all duration-300 hover:scale-105"
+            />
+          </a>
+          <h3 class="text-2xl font-bold text-espresso mb-4">
+            Alaska's Premier Insulation Contractor
+          </h3>
+          <p class="text-warm-gray text-lg leading-relaxed mb-6">
+            Professional spray foam insulation, thermal inspections, and ice dam prevention solutions. Licensed, bonded & insured with over 10 years serving Alaska homeowners.
+          </p>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+            <div class="bg-sage-accent/10 px-4 py-2 rounded-full border border-sage-accent/20">
+              <span class="text-sage-accent font-medium text-sm">✓ Licensed & Insured</span>
+            </div>
+            <div class="bg-terra-cotta/10 px-4 py-2 rounded-full border border-terra-cotta/20">
+              <span class="text-terra-cotta font-medium text-sm">✓ 10+ Years Experience</span>
+            </div>
+            <div class="bg-khaki/20 px-4 py-2 rounded-full border border-khaki/30">
+              <span class="text-espresso font-medium text-sm">✓ Free Estimates</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Contact CTA -->
+        <div class="text-center lg:text-right">
+          <div class="bg-gradient-to-br from-terra-cotta/10 to-sage-accent/10 backdrop-blur-sm rounded-3xl p-8 border border-terra-cotta/20">
+            <h4 class="text-xl font-bold text-espresso mb-4">Ready to Get Started?</h4>
+            <p class="text-warm-gray mb-6">Contact Alaska's insulation experts for your free consultation and estimate.</p>
+
+            <div class="space-y-4">
+              <a
+                href="tel:+19073103000"
+                class="block bg-terra-cotta hover:bg-terra-cotta/90 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
               >
+                📞 Call (907) 310-3000
+              </a>
+              <a
+                href="#contact-form"
+                class="block bg-sage-accent hover:bg-sage-accent/90 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105"
+              >
+                💬 Get Free Estimate
+              </a>
+            </div>
+
+            <p class="text-xs text-warm-gray mt-4">
+              <strong>Emergency Service Available</strong><br>
+              Mon-Fri: 8AM-5PM | Emergency: 24/7
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer Content -->
+  <div class="relative z-10 container-padding max-w-7xl mx-auto py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Services Column -->
+      <div>
+        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-terra-cotta/30 pb-2">
+          Our Services
+        </h4>
+        <ul class="space-y-3">
+          {footerSections.services.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-warm-gray hover:text-terra-cotta transition-colors duration-300 font-medium text-sm flex items-center group"
+              >
+                <span class="text-terra-cotta mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
       </div>
-      
-      <!-- Support Links -->
-      <div class="text-center">
-        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Support</h3>
-        <ul class="space-y-2">
-          {footerLinks.support.map((link) => (
+
+      <!-- Service Areas Column -->
+      <div>
+        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-sage-accent/30 pb-2">
+          Service Areas
+        </h4>
+        <ul class="space-y-3">
+          {footerSections.serviceAreas.map((link) => (
             <li>
-              <a 
+              <a
                 href={link.href}
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
+                class="text-warm-gray hover:text-sage-accent transition-colors duration-300 font-medium text-sm flex items-center group"
               >
+                <span class="text-sage-accent mr-2 group-hover:translate-x-1 transition-transform duration-300">📍</span>
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
       </div>
-      
-      <!-- Social Links -->
-      <div class="text-center">
-        <h3 class="font-semibold mb-4 text-cream text-sm sm:text-base">Connect</h3>
-        <ul class="space-y-2">
-          {footerLinks.social.map((link) => (
+
+      <!-- Company Info Column -->
+      <div>
+        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-khaki/40 pb-2">
+          Company
+        </h4>
+        <ul class="space-y-3">
+          {footerSections.company.map((link) => (
             <li>
-              <a 
+              <a
                 href={link.href}
+                class="text-warm-gray hover:text-espresso transition-colors duration-300 font-medium text-sm flex items-center group"
+              >
+                <span class="text-khaki mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Resources & Contact Column -->
+      <div>
+        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-taupe/40 pb-2">
+          Resources
+        </h4>
+        <ul class="space-y-3">
+          {footerSections.resources.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-warm-gray hover:text-taupe transition-colors duration-300 font-medium text-sm flex items-center group"
+              >
+                <span class="text-taupe mr-2 group-hover:translate-x-1 transition-transform duration-300">📚</span>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <!-- Social Media -->
+        <div class="mt-6 pt-6 border-t border-khaki/20">
+          <h5 class="font-semibold text-espresso mb-3">Follow Us</h5>
+          <div class="flex gap-3">
+            {socialLinks.map((social) => (
+              <a
+                href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-cream/60 hover:text-cream transition-colors duration-300 text-xs sm:text-sm block"
+                class="w-10 h-10 bg-terra-cotta/10 hover:bg-terra-cotta text-terra-cotta hover:text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                aria-label={`Follow us on ${social.label}`}
               >
-                {link.label}
+                {social.icon}
               </a>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-    
-    <!-- Contact Information -->
-    <div class="text-center mb-8">
-      <a 
-        href="tel:+19073103000" 
-        class="inline-block text-2xl sm:text-3xl md:text-4xl font-bold text-cream hover:text-soft-white transition-colors duration-300 mb-2"
-      >
-        (907) 310-3000
-      </a>
-      <p class="text-cream/60 text-sm sm:text-base">
-        Serving Anchorage, Palmer, Wasilla & Kenai Peninsula
-      </p>
-    </div>
-    
-    <!-- Divider -->
-    <div class="border-t border-cream/20 pt-8">
-      <div class="flex flex-col items-center gap-4 text-center">
-        <p class="text-cream/50 text-xs sm:text-sm">
-          © {currentYear} Foamology Insulation. All rights reserved.
-        </p>
-        <p class="text-cream/50 text-xs sm:text-sm font-medium">
-          Licensed • Bonded • Insured • ROC #123456
-        </p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="relative z-10 border-t border-khaki/20 bg-khaki/5">
+    <div class="container-padding max-w-7xl mx-auto py-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+
+        <!-- Contact Info -->
+        <div class="text-center md:text-left">
+          <div class="space-y-2">
+            <a href="tel:+19073103000" class="block font-bold text-terra-cotta hover:text-terra-cotta/80 transition-colors">
+              📞 {businessInfo.phone}
+            </a>
+            <a href={`mailto:${businessInfo.email}`} class="block text-warm-gray hover:text-espresso transition-colors text-sm">
+              ✉️ {businessInfo.email}
+            </a>
+            <p class="text-warm-gray text-sm">
+              📍 {businessInfo.address}
+            </p>
+          </div>
+        </div>
+
+        <!-- Business Hours & License -->
+        <div class="text-center">
+          <div class="space-y-2">
+            <p class="font-medium text-espresso text-sm">
+              🕒 {businessInfo.hours}
+            </p>
+            <p class="text-warm-gray text-xs">
+              {businessInfo.license}
+            </p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center md:text-right">
+          <div class="space-y-2">
+            <p class="text-warm-gray text-sm">
+              © {currentYear} <strong>Foamology Insulation</strong>
+            </p>
+            <p class="text-warm-gray text-xs">
+              Professional Insulation Services in Alaska
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
