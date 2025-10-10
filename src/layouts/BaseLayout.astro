@@ -16,7 +16,7 @@ export interface Props {
 const { 
   title, 
   description = 'Professional insulation services in Anchorage, AK. Foamology Insulation provides expert spray foam insulation, thermal inspections, and energy-efficient solutions for Alaska homes and businesses.',
-  keywords = 'insulation Anchorage, spray foam insulation Alaska, thermal inspections, energy efficient insulation, closed cell spray foam, insulation contractor Anchorage, Alaska insulation services',
+  keywords = 'insulation Anchorage Alaska, spray foam insulation Anchorage, insulation contractor Alaska, closed cell spray foam Anchorage, thermal inspections Alaska, energy efficient insulation Anchorage, Alaska insulation services, insulation Palmer Alaska, insulation Wasilla Alaska, insulation Kenai Peninsula',
   ogImage = '/images/logos/foamology-logo.png',
   canonicalURL = Astro.url.href
 } = Astro.props;
@@ -140,6 +140,14 @@ const {
               "@type": "Service",
               "name": "Insulation Removal",
               "description": "Safe removal of old, damaged, or contaminated insulation materials"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Dam Prevention",
+              "description": "Professional ice dam prevention solutions using spray foam insulation and air sealing"
             }
           }
         ]

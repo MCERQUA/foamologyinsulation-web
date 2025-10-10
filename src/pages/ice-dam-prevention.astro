@@ -2,6 +2,46 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GlassButton from '../components/ui/GlassButton.tsx';
 
+// FAQ Schema for SEO
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What exactly are ice dams and how do they form?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ice dams form when heat escapes through your roof, melting snow which then refreezes at the colder roof edge, creating a dam that backs up water under shingles and into your home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are ice dams such a problem in Alaska?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alaska's extreme temperature differences and heavy snowfall create perfect conditions for ice dams. The large temperature differential between heated homes and outdoor temperatures accelerates the formation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can ice dams be completely prevented?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! With proper insulation, air sealing, and ventilation, ice dams can be 100% prevented. The key is stopping heat loss that causes snow to melt and refreeze."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does ice dam prevention cost vs. repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prevention typically costs $3,000-$8,000 for comprehensive insulation, while ice dam damage repairs average $5,000-$15,000 plus the cost of emergency removal."
+      }
+    }
+  ]
+};
+
 const iceDamCauses = [
   {
     cause: 'Heat Loss Through Roof',
@@ -112,6 +152,8 @@ const faqs = [
   description="Professional ice dam prevention in Anchorage, AK. Closed cell spray foam insulation, air sealing & thermal solutions stop ice dams 100%. Save thousands on damage repairs."
   keywords="ice dam prevention Anchorage, ice dam solutions Alaska, prevent ice dams Alaska, insulation ice dam prevention, spray foam ice dam prevention, Alaska ice dam contractor"
 >
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head"></script>
   <!-- Hero Section -->
   <section class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
     <!-- Background Image -->
@@ -134,7 +176,7 @@ const faqs = [
         </div>
 
         <h1 class="heading-xl text-white mb-6 text-shadow-dark">
-          Stop Ice Dams Before They Destroy Your Home
+          Ice Dam Prevention Anchorage Alaska - Stop Ice Dams Before They Destroy Your Home
         </h1>
 
         <p class="body-text text-white/90 max-w-3xl mx-auto mb-8 text-shadow-dark">
