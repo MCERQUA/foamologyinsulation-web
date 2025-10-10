@@ -104,13 +104,13 @@ const businessInfo = {
                 href="tel:+19073103000"
                 class="block bg-terra-cotta hover:bg-terra-cotta/90 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
               >
-                📞 Call (907) 310-3000
+                Call (907) 310-3000
               </a>
               <a
                 href="#contact-form"
                 class="block bg-sage-accent hover:bg-sage-accent/90 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105"
               >
-                💬 Get Free Estimate
+                Get Free Estimate
               </a>
             </div>
 
@@ -125,12 +125,13 @@ const businessInfo = {
   </div>
 
   <!-- Main Footer Content -->
-  <div class="relative z-10 container-padding max-w-7xl mx-auto py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div class="relative z-10 bg-gradient-to-br from-taupe to-charcoal text-soft-white">
+    <div class="container-padding max-w-7xl mx-auto py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <!-- Services Column -->
       <div>
-        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-terra-cotta/30 pb-2">
+        <h4 class="font-bold text-soft-white text-lg mb-6 border-b-2 border-terra-cotta/50 pb-2">
           Our Services
         </h4>
         <ul class="space-y-3">
@@ -138,7 +139,7 @@ const businessInfo = {
             <li>
               <a
                 href={link.href}
-                class="text-warm-gray hover:text-terra-cotta transition-colors duration-300 font-medium text-sm flex items-center group"
+                class="text-cream/80 hover:text-terra-cotta transition-colors duration-300 font-medium text-sm flex items-center group"
               >
                 <span class="text-terra-cotta mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 {link.label}
@@ -150,7 +151,7 @@ const businessInfo = {
 
       <!-- Service Areas Column -->
       <div>
-        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-sage-accent/30 pb-2">
+        <h4 class="font-bold text-soft-white text-lg mb-6 border-b-2 border-sage-accent/50 pb-2">
           Service Areas
         </h4>
         <ul class="space-y-3">
@@ -158,9 +159,9 @@ const businessInfo = {
             <li>
               <a
                 href={link.href}
-                class="text-warm-gray hover:text-sage-accent transition-colors duration-300 font-medium text-sm flex items-center group"
+                class="text-cream/80 hover:text-sage-accent transition-colors duration-300 font-medium text-sm flex items-center group"
               >
-                <span class="text-sage-accent mr-2 group-hover:translate-x-1 transition-transform duration-300">📍</span>
+                <span class="text-sage-accent mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 {link.label}
               </a>
             </li>
@@ -170,7 +171,7 @@ const businessInfo = {
 
       <!-- Company Info Column -->
       <div>
-        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-khaki/40 pb-2">
+        <h4 class="font-bold text-soft-white text-lg mb-6 border-b-2 border-khaki/50 pb-2">
           Company
         </h4>
         <ul class="space-y-3">
@@ -178,7 +179,7 @@ const businessInfo = {
             <li>
               <a
                 href={link.href}
-                class="text-warm-gray hover:text-espresso transition-colors duration-300 font-medium text-sm flex items-center group"
+                class="text-cream/80 hover:text-soft-white transition-colors duration-300 font-medium text-sm flex items-center group"
               >
                 <span class="text-khaki mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 {link.label}
@@ -190,7 +191,7 @@ const businessInfo = {
 
       <!-- Resources & Contact Column -->
       <div>
-        <h4 class="font-bold text-espresso text-lg mb-6 border-b-2 border-taupe/40 pb-2">
+        <h4 class="font-bold text-soft-white text-lg mb-6 border-b-2 border-cream/50 pb-2">
           Resources
         </h4>
         <ul class="space-y-3">
@@ -198,9 +199,9 @@ const businessInfo = {
             <li>
               <a
                 href={link.href}
-                class="text-warm-gray hover:text-taupe transition-colors duration-300 font-medium text-sm flex items-center group"
+                class="text-cream/80 hover:text-cream transition-colors duration-300 font-medium text-sm flex items-center group"
               >
-                <span class="text-taupe mr-2 group-hover:translate-x-1 transition-transform duration-300">📚</span>
+                <span class="text-cream mr-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
                 {link.label}
               </a>
             </li>
@@ -208,18 +209,18 @@ const businessInfo = {
         </ul>
 
         <!-- Social Media -->
-        <div class="mt-6 pt-6 border-t border-khaki/20">
-          <h5 class="font-semibold text-espresso mb-3">Follow Us</h5>
+        <div class="mt-6 pt-6 border-t border-cream/20">
+          <h5 class="font-semibold text-soft-white mb-3">Follow Us</h5>
           <div class="flex gap-3">
             {socialLinks.map((social) => (
               <a
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-10 h-10 bg-terra-cotta/10 hover:bg-terra-cotta text-terra-cotta hover:text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                class="w-10 h-10 bg-terra-cotta/20 hover:bg-terra-cotta text-terra-cotta hover:text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
                 aria-label={`Follow us on ${social.label}`}
               >
-                {social.icon}
+                {social.label.charAt(0)}
               </a>
             ))}
           </div>
@@ -229,7 +230,7 @@ const businessInfo = {
   </div>
 
   <!-- Bottom Bar -->
-  <div class="relative z-10 border-t border-khaki/20 bg-khaki/5">
+  <div class="relative z-10 border-t border-cream/20 bg-charcoal">
     <div class="container-padding max-w-7xl mx-auto py-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
 
@@ -237,13 +238,13 @@ const businessInfo = {
         <div class="text-center md:text-left">
           <div class="space-y-2">
             <a href="tel:+19073103000" class="block font-bold text-terra-cotta hover:text-terra-cotta/80 transition-colors">
-              📞 {businessInfo.phone}
+              {businessInfo.phone}
             </a>
-            <a href={`mailto:${businessInfo.email}`} class="block text-warm-gray hover:text-espresso transition-colors text-sm">
-              ✉️ {businessInfo.email}
+            <a href={`mailto:${businessInfo.email}`} class="block text-cream/80 hover:text-cream transition-colors text-sm">
+              {businessInfo.email}
             </a>
-            <p class="text-warm-gray text-sm">
-              📍 {businessInfo.address}
+            <p class="text-cream/60 text-sm">
+              {businessInfo.address}
             </p>
           </div>
         </div>
@@ -251,10 +252,10 @@ const businessInfo = {
         <!-- Business Hours & License -->
         <div class="text-center">
           <div class="space-y-2">
-            <p class="font-medium text-espresso text-sm">
-              🕒 {businessInfo.hours}
+            <p class="font-medium text-soft-white text-sm">
+              {businessInfo.hours}
             </p>
-            <p class="text-warm-gray text-xs">
+            <p class="text-cream/60 text-xs">
               {businessInfo.license}
             </p>
           </div>
@@ -263,10 +264,10 @@ const businessInfo = {
         <!-- Copyright -->
         <div class="text-center md:text-right">
           <div class="space-y-2">
-            <p class="text-warm-gray text-sm">
+            <p class="text-cream/80 text-sm">
               © {currentYear} <strong>Foamology Insulation</strong>
             </p>
-            <p class="text-warm-gray text-xs">
+            <p class="text-cream/60 text-xs">
               Professional Insulation Services in Alaska
             </p>
           </div>
