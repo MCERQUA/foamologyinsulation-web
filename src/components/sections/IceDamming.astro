@@ -1,0 +1,197 @@
+---
+import GlassButton from '../ui/GlassButton.tsx';
+
+const iceDammingFacts = [
+  {
+    stat: '90%',
+    description: 'of ice dams are caused by heat loss through the roof'
+  },
+  {
+    stat: '$5,000+',
+    description: 'average cost of ice dam damage repairs'
+  },
+  {
+    stat: '100%',
+    description: 'preventable with proper insulation and air sealing'
+  }
+];
+
+const solutions = [
+  'Air sealing to prevent warm air infiltration',
+  'R-49+ attic insulation for Alaska homes',
+  'Proper ventilation system design',
+  'Thermal bridging elimination'
+];
+---
+
+<section class="relative section-padding overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0">
+    <img
+      src="/images/alaska-anchorage-ice-damming-solutions.png"
+      alt="Ice damming on Alaska home roof showing icicles and snow buildup"
+      class="w-full h-full object-cover"
+    />
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/70 to-charcoal/85"></div>
+    <!-- Additional texture overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-charcoal/20 to-charcoal/40"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 container-padding max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Text Content -->
+      <div class="animate-fade-in">
+        <!-- Warning Badge -->
+        <div class="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-full px-4 py-2 mb-6">
+          <span class="text-yellow-400 text-xl">⚠️</span>
+          <span class="text-white font-medium text-sm">Alaska Ice Dam Alert</span>
+        </div>
+
+        <h2 class="heading-lg text-white mb-6 text-shadow-dark">
+          Stop Ice Dams Before They Start
+        </h2>
+
+        <p class="body-text text-white/90 mb-8 text-shadow-dark">
+          Ice dams are a serious problem for Alaska homes, causing thousands in damage every winter. Foamology's proven insulation solutions eliminate the heat loss that creates ice dams, protecting your home and saving you money.
+        </p>
+
+        <!-- Solutions List -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold text-white mb-4 text-shadow-dark">Our Ice Dam Prevention Solutions:</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {solutions.map((solution) => (
+              <div class="flex items-start gap-3">
+                <span class="text-sage-accent text-lg mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-white/90 text-sm text-shadow-dark">{solution}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <GlassButton
+            href="/services/spray-foam"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            Prevent Ice Dams
+          </GlassButton>
+          <GlassButton
+            href="tel:+19073103000"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Emergency Call
+          </GlassButton>
+        </div>
+      </div>
+
+      <!-- Stats Panel -->
+      <div class="animate-slide-up">
+        <div class="
+          bg-white/10 backdrop-blur-md rounded-3xl p-8
+          border border-white/20 shadow-elegant
+          hover:bg-white/15 transition-all duration-500
+        ">
+          <!-- Glass effect overlay -->
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent rounded-3xl pointer-events-none"></div>
+
+          <div class="relative">
+            <h3 class="text-2xl font-bold text-white mb-6 text-center text-shadow-dark">
+              Ice Damming Facts
+            </h3>
+
+            <div class="space-y-6">
+              {iceDammingFacts.map((fact, index) => (
+                <div
+                  class="text-center animate-slide-up"
+                  style={`animation-delay: ${index * 0.2}s`}
+                >
+                  <div class="text-4xl font-bold text-sage-accent mb-2 text-shadow-dark">
+                    {fact.stat}
+                  </div>
+                  <p class="text-white/90 text-sm leading-relaxed text-shadow-dark">
+                    {fact.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-8 pt-6 border-t border-white/20 text-center">
+              <p class="text-white/80 text-sm mb-4 text-shadow-dark">
+                Don't wait for damage to occur
+              </p>
+              <GlassButton
+                href="#contact-form"
+                variant="primary"
+                size="md"
+                class="w-full"
+                client:visible
+              >
+                Get Ice Dam Assessment
+              </GlassButton>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Trust Indicators -->
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+        <div class="text-3xl mb-2">🏠</div>
+        <div class="text-white font-semibold mb-1 text-shadow-dark">Alaska Expertise</div>
+        <div class="text-white/80 text-sm text-shadow-dark">Specialized knowledge of Alaska's ice dam challenges</div>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+        <div class="text-3xl mb-2">🛡️</div>
+        <div class="text-white font-semibold mb-1 text-shadow-dark">Proven Solutions</div>
+        <div class="text-white/80 text-sm text-shadow-dark">Eliminate heat loss that causes ice dams</div>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+        <div class="text-3xl mb-2">💰</div>
+        <div class="text-white font-semibold mb-1 text-shadow-dark">Save Thousands</div>
+        <div class="text-white/80 text-sm text-shadow-dark">Prevent costly ice dam damage before it happens</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Enhanced animations for ice damming section */
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  /* Enhanced text shadows for readability */
+  .text-shadow-dark {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Improve glass morphism effect */
+  .backdrop-blur-md {
+    backdrop-filter: blur(16px) saturate(1.8);
+    -webkit-backdrop-filter: blur(16px) saturate(1.8);
+  }
+
+  /* Ensure proper contrast */
+  @media (max-width: 640px) {
+    .text-shadow-dark {
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+  }
+</style>
