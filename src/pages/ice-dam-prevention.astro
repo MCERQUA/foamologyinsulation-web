@@ -1,0 +1,416 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GlassButton from '../components/ui/GlassButton.tsx';
+
+const iceDamCauses = [
+  {
+    cause: 'Heat Loss Through Roof',
+    description: 'Warm air escapes through inadequate insulation, melting snow on the roof',
+    percentage: '90%',
+    icon: '🔥'
+  },
+  {
+    cause: 'Poor Attic Ventilation',
+    description: 'Inadequate airflow allows heat buildup in attic spaces',
+    percentage: '75%',
+    icon: '💨'
+  },
+  {
+    cause: 'Thermal Bridging',
+    description: 'Structural elements conduct heat directly to the roof surface',
+    percentage: '60%',
+    icon: '🌉'
+  },
+  {
+    cause: 'Air Leakage',
+    description: 'Gaps and cracks allow warm air to reach the roof deck',
+    percentage: '85%',
+    icon: '💨'
+  }
+];
+
+const preventionSolutions = [
+  {
+    solution: 'Closed Cell Spray Foam Insulation',
+    description: 'Create an airtight thermal barrier with R-7.0 per inch',
+    benefits: ['Complete air sealing', 'Superior R-value', 'Moisture barrier', 'Structural strength'],
+    recommended: 'R-49+ for Alaska attics'
+  },
+  {
+    solution: 'Comprehensive Air Sealing',
+    description: 'Eliminate all pathways for warm air to reach the roof',
+    benefits: ['Seal penetrations', 'Close bypass leaks', 'Insulate rim joists', 'Weatherstrip access points'],
+    recommended: 'Professional blower door testing'
+  },
+  {
+    solution: 'Proper Attic Ventilation',
+    description: 'Balance intake and exhaust ventilation for optimal airflow',
+    benefits: ['Soffit vents', 'Ridge vents', 'Continuous airflow', 'Temperature control'],
+    recommended: '1 sq ft per 300 sq ft attic'
+  },
+  {
+    solution: 'Thermal Bridge Elimination',
+    description: 'Insulate structural elements that conduct heat',
+    benefits: ['Continuous insulation', 'Reduce thermal bridging', 'Even temperature', 'Energy efficiency'],
+    recommended: 'Professional thermal imaging'
+  }
+];
+
+const damagePreventions = [
+  {
+    damage: 'Roof Damage',
+    cost: '$3,000 - $15,000',
+    prevention: 'Proper insulation prevents ice formation'
+  },
+  {
+    damage: 'Water Damage',
+    cost: '$2,000 - $10,000',
+    prevention: 'Air sealing stops warm air infiltration'
+  },
+  {
+    damage: 'Gutter Damage',
+    cost: '$500 - $3,000',
+    prevention: 'Ventilation maintains proper temperatures'
+  },
+  {
+    damage: 'Interior Damage',
+    cost: '$1,000 - $8,000',
+    prevention: 'Comprehensive prevention stops all ice dams'
+  }
+];
+
+const faqs = [
+  {
+    question: 'What exactly are ice dams and how do they form?',
+    answer: 'Ice dams form when heat escapes through your roof, melting snow which then refreezes at the colder roof edge, creating a dam that backs up water under shingles and into your home.'
+  },
+  {
+    question: 'Why are ice dams such a problem in Alaska?',
+    answer: 'Alaska\'s extreme temperature differences and heavy snowfall create perfect conditions for ice dams. The large temperature differential between heated homes and outdoor temperatures accelerates the formation.'
+  },
+  {
+    question: 'Can ice dams be completely prevented?',
+    answer: 'Yes! With proper insulation, air sealing, and ventilation, ice dams can be 100% prevented. The key is stopping heat loss that causes snow to melt and refreeze.'
+  },
+  {
+    question: 'How much does ice dam prevention cost vs. repair?',
+    answer: 'Prevention typically costs $3,000-$8,000 for comprehensive insulation, while ice dam damage repairs average $5,000-$15,000 plus the cost of emergency removal.'
+  },
+  {
+    question: 'What\'s the best insulation for Alaska ice dam prevention?',
+    answer: 'Closed cell spray foam insulation is ideal because it provides both insulation (R-7.0 per inch) and complete air sealing in one application, eliminating the primary causes of ice dams.'
+  },
+  {
+    question: 'When should I address ice dam prevention?',
+    answer: 'The best time is before winter, typically late summer or fall. However, if you\'ve experienced ice dams, address prevention immediately to avoid recurring damage.'
+  }
+];
+---
+
+<BaseLayout
+  title="Ice Dam Prevention Anchorage Alaska - Stop Ice Dams Before They Start"
+  description="Professional ice dam prevention in Anchorage, AK. Closed cell spray foam insulation, air sealing & thermal solutions stop ice dams 100%. Save thousands on damage repairs."
+  keywords="ice dam prevention Anchorage, ice dam solutions Alaska, prevent ice dams Alaska, insulation ice dam prevention, spray foam ice dam prevention, Alaska ice dam contractor"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src="/images/alaska-anchorage-ice-damming-solutions.png"
+        alt="Ice dam formation on Alaska home showing icicles and prevention solutions"
+        class="w-full h-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/50 to-charcoal/70"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto text-center">
+      <div class="animate-fade-in">
+        <!-- Alert Badge -->
+        <div class="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-full px-6 py-3 mb-8">
+          <span class="text-yellow-400 text-2xl">⚠️</span>
+          <span class="text-white font-bold">Alaska Ice Dam Emergency Prevention</span>
+        </div>
+
+        <h1 class="heading-xl text-white mb-6 text-shadow-dark">
+          Stop Ice Dams Before They Destroy Your Home
+        </h1>
+
+        <p class="body-text text-white/90 max-w-3xl mx-auto mb-8 text-shadow-dark">
+          Ice dams cause millions in damage to Alaska homes every winter. Don't wait for disaster to strike. Foamology's proven insulation solutions eliminate the heat loss that creates ice dams, protecting your home and saving you thousands.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <GlassButton
+            href="#prevention-solutions"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            See Prevention Solutions
+          </GlassButton>
+          <GlassButton
+            href="tel:+19073103000"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Emergency: (907) 310-3000
+          </GlassButton>
+        </div>
+
+        <!-- Critical Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl font-bold text-red-400 mb-2">$5,000+</div>
+            <div class="text-white text-sm text-shadow-dark">Average ice dam damage cost</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl font-bold text-sage-accent mb-2">100%</div>
+            <div class="text-white text-sm text-shadow-dark">Preventable with proper insulation</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div class="text-3xl font-bold text-terra-cotta mb-2">90%</div>
+            <div class="text-white text-sm text-shadow-dark">Caused by heat loss through roof</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Causes Ice Dams -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Understanding Ice Dam Formation
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Ice dams don't just happen randomly. They're caused by specific heat loss patterns that can be identified and eliminated with proper insulation solutions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {iceDamCauses.map((cause, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-6 h-full border border-red-100">
+              <div class="text-4xl mb-4">{cause.icon}</div>
+              <div class="text-2xl font-bold text-red-600 mb-2">{cause.percentage}</div>
+              <h3 class="text-lg font-semibold text-espresso mb-3">{cause.cause}</h3>
+              <p class="text-warm-gray text-sm">{cause.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Prevention Solutions -->
+  <section class="section-padding bg-cream" id="prevention-solutions">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Professional Ice Dam Prevention Solutions
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Our comprehensive approach addresses all causes of ice dam formation, providing permanent protection for your Alaska home.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {preventionSolutions.map((solution, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-8 h-full shadow-soft hover:shadow-medium transition-all duration-300">
+              <h3 class="text-xl font-bold text-espresso mb-4">{solution.solution}</h3>
+              <p class="text-warm-gray mb-6">{solution.description}</p>
+
+              <div class="mb-6">
+                <h4 class="font-semibold text-espresso mb-3">Key Benefits:</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {solution.benefits.map((benefit) => (
+                    <div class="flex items-center gap-2">
+                      <span class="text-sage-accent">✓</span>
+                      <span class="text-warm-gray text-sm">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div class="bg-terra-cotta/10 rounded-xl p-4">
+                <div class="font-medium text-terra-cotta text-sm mb-1">Alaska Recommendation:</div>
+                <div class="text-espresso text-sm">{solution.recommended}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Damage Prevention -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Prevent Costly Ice Dam Damage
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Ice dam prevention is always more cost-effective than dealing with the extensive damage they cause.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {damagePreventions.map((item, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-2xl p-6 text-center h-full">
+              <div class="text-xl font-bold text-red-600 mb-2">{item.cost}</div>
+              <h3 class="text-lg font-semibold text-espresso mb-3">{item.damage}</h3>
+              <p class="text-warm-gray text-sm mb-4">{item.prevention}</p>
+              <div class="text-sage-accent font-medium text-sm">✓ Preventable</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-padding bg-gradient-to-br from-taupe/10 to-khaki/10">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Our Ice Dam Prevention Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Comprehensive assessment and prevention using proven Alaska-specific solutions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">1</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Thermal Assessment</h3>
+          <p class="text-warm-gray text-sm">Advanced thermal imaging to identify heat loss patterns and ice dam risk areas.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">2</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Custom Solution Design</h3>
+          <p class="text-warm-gray text-sm">Tailored insulation and air sealing plan based on your specific home and risk factors.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">3</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Professional Installation</h3>
+          <p class="text-warm-gray text-sm">Expert installation of spray foam insulation and comprehensive air sealing.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">4</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Verification & Warranty</h3>
+          <p class="text-warm-gray text-sm">Post-installation testing and comprehensive warranty for peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Ice Dam Prevention FAQ
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about preventing ice dams in Alaska homes.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-cream/50 backdrop-blur-sm rounded-2xl p-6"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency CTA -->
+  <section class="section-padding bg-gradient-to-br from-red-600 to-orange-600">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
+        <h2 class="heading-md text-white mb-6 text-shadow-dark">
+          Don't Wait for Ice Dam Damage
+        </h2>
+        <p class="body-text text-white/90 mb-8 max-w-2xl mx-auto text-shadow-dark">
+          Every day you wait increases your risk of costly ice dam damage. Contact Foamology today for comprehensive ice dam prevention that will protect your home for decades.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <GlassButton
+            href="tel:+19073103000"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            Call Now: (907) 310-3000
+          </GlassButton>
+          <GlassButton
+            href="#contact-form"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Get Free Assessment
+          </GlassButton>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
+            <div class="text-lg font-bold text-white mb-1">Licensed & Insured</div>
+            <div class="text-white/80 text-sm">Alaska contractor license</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
+            <div class="text-lg font-bold text-white mb-1">10+ Years Experience</div>
+            <div class="text-white/80 text-sm">Alaska ice dam prevention</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
+            <div class="text-lg font-bold text-white mb-1">100% Guarantee</div>
+            <div class="text-white/80 text-sm">Complete prevention solution</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .text-shadow-dark {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 0, 0, 0.6);
+  }
+</style>

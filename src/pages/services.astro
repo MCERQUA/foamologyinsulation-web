@@ -290,6 +290,113 @@ const services = [
     </div>
   </section>
 
+  <!-- Ice Dam Prevention Section -->
+  <section class="relative section-padding overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0">
+      <img
+        src="/images/alaska-anchorage-ice-damming-solutions.png"
+        alt="Ice damming prevention solutions for Alaska homes"
+        class="w-full h-full object-cover opacity-40"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/70 to-charcoal/80"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="animate-fade-in">
+          <!-- Warning Badge -->
+          <div class="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-full px-4 py-2 mb-6">
+            <span class="text-yellow-400 text-xl">⚠️</span>
+            <span class="text-white font-medium text-sm">Alaska Ice Dam Alert</span>
+          </div>
+
+          <h2 class="heading-md text-white mb-6 text-shadow-dark">
+            Alaska's #1 Ice Dam Prevention Solution
+          </h2>
+
+          <p class="text-white/90 mb-6 text-shadow-dark">
+            Don't let ice dams destroy your home this winter. Our proven spray foam insulation eliminates the heat loss that causes ice dams, saving you thousands in damage repairs.
+          </p>
+
+          <!-- Quick Stats -->
+          <div class="grid grid-cols-3 gap-4 mb-8">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-red-400 text-shadow-dark">$5,000+</div>
+              <div class="text-white/80 text-xs text-shadow-dark">Avg. Damage Cost</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-sage-accent text-shadow-dark">100%</div>
+              <div class="text-white/80 text-xs text-shadow-dark">Preventable</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-terra-cotta text-shadow-dark">90%</div>
+              <div class="text-white/80 text-xs text-shadow-dark">Heat Loss Caused</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <GlassButton
+              href="/ice-dam-prevention"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Learn More About Ice Dam Prevention
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Emergency Call
+            </GlassButton>
+          </div>
+        </div>
+
+        <!-- Solutions Panel -->
+        <div class="animate-slide-up">
+          <div class="
+            bg-white/10 backdrop-blur-md rounded-3xl p-6
+            border border-white/20 shadow-elegant
+          ">
+            <h3 class="text-xl font-bold text-white mb-4 text-shadow-dark">
+              Our Prevention Solutions:
+            </h3>
+
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start gap-3">
+                <span class="text-sage-accent text-lg mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-white/90 text-sm text-shadow-dark">R-49+ closed cell spray foam insulation</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-sage-accent text-lg mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-white/90 text-sm text-shadow-dark">Complete air sealing to stop heat loss</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-sage-accent text-lg mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-white/90 text-sm text-shadow-dark">Thermal imaging assessment included</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-sage-accent text-lg mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-white/90 text-sm text-shadow-dark">Lifetime warranty on prevention</span>
+              </div>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-4 text-center">
+              <div class="text-white font-semibold mb-1 text-shadow-dark">Prevention vs. Repair</div>
+              <div class="text-white/80 text-sm text-shadow-dark">Invest $3,000-$8,000 in prevention vs. $5,000-$15,000 in damage repairs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Call to Action -->
   <section class="section-padding bg-gradient-to-br from-taupe/20 to-khaki/20">
     <div class="container-padding max-w-4xl mx-auto text-center">
@@ -351,5 +458,10 @@ const services = [
   /* Hover effects */
   .group:hover .group-hover\:scale-105 {
     transform: scale(1.05);
+  }
+
+  /* Text shadow for readability */
+  .text-shadow-dark {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 0, 0, 0.6);
   }
 </style>
