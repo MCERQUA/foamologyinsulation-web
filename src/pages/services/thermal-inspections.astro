@@ -1,0 +1,476 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const inspectionServices = [
+  {
+    title: 'Energy Loss Detection',
+    description: 'Identify areas where your property is losing heat and wasting energy',
+    icon: '🔍',
+    benefits: ['Pinpoint heat loss locations', 'Reduce energy waste', 'Lower utility bills']
+  },
+  {
+    title: 'Moisture Detection',
+    description: 'Find hidden moisture issues before they become major problems',
+    icon: '💧',
+    benefits: ['Prevent mold growth', 'Avoid structural damage', 'Protect indoor air quality']
+  },
+  {
+    title: 'HVAC System Analysis',
+    description: 'Evaluate heating and cooling system performance and efficiency',
+    icon: '🌡️',
+    benefits: ['Optimize system performance', 'Extend equipment life', 'Improve comfort']
+  },
+  {
+    title: 'Building Envelope Assessment',
+    description: 'Comprehensive evaluation of your building\'s thermal performance',
+    icon: '🏠',
+    benefits: ['Complete thermal profile', 'Insulation quality check', 'Air leakage detection']
+  }
+];
+
+const inspectionTypes = [
+  {
+    type: 'Residential Energy Audit',
+    description: 'Complete thermal assessment for homes and condominiums',
+    image: atticImage,
+    includes: [
+      'Thermal imaging of entire building envelope',
+      'Insulation quality assessment',
+      'Air leakage detection',
+      'HVAC system evaluation',
+      'Detailed report with recommendations',
+      'Energy saving calculations'
+    ],
+    idealFor: 'Homeowners looking to reduce energy costs and improve comfort',
+    price: 'Starting at $350'
+  },
+  {
+    type: 'Commercial Building Inspection',
+    description: 'Professional thermal inspections for commercial properties',
+    image: wallImage,
+    includes: [
+      'Large-scale thermal imaging',
+      'HVAC system analysis',
+      'Roof and wall inspection',
+      'Energy efficiency assessment',
+      'Compliance documentation',
+      'ROI analysis for improvements'
+    ],
+    idealFor: 'Business owners and property managers',
+    price: 'Custom pricing'
+  },
+  {
+    type: 'Pre-Purchase Inspection',
+    description: 'Thermal inspection before buying a property',
+    image: crawlSpaceImage,
+    includes: [
+      'Hidden defect detection',
+      'Insulation quality verification',
+      'Moisture and mold assessment',
+      'Energy cost estimation',
+      'Negotiation documentation',
+      'Peace of mind report'
+    ],
+    idealFor: 'Home buyers and real estate professionals',
+    price: 'Starting at $275'
+  }
+];
+
+const thermalBenefits = [
+  {
+    title: 'Save Money',
+    description: 'Identify energy waste costing you hundreds per year',
+    stat: 'Up to 30% savings'
+  },
+  {
+    title: 'Prevent Damage',
+    description: 'Catch moisture issues before expensive repairs needed',
+    stat: '90% accuracy rate'
+  },
+  {
+    title: 'Improve Comfort',
+    description: 'Find cold spots and drafts affecting your comfort',
+    stat: '100% improvement'
+  },
+  {
+    title: 'Increase Value',
+    description: 'Documentation for insurance claims and property value',
+    stat: 'Professional reporting'
+  }
+];
+
+const faqs = [
+  {
+    question: 'What is thermal imaging inspection?',
+    answer: 'Thermal imaging uses infrared cameras to detect temperature differences in building materials, revealing insulation gaps, air leaks, moisture issues, and other problems invisible to the naked eye.'
+  },
+  {
+    question: 'When should I get a thermal inspection?',
+    answer: 'Best times include before winter season, after energy bill increases, before buying/selling property, after insulation work, or if you notice drafts and cold spots.'
+  },
+  {
+    question: 'How accurate are thermal inspections?',
+    answer: 'Our certified thermographers achieve 90%+ accuracy in detecting thermal anomalies. Results depend on weather conditions and temperature differential requirements.'
+  },
+  {
+    question: 'Do you provide a written report?',
+    answer: 'Yes, every inspection includes a detailed digital report with thermal images, problem identification, and specific recommendations for improvements.'
+  },
+  {
+    question: 'Can thermal inspections be done in summer?',
+    answer: 'Yes, though winter provides better temperature differentials. Summer inspections can still detect moisture, HVAC issues, and air conditioning inefficiencies.'
+  }
+];
+---
+
+<BaseLayout
+  title="Thermal Imaging Inspections Anchorage Alaska - Energy Audits"
+  description="Professional thermal imaging inspections in Anchorage, AK. Advanced infrared technology detects energy loss, moisture issues, and insulation gaps. Certified thermographers, detailed reports. Book now."
+  keywords="thermal imaging Anchorage, energy audit Alaska, infrared inspection Anchorage, heat loss detection Alaska, moisture detection Anchorage, building thermal inspection, HVAC thermal analysis Alaska"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0">
+      <img
+        src={crawlSpaceImage.src}
+        alt="Professional thermal imaging inspection equipment in Anchorage Alaska"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-cream/80 to-sand/60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="animate-fade-in">
+          <h1 class="heading-xl text-espresso mb-6 text-shadow">
+            Professional Thermal Imaging Inspections
+          </h1>
+          <p class="body-text text-warm-gray mb-6">
+            Advanced infrared thermal imaging inspections in Anchorage, Alaska. Our certified thermographers use state-of-the-art equipment to detect energy loss, moisture issues, and insulation problems invisible to the naked eye.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <GlassButton
+              href="#contact-form"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Schedule Inspection
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Call (907) 310-3000
+            </GlassButton>
+          </div>
+
+          <!-- Key Benefits -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-xl font-bold text-terra-cotta">Same Day</div>
+              <div class="text-sm text-espresso">Reporting</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-xl font-bold text-terra-cotta">Certified</div>
+              <div class="text-sm text-espresso">Thermographers</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Image -->
+        <div class="animate-slide-up">
+          <div class="relative rounded-3xl overflow-hidden shadow-elegant">
+            <img
+              src={crawlSpaceImage.src}
+              alt="Thermal imaging inspection showing heat loss in Alaska building"
+              class="w-full h-auto"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+
+            <!-- Overlay Badge -->
+            <div class="absolute top-4 right-4 bg-terra-cotta/90 backdrop-blur-sm text-white px-3 py-2 rounded-full text-sm font-medium">
+              Starting at $275
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Detect -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          What Our Thermal Inspections Reveal
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Advanced infrared technology detects problems before they become expensive repairs, helping you save money and improve your property's performance.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {inspectionServices.map((service, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
+              <div class="text-4xl mb-4">{service.icon}</div>
+              <h3 class="text-xl font-semibold text-espresso mb-3">{service.title}</h3>
+              <p class="text-warm-gray mb-4">{service.description}</p>
+
+              <div class="space-y-1">
+                {service.benefits.map((benefit) => (
+                  <div class="flex items-center justify-center gap-2 text-sm">
+                    <span class="text-terra-cotta">✓</span>
+                    <span class="text-warm-gray">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Why Choose Thermal Imaging?
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Thermal inspections provide immediate, actionable insights into your property's performance and efficiency.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {thermalBenefits.map((benefit, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6">
+              <div class="text-2xl font-bold text-terra-cotta mb-2">{benefit.stat}</div>
+              <h3 class="text-lg font-semibold text-espresso mb-2">{benefit.title}</h3>
+              <p class="text-warm-gray text-sm">{benefit.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Inspection Types -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Thermal Inspection Services
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Comprehensive thermal imaging services tailored to your specific needs and property type.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {inspectionTypes.map((inspection, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-3xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 h-full flex flex-col">
+              <!-- Image -->
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src={inspection.image.src}
+                  alt={`${inspection.type} thermal imaging service in Anchorage Alaska`}
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent"></div>
+
+                <!-- Price Badge -->
+                <div class="absolute top-4 right-4 bg-terra-cotta/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {inspection.price}
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-6 flex-grow flex flex-col">
+                <h3 class="text-xl font-semibold text-espresso mb-3">{inspection.type}</h3>
+                <p class="text-warm-gray mb-4">{inspection.description}</p>
+
+                <!-- Includes -->
+                <div class="mb-4 flex-grow">
+                  <h4 class="font-medium text-espresso mb-2">Includes:</h4>
+                  <div class="space-y-1">
+                    {inspection.includes.map((item) => (
+                      <div class="flex items-start gap-2">
+                        <span class="text-terra-cotta mt-0.5 flex-shrink-0 text-sm">✓</span>
+                        <span class="text-warm-gray text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <!-- Ideal For -->
+                <div class="mb-6">
+                  <h4 class="font-medium text-espresso mb-1">Ideal For:</h4>
+                  <p class="text-warm-gray text-sm">{inspection.idealFor}</p>
+                </div>
+
+                <!-- CTA Button -->
+                <GlassButton
+                  href="#contact-form"
+                  variant="primary"
+                  size="md"
+                  class="w-full mt-auto"
+                  client:visible
+                >
+                  Book This Inspection
+                </GlassButton>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-padding bg-gradient-to-br from-taupe/10 to-khaki/10">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Our Inspection Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Professional thermal imaging inspection following industry standards and best practices.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">1</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Initial Consultation</h3>
+          <p class="text-warm-gray text-sm">Discuss your concerns and establish inspection goals and scope.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">2</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Thermal Imaging</h3>
+          <p class="text-warm-gray text-sm">Comprehensive infrared imaging of your property's thermal performance.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">3</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Analysis & Documentation</h3>
+          <p class="text-warm-gray text-sm">Expert analysis of findings with detailed photographic documentation.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">4</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Detailed Report</h3>
+          <p class="text-warm-gray text-sm">Comprehensive report with findings, recommendations, and next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Thermal Inspection FAQ
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about thermal imaging inspections in Alaska.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-cream/50 backdrop-blur-sm rounded-2xl p-6"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-br from-cream to-sand">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Ready to Discover Hidden Energy Loss?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Schedule your professional thermal imaging inspection today. Our certified thermographers will identify energy waste and provide actionable recommendations for improvement.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Schedule Inspection
+        </GlassButton>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Certified Professionals</div>
+          <div class="text-espresso text-sm">Level I & II thermographers</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Advanced Equipment</div>
+          <div class="text-espresso text-sm">Professional grade thermal cameras</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Same Day Results</div>
+          <div class="text-espresso text-sm">Digital reports available immediately</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>

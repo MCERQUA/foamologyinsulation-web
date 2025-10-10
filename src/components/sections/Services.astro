@@ -8,18 +8,21 @@ import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comf
 const services = [
   {
     title: 'Closed Cell Spray Foam',
+    slug: 'spray-foam',
     description: 'Premium closed cell spray foam with superior R-value for Alaska\'s extreme conditions.',
     features: ['Air infiltration control', 'Moisture vapor barrier', 'Structural strength'],
     image: atticImage
   },
   {
     title: 'Thermal Inspections',
+    slug: 'thermal-inspections',
     description: 'Comprehensive insulation inspections using advanced thermal imaging technology.',
     features: ['Heat loss detection', 'Energy audit reports', 'Solution recommendations'],
     image: crawlSpaceImage
   },
   {
     title: 'Insulation Removal',
+    slug: 'insulation-removal',
     description: 'Safe removal of old, damaged, or contaminated insulation materials.',
     features: ['Contamination cleanup', 'Mold prevention', 'Preparation for upgrade'],
     image: wallImage
@@ -85,7 +88,7 @@ const services = [
                   </p>
                   
                   <div class="pt-1 sm:pt-2">
-                    <ul class="space-y-1 sm:space-y-2">
+                    <ul class="space-y-1 sm:space-y-2 mb-3 sm:mb-4">
                       {service.features.map((feature) => (
                         <li class="flex items-start gap-1 sm:gap-2 md:gap-3">
                           <span class="text-terra-cotta mt-0.5 flex-shrink-0 text-xs sm:text-sm">✓</span>
@@ -93,6 +96,24 @@ const services = [
                         </li>
                       ))}
                     </ul>
+
+                    <!-- Learn More Button -->
+                    <a
+                      href={`/services/${service.slug}`}
+                      class="
+                        inline-block w-full text-center
+                        bg-terra-cotta/10 hover:bg-terra-cotta/20
+                        border border-terra-cotta/30 hover:border-terra-cotta/50
+                        text-terra-cotta hover:text-terra-cotta
+                        px-2 sm:px-3 py-1 sm:py-2
+                        rounded-lg sm:rounded-xl
+                        text-xs sm:text-sm font-medium
+                        transition-all duration-300
+                        hover:scale-105 hover:shadow-sm
+                      "
+                    >
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </div>
@@ -106,14 +127,24 @@ const services = [
       <p class="text-warm-gray mb-6 text-lg">
         Ready to improve your home's comfort and efficiency?
       </p>
-      <GlassButton 
-        href="#contact-form"
-        variant="primary"
-        size="lg"
-        client:visible
-      >
-        Get Your Free Estimate
-      </GlassButton>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <GlassButton
+          href="/services"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          View All Services
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Get Your Free Estimate
+        </GlassButton>
+      </div>
     </div>
   </div>
 </section>

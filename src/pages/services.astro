@@ -1,0 +1,355 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GlassCard from '../components/ui/GlassCard.tsx';
+import GlassButton from '../components/ui/GlassButton.tsx';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const services = [
+  {
+    title: 'Closed Cell Spray Foam',
+    slug: 'spray-foam',
+    description: 'Premium closed cell spray foam insulation with superior R-value designed for Alaska\'s extreme climate conditions. Our spray foam creates an airtight seal that prevents heat loss and moisture infiltration.',
+    longDescription: 'Our closed cell spray foam insulation is the gold standard for Alaska homes and commercial buildings. With an R-value of 6.0-7.0 per inch, it provides superior thermal performance while serving as a moisture barrier and structural enhancement.',
+    features: [
+      'Superior R-value (6.0-7.0 per inch)',
+      'Complete air infiltration control',
+      'Moisture vapor barrier protection',
+      'Adds structural strength to buildings',
+      'Lifetime warranty available',
+      'Energy savings up to 50%'
+    ],
+    benefits: [
+      'Dramatic reduction in heating costs',
+      'Improved indoor air quality',
+      'Prevents ice dams and condensation',
+      'Reduces allergen infiltration',
+      'Increases property value'
+    ],
+    applications: [
+      'Attics and roof decks',
+      'Basement and foundation walls',
+      'Crawl spaces',
+      'Commercial buildings',
+      'New construction',
+      'Retrofit applications'
+    ],
+    image: atticImage,
+    price: 'Starting at $1.50/sq ft',
+    warranty: 'Lifetime warranty available'
+  },
+  {
+    title: 'Thermal Inspections',
+    slug: 'thermal-inspections',
+    description: 'Professional thermal imaging inspections using state-of-the-art infrared technology to identify energy loss, moisture issues, and insulation gaps in your Alaska property.',
+    longDescription: 'Our certified thermographers use advanced thermal imaging cameras to provide comprehensive energy audits and building diagnostics. We identify heat loss patterns, moisture intrusion, and structural issues invisible to the naked eye.',
+    features: [
+      'Advanced infrared imaging technology',
+      'Certified thermography professionals',
+      'Comprehensive energy audit reports',
+      'Before and after documentation',
+      'Solution recommendations',
+      'Same-day reporting available'
+    ],
+    benefits: [
+      'Identify hidden energy waste',
+      'Prevent costly structural damage',
+      'Optimize insulation performance',
+      'Document insurance claims',
+      'Verify contractor work quality'
+    ],
+    applications: [
+      'Pre-purchase home inspections',
+      'Energy efficiency assessments',
+      'Moisture and leak detection',
+      'HVAC system evaluation',
+      'Insulation quality verification',
+      'Building envelope analysis'
+    ],
+    image: crawlSpaceImage,
+    price: 'Starting at $350',
+    warranty: 'Detailed digital report included'
+  },
+  {
+    title: 'Insulation Removal',
+    slug: 'insulation-removal',
+    description: 'Safe, professional removal of old, contaminated, or damaged insulation materials. We handle everything from rodent-damaged insulation to asbestos-containing materials with proper safety protocols.',
+    longDescription: 'Our experienced team safely removes old, damaged, or contaminated insulation using proper containment and disposal methods. We handle hazardous materials and ensure your property is ready for new, high-performance insulation.',
+    features: [
+      'Safe hazardous material handling',
+      'Complete contamination cleanup',
+      'Proper waste disposal',
+      'Air quality protection',
+      'Surface preparation for new insulation',
+      'Licensed and insured service'
+    ],
+    benefits: [
+      'Eliminates health hazards',
+      'Prevents mold and pest issues',
+      'Prepares for efficient new insulation',
+      'Improves indoor air quality',
+      'Increases property value'
+    ],
+    applications: [
+      'Rodent-damaged insulation',
+      'Moldy or wet insulation',
+      'Asbestos-containing materials',
+      'Fire-damaged insulation',
+      'Renovation preparation',
+      'Upgrade to modern insulation'
+    ],
+    image: wallImage,
+    price: 'Starting at $2.50/sq ft',
+    warranty: 'Complete cleanup guarantee'
+  }
+];
+---
+
+<BaseLayout
+  title="Professional Insulation Services in Anchorage Alaska"
+  description="Comprehensive insulation services in Anchorage, AK. Spray foam insulation, thermal inspections, and safe insulation removal. Licensed, bonded & insured. Free estimates on all services."
+  keywords="insulation services Anchorage, spray foam contractor Alaska, thermal imaging inspections, insulation removal Anchorage, energy efficient insulation Alaska, closed cell foam insulation"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto text-center">
+      <div class="animate-fade-in">
+        <h1 class="heading-xl text-espresso mb-6 text-shadow">
+          Professional Insulation Services
+        </h1>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto mb-8">
+          Expert insulation solutions for Alaska's extreme climate. From premium spray foam installation to comprehensive thermal inspections, we provide the insulation services your property needs to stay comfortable and energy efficient year-round.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <GlassButton
+            href="#contact-form"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            Get Free Estimate
+          </GlassButton>
+          <GlassButton
+            href="#services-overview"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Explore Services
+          </GlassButton>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section-padding bg-soft-white" id="services-overview">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Complete Insulation Solutions
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Serving Anchorage, Kenai Peninsula, Palmer, and Wasilla with licensed, bonded, and insured insulation services. Each service is designed to maximize your property's energy efficiency and comfort.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        {services.map((service, index) => (
+          <div
+            class="animate-slide-up group"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <!-- Service Card -->
+            <div class="
+              relative h-full bg-cream/30 backdrop-blur-md rounded-3xl p-6
+              border border-white/20 shadow-soft hover:shadow-medium
+              transition-all duration-500 transform hover:-translate-y-2
+              overflow-hidden
+            ">
+              <!-- Glass effect overlay -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent rounded-3xl"></div>
+
+              <!-- Service Image -->
+              <div class="relative mb-6 overflow-hidden rounded-2xl aspect-[4/3]">
+                <img
+                  src={service.image.src}
+                  alt={`${service.title} service in Anchorage Alaska`}
+                  class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+
+                <!-- Price badge -->
+                <div class="absolute top-4 right-4 bg-terra-cotta/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {service.price}
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="relative">
+                <h3 class="text-2xl font-bold text-espresso mb-3">
+                  {service.title}
+                </h3>
+
+                <p class="text-warm-gray leading-relaxed mb-4">
+                  {service.description}
+                </p>
+
+                <!-- Key Features -->
+                <div class="mb-6">
+                  <h4 class="font-semibold text-espresso mb-3">Key Features:</h4>
+                  <div class="grid grid-cols-1 gap-2">
+                    {service.features.slice(0, 3).map((feature) => (
+                      <div class="flex items-start gap-2">
+                        <span class="text-terra-cotta mt-1 flex-shrink-0">✓</span>
+                        <span class="text-warm-gray text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="pt-4 border-t border-khaki/20">
+                  <GlassButton
+                    href={`/services/${service.slug}`}
+                    variant="primary"
+                    size="md"
+                    class="w-full"
+                    client:visible
+                  >
+                    Learn More & Get Quote
+                  </GlassButton>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Service Areas -->
+      <div class="bg-gradient-to-r from-taupe/10 to-khaki/10 rounded-3xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-espresso mb-4">Service Areas</h3>
+        <p class="text-warm-gray mb-6">
+          We proudly serve residential and commercial properties throughout South-Central Alaska
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-espresso font-medium">
+          <div class="bg-white/50 rounded-xl p-3">Anchorage</div>
+          <div class="bg-white/50 rounded-xl p-3">Kenai Peninsula</div>
+          <div class="bg-white/50 rounded-xl p-3">Palmer</div>
+          <div class="bg-white/50 rounded-xl p-3">Wasilla</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Why Choose Foamology Insulation?
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Over a decade of experience serving Alaska properties with premium insulation solutions and exceptional customer service.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-2xl">🏅</span>
+          </div>
+          <h3 class="text-xl font-semibold text-espresso mb-2">Licensed & Insured</h3>
+          <p class="text-warm-gray">Fully licensed, bonded, and insured for your protection and peace of mind.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-2xl">❄️</span>
+          </div>
+          <h3 class="text-xl font-semibold text-espresso mb-2">Alaska Expertise</h3>
+          <p class="text-warm-gray">Specialized knowledge of Alaska's unique climate challenges and building requirements.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-2xl">⚡</span>
+          </div>
+          <h3 class="text-xl font-semibold text-espresso mb-2">Energy Savings</h3>
+          <p class="text-warm-gray">Proven track record of helping customers reduce energy costs by up to 50%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section-padding bg-gradient-to-br from-taupe/20 to-khaki/20">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Ready to Improve Your Property's Energy Efficiency?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Contact us today for a free consultation and estimate. Our experts will assess your property and recommend the best insulation solution for your needs and budget.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Request Free Estimate
+        </GlassButton>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-2xl font-bold text-terra-cotta">Free</div>
+          <div class="text-espresso font-medium">Estimates</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-2xl font-bold text-terra-cotta">24/7</div>
+          <div class="text-espresso font-medium">Emergency Service</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-2xl font-bold text-terra-cotta">100%</div>
+          <div class="text-espresso font-medium">Satisfaction Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Enhanced animations */
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  /* Hover effects */
+  .group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+  }
+</style>

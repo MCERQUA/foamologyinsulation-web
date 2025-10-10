@@ -1,0 +1,353 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const serviceFeatures = [
+  {
+    title: 'Superior R-Value',
+    description: 'R-6.0 to R-7.0 per inch provides maximum thermal resistance',
+    icon: '🌡️'
+  },
+  {
+    title: 'Air Sealing',
+    description: 'Creates complete airtight seal eliminating drafts and air leaks',
+    icon: '💨'
+  },
+  {
+    title: 'Moisture Barrier',
+    description: 'Prevents moisture infiltration and condensation issues',
+    icon: '💧'
+  },
+  {
+    title: 'Structural Support',
+    description: 'Adds racking strength and structural integrity to buildings',
+    icon: '🏗️'
+  }
+];
+
+const applications = [
+  {
+    area: 'Attics & Roof Decks',
+    description: 'Prevent heat loss through the roof and eliminate ice dams',
+    image: atticImage,
+    benefits: ['Prevents ice dams', 'Reduces heating costs', 'Improves comfort']
+  },
+  {
+    area: 'Basement & Foundation Walls',
+    description: 'Insulate below-grade walls for maximum comfort and efficiency',
+    image: wallImage,
+    benefits: ['Prevents condensation', 'Reduces humidity', 'Increases usable space']
+  },
+  {
+    area: 'Crawl Spaces',
+    description: 'Seal and insulate crawl spaces for improved indoor air quality',
+    image: crawlSpaceImage,
+    benefits: ['Improves air quality', 'Prevents moisture', 'Reduces allergens']
+  }
+];
+
+const faqs = [
+  {
+    question: 'How long does spray foam insulation last?',
+    answer: 'High-quality closed cell spray foam insulation can last the lifetime of your building when properly installed. We offer warranties up to lifetime coverage on our installations.'
+  },
+  {
+    question: 'Is spray foam insulation safe?',
+    answer: 'Yes, once properly cured (24-48 hours), spray foam insulation is completely safe and non-toxic. Our certified installers follow all safety protocols during installation.'
+  },
+  {
+    question: 'How much can I save on energy bills?',
+    answer: 'Most customers see 30-50% reduction in heating and cooling costs. In Alaska\'s extreme climate, the savings can be even more significant due to reduced heat loss.'
+  },
+  {
+    question: 'Can spray foam be applied in cold weather?',
+    answer: 'Yes, we have specialized equipment and techniques for cold weather application. Our team works year-round in Alaska\'s challenging conditions.'
+  }
+];
+---
+
+<BaseLayout
+  title="Closed Cell Spray Foam Insulation Anchorage Alaska"
+  description="Premium closed cell spray foam insulation in Anchorage, AK. R-7.0 per inch, lifetime warranty, 50% energy savings. Licensed spray foam contractor serving Alaska since 2010. Free estimates."
+  keywords="closed cell spray foam Anchorage, spray foam insulation Alaska, R-7 insulation Anchorage, air sealing Alaska, moisture barrier insulation, spray foam contractor Anchorage AK"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src={atticImage.src}
+        alt="Professional spray foam insulation installation in Anchorage Alaska attic"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-cream/80 to-sand/60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="animate-fade-in">
+          <h1 class="heading-xl text-espresso mb-6 text-shadow">
+            Closed Cell Spray Foam Insulation
+          </h1>
+          <p class="body-text text-warm-gray mb-6">
+            Alaska's premium spray foam insulation solution. Our closed cell spray foam provides R-7.0 per inch thermal resistance, complete air sealing, and moisture protection designed specifically for Alaska's extreme climate conditions.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <GlassButton
+              href="#contact-form"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Get Free Quote
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Call (907) 310-3000
+            </GlassButton>
+          </div>
+
+          <!-- Key Stats -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">R-7.0</div>
+              <div class="text-sm text-espresso">Per Inch</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">50%</div>
+              <div class="text-sm text-espresso">Energy Savings</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">Lifetime</div>
+              <div class="text-sm text-espresso">Warranty</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Image -->
+        <div class="animate-slide-up">
+          <div class="relative rounded-3xl overflow-hidden shadow-elegant">
+            <img
+              src={atticImage.src}
+              alt="Professional spray foam insulation installation process in Alaska"
+              class="w-full h-auto"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Why Choose Closed Cell Spray Foam?
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Closed cell spray foam is the premium insulation choice for Alaska properties, offering superior thermal performance and multiple benefits in one application.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {serviceFeatures.map((feature, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
+              <div class="text-4xl mb-4">{feature.icon}</div>
+              <h3 class="text-xl font-semibold text-espresso mb-3">{feature.title}</h3>
+              <p class="text-warm-gray">{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Spray Foam Applications
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Our closed cell spray foam insulation is perfect for various applications throughout your Alaska property.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {applications.map((app, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300">
+              <!-- Image -->
+              <div class="relative h-48 overflow-hidden">
+                <img
+                  src={app.image.src}
+                  alt={`${app.area} spray foam insulation in Anchorage Alaska`}
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent"></div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-espresso mb-3">{app.area}</h3>
+                <p class="text-warm-gray mb-4">{app.description}</p>
+
+                <div class="space-y-2">
+                  {app.benefits.map((benefit) => (
+                    <div class="flex items-center gap-2">
+                      <span class="text-terra-cotta">✓</span>
+                      <span class="text-sm text-warm-gray">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Our Installation Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Professional spray foam installation following industry best practices and Alaska building codes.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">1</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Inspection & Assessment</h3>
+          <p class="text-warm-gray text-sm">Thorough evaluation of your property's insulation needs and preparation requirements.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">2</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Surface Preparation</h3>
+          <p class="text-warm-gray text-sm">Clean and prepare all surfaces for optimal spray foam adhesion and coverage.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">3</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Professional Application</h3>
+          <p class="text-warm-gray text-sm">Expert application using professional equipment for even coverage and proper thickness.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-terra-cotta rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold">4</div>
+          <h3 class="text-lg font-semibold text-espresso mb-2">Quality Inspection</h3>
+          <p class="text-warm-gray text-sm">Final inspection and cleanup with detailed documentation of completed work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-gradient-to-br from-taupe/10 to-khaki/10">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about closed cell spray foam insulation in Alaska.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-white/50 backdrop-blur-sm rounded-2xl p-6"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-br from-cream to-sand">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Ready to Upgrade Your Insulation?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Get a free consultation and estimate for closed cell spray foam insulation. Our Alaska insulation experts will assess your property and provide a detailed quote.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Request Free Estimate
+        </GlassButton>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Licensed & Insured</div>
+          <div class="text-espresso text-sm">Alaska contractor license</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">10+ Years Experience</div>
+          <div class="text-espresso text-sm">Alaska insulation specialists</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Warranty Included</div>
+          <div class="text-espresso text-sm">Up to lifetime coverage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>
