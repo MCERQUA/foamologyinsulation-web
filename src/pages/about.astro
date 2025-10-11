@@ -1,0 +1,490 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Users, Award, Clock, Shield, Phone, Mail, MapPin, Star } from 'lucide-react';
+
+const stats = [
+  {
+    icon: Users,
+    number: "1000+",
+    label: "Happy Customers",
+    description: "Trusted by Anchorage homeowners"
+  },
+  {
+    icon: Award,
+    number: "Top 10",
+    label: "Yelp Rated",
+    description: "Best spray foam contractors"
+  },
+  {
+    icon: Clock,
+    number: "Same Week",
+    label: "Service",
+    description: "Fast, reliable scheduling"
+  },
+  {
+    icon: Shield,
+    number: "Licensed",
+    label: "& Insured",
+    description: "ROC certified professionals"
+  }
+];
+
+const services = [
+  "Attic Insulation",
+  "Thermal Inspections",
+  "Closed Cell Spray Foam",
+  "Insulation Removal",
+  "Crawl Space Insulation",
+  "Energy Efficiency Audits"
+];
+
+const serviceAreas = [
+  "Anchorage",
+  "Eagle River",
+  "Chugiak",
+  "Palmer",
+  "Wasilla",
+  "Kenai Peninsula"
+];
+---
+
+<Layout
+  title="About Foamology Insulation | Alaska's Premier Insulation Contractors"
+  description="Learn about Foamology Insulation, Anchorage's trusted insulation experts. Licensed, bonded, and insured professionals serving Alaska since day one. Contact us for your free estimate."
+>
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+      <!-- Background with subtle pattern -->
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <!-- Hero Content -->
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <div class="w-12 h-[1px] bg-sage-mist"></div>
+            <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">About & Contact</span>
+            <div class="w-12 h-[1px] bg-sage-mist"></div>
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-espresso mb-6">
+            Alaska's Trusted <br class="hidden md:block" />
+            <span class="text-sage-mist">Insulation Experts</span>
+          </h1>
+          <p class="text-xl text-espresso/80 max-w-3xl mx-auto leading-relaxed">
+            Driven by a strong commitment to quality, we enhance year-round comfort with attention to detail in insulation systems
+          </p>
+        </div>
+
+        <!-- Quick Contact Cards -->
+        <div class="grid md:grid-cols-3 gap-6 mb-20">
+          <!-- Phone -->
+          <div class="relative bg-white/40 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/30 text-center group hover:bg-white/50 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-2xl"></div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-sage-mist/30 transition-colors">
+                <Phone className="w-6 h-6 text-sage-mist" />
+              </div>
+              <h3 class="text-lg font-bold text-espresso mb-2">Call Today</h3>
+              <a href="tel:907-310-3000" class="text-2xl font-bold text-sage-mist hover:text-sage-mist/80 transition-colors">
+                (907) 310-3000
+              </a>
+              <p class="text-sm text-espresso/70 mt-2">Free estimates available</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="relative bg-white/40 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/30 text-center">
+            <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-2xl"></div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-6 h-6 text-sage-mist" />
+              </div>
+              <h3 class="text-lg font-bold text-espresso mb-2">Business Hours</h3>
+              <p class="text-lg font-semibold text-espresso">Monday - Friday</p>
+              <p class="text-lg font-semibold text-sage-mist">8AM - 5PM</p>
+              <p class="text-sm text-espresso/70 mt-2">Weekend appointments available</p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="relative bg-white/40 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/30 text-center">
+            <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-2xl"></div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-6 h-6 text-sage-mist" />
+              </div>
+              <h3 class="text-lg font-bold text-espresso mb-2">Service Area</h3>
+              <p class="text-lg font-semibold text-sage-mist">Anchorage, AK</p>
+              <p class="text-sm text-espresso/70 mt-2">Serving greater Anchorage area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          <!-- Content Side -->
+          <div class="relative">
+            <!-- Glass card container -->
+            <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-xl border border-white/30 overflow-hidden">
+              <!-- Glass effects -->
+              <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-sage-mist/5 to-transparent rounded-3xl"></div>
+
+              <!-- Content -->
+              <div class="relative z-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-espresso mb-6">
+                  Keeping Anchorage Homes Comfortable Since Day One
+                </h2>
+
+                <div class="space-y-4 text-base md:text-lg text-espresso/80 leading-relaxed">
+                  <p>
+                    At <strong class="text-espresso">Foamology Insulation</strong>, we understand Alaska's unique climate challenges. Located in Anchorage, AK 99515, we specialize in providing comprehensive insulation solutions that help homeowners reduce energy costs and improve indoor comfort year-round.
+                  </p>
+
+                  <p>
+                    Our team of <strong class="text-sage-mist">licensed, bonded, and insured professionals</strong> brings expertise in closed cell spray foam, thermal inspections, and insulation removal. We're certified professionals with expert knowledge, committed to delivering quality workmanship that stands up to Alaska's harsh winters.
+                  </p>
+
+                  <p>
+                    From the Kenai Peninsula to Palmer and Wasilla, we serve the greater Anchorage area with personalized service, competitive pricing, and solutions tailored to your home's specific needs. We provide comprehensive insulation inspections and insulation removal services with focus on long-term performance.
+                  </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                    <span class="text-espresso font-medium">Licensed & Insured</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                    <span class="text-espresso font-medium">Free Estimates</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                    <span class="text-espresso font-medium">Energy Efficient Solutions</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                    <span class="text-espresso font-medium">Alaska Climate Experts</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Decorative corner accent -->
+              <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-sage-mist/10 rounded-tl-3xl"></div>
+            </div>
+          </div>
+
+          <!-- Services & Areas Side -->
+          <div class="space-y-8">
+            <!-- Services -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-6 shadow-xl border border-white/30 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-xl font-bold text-espresso mb-4 flex items-center gap-3">
+                  <div class="w-8 h-8 bg-sage-mist/20 rounded-lg flex items-center justify-center">
+                    <Award className="w-4 h-4 text-sage-mist" />
+                  </div>
+                  Our Services
+                </h3>
+                <div class="grid grid-cols-1 gap-2">
+                  {services.map((service) => (
+                    <div class="flex items-center gap-3 py-2">
+                      <div class="w-1.5 h-1.5 bg-sage-mist rounded-full"></div>
+                      <span class="text-espresso/80">{service}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-6 shadow-xl border border-white/30 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-xl font-bold text-espresso mb-4 flex items-center gap-3">
+                  <div class="w-8 h-8 bg-sage-mist/20 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-4 h-4 text-sage-mist" />
+                  </div>
+                  Service Areas
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                  {serviceAreas.map((area) => (
+                    <div class="flex items-center gap-3 py-2">
+                      <div class="w-1.5 h-1.5 bg-sage-mist rounded-full"></div>
+                      <span class="text-espresso/80">{area}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="relative">
+          <!-- Glass background -->
+          <div class="relative bg-gradient-to-r from-sage-mist/10 via-sage-mist/5 to-sage-mist/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-12 shadow-lg overflow-hidden">
+            <!-- Glass effect overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-sage-mist/5 rounded-3xl"></div>
+
+            <div class="relative z-10">
+              <!-- Stats Grid -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {stats.map((stat) => (
+                  <div class="text-center group">
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-sage-mist/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-sage-mist/30 transition-colors duration-300">
+                      <stat.icon className="w-8 h-8 text-sage-mist" />
+                    </div>
+
+                    <!-- Number -->
+                    <div class="text-2xl md:text-3xl font-bold text-espresso mb-1">
+                      {stat.number}
+                    </div>
+
+                    <!-- Label -->
+                    <div class="text-base md:text-lg font-semibold text-sage-mist mb-1">
+                      {stat.label}
+                    </div>
+
+                    <!-- Description -->
+                    <div class="text-sm text-espresso/70">
+                      {stat.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Corner accents -->
+            <div class="absolute top-0 left-0 w-20 h-20 bg-white/10 rounded-br-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-20 h-20 bg-white/10 rounded-tl-3xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="relative py-20 overflow-hidden" id="contact-form">
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <div class="w-12 h-[1px] bg-sage-mist"></div>
+            <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">Get in Touch</span>
+            <div class="w-12 h-[1px] bg-sage-mist"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-espresso mb-6">
+            Ready to Improve Your <br class="hidden md:block" />
+            <span class="text-sage-mist">Home's Comfort?</span>
+          </h2>
+          <p class="text-xl text-espresso/80 max-w-3xl mx-auto">
+            Contact us today for your free estimate. We're here to help with all your insulation needs.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <!-- Contact Form -->
+          <div class="relative">
+            <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-xl border border-white/30 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-espresso mb-6">Request Your Free Estimate</h3>
+
+                <form class="space-y-6" netlify>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label for="firstName" class="block text-sm font-medium text-espresso mb-2">First Name *</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                        class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso placeholder-espresso/50 focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all"
+                        placeholder="John"
+                      />
+                    </div>
+                    <div>
+                      <label for="lastName" class="block text-sm font-medium text-espresso mb-2">Last Name *</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                        class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso placeholder-espresso/50 focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all"
+                        placeholder="Doe"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-espresso mb-2">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso placeholder-espresso/50 focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-espresso mb-2">Phone *</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso placeholder-espresso/50 focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all"
+                      placeholder="(907) 555-0123"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="service" class="block text-sm font-medium text-espresso mb-2">Service Needed</label>
+                    <select
+                      id="service"
+                      name="service"
+                      class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="spray-foam">Spray Foam Insulation</option>
+                      <option value="attic-insulation">Attic Insulation</option>
+                      <option value="thermal-inspection">Thermal Inspection</option>
+                      <option value="insulation-removal">Insulation Removal</option>
+                      <option value="energy-audit">Energy Audit</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="message" class="block text-sm font-medium text-espresso mb-2">Project Details</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      class="w-full px-4 py-3 bg-white/50 backdrop-blur-sm border border-white/30 rounded-xl text-espresso placeholder-espresso/50 focus:outline-none focus:ring-2 focus:ring-sage-mist/50 focus:border-sage-mist transition-all resize-none"
+                      placeholder="Tell us about your project and any specific needs..."
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full py-4 bg-sage-mist text-white font-semibold rounded-xl hover:bg-sage-mist/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    Get My Free Estimate
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <!-- Contact Details -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-espresso mb-6">Get in Touch</h3>
+
+                <div class="space-y-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <Phone className="w-6 h-6 text-sage-mist" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-1">Phone</h4>
+                      <a href="tel:907-310-3000" class="text-lg text-sage-mist hover:text-sage-mist/80 transition-colors">
+                        (907) 310-3000
+                      </a>
+                      <p class="text-sm text-espresso/70">Monday - Friday, 8AM - 5PM</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <Mail className="w-6 h-6 text-sage-mist" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-1">Email</h4>
+                      <a href="mailto:info@foamologyinsulation.com" class="text-lg text-sage-mist hover:text-sage-mist/80 transition-colors">
+                        info@foamologyinsulation.com
+                      </a>
+                      <p class="text-sm text-espresso/70">We'll respond within 24 hours</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-sage-mist/20 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                      <MapPin className="w-6 h-6 text-sage-mist" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-1">Service Area</h4>
+                      <p class="text-lg text-espresso">Anchorage, AK 99515</p>
+                      <p class="text-sm text-espresso/70">Serving greater Anchorage area</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-espresso mb-6">Why Choose Foamology?</h3>
+
+                <div class="space-y-4">
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Licensed, bonded & insured professionals</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Free comprehensive estimates</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Alaska climate expertise</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Same week service availability</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Weekend appointments available</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <Star className="w-5 h-5 text-sage-mist flex-shrink-0" />
+                    <span class="text-espresso/80">Quality workmanship guarantee</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

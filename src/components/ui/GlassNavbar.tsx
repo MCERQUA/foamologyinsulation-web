@@ -21,11 +21,12 @@ const GlassNavbar: React.FC = () => {
     let activeItem = 'Home'; // Default to first item
     
     if (currentPath === '/') {
-      if (currentHash === '#about') activeItem = 'About';
-      else if (currentHash === '#contact-form') activeItem = 'Contact';
+      if (currentHash === '#contact-form') activeItem = 'Contact';
       else activeItem = 'Home';
     } else if (currentPath.startsWith('/services')) {
-      activeItem = 'Services';
+      activeItem = 'Solutions';
+    } else if (currentPath.startsWith('/about')) {
+      activeItem = 'About';
     } else if (currentPath.startsWith('/blog')) {
       activeItem = 'Blog';
     }
@@ -35,10 +36,10 @@ const GlassNavbar: React.FC = () => {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'About', href: '#about' },
+    { label: 'Solutions', href: '/services' },
+    { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '#contact-form' },
+    { label: 'Contact', href: '/about#contact-form' },
   ];
 
   const handleNavClick = (itemLabel: string) => {
