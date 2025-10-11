@@ -175,50 +175,6 @@ const GlassNavbar: React.FC = () => {
                         )}
                       </button>
 
-                      {/* Dropdown Menu */}
-                      {showServicesDropdown && (
-                        <div
-                          className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 z-50"
-                          style={{
-                            animation: 'fadeInScale 0.2s ease-out'
-                          }}
-                        >
-                          <div
-                            className="rounded-2xl p-4 border border-white/20 shadow-elegant backdrop-blur-xl overflow-hidden"
-                            style={{
-                              backgroundColor: 'rgba(255, 255, 255, 0.12)',
-                              backdropFilter: 'blur(20px) saturate(1.8)',
-                              WebkitBackdropFilter: 'blur(20px) saturate(1.8)',
-                              boxShadow: `0 12px 40px 0 rgba(0, 0, 0, 0.15),
-                                         inset 0 1px 0 0 rgba(255, 255, 255, 0.25),
-                                         inset 0 -1px 0 0 rgba(0, 0, 0, 0.08)`,
-                            }}
-                          >
-                            <div
-                              className="absolute inset-0 rounded-2xl pointer-events-none"
-                              style={{
-                                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)',
-                              }}
-                            />
-
-                            <div className="relative z-10 space-y-1">
-                              {serviceItems.map((service) => (
-                                <a
-                                  key={service.label}
-                                  href={service.href}
-                                  className="block px-3 py-2 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
-                                  style={{
-                                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)'
-                                  }}
-                                  onClick={() => setShowServicesDropdown(false)}
-                                >
-                                  {service.label}
-                                </a>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      )}
                     </div>
                   );
                 }
@@ -312,6 +268,53 @@ const GlassNavbar: React.FC = () => {
           />
         </div>
       </nav>
+
+      {/* Services Dropdown - Rendered outside navbar container */}
+      {showServicesDropdown && (
+        <div
+          className="fixed top-20 left-1/2 -translate-x-1/2 w-64 z-50"
+          style={{
+            animation: 'fadeInScale 0.2s ease-out'
+          }}
+          onMouseEnter={() => setShowServicesDropdown(true)}
+          onMouseLeave={() => setShowServicesDropdown(false)}
+        >
+          <div
+            className="rounded-2xl p-4 border border-white/20 shadow-elegant backdrop-blur-xl overflow-hidden"
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.12)',
+              backdropFilter: 'blur(20px) saturate(1.8)',
+              WebkitBackdropFilter: 'blur(20px) saturate(1.8)',
+              boxShadow: `0 12px 40px 0 rgba(0, 0, 0, 0.15),
+                         inset 0 1px 0 0 rgba(255, 255, 255, 0.25),
+                         inset 0 -1px 0 0 rgba(0, 0, 0, 0.08)`,
+            }}
+          >
+            <div
+              className="absolute inset-0 rounded-2xl pointer-events-none"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)',
+              }}
+            />
+
+            <div className="relative z-10 space-y-1">
+              {serviceItems.map((service) => (
+                <a
+                  key={service.label}
+                  href={service.href}
+                  className="block px-3 py-2 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
+                  style={{
+                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)'
+                  }}
+                  onClick={() => setShowServicesDropdown(false)}
+                >
+                  {service.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
