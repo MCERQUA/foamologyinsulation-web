@@ -51,7 +51,6 @@ const GlassNavbar: React.FC = () => {
     { label: 'Solutions', href: '/solutions' },
     { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/about#contact-form' },
   ];
 
   const handleNavClick = (itemLabel: string) => {
@@ -274,11 +273,12 @@ const GlassNavbar: React.FC = () => {
               })}
 
               {/* Get Quote Button */}
-              <button 
+              <a
+                href="/about#contact-form"
                 className="
                   ml-2 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300
                   text-white hover:text-white
-                  hover:bg-white/15 
+                  hover:bg-white/15
                   backdrop-blur-sm border border-white/30 shadow-lg
                   relative overflow-hidden
                 "
@@ -291,7 +291,7 @@ const GlassNavbar: React.FC = () => {
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/15 to-transparent" />
-                <span 
+                <span
                   className="relative z-10"
                   style={{
                     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)'
@@ -299,7 +299,7 @@ const GlassNavbar: React.FC = () => {
                 >
                   Quote
                 </span>
-              </button>
+              </a>
             </div>
           </div>
 
