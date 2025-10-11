@@ -1,0 +1,342 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassCard from '../../components/ui/GlassCard.tsx';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+import { Shield, Thermometer, Droplets, Home, CheckCircle, Star } from 'lucide-react';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+
+const benefits = [
+  {
+    icon: Thermometer,
+    title: 'Temperature Control',
+    description: 'Maintain consistent temperatures and reduce heating/cooling costs by preventing air infiltration through the foundation.'
+  },
+  {
+    icon: Droplets,
+    title: 'Moisture Protection',
+    description: 'Prevent moisture intrusion that can lead to mold, mildew, and structural damage in your crawl space.'
+  },
+  {
+    icon: Shield,
+    title: 'Structural Integrity',
+    description: 'Protect your home\'s foundation and flooring systems from moisture damage and temperature fluctuations.'
+  },
+  {
+    icon: Home,
+    title: 'Indoor Air Quality',
+    description: 'Improve indoor air quality by preventing allergens, dust, and moisture from entering your living space.'
+  }
+];
+
+const features = [
+  'Complete air sealing and vapor barrier',
+  'Moisture prevention and mold protection',
+  'Improved indoor air quality',
+  'Structural strengthening benefits',
+  'Energy efficiency optimization',
+  'Thermal imaging inspection included'
+];
+
+const applications = [
+  'Vented crawl space encapsulation',
+  'Foundation wall insulation',
+  'Floor joist insulation',
+  'Moisture barrier installation',
+  'Air sealing around penetrations',
+  'HVAC ductwork protection'
+];
+---
+
+<BaseLayout
+  title="Crawl Space Insulation Anchorage | Professional Foundation Insulation"
+  description="Expert crawl space insulation services in Anchorage, AK. Prevent moisture, improve air quality, and reduce energy costs with professional foundation insulation. Licensed & insured."
+  keywords="crawl space insulation Anchorage, foundation insulation Alaska, moisture control Anchorage, crawl space encapsulation, vapor barrier Alaska"
+>
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+      <!-- Background with subtle pattern -->
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-mist/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Content Side -->
+          <div class="relative">
+            <div class="inline-flex items-center gap-2 mb-6">
+              <div class="w-12 h-[1px] bg-sage-mist"></div>
+              <span class="text-sage-mist font-medium uppercase tracking-wider text-sm">Foundation Protection</span>
+              <div class="w-12 h-[1px] bg-sage-mist"></div>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-espresso mb-6">
+              Professional <br class="hidden md:block" />
+              <span class="text-sage-mist">Crawl Space Insulation</span>
+            </h1>
+
+            <p class="text-xl text-espresso/80 mb-8 leading-relaxed">
+              Protect your Anchorage home's foundation with expert crawl space insulation. Prevent moisture damage, improve air quality, and reduce energy costs with our comprehensive foundation insulation solutions.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+              <GlassButton
+                href="/about#contact-form"
+                size="lg"
+                client:load
+              >
+                Get Free Estimate
+              </GlassButton>
+              <GlassButton
+                href="tel:907-310-3000"
+                variant="outline"
+                size="lg"
+                client:load
+              >
+                Call (907) 310-3000
+              </GlassButton>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-sage-mist">50%+</div>
+                <div class="text-sm text-espresso/70">Energy Savings</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-sage-mist">100%</div>
+                <div class="text-sm text-espresso/70">Moisture Barrier</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-bold text-sage-mist">Lifetime</div>
+                <div class="text-sm text-espresso/70">Warranty Available</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Side -->
+          <div class="relative">
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-6 shadow-xl border border-white/30 overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+              <div class="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <img
+                  src={crawlSpaceImage.src}
+                  alt="Professional crawl space insulation installation in Anchorage"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="absolute -bottom-6 -right-6 bg-sage-mist text-white rounded-2xl p-4 shadow-lg">
+              <div class="text-center">
+                <div class="text-sm font-medium">Licensed & Insured</div>
+                <div class="text-xs opacity-90">Alaska Certified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-espresso mb-6">
+            Why Crawl Space Insulation <br class="hidden md:block" />
+            <span class="text-sage-mist">Matters in Alaska</span>
+          </h2>
+          <p class="text-xl text-espresso/80 max-w-3xl mx-auto">
+            Alaska's extreme climate makes proper crawl space insulation essential for home comfort, energy efficiency, and structural protection.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {benefits.map((benefit, index) => (
+            <div class="relative group">
+              <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 shadow-xl border border-white/30 h-full hover:bg-white/50 transition-all duration-300">
+                <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+
+                <div class="relative z-10">
+                  <div class="w-16 h-16 bg-sage-mist/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sage-mist/30 transition-colors">
+                    <benefit.icon className="w-8 h-8 text-sage-mist" />
+                  </div>
+                  <h3 class="text-xl font-bold text-espresso mb-4">{benefit.title}</h3>
+                  <p class="text-espresso/80 leading-relaxed">{benefit.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/5 via-transparent to-sage-mist/10"></div>
+
+      <div class="relative container-padding max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Content -->
+          <div class="relative">
+            <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 md:p-10 shadow-xl border border-white/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-espresso mb-6">
+                  Our Comprehensive <br />
+                  <span class="text-sage-mist">Approach</span>
+                </h2>
+
+                <div class="space-y-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 bg-sage-mist/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span class="text-sage-mist font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-espresso mb-2">Comprehensive Inspection</h3>
+                      <p class="text-espresso/80">Thorough assessment of your crawl space including thermal imaging to identify problem areas, moisture issues, and insulation gaps.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 bg-sage-mist/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span class="text-sage-mist font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-espresso mb-2">Moisture Control</h3>
+                      <p class="text-espresso/80">Installation of vapor barriers and moisture control systems to prevent mold, mildew, and structural damage.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 bg-sage-mist/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span class="text-sage-mist font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-espresso mb-2">Professional Installation</h3>
+                      <p class="text-espresso/80">Expert installation of high-performance insulation with complete air sealing for maximum energy efficiency.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4">
+                    <div class="w-8 h-8 bg-sage-mist/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span class="text-sage-mist font-bold text-sm">4</span>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-espresso mb-2">Quality Verification</h3>
+                      <p class="text-espresso/80">Post-installation inspection and thermal imaging to ensure optimal performance and complete coverage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features & Applications -->
+          <div class="space-y-8">
+            <!-- Features -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-espresso mb-6 flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-sage-mist" />
+                  Service Features
+                </h3>
+                <div class="space-y-3">
+                  {features.map((feature) => (
+                    <div class="flex items-center gap-3">
+                      <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                      <span class="text-espresso/80">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <!-- Applications -->
+            <div class="relative bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent rounded-3xl"></div>
+
+              <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-espresso mb-6 flex items-center gap-3">
+                  <Star className="w-6 h-6 text-sage-mist" />
+                  Applications
+                </h3>
+                <div class="space-y-3">
+                  {applications.map((application) => (
+                    <div class="flex items-center gap-3">
+                      <div class="w-2 h-2 bg-sage-mist rounded-full"></div>
+                      <span class="text-espresso/80">{application}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-sage-mist/10 via-sage-mist/5 to-sage-mist/10"></div>
+
+      <div class="relative container-padding max-w-4xl mx-auto text-center">
+        <div class="relative bg-white/40 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-xl border border-white/30">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-transparent rounded-3xl"></div>
+
+          <div class="relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-espresso mb-6">
+              Ready to Protect Your <br class="hidden md:block" />
+              <span class="text-sage-mist">Home's Foundation?</span>
+            </h2>
+
+            <p class="text-xl text-espresso/80 mb-8 max-w-2xl mx-auto">
+              Don't let moisture and energy loss damage your home. Get expert crawl space insulation from Anchorage's trusted professionals.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <GlassButton
+                href="/about#contact-form"
+                size="lg"
+                client:load
+              >
+                Get Your Free Estimate
+              </GlassButton>
+              <GlassButton
+                href="tel:907-310-3000"
+                variant="outline"
+                size="lg"
+                client:load
+              >
+                Call (907) 310-3000
+              </GlassButton>
+            </div>
+
+            <div class="mt-8 flex items-center justify-center gap-8 text-sm text-espresso/70">
+              <div class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-sage-mist" />
+                Licensed & Insured
+              </div>
+              <div class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-sage-mist" />
+                Free Estimates
+              </div>
+              <div class="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-sage-mist" />
+                Same Week Service
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

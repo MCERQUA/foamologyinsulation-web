@@ -5,6 +5,7 @@ const footerSections = {
   services: [
     { label: 'Spray Foam Insulation', href: '/services/spray-foam' },
     { label: 'Thermal Inspections', href: '/services/thermal-inspections' },
+    { label: 'Crawl Space Insulation', href: '/services/crawl-space-insulation' },
     { label: 'Insulation Removal', href: '/services/insulation-removal' },
     { label: 'Ice Dam Prevention', href: '/ice-dam-prevention' },
     { label: 'All Services', href: '/services' },
@@ -35,8 +36,33 @@ const footerSections = {
 const socialLinks = [
   {
     label: 'Facebook',
-    href: 'https://www.facebook.com/61566246782622',
-    icon: '📘'
+    href: 'https://www.facebook.com/foamologyinsulation',
+    icon: 'F',
+    color: 'bg-blue-600 hover:bg-blue-700'
+  },
+  {
+    label: 'Google Business',
+    href: 'https://www.google.com/search?q=foamology+insulation+anchorage',
+    icon: 'G',
+    color: 'bg-red-600 hover:bg-red-700'
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/foamologyinsulation',
+    icon: 'I',
+    color: 'bg-pink-600 hover:bg-pink-700'
+  },
+  {
+    label: 'Yelp',
+    href: 'https://www.yelp.com/biz/foamology-insulation-anchorage',
+    icon: 'Y',
+    color: 'bg-red-500 hover:bg-red-600'
+  },
+  {
+    label: 'Pinterest',
+    href: 'https://www.pinterest.com/foamologyinsulation',
+    icon: 'P',
+    color: 'bg-red-700 hover:bg-red-800'
   },
 ];
 
@@ -217,10 +243,10 @@ const businessInfo = {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-10 h-10 bg-terra-cotta/20 hover:bg-terra-cotta text-terra-cotta hover:text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                class={`w-10 h-10 text-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 font-bold text-sm ${social.color || 'bg-terra-cotta/20 hover:bg-terra-cotta text-terra-cotta hover:text-white'}`}
                 aria-label={`Follow us on ${social.label}`}
               >
-                {social.label.charAt(0)}
+                {social.icon}
               </a>
             ))}
           </div>

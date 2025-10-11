@@ -9,23 +9,30 @@ const services = [
   {
     title: 'Closed Cell Spray Foam',
     slug: 'spray-foam',
-    description: 'Premium closed cell spray foam with superior R-value for Alaska\'s extreme conditions.',
-    features: ['Air infiltration control', 'Moisture vapor barrier', 'Structural strength'],
+    description: 'Premium closed cell spray foam with superior R-value for Alaska\'s extreme conditions. Reduces vapor transmission and adds structural strength.',
+    features: ['Air infiltration control', 'Moisture vapor barrier', 'Structural strengthening'],
     image: atticImage
   },
   {
     title: 'Thermal Inspections',
     slug: 'thermal-inspections',
-    description: 'Comprehensive insulation inspections using advanced thermal imaging technology.',
-    features: ['Heat loss detection', 'Energy audit reports', 'Solution recommendations'],
+    description: 'State-of-the-art thermal imaging technology to identify energy loss and prevent costly damage.',
+    features: ['Advanced infrared technology', 'Comprehensive inspections', 'Prevent costly damage'],
     image: crawlSpaceImage
+  },
+  {
+    title: 'Crawl Space Insulation',
+    slug: 'crawl-space-insulation',
+    description: 'Comprehensive crawl space encapsulation and moisture control for foundation protection.',
+    features: ['Moisture prevention', 'Indoor air quality', 'Energy efficiency'],
+    image: wallImage
   },
   {
     title: 'Insulation Removal',
     slug: 'insulation-removal',
-    description: 'Safe removal of old, damaged, or contaminated insulation materials.',
-    features: ['Contamination cleanup', 'Mold prevention', 'Preparation for upgrade'],
-    image: wallImage
+    description: 'Safe removal of old, contaminated, or damaged insulation with complete cleanup.',
+    features: ['Safe material handling', 'Complete cleanup', 'Upgrade preparation'],
+    image: atticImage
   }
 ];
 ---
@@ -41,7 +48,7 @@ const services = [
       </p>
     </div>
     
-    <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
       {services.map((service, index) => (
         <div 
           class="animate-slide-up" 
