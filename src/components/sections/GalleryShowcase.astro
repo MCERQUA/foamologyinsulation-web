@@ -1,0 +1,150 @@
+---
+import GlassButton from '../ui/GlassButton.tsx';
+import { galleryImages } from '../../data/gallery-images.ts';
+
+// Get a curated selection of featured images (mix of categories)
+const featuredImages = [
+  galleryImages.find(img => img.src.includes('alaska-closed-cell-spray-foam-installation')),
+  galleryImages.find(img => img.src.includes('anchorage-commercial-warehouse-foam')),
+  galleryImages.find(img => img.src.includes('alaska-attic-floor-air-barrier-ice-dam-prevention')),
+  galleryImages.find(img => img.src.includes('anchorage-crawl-space-spray-foam-encapsulation-1')),
+  galleryImages.find(img => img.src.includes('alaska-quonset-hut-spray-foam-insulation-1')),
+  galleryImages.find(img => img.src.includes('anchorage-metal-building-spray-foam-specialists-1')),
+  galleryImages.find(img => img.src.includes('how-ice-dams-form-alaska-diagram')),
+  galleryImages.find(img => img.src.includes('anchorage-thermal-imaging-inspection-service')),
+].filter(Boolean).slice(0, 8);
+
+const totalImages = galleryImages.length;
+---
+
+<section class="section-padding bg-gradient-to-b from-sand to-cream" id="gallery-showcase">
+  <div class="container-padding max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="heading-lg text-espresso mb-4">
+        Our Work Gallery
+      </h2>
+      <p class="body-text text-warm-gray max-w-2xl mx-auto">
+        See real projects from Anchorage and across Alaska. From residential spray foam to commercial metal buildings, thermal inspections to ice dam prevention solutions.
+      </p>
+      <div class="mt-4 text-terra-cotta font-semibold">
+        {totalImages} Project Photos
+      </div>
+    </div>
+
+    <!-- Gallery Grid Preview -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-12">
+      {featuredImages.map((image, index) => (
+        <a
+          href="/gallery"
+          class="group relative overflow-hidden rounded-2xl aspect-square animate-slide-up hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          style={`animation-delay: ${index * 0.1}s`}
+        >
+          <!-- Image -->
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+          />
+
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-3">
+              <p class="text-white text-xs font-medium line-clamp-2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+                {image.alt}
+              </p>
+            </div>
+          </div>
+
+          <!-- Category Badge -->
+          <div class="absolute top-2 right-2 px-2 py-1 bg-terra-cotta/80 backdrop-blur-sm rounded-full">
+            <span class="text-white text-xs font-medium capitalize">
+              {image.category.replace('-', ' ')}
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- CTA to Full Gallery -->
+    <div class="text-center">
+      <div class="
+        inline-block rounded-3xl p-8 sm:p-10 max-w-2xl mx-auto
+        bg-white/85 backdrop-blur-md
+        border border-white/20 shadow-elegant
+      ">
+        <h3 class="text-2xl sm:text-3xl font-bold text-espresso mb-4">
+          Explore Our Full Portfolio
+        </h3>
+        <p class="text-warm-gray mb-6 text-lg">
+          Browse {totalImages} project photos organized by category with detailed views and descriptions.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <GlassButton
+            href="/gallery"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            View Full Gallery ({totalImages} Photos)
+          </GlassButton>
+          <GlassButton
+            href="#contact-form"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Get Free Estimate
+          </GlassButton>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Preview List -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="p-4 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/30">
+        <div class="text-2xl font-bold text-terra-cotta mb-1">53</div>
+        <div class="text-sm text-espresso">Spray Foam Projects</div>
+      </div>
+      <div class="p-4 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/30">
+        <div class="text-2xl font-bold text-terra-cotta mb-1">22</div>
+        <div class="text-sm text-espresso">Commercial Buildings</div>
+      </div>
+      <div class="p-4 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/30">
+        <div class="text-2xl font-bold text-terra-cotta mb-1">6</div>
+        <div class="text-sm text-espresso">Ice Dam Solutions</div>
+      </div>
+      <div class="p-4 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/30">
+        <div class="text-2xl font-bold text-terra-cotta mb-1">4</div>
+        <div class="text-sm text-espresso">Crawlspace Projects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

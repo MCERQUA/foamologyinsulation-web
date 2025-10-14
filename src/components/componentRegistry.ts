@@ -51,6 +51,12 @@ export const componentRegistry = {
       props: [],
       images: ['blog thumbnails - in /public/images/blog/']
     },
+    GalleryShowcase: {
+      path: '@components/sections/GalleryShowcase',
+      description: 'Gallery preview section showing 8 featured project images with category counts and links to full gallery page',
+      props: [],
+      images: ['Pulls from gallery-images.ts - 93 total project photos']
+    },
     ContactForm: {
       path: '@components/sections/ContactForm',
       description: 'Netlify contact form section',
