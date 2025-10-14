@@ -284,7 +284,7 @@ const GlassNavbar: React.FC = () => {
       {/* Services Dropdown - Rendered outside navbar container */}
       {showServicesDropdown && (
         <div
-          className="fixed top-20 left-1/2 -translate-x-1/2 w-64 z-50"
+          className="fixed top-12 left-1/2 -translate-x-1/2 w-64 z-50 pt-6"
           style={{
             animation: 'fadeInScale 0.2s ease-out'
           }}
@@ -331,7 +331,7 @@ const GlassNavbar: React.FC = () => {
       {/* About Dropdown - Rendered outside navbar container */}
       {showAboutDropdown && (
         <div
-          className="fixed top-20 left-1/2 -translate-x-1/2 w-48 z-50"
+          className="fixed top-12 left-1/2 -translate-x-1/2 w-48 z-50 pt-6"
           style={{
             animation: 'fadeInScale 0.2s ease-out'
           }}
