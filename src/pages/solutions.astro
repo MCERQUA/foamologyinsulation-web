@@ -1,0 +1,528 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GlassButton from '../components/ui/GlassButton.tsx';
+
+const solutions = [
+  {
+    title: 'Ice Dam Prevention Solutions',
+    slug: 'ice-dam-prevention',
+    problem: 'Ice dams cause thousands in water damage to Alaska homes every winter',
+    solution: 'Closed cell spray foam creates a monolithic air barrier on attic floors, eliminating the heat loss that causes ice dams. R-49+ insulation combined with complete air sealing stops snow melt and refreeze cycles.',
+    applications: [
+      'Attic floor air barrier installation',
+      'Roof deck insulation',
+      'Rim joist and top plate sealing',
+      'Cathedral ceiling insulation',
+      'Complex roof geometry solutions'
+    ],
+    benefits: [
+      'Eliminate ice dam formation permanently',
+      'Prevent costly water damage',
+      'Protect roof structure and shingles',
+      'Reduce heating costs by 30-50%',
+      'Improve home comfort year-round'
+    ],
+    keywords: 'ice dam prevention, Alaska ice dam solutions, spray foam ice dam, attic insulation ice dams',
+    image: '/gallery/webp/alaska-attic-floor-air-barrier-ice-dam-prevention.webp'
+  },
+  {
+    title: 'Hidden Problem Detection',
+    slug: 'thermal-imaging',
+    problem: 'Critical insulation gaps, air leaks, moisture infiltration, and structural issues are invisible to the naked eye',
+    solution: 'Advanced thermal imaging cameras reveal temperature differences that expose hidden problems before they cause damage. IR technology shows exactly where insulation is missing, air is leaking, or moisture is accumulating, allowing precise solutions.',
+    applications: [
+      'Pre-purchase home inspections',
+      'Energy audit diagnostics',
+      'Moisture and water intrusion detection',
+      'Post-insulation quality verification',
+      'Ice dam cause identification'
+    ],
+    benefits: [
+      'Find problems before they cause damage',
+      'Identify exact location of energy losses',
+      'Document issues for insurance claims',
+      'Verify insulation quality and coverage',
+      'Save thousands on targeted repairs'
+    ],
+    keywords: 'thermal imaging Alaska, IR camera inspection Anchorage, energy audit Alaska, insulation inspection, moisture detection Alaska',
+    image: '/gallery/webp/anchorage-thermal-imaging-inspection-service.webp'
+  },
+  {
+    title: 'Shipping Container Insulation',
+    slug: 'shipping-container',
+    problem: 'Metal shipping containers experience extreme condensation and temperature swings in Alaska',
+    solution: 'Closed cell spray foam applied directly to container walls and ceilings creates a thermal break, eliminating condensation and providing R-6 to R-7 per inch of insulation. Perfect for container homes, shops, and storage.',
+    applications: [
+      'Container home conversions',
+      'Workshop and garage spaces',
+      'Remote camp facilities',
+      'Cold storage units',
+      'Mobile office containers'
+    ],
+    benefits: [
+      'Eliminate condensation completely',
+      'Create comfortable living/working space',
+      'Reduce heating costs dramatically',
+      'Add structural rigidity',
+      'Prevent rust and corrosion'
+    ],
+    keywords: 'shipping container insulation Alaska, container home insulation, spray foam container, Alaska container conversion',
+    image: '/gallery/webp/anchorage-commercial-warehouse-foam.webp'
+  },
+  {
+    title: 'Tank and Vessel Insulation',
+    slug: 'tank-insulation',
+    problem: 'Fuel tanks, water tanks, and industrial vessels lose heat rapidly in Alaska temperatures',
+    solution: 'Closed cell spray foam provides superior thermal protection for tanks and vessels, preventing freeze-ups and maintaining operating temperatures. Seamless application conforms to any shape.',
+    applications: [
+      'Fuel oil storage tanks',
+      'Water storage tanks',
+      'Process vessels and equipment',
+      'Septic tanks and pump chambers',
+      'Industrial mixing tanks'
+    ],
+    benefits: [
+      'Prevent freezing and heat loss',
+      'Reduce energy costs for heating',
+      'Eliminate condensation issues',
+      'Extend equipment life',
+      'Maintain process temperatures'
+    ],
+    keywords: 'tank insulation Alaska, fuel tank insulation, spray foam tanks, vessel insulation Anchorage',
+    image: '/gallery/webp/alaska-closed-cell-spray-foam-installation.webp'
+  },
+  {
+    title: 'Metal Building Solutions',
+    slug: 'metal-building',
+    problem: 'Metal buildings are notoriously cold and suffer from severe condensation in Alaska',
+    solution: 'Closed cell spray foam applied to metal panels creates a continuous insulation and vapor barrier system. Eliminates thermal bridging through metal framing and prevents condensation on cold surfaces.',
+    applications: [
+      'Pole barns and agricultural buildings',
+      'Commercial warehouses',
+      'Aircraft hangars',
+      'Manufacturing facilities',
+      'Storage buildings'
+    ],
+    benefits: [
+      'Stop condensation dripping',
+      'Dramatically reduce heating costs',
+      'Improve interior comfort',
+      'Protect stored equipment and materials',
+      'Add structural support'
+    ],
+    keywords: 'metal building insulation Alaska, pole barn insulation, spray foam metal building, warehouse insulation Anchorage',
+    image: '/gallery/webp/anchorage-metal-building-spray-foam-specialists-1.webp'
+  },
+  {
+    title: 'Quonset Hut Insulation',
+    slug: 'quonset-hut',
+    problem: 'Quonset huts and arch buildings create challenging insulation conditions with severe condensation',
+    solution: 'Spray foam conforms perfectly to curved surfaces, creating a seamless insulation and vapor barrier. Stops condensation dripping and makes these structures comfortable and energy efficient.',
+    applications: [
+      'Residential quonset homes',
+      'Workshop and storage buildings',
+      'Equipment storage facilities',
+      'Remote camp structures',
+      'Agricultural storage'
+    ],
+    benefits: [
+      'Perfect fit for curved surfaces',
+      'Eliminate condensation completely',
+      'Create warm, dry interior space',
+      'Reduce heating costs by 50%+',
+      'Add structural rigidity'
+    ],
+    keywords: 'quonset hut insulation Alaska, arch building insulation, spray foam quonset, curved building insulation Anchorage',
+    image: '/gallery/webp/alaska-quonset-hut-spray-foam-insulation-1.webp'
+  },
+  {
+    title: 'Crawl Space Encapsulation',
+    slug: 'crawl-space-encapsulation',
+    problem: 'Crawl spaces allow cold air infiltration, moisture problems, and pest entry',
+    solution: 'Complete crawl space encapsulation with closed cell spray foam on walls and rim joists, combined with vapor barrier on ground. Creates conditioned space that protects your home.',
+    applications: [
+      'Foundation wall insulation',
+      'Rim joist air sealing',
+      'Floor joist insulation',
+      'Pier and column encapsulation',
+      'Access door sealing'
+    ],
+    benefits: [
+      'Eliminate drafts and cold floors',
+      'Prevent moisture and mold issues',
+      'Block pest infiltration',
+      'Reduce heating costs',
+      'Improve indoor air quality'
+    ],
+    keywords: 'crawl space insulation Alaska, crawl space encapsulation Anchorage, spray foam crawl space, foundation insulation',
+    image: '/gallery/webp/anchorage-crawl-space-spray-foam-encapsulation-1.webp'
+  },
+  {
+    title: 'Rim Joist Air Sealing',
+    slug: 'rim-joist',
+    problem: 'Rim joists are the largest source of air leakage in most homes, causing cold floors and high heating bills',
+    solution: 'Closed cell spray foam completely seals rim joist cavities, eliminating air leakage and insulating this critical area. Essential for any home performance improvement.',
+    applications: [
+      'Basement rim joist sealing',
+      'Crawl space rim joist',
+      'Multi-story band joist',
+      'Addition connections',
+      'Deck ledger board areas'
+    ],
+    benefits: [
+      'Stop major source of air leakage',
+      'Eliminate cold floors',
+      'Prevent ice dam formation',
+      'Reduce heating costs immediately',
+      'Improve whole-house comfort'
+    ],
+    keywords: 'rim joist insulation Alaska, air sealing Anchorage, band joist spray foam, foundation air sealing',
+    image: '/gallery/webp/alaska-closed-cell-spray-foam-installation.webp'
+  },
+  {
+    title: 'Soundproofing Solutions',
+    slug: 'soundproofing',
+    problem: 'Noise transmission between rooms, from mechanical systems, or from outdoors',
+    solution: 'Spray foam insulation dramatically reduces sound transmission through walls, ceilings, and floors. Open cell foam provides excellent sound dampening while closed cell offers both sound control and thermal benefits.',
+    applications: [
+      'Interior wall soundproofing',
+      'Home theater rooms',
+      'Music studios and practice rooms',
+      'Multi-family sound separation',
+      'Mechanical room isolation'
+    ],
+    benefits: [
+      'Reduce sound transmission significantly',
+      'Create quiet living spaces',
+      'Improve privacy between rooms',
+      'Reduce HVAC system noise',
+      'Professional acoustical performance'
+    ],
+    keywords: 'soundproofing Alaska, spray foam soundproofing, acoustic insulation Anchorage, noise reduction insulation',
+    image: '/gallery/webp/anchorage-commercial-warehouse-foam.webp'
+  },
+  {
+    title: 'Cold Storage Insulation',
+    slug: 'cold-storage',
+    problem: 'Cold storage facilities require superior insulation to maintain temperatures and control costs',
+    solution: 'High-density closed cell spray foam provides maximum R-value and complete vapor barrier, essential for cold storage applications. Seamless application prevents air infiltration.',
+    applications: [
+      'Walk-in coolers and freezers',
+      'Food processing facilities',
+      'Pharmaceutical storage',
+      'Fish processing plants',
+      'Commercial refrigeration'
+    ],
+    benefits: [
+      'Maximum thermal performance',
+      'Eliminate frost and ice buildup',
+      'Reduce refrigeration costs',
+      'Meet health department requirements',
+      'Extend equipment life'
+    ],
+    keywords: 'cold storage insulation Alaska, walk-in cooler insulation, freezer insulation Anchorage, commercial refrigeration insulation',
+    image: '/gallery/webp/anchorage-commercial-warehouse-foam.webp'
+  }
+];
+
+const solutionCategories = [
+  {
+    category: 'Residential Solutions',
+    count: '5',
+    description: 'Solving common problems in Alaska homes'
+  },
+  {
+    category: 'Commercial Applications',
+    count: '5',
+    description: 'Industrial and commercial insulation solutions'
+  },
+  {
+    category: 'Specialty Projects',
+    count: '3',
+    description: 'Unique applications and custom solutions'
+  }
+];
+---
+
+<BaseLayout
+  title="Spray Foam Insulation Solutions Anchorage Alaska - Problem-Solving Applications"
+  description="Specialized spray foam insulation solutions in Anchorage, AK. Ice dam prevention, shipping containers, metal buildings, tanks, quonset huts, soundproofing. Expert problem-solving for Alaska's unique challenges."
+  keywords="spray foam solutions Alaska, ice dam solutions Anchorage, container insulation, metal building insulation, tank insulation Alaska, quonset hut insulation, crawl space encapsulation, soundproofing Alaska"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0); background-size: 50px 50px;"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto text-center">
+      <div class="animate-fade-in">
+        <h1 class="heading-xl text-espresso mb-6">
+          Spray Foam Insulation Solutions
+        </h1>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto mb-8">
+          Specialized spray foam applications solving Alaska's unique insulation challenges. From ice dam prevention to shipping containers, metal buildings to tank insulation, we provide expert solutions for problems other contractors can't solve.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <GlassButton
+            href="#solutions-list"
+            variant="primary"
+            size="lg"
+            client:visible
+          >
+            Explore Solutions
+          </GlassButton>
+          <GlassButton
+            href="tel:+19073103000"
+            variant="secondary"
+            size="lg"
+            client:visible
+          >
+            Call (907) 310-3000
+          </GlassButton>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Categories -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="heading-lg text-espresso mb-4">
+          Problem-Solving Expertise
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Over a decade of experience solving Alaska's toughest insulation challenges with proven spray foam solutions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {solutionCategories.map((category, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-8">
+              <div class="text-4xl font-bold text-terra-cotta mb-2">{category.count}</div>
+              <h3 class="text-xl font-semibold text-espresso mb-2">{category.category}</h3>
+              <p class="text-warm-gray text-sm">{category.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions List -->
+  <section class="section-padding bg-cream" id="solutions-list">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Specialized Insulation Solutions
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Each solution is tailored to solve specific problems unique to Alaska's extreme climate and challenging building conditions.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        {solutions.map((solution, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${(index % 3) * 0.1}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-lg rounded-3xl overflow-hidden shadow-elegant hover:shadow-xl transition-all duration-500">
+              <div class="grid lg:grid-cols-2 gap-0">
+                <!-- Image -->
+                <div class="relative h-80 lg:h-auto overflow-hidden">
+                  <img
+                    src={solution.image}
+                    alt={`${solution.title} in Alaska`}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-charcoal/30 to-transparent"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="p-8 lg:p-10">
+                  <h3 class="text-3xl font-bold text-espresso mb-4">{solution.title}</h3>
+
+                  <!-- Problem -->
+                  <div class="mb-6">
+                    <h4 class="text-sm font-semibold text-red-600 mb-2 uppercase tracking-wide">The Problem:</h4>
+                    <p class="text-warm-gray">{solution.problem}</p>
+                  </div>
+
+                  <!-- Solution -->
+                  <div class="mb-6">
+                    <h4 class="text-sm font-semibold text-sage-mist mb-2 uppercase tracking-wide">Our Solution:</h4>
+                    <p class="text-warm-gray">{solution.solution}</p>
+                  </div>
+
+                  <!-- Applications & Benefits Grid -->
+                  <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <!-- Applications -->
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-3">Applications:</h4>
+                      <div class="space-y-2">
+                        {solution.applications.slice(0, 4).map((app) => (
+                          <div class="flex items-start gap-2 text-sm">
+                            <span class="text-terra-cotta mt-0.5 flex-shrink-0">•</span>
+                            <span class="text-warm-gray">{app}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <!-- Benefits -->
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-3">Benefits:</h4>
+                      <div class="space-y-2">
+                        {solution.benefits.slice(0, 4).map((benefit) => (
+                          <div class="flex items-start gap-2 text-sm">
+                            <span class="text-sage-mist mt-0.5 flex-shrink-0">✓</span>
+                            <span class="text-warm-gray">{benefit}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- CTA Buttons -->
+                  <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-khaki/20">
+                    <GlassButton
+                      href={`/${solution.slug}`}
+                      variant="primary"
+                      size="md"
+                      client:visible
+                    >
+                      Learn More
+                    </GlassButton>
+                    <GlassButton
+                      href="#contact-form"
+                      variant="secondary"
+                      size="md"
+                      client:visible
+                    >
+                      Get Free Estimate
+                    </GlassButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Our Solutions -->
+  <section class="section-padding bg-gradient-to-br from-taupe/10 to-khaki/10">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Why Choose Foamology Solutions?
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Specialized expertise and proven results solving Alaska's most challenging insulation problems.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+            <div class="text-3xl font-bold text-terra-cotta mb-2">10+</div>
+            <h3 class="text-lg font-semibold text-espresso mb-2">Years Experience</h3>
+            <p class="text-warm-gray text-sm">Solving Alaska's unique insulation challenges</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+            <div class="text-3xl font-bold text-terra-cotta mb-2">100%</div>
+            <h3 class="text-lg font-semibold text-espresso mb-2">Satisfaction</h3>
+            <p class="text-warm-gray text-sm">Guaranteed results on every project</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+            <div class="text-3xl font-bold text-terra-cotta mb-2">Licensed</div>
+            <h3 class="text-lg font-semibold text-espresso mb-2">& Insured</h3>
+            <p class="text-warm-gray text-sm">Full Alaska contractor licensing</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+            <div class="text-3xl font-bold text-terra-cotta mb-2">Custom</div>
+            <h3 class="text-lg font-semibold text-espresso mb-2">Solutions</h3>
+            <p class="text-warm-gray text-sm">Tailored to your specific needs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-br from-cream to-sand">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Have a Challenging Insulation Problem?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Contact us to discuss your specific insulation challenge. We specialize in solving problems other contractors can't, with proven spray foam solutions designed for Alaska's extreme conditions.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Request Free Consultation
+        </GlassButton>
+      </div>
+
+      <!-- Service Area -->
+      <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-espresso mb-3">Serving All of South-Central Alaska</h3>
+        <div class="flex flex-wrap justify-center gap-4 text-warm-gray text-sm">
+          <span>Anchorage</span>
+          <span>•</span>
+          <span>Kenai Peninsula</span>
+          <span>•</span>
+          <span>Palmer</span>
+          <span>•</span>
+          <span>Wasilla</span>
+          <span>•</span>
+          <span>Mat-Su Valley</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>

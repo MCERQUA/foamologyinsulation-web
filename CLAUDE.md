@@ -605,3 +605,4 @@ When adding new project photos:
 
 ### remember to PUSH TO GITHUB!!!
 Per project instructions, always push changes to GitHub after completing work.
+- DO NOT use emojs on the website they look childish only create professional sylissh components and svg icons
