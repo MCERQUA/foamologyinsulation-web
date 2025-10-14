@@ -24,13 +24,13 @@ const solutions = [
 ];
 ---
 
-<section class="relative overflow-hidden min-h-screen">
-  <!-- Background Image with Overlay - Full height without cropping -->
-  <div class="absolute inset-0 bg-charcoal flex items-center justify-center">
+<section class="relative section-padding overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0">
     <img
       src="/images/alaska-anchorage-ice-damming-solutions.png"
       alt="Ice damming diagram showing how ice dams form on Alaska home roofs"
-      class="w-full h-auto"
+      class="w-full h-full object-cover"
     />
     <!-- Lightened overlay for better visibility -->
     <div class="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/60 to-charcoal/75"></div>
@@ -93,12 +93,12 @@ const solutions = [
 
       <!-- Stats Panel -->
       <div class="animate-slide-up space-y-6">
-        <!-- Real Ice Dam Photo -->
-        <div class="rounded-3xl overflow-hidden border border-white/20 shadow-elegant">
+        <!-- Ice Dam Formation Diagram -->
+        <div class="rounded-3xl overflow-hidden border border-white/20 shadow-elegant bg-white p-4">
           <img
-            src="/gallery/webp/alaska-thermal-camera-energy-audit.webp"
-            alt="Alaska thermal camera showing heat loss and ice dam risk areas"
-            class="w-full h-64 object-cover"
+            src="/gallery/webp/how-ice-dams-form-alaska-diagram.webp"
+            alt="Diagram showing how ice dams form on Alaska home roofs"
+            class="w-full h-auto object-contain"
           />
         </div>
 

@@ -215,11 +215,6 @@ export const galleryImages: GalleryImage[] = [
     category: 'spray-foam'
   },
   {
-    src: '/gallery/webp/alaska-thermal-camera-energy-audit.webp',
-    alt: 'Alaska Thermal Camera Energy Audit',
-    category: 'thermal-inspections'
-  },
-  {
     src: '/gallery/webp/alaska-thermal-imaging-heat-loss-detection.webp',
     alt: 'Alaska Thermal Imaging Heat Loss Detection',
     category: 'thermal-inspections'
@@ -473,5 +468,10 @@ export const galleryImages: GalleryImage[] = [
     src: '/gallery/webp/anchorage-warehouse-spray-foam-project-1.webp',
     alt: 'Anchorage Warehouse Spray Foam Project',
     category: 'commercial'
+  },
+  {
+    src: '/gallery/webp/how-ice-dams-form-alaska-diagram.webp',
+    alt: 'How Ice Dams Form Alaska Diagram',
+    category: 'ice-dam-prevention'
   },
 ];
