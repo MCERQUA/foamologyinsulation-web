@@ -9,25 +9,25 @@ const removalServices = [
   {
     title: 'Contaminated Insulation Removal',
     description: 'Safe removal of insulation contaminated by rodents, pests, or other hazards',
-    icon: '🦠',
+    icon: '',
     includes: ['Hazmat containment', 'Safe disposal', 'Decontamination', 'Air quality protection']
   },
   {
     title: 'Wet & Moldy Insulation',
     description: 'Professional removal of moisture-damaged and moldy insulation materials',
-    icon: '💧',
+    icon: '',
     includes: ['Mold remediation', 'Moisture source identification', 'Prevention measures', 'Health protection']
   },
   {
     title: 'Asbestos-Containing Materials',
     description: 'Licensed asbestos abatement and safe removal of ACM insulation',
-    icon: '⚠️',
+    icon: '',
     includes: ['Licensed abatement', 'Proper containment', 'Legal disposal', 'Safety compliance']
   },
   {
     title: 'Fire-Damaged Insulation',
     description: 'Removal and cleanup of fire and smoke-damaged insulation materials',
-    icon: '🔥',
+    icon: '',
     includes: ['Smoke damage cleanup', 'Structural assessment', 'Complete removal', 'Restoration prep']
   }
 ];
@@ -281,7 +281,6 @@ const faqs = [
             style={`animation-delay: ${index * 0.15}s`}
           >
             <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6 h-full">
-              <div class="text-4xl mb-4">{service.icon}</div>
               <h3 class="text-lg font-semibold text-espresso mb-3">{service.title}</h3>
               <p class="text-warm-gray text-sm mb-4">{service.description}</p>
 

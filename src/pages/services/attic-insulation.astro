@@ -1,0 +1,543 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+
+const atticProblems = [
+  {
+    problem: 'Ice Dams & Roof Damage',
+    description: 'Heat loss through poorly insulated attics melts snow, causing destructive ice dams',
+    solution: 'Air-tight spray foam insulation stops heat loss at the source',
+    damage: '$5,000+ average repair cost',
+    image: '/gallery/webp/alaska-ice-dam-roof-damage-repair-needed.webp'
+  },
+  {
+    problem: 'Extreme Heat Loss',
+    description: 'Up to 40% of home heating escapes through the attic in Alaska winters',
+    solution: 'R-49+ insulation with complete air sealing',
+    damage: '30-50% higher heating bills',
+    image: '/gallery/webp/alaska-missing-vapor-barrier-heat-loss-thermal.webp'
+  },
+  {
+    problem: 'Moisture & Condensation',
+    description: 'Air leaks allow warm, moist air into cold attic spaces causing condensation',
+    solution: 'Monolithic vapor barrier prevents moisture infiltration',
+    damage: 'Mold, rot, and structural damage',
+    image: '/gallery/webp/alaska-attic-insulation-before-foam-1.webp'
+  }
+];
+
+const insulationMethods = [
+  {
+    method: 'Attic Floor Insulation',
+    description: 'Most common approach - insulate and air seal the attic floor',
+    rValue: 'R-49 to R-60',
+    image: '/gallery/webp/alaska-attic-floor-air-barrier-ice-dam-prevention.webp',
+    benefits: [
+      'Prevents ice dam formation',
+      'Easiest access for installation',
+      'Creates unconditioned attic space',
+      'Most cost-effective approach',
+      'Meets Alaska building code'
+    ],
+    idealFor: 'Standard attics with traditional roof ventilation'
+  },
+  {
+    method: 'Cathedral Ceiling / Roof Deck',
+    description: 'Insulate the underside of the roof deck for conditioned attic space',
+    rValue: 'R-38 to R-49',
+    image: '/gallery/webp/alaska-cathedral-ceiling-spray-foam-1.webp',
+    benefits: [
+      'Creates conditioned attic space',
+      'Protects roof structure',
+      'Ideal for cathedral ceilings',
+      'HVAC equipment protection',
+      'No ventilation required'
+    ],
+    idealFor: 'Cathedral ceilings, bonus rooms, conditioned attic spaces'
+  },
+  {
+    method: 'Rafter Bay Insulation',
+    description: 'Fill rafter bays with spray foam for maximum thermal performance',
+    rValue: 'R-30 to R-49',
+    image: '/gallery/webp/anchorage-attic-rafter-bay-spray-foam-1.webp',
+    benefits: [
+      'Maximum R-value per inch',
+      'Complete air sealing',
+      'Structural reinforcement',
+      'Prevents moisture issues',
+      'Long-term durability'
+    ],
+    idealFor: 'New construction, major renovations, vaulted ceilings'
+  }
+];
+
+const processSteps = [
+  {
+    step: '1',
+    title: 'Thermal Inspection',
+    description: 'Comprehensive assessment using thermal imaging to identify current heat loss patterns',
+    includes: ['Thermal imaging scan', 'Insulation quality check', 'Air leakage detection', 'Moisture assessment']
+  },
+  {
+    step: '2',
+    title: 'Preparation & Protection',
+    description: 'Proper preparation of attic space and protection of existing systems',
+    includes: ['Equipment protection', 'Ventilation assessment', 'Surface preparation', 'Safety setup']
+  },
+  {
+    step: '3',
+    title: 'Professional Installation',
+    description: 'Expert application of spray foam insulation to achieve specified R-value',
+    includes: ['Precise foam application', 'Even coverage', 'Proper thickness', 'Quality control']
+  },
+  {
+    step: '4',
+    title: 'Verification & Documentation',
+    description: 'Post-installation inspection and documentation for peace of mind',
+    includes: ['Thermal imaging verification', 'R-value confirmation', 'Photo documentation', 'Warranty activation']
+  }
+];
+
+const alaskaStandards = [
+  {
+    zone: 'South-Central Alaska',
+    location: 'Anchorage, Kenai, Mat-Su Valley',
+    minRValue: 'R-49',
+    recommended: 'R-49 to R-60',
+    notes: 'IECC Climate Zone 7'
+  },
+  {
+    zone: 'Interior Alaska',
+    location: 'Fairbanks, North Pole, Delta',
+    minRValue: 'R-49',
+    recommended: 'R-60+',
+    notes: 'IECC Climate Zone 8 - Extreme conditions'
+  }
+];
+
+const faqs = [
+  {
+    question: 'What R-value do I need for my Alaska attic?',
+    answer: 'Alaska building code requires minimum R-49 for attic insulation in most areas. We typically recommend R-49 to R-60 for South-Central Alaska, depending on your specific home and heating system. Interior Alaska may benefit from R-60 or higher.'
+  },
+  {
+    question: 'Will spray foam prevent ice dams?',
+    answer: 'Yes! Ice dams are caused by heat loss through the attic. Spray foam insulation combined with complete air sealing stops this heat loss at the source, eliminating ice dam formation. This is the most effective solution for Alaska\'s ice dam problems.'
+  },
+  {
+    question: 'Can I install attic insulation in winter?',
+    answer: 'Yes, we work year-round in Alaska. Spray foam can be applied in cold weather with proper equipment and techniques. Winter is actually a great time because thermal imaging clearly shows heat loss patterns.'
+  },
+  {
+    question: 'Do I need to remove old insulation first?',
+    answer: 'Not always. If existing insulation is clean, dry, and in good condition, spray foam can often be applied over it. However, contaminated, wet, or moldy insulation should be removed first for health and performance reasons.'
+  },
+  {
+    question: 'How long does attic insulation installation take?',
+    answer: 'Most residential attic insulation projects take 1-2 days depending on size and access. We complete thermal inspection, preparation, installation, and verification with minimal disruption to your daily routine.'
+  },
+  {
+    question: 'What\'s the payback period for attic insulation?',
+    answer: 'In Alaska\'s climate, most homeowners see 30-50% reduction in heating costs. With typical energy savings of $1,500-3,000 per year, payback period is usually 3-7 years. Plus, you get immediate comfort improvements and ice dam prevention.'
+  }
+];
+---
+
+<BaseLayout
+  title="Attic Insulation Anchorage Alaska - Spray Foam Attic Insulation R-49+"
+  description="Professional attic insulation in Anchorage, AK. Spray foam attic insulation R-49+, ice dam prevention, 50% energy savings. Licensed Alaska insulation contractor. Free estimates."
+  keywords="attic insulation Anchorage, attic spray foam Alaska, R-49 insulation Anchorage, ice dam prevention Alaska, attic air sealing Anchorage, cathedral ceiling insulation Alaska"
+>
+  <!-- Hero Section with Parallax Effect -->
+  <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <!-- Parallax Background -->
+    <div class="absolute inset-0">
+      <img
+        src="/gallery/webp/anchorage-attic-spray-foam-insulation-project-1.webp"
+        alt="Professional attic insulation installation in Anchorage Alaska"
+        class="w-full h-full object-cover scale-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/80 to-charcoal/60"></div>
+    </div>
+
+    <!-- Floating Particles Effect -->
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-20 left-10 w-2 h-2 bg-sage-mist rounded-full animate-float"></div>
+      <div class="absolute top-40 right-20 w-3 h-3 bg-sage-mist rounded-full animate-float" style="animation-delay: 1s;"></div>
+      <div class="absolute bottom-32 left-1/4 w-2 h-2 bg-sage-mist rounded-full animate-float" style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-7xl mx-auto">
+      <div class="max-w-4xl">
+        <div class="animate-fade-in">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 bg-sage-mist/20 backdrop-blur-sm border border-sage-mist/30 rounded-full px-6 py-2 mb-8">
+            <span class="text-white font-medium">Alaska's #1 Attic Insulation Solution</span>
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
+            Attic Insulation<br />
+            <span class="text-sage-mist">for Alaska Homes</span>
+          </h1>
+
+          <p class="text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl">
+            Stop ice dams, reduce heating costs by 30-50%, and improve comfort with professional attic insulation designed specifically for Alaska's extreme climate.
+          </p>
+
+          <!-- Key Benefits Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
+              <div class="text-3xl font-bold text-sage-mist mb-1">R-49+</div>
+              <div class="text-white/90 text-sm">Alaska Code Compliant</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
+              <div class="text-3xl font-bold text-sage-mist mb-1">100%</div>
+              <div class="text-white/90 text-sm">Ice Dam Prevention</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
+              <div class="text-3xl font-bold text-sage-mist mb-1">50%</div>
+              <div class="text-white/90 text-sm">Energy Savings</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <GlassButton
+              href="#contact-form"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Get Free Attic Assessment
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Call (907) 310-3000
+            </GlassButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alaska Attic Problems -->
+  <section class="section-padding bg-gradient-to-br from-red-50 to-orange-50">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Alaska Attic Problems We Solve
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Poorly insulated attics cause serious problems in Alaska's extreme climate. Here's how we fix them permanently.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {atticProblems.map((item, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.2}s`}
+          >
+            <div class="bg-white rounded-3xl overflow-hidden shadow-elegant hover:shadow-xl transition-all duration-500 h-full flex flex-col">
+              <!-- Image -->
+              <div class="relative h-56 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={`${item.problem} in Alaska attic`}
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent"></div>
+
+                <!-- Problem Label -->
+                <div class="absolute top-4 left-4">
+                  <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">Problem</span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-6 flex-grow flex flex-col">
+                <h3 class="text-2xl font-bold text-espresso mb-3">{item.problem}</h3>
+                <p class="text-warm-gray mb-4">{item.description}</p>
+
+                <!-- Damage Cost -->
+                <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded-r-xl mb-4">
+                  <p class="text-red-800 font-semibold text-sm">{item.damage}</p>
+                </div>
+
+                <!-- Solution -->
+                <div class="mt-auto pt-4 border-t border-khaki/20">
+                  <h4 class="text-sm font-bold text-sage-mist mb-2">Our Solution:</h4>
+                  <p class="text-warm-gray text-sm">{item.solution}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Insulation Methods -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Attic Insulation Methods
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          We offer three proven approaches for attic insulation in Alaska, each designed for specific home types and needs.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        {insulationMethods.map((method, index) => (
+          <div
+            class="animate-fade-in"
+            style={`animation-delay: ${index * 0.3}s`}
+          >
+            <div class={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+              <!-- Image -->
+              <div class={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                <div class="relative rounded-3xl overflow-hidden shadow-elegant">
+                  <img
+                    src={method.image}
+                    alt={`${method.method} in Anchorage Alaska attic`}
+                    class="w-full h-auto"
+                  />
+                  <div class="absolute top-4 right-4 bg-sage-mist text-white px-4 py-2 rounded-full font-bold">
+                    {method.rValue}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-3xl p-8">
+                  <h3 class="text-3xl font-bold text-espresso mb-4">{method.method}</h3>
+                  <p class="text-warm-gray text-lg mb-6">{method.description}</p>
+
+                  <!-- Benefits -->
+                  <div class="mb-6">
+                    <h4 class="font-bold text-espresso mb-3">Benefits:</h4>
+                    <div class="grid grid-cols-1 gap-2">
+                      {method.benefits.map((benefit) => (
+                        <div class="flex items-start gap-3">
+                          <span class="text-sage-mist text-lg mt-0.5 flex-shrink-0">✓</span>
+                          <span class="text-warm-gray">{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <!-- Ideal For -->
+                  <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-4 border border-sage-mist/20">
+                    <h4 class="font-bold text-espresso mb-2">Ideal For:</h4>
+                    <p class="text-warm-gray text-sm">{method.idealFor}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Alaska Building Standards -->
+  <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="heading-lg text-espresso mb-4">
+          Alaska Building Code Standards
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Alaska has some of the highest insulation requirements in the nation due to our extreme climate.
+        </p>
+      </div>
+
+      <div class="bg-white/80 backdrop-blur-lg rounded-3xl overflow-hidden shadow-elegant">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                <th class="px-6 py-4 text-left font-bold">Climate Zone</th>
+                <th class="px-6 py-4 text-left font-bold">Locations</th>
+                <th class="px-6 py-4 text-center font-bold">Minimum R-Value</th>
+                <th class="px-6 py-4 text-center font-bold">Recommended</th>
+                <th class="px-6 py-4 text-left font-bold">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {alaskaStandards.map((standard, index) => (
+                <tr class={index % 2 === 0 ? 'bg-white' : 'bg-blue-50/50'}>
+                  <td class="px-6 py-4 font-bold text-espresso">{standard.zone}</td>
+                  <td class="px-6 py-4 text-warm-gray">{standard.location}</td>
+                  <td class="px-6 py-4 text-center font-bold text-orange-600">{standard.minRValue}</td>
+                  <td class="px-6 py-4 text-center font-bold text-green-600">{standard.recommended}</td>
+                  <td class="px-6 py-4 text-warm-gray text-sm">{standard.notes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-6 bg-blue-100 border-t-4 border-blue-500">
+          <p class="text-blue-900">
+            <strong>Code Compliance:</strong> All our attic insulation installations meet or exceed Alaska building code requirements. We provide documentation for permits, inspections, and warranty purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Our Attic Insulation Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Professional installation following Alaska best practices for maximum performance and longevity.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {processSteps.map((step, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-white rounded-3xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 h-full">
+              <!-- Step Number -->
+              <div class="w-16 h-16 bg-gradient-to-br from-sage-mist to-sage-accent rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
+                {step.step}
+              </div>
+
+              <h3 class="text-xl font-bold text-espresso mb-3 text-center">{step.title}</h3>
+              <p class="text-warm-gray text-sm mb-4 text-center">{step.description}</p>
+
+              <!-- Includes -->
+              <div class="space-y-2">
+                {step.includes.map((item) => (
+                  <div class="flex items-start gap-2">
+                    <span class="text-sage-mist text-xs mt-0.5 flex-shrink-0">•</span>
+                    <span class="text-warm-gray text-xs">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Attic Insulation FAQ
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about attic insulation in Alaska.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-white rounded-2xl p-6 shadow-soft"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section-padding bg-gradient-to-br from-sage-mist to-sage-accent text-white">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Ready to Stop Wasting Money on Heating?
+      </h2>
+      <p class="text-xl mb-10 text-white/90 max-w-2xl mx-auto">
+        Get professional attic insulation from Alaska's most trusted insulation contractor. Free thermal imaging assessment with every quote.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+        <a
+          href="tel:+19073103000"
+          class="px-10 py-4 bg-white text-sage-mist font-bold rounded-full text-lg hover:bg-cream hover:scale-105 transition-all duration-300 shadow-lg"
+        >
+          Call (907) 310-3000
+        </a>
+        <a
+          href="#contact-form"
+          class="px-10 py-4 bg-white/20 backdrop-blur-sm text-white font-bold rounded-full text-lg border-2 border-white hover:bg-white/30 hover:scale-105 transition-all duration-300"
+        >
+          Get Free Assessment
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+          <div class="font-bold mb-1">Licensed</div>
+          <div class="text-sm text-white/80">& Insured</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+          <div class="font-bold mb-1">10+ Years</div>
+          <div class="text-sm text-white/80">Experience</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+          <div class="font-bold mb-1">Lifetime</div>
+          <div class="text-sm text-white/80">Warranty</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+          <div class="font-bold mb-1">Free</div>
+          <div class="text-sm text-white/80">Thermal Scan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+      transform: translateY(-10px) translateX(-10px);
+    }
+    75% {
+      transform: translateY(-30px) translateX(5px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
