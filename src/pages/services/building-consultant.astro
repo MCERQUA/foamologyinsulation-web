@@ -1,0 +1,727 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const consultingServices = [
+  {
+    title: 'Design Review & Specifications',
+    description: 'Expert review of architectural plans and insulation specifications for optimal performance',
+    icon: '📐',
+    benefits: ['Code compliance verification', 'Value engineering opportunities', 'Constructability review', 'Energy modeling integration']
+  },
+  {
+    title: 'Construction Phase Services',
+    description: 'On-site oversight and quality assurance during insulation installation',
+    icon: '👷',
+    benefits: ['Installation verification', 'Quality control inspections', 'Problem-solving support', 'Documentation for owner']
+  },
+  {
+    title: 'Energy Code Compliance',
+    description: 'Navigate Alaska building energy codes and certification programs',
+    icon: '📋',
+    benefits: ['IECC compliance documentation', 'REScheck/COMcheck preparation', 'ENERGY STAR certification', 'Above-code program guidance']
+  },
+  {
+    title: 'Forensic Investigation',
+    description: 'Diagnose and resolve existing building performance problems',
+    icon: '🔬',
+    benefits: ['Moisture problem diagnosis', 'Thermal performance issues', 'Air quality investigations', 'Expert testimony available']
+  }
+];
+
+const projectTypes = [
+  {
+    type: 'New Construction',
+    description: 'Design and construction consulting for residential and commercial new builds',
+    image: atticImage,
+    services: [
+      'Building envelope design review',
+      'Insulation and air sealing specifications',
+      'HVAC system sizing and design review',
+      'Energy code compliance documentation',
+      'Blower door testing and verification',
+      'ENERGY STAR certification support'
+    ],
+    benefits: [
+      'Avoid costly design mistakes',
+      'Ensure constructability',
+      'Meet or exceed energy codes',
+      'Qualify for utility rebates',
+      'Document performance for owner'
+    ]
+  },
+  {
+    type: 'Major Renovations',
+    description: 'Building science consulting for gut rehabs and major remodels',
+    image: wallImage,
+    services: [
+      'Existing condition assessment',
+      'Upgrade strategy development',
+      'Moisture management planning',
+      'Building envelope improvements',
+      'Mechanical system upgrades',
+      'Construction phase oversight'
+    ],
+    benefits: [
+      'Maximize improvement impact',
+      'Avoid moisture problems',
+      'Integrate modern systems',
+      'Preserve historic character',
+      'Document improvements'
+    ]
+  },
+  {
+    type: 'Existing Building Commissioning',
+    description: 'Optimize performance of existing commercial and residential buildings',
+    image: crawlSpaceImage,
+    services: [
+      'Comprehensive building assessment',
+      'Energy audit and benchmarking',
+      'System performance testing',
+      'Operational improvements',
+      'Measurement and verification',
+      'Ongoing performance monitoring'
+    ],
+    benefits: [
+      'Reduce operating costs',
+      'Improve occupant comfort',
+      'Extend equipment life',
+      'Document performance gains',
+      'Support sustainability goals'
+    ]
+  }
+];
+
+const expertiseAreas = [
+  {
+    area: 'Building Science & Physics',
+    topics: [
+      'Heat, air, and moisture transport',
+      'Building envelope design and detailing',
+      'Vapor barrier and air barrier systems',
+      'Thermal bridging mitigation',
+      'Hygrothermal analysis',
+      'Durability and longevity'
+    ]
+  },
+  {
+    area: 'Energy Efficiency',
+    topics: [
+      'Building energy modeling (BEopt, EnergyPlus)',
+      'Energy code compliance (IECC, ASHRAE 90.1)',
+      'High-performance building programs',
+      'Passive House (PHIUS) consulting',
+      'Net-zero energy design',
+      'Utility rebate program navigation'
+    ]
+  },
+  {
+    area: 'HVAC & Mechanical Systems',
+    topics: [
+      'Manual J/S/D load calculations',
+      'System selection and sizing',
+      'Distribution system design',
+      'Ventilation strategy (HRV/ERV)',
+      'Combustion safety',
+      'Controls and automation'
+    ]
+  },
+  {
+    area: 'Alaska-Specific Expertise',
+    topics: [
+      'Extreme cold climate construction',
+      'Permafrost and frost-protected foundations',
+      'Ice dam prevention strategies',
+      'Cold climate HVAC systems',
+      'Alaska building code requirements',
+      'Remote/rural building challenges'
+    ]
+  }
+];
+
+const consultingProcess = [
+  {
+    phase: 'Initial Consultation',
+    description: 'Discuss project goals, constraints, timeline, and budget. Define scope of consulting services.',
+    duration: '1-2 hours',
+    deliverable: 'Scope of work and fee proposal'
+  },
+  {
+    phase: 'Information Gathering',
+    description: 'Review plans, specifications, site conditions, and relevant documentation.',
+    duration: 'Varies by project',
+    deliverable: 'Complete project understanding'
+  },
+  {
+    phase: 'Analysis & Recommendations',
+    description: 'Apply building science principles to develop specific recommendations for project success.',
+    duration: '1-2 weeks',
+    deliverable: 'Written recommendations report'
+  },
+  {
+    phase: 'Design Development Support',
+    description: 'Collaborate with design team to integrate recommendations into construction documents.',
+    duration: 'Ongoing',
+    deliverable: 'Reviewed plans and specifications'
+  },
+  {
+    phase: 'Construction Phase Services',
+    description: 'Site visits, inspections, testing, and problem-solving support during construction.',
+    duration: 'Project duration',
+    deliverable: 'Inspection reports and test results'
+  },
+  {
+    phase: 'Commissioning & Verification',
+    description: 'Final testing, performance verification, and owner training/documentation.',
+    duration: '1-2 weeks',
+    deliverable: 'Final commissioning report'
+  }
+];
+
+const typicalIssues = [
+  {
+    issue: 'Design Conflicts',
+    description: 'Plans show architectural features that conflict with proper air sealing or insulation',
+    impact: 'Results in thermal bypasses, air leakage, and code compliance failures',
+    solution: 'Early design review identifies conflicts before bidding, allowing cost-effective resolution'
+  },
+  {
+    issue: 'Inadequate Specifications',
+    description: 'Specs lack critical details on air barrier continuity, vapor barrier placement, or insulation quality',
+    impact: 'Leads to field confusion, RFIs, change orders, and substandard installations',
+    solution: 'Building science consultant develops complete, constructable specifications'
+  },
+  {
+    issue: 'Code Compliance Questions',
+    description: 'Uncertainty about how to meet Alaska energy codes or qualify for above-code programs',
+    impact: 'Projects delayed by inspection failures or miss opportunities for rebates/certifications',
+    solution: 'Expert guidance ensures first-time code compliance and maximizes incentive opportunities'
+  },
+  {
+    issue: 'Installation Problems',
+    description: 'Field conditions differ from plans, requiring adaptation while maintaining performance',
+    impact: 'Wrong decisions in the field can create lasting problems and liability',
+    solution: 'On-call consulting support provides real-time problem-solving based on building science'
+  },
+  {
+    issue: 'Performance Failures',
+    description: 'Completed buildings fail to meet energy targets or experience moisture/comfort problems',
+    impact: 'Owner dissatisfaction, callbacks, warranty claims, and potential litigation',
+    solution: 'Commissioning and testing verifies performance before owner occupancy'
+  }
+];
+
+const clientTypes = [
+  {
+    client: 'Architects & Engineers',
+    needs: [
+      'Building envelope design review',
+      'Energy modeling and code compliance',
+      'Specification development',
+      'Continuing education on building science',
+      'Expert support for challenging projects'
+    ]
+  },
+  {
+    client: 'General Contractors & Builders',
+    needs: [
+      'Plan review for constructability',
+      'Field problem-solving support',
+      'Quality assurance inspections',
+      'Subcontractor coordination',
+      'Owner/architect communication'
+    ]
+  },
+  {
+    client: 'Building Owners & Developers',
+    needs: [
+      'Independent building performance review',
+      'Design and construction quality oversight',
+      'Commissioning and performance verification',
+      'Energy efficiency consulting',
+      'Long-term building performance'
+    ]
+  },
+  {
+    client: 'Attorneys & Insurance',
+    needs: [
+      'Expert witness testimony',
+      'Forensic investigation of building failures',
+      'Technical report preparation',
+      'Deposition and trial support',
+      'Construction defect analysis'
+    ]
+  }
+];
+
+const faqs = [
+  {
+    question: 'What is a building science consultant and why would I need one?',
+    answer: 'A building science consultant applies physics and engineering principles to building design and construction to ensure optimal performance, durability, and efficiency. You would hire a consultant to avoid costly mistakes, solve complex problems, verify quality, meet code requirements, or achieve high-performance building certifications. Our expertise is especially valuable in Alaska\'s extreme climate where building science mistakes can have severe consequences.'
+  },
+  {
+    question: 'When should I engage a building consultant on my project?',
+    answer: 'The earlier the better. Ideally during schematic design or design development phases when changes are still cost-effective. However, we can provide value at any stage - reviewing plans before bidding, solving problems during construction, or investigating issues in completed buildings. Early engagement prevents problems; later engagement solves problems.'
+  },
+  {
+    question: 'How do building consultant fees work?',
+    answer: 'We offer hourly consulting, fixed-fee proposals for defined scopes, and retainer agreements for ongoing support. Typical hourly rates are $150-$250 depending on service type. Most plan reviews run $1,500-$5,000. Construction phase services are typically 1-3% of insulation/envelope costs. The investment typically pays for itself many times over through avoided problems, code compliance, and optimized performance.'
+  },
+  {
+    question: 'What is the difference between a building consultant and an inspector?',
+    answer: 'Building inspectors enforce minimum code requirements at specific stages. Building consultants work proactively throughout the project to optimize performance beyond minimum codes, solve problems, verify quality, and ensure the building performs as intended. We complement rather than replace inspections - providing owner representation and building science expertise that inspectors don\'t provide.'
+  },
+  {
+    question: 'Can you help with energy code compliance and certifications?',
+    answer: 'Yes, this is a core service. We prepare REScheck and COMcheck documentation for Alaska building departments, support ENERGY STAR certification, provide Passive House (PHIUS) consulting, and help navigate utility rebate programs. We stay current on Alaska\'s energy codes and can ensure your project meets or exceeds requirements while qualifying for available incentives.'
+  },
+  {
+    question: 'Do you provide expert witness services for construction disputes?',
+    answer: 'Yes, we provide forensic investigation and expert testimony for construction defect cases, insurance claims, and building performance disputes. Services include site investigation, testing and documentation, technical report preparation, deposition testimony, and trial testimony. We have experience working with attorneys and insurance professionals on building envelope failures, moisture problems, and energy performance issues.'
+  },
+  {
+    question: 'What makes Alaska building science consulting different from the Lower 48?',
+    answer: 'Alaska\'s extreme climate creates unique challenges: -40°F to -60°F design temperatures, extreme temperature differentials driving moisture movement, ice dam problems, permafrost in many areas, high heating costs making efficiency critical, and remote locations limiting materials and contractors. Alaska also has specific building codes and utility programs. Our Alaska-specific expertise ensures recommendations work in Alaska\'s real-world conditions.'
+  },
+  {
+    question: 'Can you help with existing building performance problems?',
+    answer: 'Yes, forensic investigation is a key service. We diagnose moisture problems, ice dams, high energy bills, comfort issues, and indoor air quality problems. Services include blower door testing, thermal imaging, moisture testing, and detailed investigation to identify root causes. We then develop practical, cost-effective solutions based on building science principles and Alaska climate considerations.'
+  },
+  {
+    question: 'Do you work with Passive House and other high-performance building standards?',
+    answer: 'Yes, we provide consulting for Passive House (PHIUS), Net Zero Energy, LEED, and other high-performance building programs. This includes energy modeling (WUFI Passive, BEopt), design review, specification development, and verification testing. Alaska\'s extreme climate is well-suited to Passive House strategies, and we have experience optimizing these approaches for Alaska conditions.'
+  },
+  {
+    question: 'What geographic areas do you serve?',
+    answer: 'We are based in Anchorage and primarily serve Southcentral Alaska (Anchorage, Mat-Su, Kenai Peninsula). However, we provide consulting services statewide including Fairbanks, Juneau, and remote communities. For projects outside Anchorage, we typically combine remote consulting (plan review, phone/email support) with strategic site visits at critical construction phases to optimize travel efficiency.'
+  }
+];
+---
+
+<BaseLayout
+  title="Building Science Consultant Anchorage Alaska - Energy Code Compliance"
+  description="Professional building science consulting in Anchorage, AK. Design review, construction oversight, energy code compliance, forensic investigation. Expert consulting for architects, contractors, and building owners. Alaska building science expertise."
+  keywords="building consultant Anchorage, building science Alaska, energy code compliance Anchorage, construction consulting Alaska, building envelope design, ENERGY STAR Alaska, forensic investigation, expert witness Alaska, building commissioning Anchorage"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src={wallImage.src}
+        alt="Professional building science consultant reviewing construction in Anchorage Alaska"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-cream/80 to-sand/60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="animate-fade-in">
+          <h1 class="heading-xl text-espresso mb-6 text-shadow">
+            Building Science Consulting
+          </h1>
+          <p class="body-text text-warm-gray mb-6">
+            Expert building science consulting for architects, contractors, and building owners in Alaska. We apply building physics principles to design review, construction oversight, energy code compliance, and forensic investigation. Our Alaska-specific expertise ensures your project performs optimally in extreme cold climate conditions.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <GlassButton
+              href="#contact-form"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Request Consultation
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Call (907) 310-3000
+            </GlassButton>
+          </div>
+
+          <!-- Key Credentials -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">15+</div>
+              <div class="text-sm text-espresso">Years Experience</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">Alaska</div>
+              <div class="text-sm text-espresso">Climate Expert</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">Certified</div>
+              <div class="text-sm text-espresso">Building Science</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Image -->
+        <div class="animate-slide-up">
+          <div class="relative rounded-3xl overflow-hidden shadow-elegant">
+            <img
+              src={wallImage.src}
+              alt="Building science consultant reviewing plans and specifications in Alaska"
+              class="w-full h-auto"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulting Services Overview -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Building Science Consulting Services
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Comprehensive consulting services applying building physics and engineering principles to ensure optimal building performance in Alaska's extreme climate.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {consultingServices.map((service, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
+              <div class="text-4xl mb-4">{service.icon}</div>
+              <h3 class="text-xl font-semibold text-espresso mb-3">{service.title}</h3>
+              <p class="text-warm-gray mb-4">{service.description}</p>
+
+              <div class="space-y-2">
+                {service.benefits.map((benefit) => (
+                  <div class="flex items-start gap-2 text-sm">
+                    <span class="text-terra-cotta mt-0.5 flex-shrink-0">✓</span>
+                    <span class="text-warm-gray text-left">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Types -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Project Types We Support
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          From design phase through construction and commissioning, we provide building science expertise for all project types.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        {projectTypes.map((project, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-lg rounded-3xl overflow-hidden shadow-elegant">
+              <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Image -->
+                <div class="relative h-80 lg:h-auto overflow-hidden">
+                  <img
+                    src={project.image.src}
+                    alt={`${project.type} building science consulting in Alaska`}
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-charcoal/20 to-transparent"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="p-8 lg:py-12">
+                  <h3 class="text-2xl font-bold text-espresso mb-3">{project.type}</h3>
+                  <p class="text-warm-gray mb-6">{project.description}</p>
+
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-3">Services Provided:</h4>
+                      <div class="space-y-2">
+                        {project.services.map((service) => (
+                          <div class="flex items-start gap-2 text-sm">
+                            <span class="text-sage-mist mt-0.5 flex-shrink-0">✓</span>
+                            <span class="text-warm-gray">{service}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 class="font-semibold text-espresso mb-3">Client Benefits:</h4>
+                      <div class="space-y-2">
+                        {project.benefits.map((benefit) => (
+                          <div class="flex items-start gap-2 text-sm">
+                            <span class="text-terra-cotta mt-0.5 flex-shrink-0">✓</span>
+                            <span class="text-warm-gray">{benefit}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas of Expertise -->
+  <section class="section-padding bg-gradient-to-br from-sage-mist/10 to-sage-mist/5">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Areas of Technical Expertise
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Deep technical knowledge across all aspects of building science, energy efficiency, and Alaska-specific construction challenges.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {expertiseAreas.map((area, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-8 h-full">
+              <h3 class="text-xl font-bold text-espresso mb-4">{area.area}</h3>
+              <div class="space-y-2">
+                {area.topics.map((topic) => (
+                  <div class="flex items-start gap-2">
+                    <span class="text-terra-cotta mt-1 flex-shrink-0">•</span>
+                    <span class="text-warm-gray">{topic}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulting Process -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Our Consulting Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Structured approach to building science consulting tailored to your project needs and timeline.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {consultingProcess.map((step, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-3xl p-6 h-full">
+              <div class="bg-terra-cotta text-white px-3 py-1 rounded-full text-sm font-medium inline-block mb-4">
+                Phase {index + 1}
+              </div>
+              <h3 class="text-lg font-semibold text-espresso mb-3">{step.phase}</h3>
+              <p class="text-warm-gray text-sm mb-4">{step.description}</p>
+
+              <div class="space-y-2 text-xs">
+                <div class="bg-sage-mist/20 px-3 py-2 rounded-lg">
+                  <span class="font-medium text-espresso">⏱️ Duration:</span>
+                  <span class="text-warm-gray ml-2">{step.duration}</span>
+                </div>
+                <div class="bg-blue-50 px-3 py-2 rounded-lg">
+                  <span class="font-medium text-espresso">📦 Deliverable:</span>
+                  <span class="text-warm-gray ml-2">{step.deliverable}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Issues We Prevent/Solve -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Common Issues We Prevent & Solve
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Building science consulting identifies and resolves problems before they become costly failures.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {typicalIssues.map((item, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.08}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+              <div class="grid lg:grid-cols-4 gap-6">
+                <div>
+                  <h3 class="text-lg font-bold text-espresso mb-2">{item.issue}</h3>
+                  <p class="text-warm-gray text-sm">{item.description}</p>
+                </div>
+                <div class="lg:col-span-3 grid md:grid-cols-2 gap-4">
+                  <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-xl">
+                    <h4 class="font-semibold text-red-900 mb-2">Impact:</h4>
+                    <p class="text-red-800 text-sm">{item.impact}</p>
+                  </div>
+                  <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-xl">
+                    <h4 class="font-semibold text-green-900 mb-2">Solution:</h4>
+                    <p class="text-green-800 text-sm">{item.solution}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Types -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Who We Serve
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Building science consulting tailored to the specific needs of design professionals, contractors, building owners, and legal professionals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {clientTypes.map((client, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.12}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-8 h-full">
+              <h3 class="text-xl font-bold text-espresso mb-4">{client.client}</h3>
+              <div class="space-y-3">
+                {client.needs.map((need) => (
+                  <div class="flex items-start gap-3">
+                    <span class="text-sage-mist mt-1 flex-shrink-0 text-lg">✓</span>
+                    <span class="text-warm-gray">{need}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-gradient-to-br from-sage-mist/10 to-sage-mist/5">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Building Consulting FAQ
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about building science consulting services in Alaska.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-white/50 backdrop-blur-sm rounded-2xl p-6"
+            style={`animation-delay: ${index * 0.05}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-br from-cream to-sand">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Ready to Discuss Your Project?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Contact us to discuss how building science consulting can help your project succeed. We provide expert guidance for architects, contractors, and building owners throughout Alaska.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Request Consultation
+        </GlassButton>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">15+ Years Experience</div>
+          <div class="text-espresso text-sm">Alaska building science expertise</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Certified Professional</div>
+          <div class="text-espresso text-sm">Building science & energy modeling</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Statewide Service</div>
+          <div class="text-espresso text-sm">Anchorage to remote Alaska</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>

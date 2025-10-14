@@ -24,6 +24,11 @@ export const componentRegistry = {
       path: '@components/ui/GlassNavbar',
       description: 'Glass effect navigation bar with scroll effects',
       props: []
+    },
+    GalleryGrid: {
+      path: '@components/ui/GalleryGrid',
+      description: 'Image gallery grid with lightbox modal and category filtering',
+      props: ['images', 'columns']
     }
   },
   
@@ -54,6 +59,40 @@ export const componentRegistry = {
     Footer: {
       path: '@components/sections/Footer',
       description: 'Site footer with company info',
+      props: []
+    }
+  },
+
+  // Service Pages
+  services: {
+    SprayFoam: {
+      path: '@pages/services/spray-foam',
+      description: 'Closed cell spray foam insulation service page with vapor barrier comparison',
+      props: []
+    },
+    CrawlSpace: {
+      path: '@pages/services/crawl-space-insulation',
+      description: 'Crawl space insulation and encapsulation service page',
+      props: []
+    },
+    ThermalInspections: {
+      path: '@pages/services/thermal-inspections',
+      description: 'Thermal imaging and infrared inspection service page',
+      props: []
+    },
+    InsulationRemoval: {
+      path: '@pages/services/insulation-removal',
+      description: 'Old insulation removal and replacement service page',
+      props: []
+    },
+    Weatherization: {
+      path: '@pages/services/weatherization',
+      description: 'Comprehensive weatherization and energy audit page with extensive home performance content, blower door testing, and house-as-a-system approach',
+      props: []
+    },
+    BuildingConsultant: {
+      path: '@pages/services/building-consultant',
+      description: 'Building science consulting for architects, contractors, and building owners',
       props: []
     }
   },

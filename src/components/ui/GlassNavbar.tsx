@@ -5,6 +5,7 @@ const GlassNavbar: React.FC = () => {
   const [activeTab, setActiveTab] = useState('Home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +27,7 @@ const GlassNavbar: React.FC = () => {
       else activeItem = 'Home';
     } else if (currentPath.startsWith('/services')) {
       activeItem = 'Solutions';
-    } else if (currentPath.startsWith('/about')) {
+    } else if (currentPath.startsWith('/about') || currentPath.startsWith('/gallery')) {
       activeItem = 'About';
     } else if (currentPath.startsWith('/blog')) {
       activeItem = 'Blog';
@@ -40,16 +41,23 @@ const GlassNavbar: React.FC = () => {
     { label: 'Open Cell Spray Foam', href: '/services/open-cell-spray-foam' },
     { label: 'Attic Insulation', href: '/services/attic-insulation' },
     { label: 'Crawl Space Insulation', href: '/services/crawl-space-insulation' },
+    { label: 'Weatherization & Energy Audits', href: '/services/weatherization' },
     { label: 'Thermal Inspections', href: '/services/thermal-inspections' },
+    { label: 'Building Science Consulting', href: '/services/building-consultant' },
     { label: 'Insulation Removal', href: '/services/insulation-removal' },
     { label: 'Ice Dam Prevention', href: '/ice-dam-prevention' },
   ];
 
+  const aboutItems = [
+    { label: 'About Us', href: '/about' },
+    { label: 'Gallery', href: '/gallery' },
+  ];
+
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services', hasDropdown: true },
+    { label: 'Services', href: '/services', hasDropdown: true, dropdownType: 'services' },
     { label: 'Solutions', href: '/solutions' },
-    { label: 'About', href: '/about' },
+    { label: 'About', href: '/about', hasDropdown: true, dropdownType: 'about' },
     { label: 'Blog', href: '/blog' },
   ];
 
@@ -116,12 +124,16 @@ const GlassNavbar: React.FC = () => {
                 const isActive = activeTab === item.label;
 
                 if (item.hasDropdown) {
+                  const isServicesDropdown = item.dropdownType === 'services';
+                  const isAboutDropdown = item.dropdownType === 'about';
+                  const showDropdown = isServicesDropdown ? showServicesDropdown : showAboutDropdown;
+
                   return (
                     <div
                       key={item.label}
                       className="relative"
-                      onMouseEnter={() => setShowServicesDropdown(true)}
-                      onMouseLeave={() => setShowServicesDropdown(false)}
+                      onMouseEnter={() => isServicesDropdown ? setShowServicesDropdown(true) : setShowAboutDropdown(true)}
+                      onMouseLeave={() => isServicesDropdown ? setShowServicesDropdown(false) : setShowAboutDropdown(false)}
                     >
                       <button
                         onClick={() => handleNavClick(item.label)}
@@ -143,7 +155,7 @@ const GlassNavbar: React.FC = () => {
                         </span>
                         <ChevronDown
                           size={12}
-                          className={`transition-transform duration-200 ${showServicesDropdown ? 'rotate-180' : ''}`}
+                          className={`transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`}
                           style={{
                             filter: 'drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8))'
                           }}
@@ -309,6 +321,53 @@ const GlassNavbar: React.FC = () => {
                   onClick={() => setShowServicesDropdown(false)}
                 >
                   {service.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* About Dropdown - Rendered outside navbar container */}
+      {showAboutDropdown && (
+        <div
+          className="fixed top-20 left-1/2 -translate-x-1/2 w-48 z-50"
+          style={{
+            animation: 'fadeInScale 0.2s ease-out'
+          }}
+          onMouseEnter={() => setShowAboutDropdown(true)}
+          onMouseLeave={() => setShowAboutDropdown(false)}
+        >
+          <div
+            className="rounded-2xl p-4 border border-white/20 shadow-elegant backdrop-blur-xl overflow-hidden"
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.12)',
+              backdropFilter: 'blur(20px) saturate(1.8)',
+              WebkitBackdropFilter: 'blur(20px) saturate(1.8)',
+              boxShadow: `0 12px 40px 0 rgba(0, 0, 0, 0.15),
+                         inset 0 1px 0 0 rgba(255, 255, 255, 0.25),
+                         inset 0 -1px 0 0 rgba(0, 0, 0, 0.08)`,
+            }}
+          >
+            <div
+              className="absolute inset-0 rounded-2xl pointer-events-none"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)',
+              }}
+            />
+
+            <div className="relative z-10 space-y-1">
+              {aboutItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block px-3 py-2 text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
+                  style={{
+                    textShadow: '1px 1px 3px rgba(0, 0, 0, 0.7)'
+                  }}
+                  onClick={() => setShowAboutDropdown(false)}
+                >
+                  {item.label}
                 </a>
               ))}
             </div>

@@ -1,0 +1,878 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GlassButton from '../../components/ui/GlassButton.tsx';
+import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
+import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+
+const weatherizationServices = [
+  {
+    title: 'Blower Door Testing',
+    description: 'Quantify air leakage and identify infiltration points throughout the building envelope',
+    icon: '🌪️',
+    benefits: ['Measure ACH50 air changes', 'Locate hidden air leaks', 'Document improvement results', 'Meet building code requirements']
+  },
+  {
+    title: 'Energy Audits',
+    description: 'Comprehensive home performance assessment with detailed recommendations',
+    icon: '⚡',
+    benefits: ['Complete energy analysis', 'Prioritized improvements', 'ROI calculations', 'Utility rebate guidance']
+  },
+  {
+    title: 'Infrared Inspections',
+    description: 'Advanced thermal imaging to detect insulation gaps and thermal bridging',
+    icon: '🔍',
+    benefits: ['Visualize heat loss', 'Find missing insulation', 'Detect moisture issues', 'Verify air sealing work']
+  },
+  {
+    title: 'HVAC System Analysis',
+    description: 'Evaluate heating system efficiency and duct system performance',
+    icon: '🌡️',
+    benefits: ['Optimize system sizing', 'Improve distribution', 'Reduce energy waste', 'Enhance comfort']
+  }
+];
+
+const houseAsSystemConcepts = [
+  {
+    category: 'Building Envelope',
+    description: 'The thermal boundary that separates conditioned from unconditioned space',
+    topics: [
+      {
+        title: 'Air Barrier System',
+        content: 'Continuous air barrier prevents uncontrolled air infiltration and exfiltration, which accounts for 25-40% of heating/cooling loads in Alaska homes.',
+        alaska: 'Critical in Alaska\'s extreme climate - even small gaps can lead to massive heat loss and ice dams.'
+      },
+      {
+        title: 'Thermal Barrier System',
+        content: 'Continuous insulation with minimal thermal bridging reduces conductive heat loss through building assemblies.',
+        alaska: 'Alaska requires R-49+ attics, R-21+ walls, R-30+ floors to handle -40°F design temperatures.'
+      },
+      {
+        title: 'Moisture Control',
+        content: 'Proper vapor management prevents condensation within building assemblies that can lead to mold, rot, and structural damage.',
+        alaska: 'Extreme temperature differentials in Alaska create high moisture drive - monolithic vapor barriers essential.'
+      }
+    ]
+  },
+  {
+    category: 'Pressure Dynamics',
+    description: 'Understanding and controlling air pressure differentials within the home',
+    topics: [
+      {
+        title: 'Stack Effect',
+        content: 'Warm air rises and creates pressure differentials that drive air infiltration at the bottom and exfiltration at the top of the building.',
+        alaska: 'Amplified in Alaska - a 60°F temperature difference creates powerful stack effect driving massive air movement.'
+      },
+      {
+        title: 'Mechanical Pressure',
+        content: 'HVAC systems, exhaust fans, and combustion appliances create positive or negative pressure that affects air leakage patterns.',
+        alaska: 'Critical for combustion safety in tight Alaska homes - proper makeup air prevents backdrafting.'
+      },
+      {
+        title: 'Wind Pressure',
+        content: 'Wind creates positive pressure on windward side and negative pressure on leeward side, driving infiltration through envelope defects.',
+        alaska: 'Alaska\'s high wind conditions magnify envelope defects - proper air sealing essential.'
+      }
+    ]
+  },
+  {
+    category: 'HVAC Interaction',
+    description: 'How heating, cooling, and ventilation systems affect building performance',
+    topics: [
+      {
+        title: 'System Sizing',
+        content: 'Right-sizing HVAC equipment based on actual building loads prevents short cycling, maintains comfort, and optimizes efficiency.',
+        alaska: 'Manual J load calculations essential in Alaska - oversizing common but wastes energy and reduces comfort.'
+      },
+      {
+        title: 'Distribution System',
+        content: 'Duct system design, sealing, and insulation ensures even heating/cooling and prevents energy waste.',
+        alaska: 'Duct leakage to unconditioned attics in Alaska can waste 30%+ of heating energy - sealing critical.'
+      },
+      {
+        title: 'Ventilation Strategy',
+        content: 'Controlled mechanical ventilation provides fresh air while recovering heat energy in tight homes.',
+        alaska: 'HRV/ERV systems essential in tight Alaska homes - recover 60-90% of heat from exhaust air.'
+      }
+    ]
+  },
+  {
+    category: 'Indoor Air Quality',
+    description: 'Managing contaminants and moisture in conditioned space',
+    topics: [
+      {
+        title: 'Source Control',
+        content: 'Eliminating or isolating pollutant sources prevents indoor air quality problems at the source.',
+        alaska: 'Combustion appliances, radon, and building materials require special attention in tight Alaska homes.'
+      },
+      {
+        title: 'Dilution Ventilation',
+        content: 'Continuous or intermittent fresh air introduction dilutes indoor contaminants to acceptable levels.',
+        alaska: 'ASHRAE 62.2 ventilation required in tight homes - typically 40-80 CFM continuous in Alaska residences.'
+      },
+      {
+        title: 'Humidity Control',
+        content: 'Maintaining 30-50% relative humidity prevents mold growth, dust mites, and comfort issues.',
+        alaska: 'Winter: prevent over-humidification. Summer: control moisture from crawl spaces and outdoor air.'
+      }
+    ]
+  },
+  {
+    category: 'Moisture Management',
+    description: 'Controlling liquid water, water vapor, and humidity',
+    topics: [
+      {
+        title: 'Bulk Water Control',
+        content: 'Proper grading, gutters, and drainage prevents water intrusion that causes major damage.',
+        alaska: 'Spring melt and ice dams create unique challenges - proper roof drainage and ice dam prevention critical.'
+      },
+      {
+        title: 'Vapor Diffusion',
+        content: 'Vapor barriers control water vapor movement through building assemblies based on climate zone.',
+        alaska: 'Interior vapor barriers required in Alaska (Climate Zone 7) - typically 6 mil poly or closed cell foam.'
+      },
+      {
+        title: 'Air Transported Moisture',
+        content: 'Air leakage moves far more moisture than diffusion - air sealing is the primary moisture control strategy.',
+        alaska: 'Air leakage can move 100x more moisture than diffusion - air sealing is most important moisture control.'
+      }
+    ]
+  },
+  {
+    category: 'Building Science Fundamentals',
+    description: 'Understanding heat, air, and moisture movement through buildings',
+    topics: [
+      {
+        title: 'Heat Transfer Mechanisms',
+        content: 'Conduction through materials, convection via air movement, radiation across air spaces, and evaporation cooling.',
+        alaska: 'All four mechanisms contribute to heat loss - comprehensive approach required for Alaska\'s extreme climate.'
+      },
+      {
+        title: 'Dew Point & Condensation',
+        content: 'Understanding where moisture will condense based on temperature and humidity conditions.',
+        alaska: 'Cold surfaces in Alaska readily condense moisture - proper insulation and vapor barriers prevent interstitial condensation.'
+      },
+      {
+        title: 'Thermal Bridging',
+        content: 'Conductive heat loss through structural elements that bypass insulation reduces effective R-value.',
+        alaska: 'Metal fasteners, studs, and joists create thermal bridges - continuous insulation mitigates in Alaska construction.'
+      }
+    ]
+  }
+];
+
+const energyAuditProcess = [
+  {
+    step: '1',
+    title: 'Pre-Audit Interview',
+    description: 'Discuss energy bills, comfort issues, renovation history, and homeowner concerns',
+    duration: '15-30 minutes',
+    deliverable: 'Understanding of home history and priorities'
+  },
+  {
+    step: '2',
+    title: 'Blower Door Testing',
+    description: 'Depressurize home to -50 Pascals and measure air leakage rate (CFM50 and ACH50)',
+    duration: '30-45 minutes',
+    deliverable: 'Quantified air leakage metrics'
+  },
+  {
+    step: '3',
+    title: 'Thermal Imaging',
+    description: 'Comprehensive infrared inspection during blower door test to locate air leakage and insulation defects',
+    duration: '45-60 minutes',
+    deliverable: 'Documented thermal anomalies with photos'
+  },
+  {
+    step: '4',
+    title: 'Building Envelope Assessment',
+    description: 'Evaluate insulation levels, air sealing, windows, doors, and foundation details',
+    duration: '30-45 minutes',
+    deliverable: 'Complete envelope inventory'
+  },
+  {
+    step: '5',
+    title: 'HVAC System Evaluation',
+    description: 'Assess heating system type, age, efficiency, distribution system, and thermostat control',
+    duration: '20-30 minutes',
+    deliverable: 'System performance analysis'
+  },
+  {
+    step: '6',
+    title: 'Combustion Safety Testing',
+    description: 'Test for backdrafting, CO levels, and spillage on all combustion appliances',
+    duration: '15-30 minutes',
+    deliverable: 'Safety verification and recommendations'
+  },
+  {
+    step: '7',
+    title: 'Energy Modeling',
+    description: 'Input building details into energy modeling software to calculate current and post-retrofit consumption',
+    duration: '2-3 hours (office work)',
+    deliverable: 'Energy use breakdown and savings projections'
+  },
+  {
+    step: '8',
+    title: 'Comprehensive Report',
+    description: 'Detailed report with findings, prioritized recommendations, ROI calculations, and utility rebate information',
+    duration: '3-4 hours (office work)',
+    deliverable: 'Professional energy audit report with implementation roadmap'
+  }
+];
+
+const blowerDoorMetrics = [
+  {
+    standard: 'IECC 2021 (Alaska Code)',
+    requirement: '3.0 ACH50 or less',
+    description: 'Current Alaska building code requirement for new construction and major renovations'
+  },
+  {
+    standard: 'ENERGY STAR Certified Homes',
+    requirement: '3.0 ACH50 or less',
+    description: 'Required for ENERGY STAR certification in Climate Zone 7 (Alaska)'
+  },
+  {
+    standard: 'Passive House (PHIUS)',
+    requirement: '0.6 ACH50 or less',
+    description: 'Ultra-tight standard for maximum energy performance'
+  },
+  {
+    standard: 'Typical Existing Alaska Home',
+    requirement: '8-15 ACH50',
+    description: 'Average leakage in older Alaska homes - significant improvement potential'
+  }
+];
+
+const commonProblems = [
+  {
+    problem: 'High Energy Bills',
+    causes: [
+      'Excessive air leakage',
+      'Inadequate insulation levels',
+      'Inefficient heating system',
+      'Duct leakage to unconditioned spaces',
+      'Single pane windows or failed glazing'
+    ],
+    solution: 'Comprehensive energy audit identifies and prioritizes improvements for maximum ROI'
+  },
+  {
+    problem: 'Comfort Issues',
+    causes: [
+      'Drafts from air leakage',
+      'Cold floors and walls',
+      'Uneven temperatures between rooms',
+      'HVAC system oversized or undersized',
+      'Poor distribution system design'
+    ],
+    solution: 'Building science approach addresses root causes rather than treating symptoms'
+  },
+  {
+    problem: 'Ice Dams',
+    causes: [
+      'Attic air leakage allows heat into attic',
+      'Insufficient attic insulation',
+      'Recessed lights penetrate air barrier',
+      'Inadequate attic ventilation',
+      'Complex roof geometry'
+    ],
+    solution: 'Air sealing and insulation improvements eliminate heat loss that causes ice dams'
+  },
+  {
+    problem: 'Indoor Air Quality Concerns',
+    causes: [
+      'Inadequate ventilation in tight home',
+      'Combustion appliances backdrafting',
+      'High humidity and condensation',
+      'Radon infiltration from soil',
+      'Mold growth from moisture problems'
+    ],
+    solution: 'Balanced ventilation and source control maintains healthy indoor environment'
+  },
+  {
+    problem: 'Moisture & Condensation',
+    causes: [
+      'Air leakage transporting moisture',
+      'Missing or damaged vapor barriers',
+      'Cold surfaces below dew point',
+      'Inadequate ventilation',
+      'Plumbing leaks or bulk water intrusion'
+    ],
+    solution: 'Moisture management strategy controls all four moisture transport mechanisms'
+  }
+];
+
+const weatherizationBenefits = [
+  {
+    benefit: 'Energy Savings',
+    description: '20-40% reduction in heating costs typical after comprehensive weatherization',
+    stat: '30% Average',
+    icon: '💰'
+  },
+  {
+    benefit: 'Improved Comfort',
+    description: 'Eliminate drafts, cold spots, and temperature swings throughout the home',
+    stat: '100% Better',
+    icon: '🏡'
+  },
+  {
+    benefit: 'Healthier Indoor Air',
+    description: 'Controlled ventilation and moisture management prevent mold and improve air quality',
+    stat: 'Healthier Home',
+    icon: '🌿'
+  },
+  {
+    benefit: 'Increased Home Value',
+    description: 'Energy efficient homes command premium prices and sell faster',
+    stat: 'Higher Value',
+    icon: '📈'
+  }
+];
+
+const faqs = [
+  {
+    question: 'What is home performance and how is it different from just adding insulation?',
+    answer: 'Home performance is a comprehensive building science approach that treats the house as a system. Rather than just adding insulation, we diagnose the root causes of energy waste, comfort problems, and moisture issues. We use diagnostic testing (blower door, thermal imaging) to identify specific problems, then prioritize solutions based on building science principles and ROI. This systematic approach delivers better results than piecemeal improvements.'
+  },
+  {
+    question: 'What is blower door testing and why is it important?',
+    answer: 'A blower door is a diagnostic tool that measures the airtightness of buildings. We install a calibrated fan in an exterior door, depressurize the home to -50 Pascals, and measure air leakage in CFM50 (cubic feet per minute) and ACH50 (air changes per hour). This quantifies how leaky the home is and helps us locate air leakage sites using thermal imaging and smoke. Alaska building code now requires 3.0 ACH50 or tighter for new construction.'
+  },
+  {
+    question: 'How does the "house as a system" concept apply to Alaska homes?',
+    answer: 'In Alaska\'s extreme climate, everything is interconnected. Air sealing reduces heat loss but requires mechanical ventilation for indoor air quality. Adding insulation changes HVAC load calculations. Tightening the envelope affects pressure dynamics and combustion safety. Our building science approach considers these interactions to ensure improvements work together rather than creating new problems. For example, we never tighten a home without addressing ventilation and combustion safety.'
+  },
+  {
+    question: 'Can a home be too tight? What about fresh air?',
+    answer: 'Yes, homes can be too tight without proper mechanical ventilation. Alaska code requires ventilation systems (typically HRV or ERV) in homes tighter than 5 ACH50. These systems provide continuous fresh air while recovering 60-90% of heat energy from exhaust air. The goal is to build tight and ventilate right - control air leakage and provide intentional, filtered, heat-recovered ventilation rather than relying on random infiltration.'
+  },
+  {
+    question: 'What is the difference between an energy audit and a home energy assessment?',
+    answer: 'The terms are often used interchangeably, but a comprehensive energy audit includes diagnostic testing (blower door, thermal imaging), combustion safety testing, detailed energy modeling, and prioritized recommendations with ROI calculations. A basic walkthrough assessment may just provide general recommendations without diagnostic testing. Our weatherization audits include full diagnostics and modeling to ensure recommendations are based on actual building performance data.'
+  },
+  {
+    question: 'How much does a comprehensive energy audit cost and what do I get?',
+    answer: 'Our comprehensive weatherization audits start at $450-$650 depending on home size and scope. You receive blower door testing results, thermal imaging documentation, combustion safety testing, detailed energy modeling, prioritized recommendations with cost estimates and ROI calculations, utility rebate information, and a comprehensive written report. Many improvements pay for the audit cost in the first year through energy savings.'
+  },
+  {
+    question: 'What utility rebates are available for weatherization improvements in Alaska?',
+    answer: 'Alaska utility rebates vary by location and utility provider. Common rebates include $200-$400 for insulation upgrades, $100-$300 for air sealing, $300-$500 for heat pump water heaters, and $500-$1,000 for air source heat pumps. We provide specific rebate information for your utility as part of our energy audit report and can help with rebate application documentation.'
+  },
+  {
+    question: 'Should I improve insulation or upgrade my heating system first?',
+    answer: 'Generally, reduce the load first, then right-size equipment. Improving insulation and air sealing reduces heating loads by 30-50%, allowing you to downsize equipment and save on replacement costs. Installing a new system before air sealing means you\'ll buy a larger, more expensive system than necessary. Our energy audit prioritizes improvements based on building science principles and ROI to guide your investment decisions.'
+  },
+  {
+    question: 'How does weatherization prevent ice dams in Alaska?',
+    answer: 'Ice dams form when heat escaping into the attic melts snow on the roof, which then refreezes at the eaves. The solution is keeping heat inside the home through comprehensive air sealing (especially around top plates, recessed lights, and penetrations) combined with adequate insulation (R-49+ in Alaska attics). Attic ventilation is secondary - air sealing is the primary solution. Our thermal imaging during blower door testing pinpoints exactly where heat is escaping.'
+  },
+  {
+    question: 'What is thermal bridging and why does it matter in Alaska?',
+    answer: 'Thermal bridging occurs when conductive materials (studs, joists, fasteners) bypass insulation and create heat loss pathways. A 2x6 wall with R-21 insulation has an effective R-value of only R-14-16 due to thermal bridging. In Alaska\'s extreme climate, this represents significant heat loss. Solutions include continuous exterior insulation, insulated sheathing, spray foam to reduce framing member exposure, and advanced framing techniques to minimize thermal bridging.'
+  }
+];
+---
+
+<BaseLayout
+  title="Weatherization & Energy Audits Anchorage Alaska - Home Performance"
+  description="Comprehensive weatherization and energy audit services in Anchorage, AK. Blower door testing, infrared inspections, building science approach. Reduce energy costs 30%+ with house-as-a-system improvements. Free consultation."
+  keywords="weatherization Anchorage, energy audit Alaska, blower door testing Anchorage, home performance Alaska, air sealing Anchorage, infrared inspection Alaska, HVAC efficiency, house as a system, building science Alaska, energy efficiency Anchorage"
+>
+  <!-- Hero Section -->
+  <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src={atticImage.src}
+        alt="Professional weatherization and energy audit in Anchorage Alaska home"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-cream/80 to-sand/60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 container-padding max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="animate-fade-in">
+          <h1 class="heading-xl text-espresso mb-6 text-shadow">
+            Weatherization & Home Performance
+          </h1>
+          <p class="body-text text-warm-gray mb-6">
+            Comprehensive weatherization services using building science principles and advanced diagnostics. Our energy audits with blower door testing and thermal imaging identify exactly where your home is wasting energy, costing you money, and compromising comfort. We treat your house as a system to deliver lasting improvements.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <GlassButton
+              href="#contact-form"
+              variant="primary"
+              size="lg"
+              client:visible
+            >
+              Schedule Energy Audit
+            </GlassButton>
+            <GlassButton
+              href="tel:+19073103000"
+              variant="secondary"
+              size="lg"
+              client:visible
+            >
+              Call (907) 310-3000
+            </GlassButton>
+          </div>
+
+          <!-- Key Stats -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">30%</div>
+              <div class="text-sm text-espresso">Energy Savings</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">Certified</div>
+              <div class="text-sm text-espresso">Building Science</div>
+            </div>
+            <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 text-center">
+              <div class="text-2xl font-bold text-terra-cotta">$450+</div>
+              <div class="text-sm text-espresso">Starting Price</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Image -->
+        <div class="animate-slide-up">
+          <div class="relative rounded-3xl overflow-hidden shadow-elegant">
+            <img
+              src={atticImage.src}
+              alt="Energy audit with blower door testing and thermal imaging in Alaska"
+              class="w-full h-auto"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weatherization Services Overview -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Comprehensive Weatherization Services
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Advanced diagnostic testing and building science expertise to identify and solve energy waste, comfort problems, and moisture issues in Alaska homes.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {weatherizationServices.map((service, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
+              <div class="text-4xl mb-4">{service.icon}</div>
+              <h3 class="text-xl font-semibold text-espresso mb-3">{service.title}</h3>
+              <p class="text-warm-gray mb-4">{service.description}</p>
+
+              <div class="space-y-2">
+                {service.benefits.map((benefit) => (
+                  <div class="flex items-start gap-2 text-sm">
+                    <span class="text-terra-cotta mt-0.5 flex-shrink-0">✓</span>
+                    <span class="text-warm-gray text-left">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- House as a System - Comprehensive Section -->
+  <section class="section-padding bg-gradient-to-br from-sage-mist/10 to-sage-mist/5">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Understanding Your House as a System
+        </h2>
+        <p class="body-text text-warm-gray max-w-4xl mx-auto">
+          Modern building science recognizes that homes are complex systems where all components interact. Changes to one part of the system affect the entire home. Our comprehensive approach considers these interactions to deliver improvements that work together for maximum performance, efficiency, and durability in Alaska's extreme climate.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        {houseAsSystemConcepts.map((concept, conceptIndex) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${conceptIndex * 0.1}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-lg rounded-3xl p-8 shadow-elegant">
+              <!-- Category Header -->
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold text-espresso mb-2">{concept.category}</h3>
+                <p class="text-warm-gray">{concept.description}</p>
+              </div>
+
+              <!-- Topics -->
+              <div class="space-y-6">
+                {concept.topics.map((topic, topicIndex) => (
+                  <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-2xl p-6">
+                    <h4 class="text-lg font-semibold text-espresso mb-3">{topic.title}</h4>
+                    <p class="text-warm-gray mb-4 leading-relaxed">{topic.content}</p>
+
+                    {topic.alaska && (
+                      <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-xl">
+                        <div class="flex items-start gap-3">
+                          <span class="text-2xl">🏔️</span>
+                          <div>
+                            <h5 class="font-semibold text-blue-900 mb-1">Alaska-Specific Considerations:</h5>
+                            <p class="text-blue-800 text-sm">{topic.alaska}</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Key Takeaway -->
+      <div class="mt-12">
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-8 text-white">
+          <div class="max-w-4xl mx-auto">
+            <div class="flex items-start gap-6">
+              <div class="text-5xl">🏠</div>
+              <div>
+                <h3 class="text-2xl font-bold mb-4">The Building Science Advantage</h3>
+                <p class="text-blue-100 mb-4 leading-relaxed">
+                  Understanding how your house works as an integrated system allows us to diagnose root causes rather than treating symptoms. This scientific approach ensures improvements work together synergistically rather than creating unintended consequences.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-blue-100">
+                  <div>
+                    <h4 class="font-bold text-white mb-2">Traditional Approach Problems:</h4>
+                    <div class="space-y-1">
+                      <div>• Adds insulation without fixing air leakage</div>
+                      <div>• Tightens home without adding ventilation</div>
+                      <div>• Treats symptoms instead of root causes</div>
+                      <div>• May create moisture or IAQ problems</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white mb-2">Building Science Approach:</h4>
+                    <div class="space-y-1">
+                      <div>• Uses diagnostics to identify actual problems</div>
+                      <div>• Considers system interactions and safety</div>
+                      <div>• Prioritizes improvements based on impact</div>
+                      <div>• Ensures durable, healthy, efficient results</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Energy Audit Process -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Comprehensive Energy Audit Process
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Our detailed energy audit process uses advanced diagnostics and building science principles to identify opportunities for improvement and provide actionable recommendations with ROI calculations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {energyAuditProcess.map((step, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-3xl p-6 h-full">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-terra-cotta rounded-full flex items-center justify-center flex-shrink-0 text-white text-xl font-bold">
+                  {step.step}
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-espresso mb-2">{step.title}</h3>
+                  <p class="text-warm-gray text-sm mb-3">{step.description}</p>
+                  <div class="flex items-center gap-4 text-xs">
+                    <div class="bg-sage-mist/20 px-3 py-1 rounded-full">
+                      <span class="font-medium text-espresso">⏱️ {step.duration}</span>
+                    </div>
+                  </div>
+                  <div class="mt-3 pt-3 border-t border-warm-gray/20">
+                    <p class="text-xs text-warm-gray">
+                      <strong class="text-espresso">Deliverable:</strong> {step.deliverable}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Total Deliverable -->
+      <div class="mt-12">
+        <div class="bg-gradient-to-br from-sage-mist/20 to-sage-accent/20 rounded-3xl p-8 border border-sage-mist/30">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-espresso mb-4">What You Receive</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6">
+                <h4 class="font-semibold text-espresso mb-2">📊 Diagnostic Results</h4>
+                <ul class="text-sm text-warm-gray space-y-1">
+                  <li>• Blower door test results (CFM50, ACH50)</li>
+                  <li>• Thermal imaging documentation</li>
+                  <li>• Combustion safety test results</li>
+                  <li>• Building envelope inventory</li>
+                </ul>
+              </div>
+              <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6">
+                <h4 class="font-semibold text-espresso mb-2">📈 Energy Analysis</h4>
+                <ul class="text-sm text-warm-gray space-y-1">
+                  <li>• Current energy use breakdown</li>
+                  <li>• Post-retrofit projections</li>
+                  <li>• Annual savings estimates</li>
+                  <li>• Energy modeling report</li>
+                </ul>
+              </div>
+              <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6">
+                <h4 class="font-semibold text-espresso mb-2">🎯 Recommendations</h4>
+                <ul class="text-sm text-warm-gray space-y-1">
+                  <li>• Prioritized improvement list</li>
+                  <li>• Cost estimates and ROI calculations</li>
+                  <li>• Utility rebate information</li>
+                  <li>• Implementation roadmap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blower Door Testing Standards -->
+  <section class="section-padding bg-cream">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Blower Door Testing Standards
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Air leakage testing quantifies how tight your home is and provides a baseline for improvement. Here's how different standards compare and what they mean for Alaska homes.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {blowerDoorMetrics.map((metric, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.15}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6 h-full">
+              <h3 class="text-xl font-semibold text-espresso mb-3">{metric.standard}</h3>
+              <div class="bg-sage-mist/20 rounded-xl p-4 mb-4">
+                <div class="text-3xl font-bold text-sage-mist text-center">{metric.requirement}</div>
+              </div>
+              <p class="text-warm-gray text-sm">{metric.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8">
+          <h3 class="text-xl font-bold text-espresso mb-4">Understanding ACH50</h3>
+          <p class="text-warm-gray mb-4">
+            ACH50 (Air Changes per Hour at 50 Pascals pressure) measures how many times the entire volume of air in your home would be replaced in one hour under test conditions. Lower numbers mean tighter homes with less air leakage.
+          </p>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="bg-white/50 rounded-xl p-4">
+              <div class="font-bold text-red-600 mb-1">15+ ACH50</div>
+              <div class="text-warm-gray">Very leaky - common in older Alaska homes. Massive energy waste and comfort problems.</div>
+            </div>
+            <div class="bg-white/50 rounded-xl p-4">
+              <div class="font-bold text-orange-600 mb-1">5-8 ACH50</div>
+              <div class="text-warm-gray">Moderately leaky - typical Alaska home. Significant improvement potential.</div>
+            </div>
+            <div class="bg-white/50 rounded-xl p-4">
+              <div class="font-bold text-green-600 mb-1">≤3 ACH50</div>
+              <div class="text-warm-gray">Tight - meets Alaska code. Mechanical ventilation required for air quality.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Problems & Solutions -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Common Problems We Solve
+        </h2>
+        <p class="body-text text-warm-gray max-w-3xl mx-auto">
+          Our building science approach identifies root causes of common problems and provides comprehensive solutions tailored to Alaska's extreme climate.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        {commonProblems.map((item, index) => (
+          <div
+            class="animate-slide-up"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-3xl p-8">
+              <div class="grid lg:grid-cols-3 gap-6">
+                <div>
+                  <h3 class="text-xl font-bold text-espresso mb-4">{item.problem}</h3>
+                  <div class="bg-sage-mist/20 rounded-xl p-4">
+                    <h4 class="font-semibold text-espresso mb-2">Building Science Solution:</h4>
+                    <p class="text-warm-gray text-sm">{item.solution}</p>
+                  </div>
+                </div>
+                <div class="lg:col-span-2">
+                  <h4 class="font-semibold text-espresso mb-3">Common Root Causes:</h4>
+                  <div class="grid md:grid-cols-2 gap-3">
+                    {item.causes.map((cause) => (
+                      <div class="flex items-start gap-2 bg-white/50 rounded-xl p-3">
+                        <span class="text-red-500 mt-0.5 flex-shrink-0">⚠</span>
+                        <span class="text-warm-gray text-sm">{cause}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section-padding bg-gradient-to-br from-sage-mist/10 to-sage-mist/5">
+    <div class="container-padding max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Benefits of Comprehensive Weatherization
+        </h2>
+        <p class="body-text text-warm-gray max-w-2xl mx-auto">
+          Professional weatherization delivers multiple benefits beyond just energy savings.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {weatherizationBenefits.map((item, index) => (
+          <div
+            class="animate-slide-up text-center"
+            style={`animation-delay: ${index * 0.1}s`}
+          >
+            <div class="bg-white/50 backdrop-blur-sm rounded-3xl p-6">
+              <div class="text-4xl mb-4">{item.icon}</div>
+              <div class="text-2xl font-bold text-terra-cotta mb-2">{item.stat}</div>
+              <h3 class="text-lg font-semibold text-espresso mb-2">{item.benefit}</h3>
+              <p class="text-warm-gray text-sm">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-soft-white">
+    <div class="container-padding max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="heading-lg text-espresso mb-4">
+          Weatherization & Home Performance FAQ
+        </h2>
+        <p class="body-text text-warm-gray">
+          Common questions about weatherization, energy audits, and building science in Alaska.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <div
+            class="animate-slide-up bg-gradient-to-br from-taupe/10 to-khaki/10 rounded-2xl p-6"
+            style={`animation-delay: ${index * 0.05}s`}
+          >
+            <h3 class="text-lg font-semibold text-espresso mb-3">{faq.question}</h3>
+            <p class="text-warm-gray leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding bg-gradient-to-br from-cream to-sand">
+    <div class="container-padding max-w-4xl mx-auto text-center">
+      <h2 class="heading-md text-espresso mb-6">
+        Ready to Improve Your Home's Performance?
+      </h2>
+      <p class="body-text text-warm-gray mb-8 max-w-2xl mx-auto">
+        Schedule a comprehensive energy audit today. Our building science experts will diagnose your home's performance issues and provide prioritized recommendations for maximum energy savings, comfort, and durability in Alaska's extreme climate.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <GlassButton
+          href="tel:+19073103000"
+          variant="primary"
+          size="lg"
+          client:visible
+        >
+          Call (907) 310-3000
+        </GlassButton>
+        <GlassButton
+          href="#contact-form"
+          variant="secondary"
+          size="lg"
+          client:visible
+        >
+          Schedule Energy Audit
+        </GlassButton>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Building Science Certified</div>
+          <div class="text-espresso text-sm">Professional energy auditors</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Advanced Diagnostics</div>
+          <div class="text-espresso text-sm">Blower door & thermal imaging</div>
+        </div>
+        <div class="bg-white/30 backdrop-blur-sm rounded-2xl p-4">
+          <div class="text-xl font-bold text-terra-cotta mb-1">Comprehensive Reports</div>
+          <div class="text-espresso text-sm">Detailed recommendations & ROI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .animate-slide-up {
+    opacity: 0;
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+</style>
