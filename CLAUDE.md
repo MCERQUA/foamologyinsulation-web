@@ -333,6 +333,32 @@ Always use these classes from `global.css` OR replicate the exact pattern in inl
   - Medium: `px-8 py-3.5`
   - Large: `px-10 py-4`
 
+#### Hero Section Padding (Floating Navbar Compensation)
+**CRITICAL DESIGN PATTERN**: Because the navigation menu is a floating component positioned at `top-6`, all hero sections MUST include `pt-24 pb-12` padding to prevent content from being hidden behind the navbar.
+
+**Required Pattern for All Service Pages and Hero Sections:**
+```astro
+<section class="... pt-24 pb-12">
+  <!-- Hero content -->
+</section>
+```
+
+**Why This Matters:**
+- Floating navbar has `top-6` (1.5rem = 24px from top)
+- Navbar itself is approximately 72px tall
+- Total space needed: ~96px (24px top spacing + 72px navbar height)
+- `pt-24` = 6rem = 96px provides exact compensation
+- `pb-12` = 3rem = 48px provides visual breathing room at bottom
+
+**Pages That MUST Have This Padding:**
+- All pages in `src/pages/services/` directory
+- Any page with a hero section as the first element
+- Any page where content could overlap with the fixed navbar
+
+**Reference Examples:**
+- `src/pages/services/crawl-space-insulation.astro` (has correct padding)
+- `src/pages/services/weatherization.astro` (has correct padding)
+
 #### Text Shadows (for readability over images)
 ```css
 /* Heavy shadow for hero/navbar text */
