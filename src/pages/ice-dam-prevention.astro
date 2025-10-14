@@ -47,25 +47,25 @@ const iceDamCauses = [
     cause: 'Heat Loss Through Roof',
     description: 'Warm air escapes through inadequate insulation, melting snow on the roof',
     percentage: '90%',
-    icon: '🔥'
+    icon: ''
   },
   {
     cause: 'Poor Attic Ventilation',
     description: 'Inadequate airflow allows heat buildup in attic spaces',
     percentage: '75%',
-    icon: '💨'
+    icon: ''
   },
   {
     cause: 'Thermal Bridging',
     description: 'Structural elements conduct heat directly to the roof surface',
     percentage: '60%',
-    icon: '🌉'
+    icon: ''
   },
   {
     cause: 'Air Leakage',
     description: 'Gaps and cracks allow warm air to reach the roof deck',
     percentage: '85%',
-    icon: '💨'
+    icon: ''
   }
 ];
 
@@ -171,7 +171,6 @@ const faqs = [
       <div class="animate-fade-in">
         <!-- Alert Badge -->
         <div class="inline-flex items-center gap-2 bg-red-500/20 backdrop-blur-sm border border-red-400/30 rounded-full px-6 py-3 mb-8">
-          <span class="text-yellow-400 text-2xl">⚠️</span>
           <span class="text-white font-bold">Alaska Ice Dam Emergency Prevention</span>
         </div>
 
@@ -240,7 +239,6 @@ const faqs = [
             style={`animation-delay: ${index * 0.15}s`}
           >
             <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-6 h-full border border-red-100">
-              <div class="text-4xl mb-4">{cause.icon}</div>
               <div class="text-2xl font-bold text-red-600 mb-2">{cause.percentage}</div>
               <h3 class="text-lg font-semibold text-espresso mb-3">{cause.cause}</h3>
               <p class="text-warm-gray text-sm">{cause.description}</p>

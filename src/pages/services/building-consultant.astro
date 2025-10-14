@@ -9,25 +9,25 @@ const consultingServices = [
   {
     title: 'Design Review & Specifications',
     description: 'Expert review of architectural plans and insulation specifications for optimal performance',
-    icon: '📐',
+    icon: '',
     benefits: ['Code compliance verification', 'Value engineering opportunities', 'Constructability review', 'Energy modeling integration']
   },
   {
     title: 'Construction Phase Services',
     description: 'On-site oversight and quality assurance during insulation installation',
-    icon: '👷',
+    icon: '',
     benefits: ['Installation verification', 'Quality control inspections', 'Problem-solving support', 'Documentation for owner']
   },
   {
     title: 'Energy Code Compliance',
     description: 'Navigate Alaska building energy codes and certification programs',
-    icon: '📋',
+    icon: '',
     benefits: ['IECC compliance documentation', 'REScheck/COMcheck preparation', 'ENERGY STAR certification', 'Above-code program guidance']
   },
   {
     title: 'Forensic Investigation',
     description: 'Diagnose and resolve existing building performance problems',
-    icon: '🔬',
+    icon: '',
     benefits: ['Moisture problem diagnosis', 'Thermal performance issues', 'Air quality investigations', 'Expert testimony available']
   }
 ];
@@ -399,7 +399,6 @@ const faqs = [
             style={`animation-delay: ${index * 0.15}s`}
           >
             <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
-              <div class="text-4xl mb-4">{service.icon}</div>
               <h3 class="text-xl font-semibold text-espresso mb-3">{service.title}</h3>
               <p class="text-warm-gray mb-4">{service.description}</p>
 
@@ -549,11 +548,11 @@ const faqs = [
 
               <div class="space-y-2 text-xs">
                 <div class="bg-sage-mist/20 px-3 py-2 rounded-lg">
-                  <span class="font-medium text-espresso">⏱️ Duration:</span>
+                  <span class="font-medium text-espresso">Duration:</span>
                   <span class="text-warm-gray ml-2">{step.duration}</span>
                 </div>
                 <div class="bg-blue-50 px-3 py-2 rounded-lg">
-                  <span class="font-medium text-espresso">📦 Deliverable:</span>
+                  <span class="font-medium text-espresso">Deliverable:</span>
                   <span class="text-warm-gray ml-2">{step.deliverable}</span>
                 </div>
               </div>

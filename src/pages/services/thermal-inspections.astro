@@ -9,25 +9,25 @@ const inspectionServices = [
   {
     title: 'Energy Loss Detection',
     description: 'Identify areas where your property is losing heat and wasting energy',
-    icon: '🔍',
+    icon: '',
     benefits: ['Pinpoint heat loss locations', 'Reduce energy waste', 'Lower utility bills']
   },
   {
     title: 'Moisture Detection',
     description: 'Find hidden moisture issues before they become major problems',
-    icon: '💧',
+    icon: '',
     benefits: ['Prevent mold growth', 'Avoid structural damage', 'Protect indoor air quality']
   },
   {
     title: 'HVAC System Analysis',
     description: 'Evaluate heating and cooling system performance and efficiency',
-    icon: '🌡️',
+    icon: '',
     benefits: ['Optimize system performance', 'Extend equipment life', 'Improve comfort']
   },
   {
     title: 'Building Envelope Assessment',
     description: 'Comprehensive evaluation of your building\'s thermal performance',
-    icon: '🏠',
+    icon: '',
     benefits: ['Complete thermal profile', 'Insulation quality check', 'Air leakage detection']
   }
 ];
@@ -226,7 +226,6 @@ const faqs = [
             style={`animation-delay: ${index * 0.15}s`}
           >
             <div class="bg-gradient-to-br from-taupe/20 to-khaki/20 rounded-3xl p-6 h-full">
-              <div class="text-4xl mb-4">{service.icon}</div>
               <h3 class="text-xl font-semibold text-espresso mb-3">{service.title}</h3>
               <p class="text-warm-gray mb-4">{service.description}</p>
 
