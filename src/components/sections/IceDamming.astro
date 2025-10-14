@@ -24,13 +24,14 @@ const solutions = [
 ];
 ---
 
-<section class="relative section-padding overflow-hidden">
-  <!-- Background Image with Overlay -->
-  <div class="absolute inset-0 bg-charcoal">
+<section class="relative overflow-hidden">
+  <!-- Background Image with Overlay - Full height without cropping -->
+  <div class="absolute inset-0 bg-charcoal flex items-center justify-center">
     <img
       src="/images/alaska-anchorage-ice-damming-solutions.png"
       alt="Ice damming diagram showing how ice dams form on Alaska home roofs"
-      class="w-full h-full object-contain"
+      class="w-full max-h-none"
+      style="min-height: 100%;"
     />
     <!-- Lightened overlay for better visibility -->
     <div class="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/60 to-charcoal/75"></div>
@@ -39,7 +40,7 @@ const solutions = [
   </div>
 
   <!-- Content -->
-  <div class="relative z-10 container-padding max-w-7xl mx-auto">
+  <div class="relative z-10 section-padding container-padding max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Text Content -->
       <div class="animate-fade-in">
