@@ -6,6 +6,8 @@ const GlassNavbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
+  const [servicesButtonRect, setServicesButtonRect] = useState<DOMRect | null>(null);
+  const [aboutButtonRect, setAboutButtonRect] = useState<DOMRect | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,7 +134,16 @@ const GlassNavbar: React.FC = () => {
                     <div
                       key={item.label}
                       className="relative"
-                      onMouseEnter={() => isServicesDropdown ? setShowServicesDropdown(true) : setShowAboutDropdown(true)}
+                      onMouseEnter={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        if (isServicesDropdown) {
+                          setServicesButtonRect(rect);
+                          setShowServicesDropdown(true);
+                        } else {
+                          setAboutButtonRect(rect);
+                          setShowAboutDropdown(true);
+                        }
+                      }}
                       onMouseLeave={() => isServicesDropdown ? setShowServicesDropdown(false) : setShowAboutDropdown(false)}
                     >
                       <button
@@ -282,10 +293,12 @@ const GlassNavbar: React.FC = () => {
       </nav>
 
       {/* Services Dropdown - Rendered outside navbar container */}
-      {showServicesDropdown && (
+      {showServicesDropdown && servicesButtonRect && (
         <div
-          className="fixed top-12 left-1/2 -translate-x-1/2 w-64 z-50 pt-6"
+          className="fixed top-12 w-64 z-50 pt-6"
           style={{
+            left: `${servicesButtonRect.left + servicesButtonRect.width / 2}px`,
+            transform: 'translateX(-50%)',
             animation: 'fadeInScale 0.2s ease-out'
           }}
           onMouseEnter={() => setShowServicesDropdown(true)}
@@ -329,10 +342,12 @@ const GlassNavbar: React.FC = () => {
       )}
 
       {/* About Dropdown - Rendered outside navbar container */}
-      {showAboutDropdown && (
+      {showAboutDropdown && aboutButtonRect && (
         <div
-          className="fixed top-12 left-1/2 -translate-x-1/2 w-48 z-50 pt-6"
+          className="fixed top-12 w-48 z-50 pt-6"
           style={{
+            left: `${aboutButtonRect.left + aboutButtonRect.width / 2}px`,
+            transform: 'translateX(-50%)',
             animation: 'fadeInScale 0.2s ease-out'
           }}
           onMouseEnter={() => setShowAboutDropdown(true)}
