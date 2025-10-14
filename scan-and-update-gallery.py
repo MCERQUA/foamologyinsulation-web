@@ -16,7 +16,7 @@ def categorize_image(filename):
     # Category priority order (more specific first)
     if 'quonset' in name_lower or 'shipping-container' in name_lower or 'connex' in name_lower:
         return 'commercial'
-    if 'ice-dam' in name_lower or 'vapor-barrier' in name_lower:
+    if 'ice-dam' in name_lower or 'vapor-barrier' in name_lower or 'air-barrier' in name_lower:
         return 'ice-dam-prevention'
     if 'thermal' in name_lower or 'heat-loss' in name_lower:
         return 'thermal-inspections'

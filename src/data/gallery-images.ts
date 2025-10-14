@@ -20,6 +20,11 @@ export const galleryImages: GalleryImage[] = [
     category: 'commercial'
   },
   {
+    src: '/gallery/webp/alaska-attic-floor-air-barrier-ice-dam-prevention.webp',
+    alt: 'Alaska Attic Floor Air Barrier Ice Dam Prevention',
+    category: 'ice-dam-prevention'
+  },
+  {
     src: '/gallery/webp/alaska-attic-insulation-before-foam-1.webp',
     alt: 'Alaska Attic Insulation Before Foam',
     category: 'spray-foam'
@@ -317,11 +322,6 @@ export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/webp/anchorage-crawl-space-spray-foam-encapsulation-2.webp',
     alt: 'Anchorage Crawl Space Spray Foam Encapsulation',
-    category: 'crawlspace'
-  },
-  {
-    src: '/gallery/webp/anchorage-crawlspace-floor-joist-insulation-1.webp',
-    alt: 'Anchorage Crawlspace Floor Joist Insulation',
     category: 'crawlspace'
   },
   {
