@@ -1,6 +1,6 @@
 // Gallery images data - SEO optimized WebP images
 // Auto-generated from webp directory scan
-// Total images: 96
+// Total images: 93
 
 export interface GalleryImage {
   src: string;
@@ -9,21 +9,6 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
-  {
-    src: '/gallery/webp/Crawlspace Insulation.webp',
-    alt: 'Crawlspace insulation - Alaska Spray Foam Insulation',
-    category: 'crawlspace'
-  },
-  {
-    src: '/gallery/webp/IMG_4598.webp',
-    alt: 'Img_4598 - Alaska Spray Foam Insulation',
-    category: 'spray-foam'
-  },
-  {
-    src: '/gallery/webp/Thermal Inspections.webp',
-    alt: 'Thermal inspections - Alaska Spray Foam Insulation',
-    category: 'thermal-inspections'
-  },
   {
     src: '/gallery/webp/alaska-agricultural-building-insulation-1.webp',
     alt: 'Alaska Agricultural Building Insulation',
