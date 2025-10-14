@@ -1,0 +1,163 @@
+======================================================================
+HEIC to WebP Conversion for Foamology Insulation
+======================================================================
+
+Found 90 HEIC files to convert
+
+✓ Converted: 70198248514__A5C3377D-6B1C-49D4-9B4B-331942256B56.HEIC -> 70198248514__A5C3377D-6B1C-49D4-9B4B-331942256B56.webp
+✓ Converted: Blow in Insulation.HEIC -> Blow in Insulation.webp
+✓ Converted: Blow in_.HEIC -> Blow in_.webp
+✓ Converted: Closed Cell Foam.HEIC -> Closed Cell Foam.webp
+✓ Converted: Cold floors at cantilevers Fix.HEIC -> Cold floors at cantilevers Fix.webp
+✓ Converted: Connex Insulation(1).HEIC -> Connex Insulation(1).webp
+✓ Converted: Connex Insulation.HEIC -> Connex Insulation.webp
+✓ Converted: Crawlspace Insulation(1).HEIC -> Crawlspace Insulation(1).webp
+✓ Converted: Crawlspace Insulation.HEIC -> Crawlspace Insulation.webp
+✓ Converted: Heat Loss example.HEIC -> Heat Loss example.webp
+✓ Converted: IMG_0117.HEIC -> IMG_0117.webp
+✓ Converted: IMG_0127.HEIC -> IMG_0127.webp
+✓ Converted: IMG_0641.HEIC -> IMG_0641.webp
+✓ Converted: IMG_3220.HEIC -> IMG_3220.webp
+✓ Converted: IMG_3226.HEIC -> IMG_3226.webp
+✓ Converted: IMG_3227.HEIC -> IMG_3227.webp
+✓ Converted: IMG_3235.HEIC -> IMG_3235.webp
+✓ Converted: IMG_3242.HEIC -> IMG_3242.webp
+✓ Converted: IMG_3245.HEIC -> IMG_3245.webp
+✓ Converted: IMG_4195.HEIC -> IMG_4195.webp
+✓ Converted: IMG_4215.HEIC -> IMG_4215.webp
+✓ Converted: IMG_4216.HEIC -> IMG_4216.webp
+✓ Converted: IMG_4219.HEIC -> IMG_4219.webp
+✓ Converted: IMG_4271.HEIC -> IMG_4271.webp
+✓ Converted: IMG_4440.HEIC -> IMG_4440.webp
+✓ Converted: IMG_4457.HEIC -> IMG_4457.webp
+✓ Converted: IMG_4458.HEIC -> IMG_4458.webp
+✓ Converted: IMG_4460.HEIC -> IMG_4460.webp
+✓ Converted: IMG_4463.HEIC -> IMG_4463.webp
+✓ Converted: IMG_4488.HEIC -> IMG_4488.webp
+✓ Converted: IMG_4644.HEIC -> IMG_4644.webp
+✓ Converted: IMG_4646.HEIC -> IMG_4646.webp
+✓ Converted: IMG_4780.HEIC -> IMG_4780.webp
+✓ Converted: IMG_4805.HEIC -> IMG_4805.webp
+✓ Converted: IMG_4807.HEIC -> IMG_4807.webp
+✓ Converted: IMG_4812.HEIC -> IMG_4812.webp
+✓ Converted: IMG_4845.HEIC -> IMG_4845.webp
+✓ Converted: IMG_4853.HEIC -> IMG_4853.webp
+✓ Converted: IMG_4875.HEIC -> IMG_4875.webp
+✓ Converted: IMG_4930.HEIC -> IMG_4930.webp
+✓ Converted: IMG_4931.HEIC -> IMG_4931.webp
+✓ Converted: IMG_4933.HEIC -> IMG_4933.webp
+✓ Converted: IMG_5060.HEIC -> IMG_5060.webp
+✓ Converted: IMG_5525.HEIC -> IMG_5525.webp
+✓ Converted: IMG_5597.HEIC -> IMG_5597.webp
+✓ Converted: IMG_5600.HEIC -> IMG_5600.webp
+✓ Converted: IMG_5616.HEIC -> IMG_5616.webp
+✓ Converted: IMG_5651.HEIC -> IMG_5651.webp
+✓ Converted: IMG_5674.HEIC -> IMG_5674.webp
+✓ Converted: IMG_5675.HEIC -> IMG_5675.webp
+✓ Converted: IMG_5677.HEIC -> IMG_5677.webp
+✓ Converted: IMG_5679.HEIC -> IMG_5679.webp
+✓ Converted: IMG_5759.HEIC -> IMG_5759.webp
+✓ Converted: IMG_5760.HEIC -> IMG_5760.webp
+✓ Converted: IMG_5762.HEIC -> IMG_5762.webp
+✓ Converted: IMG_5764.HEIC -> IMG_5764.webp
+✓ Converted: IMG_5765.HEIC -> IMG_5765.webp
+✓ Converted: IMG_5766.HEIC -> IMG_5766.webp
+✓ Converted: IMG_5767.HEIC -> IMG_5767.webp
+✓ Converted: IMG_5768.HEIC -> IMG_5768.webp
+✓ Converted: IMG_5769.HEIC -> IMG_5769.webp
+✓ Converted: IMG_5770.HEIC -> IMG_5770.webp
+✓ Converted: IMG_5771.HEIC -> IMG_5771.webp
+✓ Converted: IMG_5772.HEIC -> IMG_5772.webp
+✓ Converted: IMG_5773.HEIC -> IMG_5773.webp
+✓ Converted: IMG_5774.HEIC -> IMG_5774.webp
+✓ Converted: IMG_5775.HEIC -> IMG_5775.webp
+✓ Converted: IMG_5776.HEIC -> IMG_5776.webp
+✓ Converted: IMG_5777.HEIC -> IMG_5777.webp
+✓ Converted: IMG_5778.HEIC -> IMG_5778.webp
+✓ Converted: IMG_5780.HEIC -> IMG_5780.webp
+✓ Converted: IMG_5796.HEIC -> IMG_5796.webp
+✓ Converted: IMG_5797.HEIC -> IMG_5797.webp
+✓ Converted: IMG_5798.HEIC -> IMG_5798.webp
+✓ Converted: IMG_5800.HEIC -> IMG_5800.webp
+✓ Converted: IMG_5802.HEIC -> IMG_5802.webp
+✓ Converted: IMG_5824.HEIC -> IMG_5824.webp
+✓ Converted: IMG_5920.HEIC -> IMG_5920.webp
+✓ Converted: IMG_8374.HEIC -> IMG_8374.webp
+✓ Converted: Insulation Removal(1).HEIC -> Insulation Removal(1).webp
+✓ Converted: Insulation Removal.HEIC -> Insulation Removal.webp
+✓ Converted: Metal Building Insulation_.HEIC -> Metal Building Insulation_.webp
+✓ Converted: Metal Building Specialists.HEIC -> Metal Building Specialists.webp
+✓ Converted: Missing vapor Barrier causing heat loss.HEIC -> Missing vapor Barrier causing heat loss.webp
+✓ Converted: Missing_Torn Vapor barrier causing ice damming.HEIC -> Missing_Torn Vapor barrier causing ice damming.webp
+✓ Converted: Quonset Hut Insulation(1).HEIC -> Quonset Hut Insulation(1).webp
+✓ Converted: Quonset Hut Insulation.HEIC -> Quonset Hut Insulation.webp
+✓ Converted: Quonset Hut Specialists.HEIC -> Quonset Hut Specialists.webp
+✓ Converted: Rotten roof decking as a result from ice damming.HEIC -> Rotten roof decking as a result from ice damming.webp
+✓ Converted: Torn Vapor Barrier around light fixtures causing heatloss.HEIC -> Torn Vapor Barrier around light fixtures causing heatloss.webp
+
+======================================================================
+Conversion Complete: 90/90 successful
+======================================================================
+
+Conversion mapping saved to: public/gallery/conversion-mapping.json
+Temporary WebP files in: public/gallery/webp_temp/
+
+Next steps:
+1. Review the images in webp_temp/ folder
+2. Review conversion-mapping.json for SEO names
+3. Run the rename script to apply SEO names
+
+======================================================================
+SEO Name Suggestions Summary:
+======================================================================
+
+alaska-blown-in-cellulose-insulation-installation: (2 files)
+  - Blow in Insulation.HEIC
+  - Blow in_.HEIC
+
+alaska-heat-loss-thermal-camera-detection: (2 files)
+  - Heat Loss example.HEIC
+  - Missing vapor Barrier causing heat loss.HEIC
+
+alaska-ice-dam-prevention-spray-foam: (2 files)
+  - Missing_Torn Vapor barrier causing ice damming.HEIC
+  - Rotten roof decking as a result from ice damming.HEIC
+
+alaska-quonset-hut-spray-foam-specialists: (3 files)
+  - Quonset Hut Insulation(1).HEIC
+  - Quonset Hut Insulation.HEIC
+  - Quonset Hut Specialists.HEIC
+
+alaska-spray-foam-insulation-project: (69 files)
+  - IMG_0117.HEIC
+  - IMG_0127.HEIC
+  - IMG_0641.HEIC
+  ... and 66 more
+
+alaska-vapor-barrier-air-sealing-installation: (1 files)
+  - Torn Vapor Barrier around light fixtures causing heatloss.HEIC
+
+anchorage-closed-cell-spray-foam-installation: (1 files)
+  - Closed Cell Foam.HEIC
+
+anchorage-crawl-space-spray-foam-insulation: (2 files)
+  - Crawlspace Insulation(1).HEIC
+  - Crawlspace Insulation.HEIC
+
+anchorage-floor-spray-foam-insulation: (1 files)
+  - Cold floors at cantilevers Fix.HEIC
+
+anchorage-metal-building-spray-foam-insulation: (2 files)
+  - Metal Building Insulation_.HEIC
+  - Metal Building Specialists.HEIC
+
+anchorage-old-insulation-removal-service: (2 files)
+  - Insulation Removal(1).HEIC
+  - Insulation Removal.HEIC
+
+anchorage-shipping-container-insulation-specialists: (2 files)
+  - Connex Insulation(1).HEIC
+  - Connex Insulation.HEIC
+
+anchorage-spray-foam-insulation-service: (1 files)
+  - 70198248514__A5C3377D-6B1C-49D4-9B4B-331942256B56.HEIC

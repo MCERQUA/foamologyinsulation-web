@@ -1,0 +1,11 @@
+batch-convert-heic-webp.sh: line 4: $'\r': command not found
+batch-convert-heic-webp.sh: line 8: $'\r': command not found
+batch-convert-heic-webp.sh: line 11: $'\r': command not found
+==================================
+HEIC to WebP Batch Conversion
+==================================
+
+batch-convert-heic-webp.sh: line 16: $'\r': command not found
+batch-convert-heic-webp.sh: line 19: $'\r': command not found
+batch-convert-heic-webp.sh: line 60: syntax error near unexpected token `$'do\r''
+batch-convert-heic-webp.sh: line 60: `for jpg_file in "$TEMP_DIR"/*.jpg; do'

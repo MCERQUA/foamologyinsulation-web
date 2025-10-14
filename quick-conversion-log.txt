@@ -1,0 +1,35 @@
+======================================================================
+HEIC to WebP Conversion
+======================================================================
+
+Found 90 HEIC files
+
+Stage 1: Converting HEIC to temporary JPG...
+
+Progress: 10/90
+Progress: 20/90
+Progress: 30/90
+Progress: 40/90
+Progress: 50/90
+Progress: 60/90
+Progress: 70/90
+Progress: 80/90
+Progress: 90/90
+
+Stage 1 complete: 90 files
+
+Stage 2: Converting to WebP...
+
+Progress: 10/90
+Progress: 20/90
+Progress: 30/90
+Progress: 40/90
+Progress: 50/90
+Progress: 60/90
+Progress: 70/90
+Progress: 80/90
+Progress: 90/90
+
+======================================================================
+Complete: 90 WebP files created
+======================================================================
