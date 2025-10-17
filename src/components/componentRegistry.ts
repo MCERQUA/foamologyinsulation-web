@@ -31,6 +31,40 @@ export const componentRegistry = {
       props: ['images', 'columns']
     }
   },
+
+  // Blog Components
+  blog: {
+    InfoBox: {
+      path: '@components/blog/InfoBox',
+      description: 'Styled info box for tips, warnings, success messages in blog posts',
+      props: ['title', 'children', 'variant (info|tip|warning|success)', 'icon']
+    },
+    StatsCard: {
+      path: '@components/blog/StatsCard',
+      description: 'Display statistics in a 3-column grid with glass cards',
+      props: ['stats (array of {value, label, description})', 'title']
+    },
+    CTABlock: {
+      path: '@components/blog/CTABlock',
+      description: 'Call-to-action block with button and description for blog posts',
+      props: ['title', 'description', 'buttonText', 'buttonLink', 'variant (primary|secondary)']
+    },
+    ImageWithCaption: {
+      path: '@components/blog/ImageWithCaption',
+      description: 'Image with caption and WebP support for blog posts',
+      props: ['src', 'alt', 'caption', 'credit', 'width (small|medium|large|full)']
+    },
+    TableOfContents: {
+      path: '@components/blog/TableOfContents',
+      description: 'Auto-generated table of contents with active section highlighting',
+      props: []
+    },
+    SocialShare: {
+      path: '@components/blog/SocialShare',
+      description: 'Social media sharing buttons for blog posts',
+      props: ['title', 'url', 'description']
+    }
+  },
   
   // Section Components
   sections: {
