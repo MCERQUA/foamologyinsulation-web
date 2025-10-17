@@ -37,12 +37,20 @@ const schema = {
   "datePublished": pubDate.toISOString(),
   "dateModified": pubDate.toISOString(),
   "author": {
-    "@type": author === 'Mike Cerqua, Owner' ? "Person" : "Organization",
+    "@type": author === 'Magnus Pedersen, Owner' ? "Person" : "Organization",
     "name": author
   },
   "publisher": {
     "@type": "Organization",
     "name": "Foamology Insulation",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "901 E Klatt Road #6",
+      "addressLocality": "Anchorage",
+      "addressRegion": "AK",
+      "postalCode": "99515",
+      "addressCountry": "US"
+    },
     "logo": {
       "@type": "ImageObject",
       "url": "https://foamologyinsulation.com/logo.png"

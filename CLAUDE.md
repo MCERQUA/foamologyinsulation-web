@@ -2,9 +2,40 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 🚨 CRITICAL REQUIREMENTS - READ FIRST 🚨
+
+### ⚠️ FLOATING NAVBAR PADDING REQUIREMENT ⚠️
+
+**ALL PAGES AND BLOG POSTS MUST HAVE `pt-24` PADDING AT THE TOP!**
+
+The website uses a **floating navbar** positioned at `top-6`. Every page, hero section, and blog post layout **MUST** include `pt-24 pb-12` padding to prevent content from being hidden behind the navbar.
+
+**Required on:**
+- ✅ All pages in `src/pages/` (including blog pages)
+- ✅ All service pages in `src/pages/services/`
+- ✅ Blog layout (`src/layouts/BlogLayout.astro`)
+- ✅ Any hero sections or first elements on pages
+
+**Pattern:**
+```astro
+<section class="... pt-24 pb-12">
+  <!-- Content here -->
+</section>
+```
+
+**Why:**
+- Navbar positioned at `top-6` (24px from top)
+- Navbar height: ~72px
+- Total space: 96px = `pt-24` (6rem)
+- Bottom breathing room: `pb-12` (3rem)
+
+**If you forget this, content will be hidden behind the navbar! This is NON-NEGOTIABLE.**
+
+---
+
 ## Project Overview
 
-This is a **spray foam insulation company website** built for Foamology Insulation (Alaska-based). It's a modern, static site using **Astro v5**, **React**, and **Tailwind CSS** with glass morphism effects and a component-based architecture.
+This is a **spray foam insulation company website** built for Foamology Insulation (Alaska-based), owned by **Magnus Pedersen**. Business address: **901 E Klatt Road #6, Anchorage, AK 99515**. It's a modern, static site using **Astro v5**, **React**, and **Tailwind CSS** with glass morphism effects and a component-based architecture.
 
 ## Common Commands
 
@@ -629,6 +660,17 @@ When adding new project photos:
 - Mobile-responsive with touch gestures
 - SEO-optimized with proper alt text on all images
 
+### Company Information
+- **Business Name**: Foamology Insulation
+- **Owner**: Magnus Pedersen
+- **Address**: 901 E Klatt Road #6, Anchorage, AK 99515
+- **Phone**: (907) 310-3000
+- **Email**: info@foamologyinsulation.com
+- **Service Area**: Anchorage, Mat-Su Valley, Kenai Peninsula Borough
+
 ### remember to PUSH TO GITHUB!!!
 Per project instructions, always push changes to GitHub after completing work.
-- DO NOT use emojs on the website they look childish only create professional sylissh components and svg icons
+- DO NOT use emojis on the website they look childish only create professional stylish components and svg icons
+
+### 🚨 FINAL REMINDER: FLOATING NAVBAR PADDING 🚨
+**Every time you create or modify a page, CHECK FOR `pt-24` padding at the top!** This is the #1 most common mistake. The floating navbar will cover content without this padding.
