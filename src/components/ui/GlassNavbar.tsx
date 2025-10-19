@@ -109,18 +109,6 @@ const GlassNavbar: React.FC = () => {
             
             {/* Navigation Items Container */}
             <div className="relative z-10 flex items-center gap-1 sm:gap-2">
-              {/* Logo - Desktop only */}
-              <a href="/" className="hidden lg:flex items-center mr-4 group">
-                <img 
-                  src="/images/logos/foamology-logo.png" 
-                  alt="Foamology Insulation" 
-                  className="h-8 w-auto transition-all duration-300"
-                  style={{
-                    filter: 'brightness(1.2) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'
-                  }}
-                />
-              </a>
-
               {/* Navigation Items - All visible as glass buttons */}
               {navItems.map((item) => {
                 const isActive = activeTab === item.label;
