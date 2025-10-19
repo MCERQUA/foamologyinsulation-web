@@ -377,6 +377,10 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogIm
       "inLanguage": "en-US"
     })} />
     
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/images/hero2.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="/images/logos/foamology-logo.png" as="image" fetchpriority="high" />
+
     <!-- Preconnect to External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -388,21 +392,21 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogIm
     <slot name="head" />
   </head>
   <body class="bg-cream text-espresso">
-    <!-- Glass Filter SVG -->
-    <GlassFilter client:load />
-    
-    <!-- Navigation -->
+    <!-- Glass Filter SVG - Deferred for better TBT -->
+    <GlassFilter client:idle />
+
+    <!-- Navigation - Load immediately for UX -->
     <GlassNavbar client:load />
-    
+
     <!-- Main Content -->
     <main class="min-h-screen">
       <slot />
     </main>
-    
+
     <!-- Footer -->
     <Footer />
-    
-    <!-- Floating Contact Button -->
-    <FloatingContactButton client:load />
+
+    <!-- Floating Contact Button - Deferred for better TBT -->
+    <FloatingContactButton client:idle />
   </body>
 </html>

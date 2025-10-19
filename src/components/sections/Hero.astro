@@ -37,9 +37,12 @@ import LogoScroller from '../ui/LogoScroller.tsx';
         <!-- Logo above hero text -->
         <div class="-mb-2 md:-mb-4">
           <a href="/" class="inline-block">
-            <img 
-              src="/images/logos/foamology-logo.png" 
-              alt="Foamology Insulation" 
+            <img
+              src="/images/logos/foamology-logo.png"
+              alt="Foamology Insulation"
+              width="1200"
+              height="600"
+              fetchpriority="high"
               class="h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] w-auto mx-auto transition-all duration-500 hover:scale-105 cursor-pointer"
               style="
                 filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.6));
@@ -64,11 +67,11 @@ import LogoScroller from '../ui/LogoScroller.tsx';
         
         <!-- Centered button -->
         <div class="flex justify-center">
-          <GlassButton 
-            href="#contact-form" 
+          <GlassButton
+            href="#contact-form"
             size="lg"
             variant="primary"
-            client:load
+            client:visible
           >
             Get My Free Estimate
           </GlassButton>
