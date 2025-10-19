@@ -19,12 +19,13 @@ const {
   description = 'Professional insulation services in Anchorage, AK. Foamology Insulation provides expert spray foam insulation, thermal inspections, and energy-efficient solutions for Alaska homes and businesses.',
   keywords = 'insulation Anchorage Alaska, spray foam insulation Anchorage, insulation contractor Alaska, closed cell spray foam Anchorage, thermal inspections Alaska, energy efficient insulation Anchorage, Alaska insulation services, insulation Palmer Alaska, insulation Wasilla Alaska, insulation Kenai Peninsula',
   ogImage = '/images/logos/foamology-logo.png',
-  canonicalURL = Astro.url.href,
+  canonicalURL,
   schemaType = 'WebPage'
 } = Astro.props;
 
-// Get absolute URL for images
+// Get absolute URLs for canonical and images (always use production domain)
 const siteUrl = 'https://foamologyinsulation.com';
+const absoluteCanonicalURL = canonicalURL || `${siteUrl}${Astro.url.pathname}`;
 const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
@@ -44,15 +45,15 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogIm
     <meta name="author" content="Foamology Insulation" />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href={canonicalURL} />
-    
+    <link rel="canonical" href={absoluteCanonicalURL} />
+
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:url" content={absoluteCanonicalURL} />
     <meta property="og:title" content={`${title} | Foamology Insulation`} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={absoluteOgImage} />
@@ -61,7 +62,7 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogIm
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:url" content={absoluteCanonicalURL} />
     <meta property="twitter:title" content={`${title} | Foamology Insulation`} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={absoluteOgImage} />
@@ -359,8 +360,8 @@ const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogIm
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": schemaType,
-      "@id": `${canonicalURL}#webpage`,
-      "url": canonicalURL,
+      "@id": `${absoluteCanonicalURL}#webpage`,
+      "url": absoluteCanonicalURL,
       "name": title,
       "description": description,
       "isPartOf": {
