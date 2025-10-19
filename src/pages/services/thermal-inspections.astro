@@ -4,6 +4,9 @@ import GlassButton from '../../components/ui/GlassButton.tsx';
 import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
 import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
 import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
 
 const inspectionServices = [
   {
@@ -128,9 +131,33 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Thermal Imaging Inspections Anchorage Alaska - Energy Audits"
+  title="Thermal Inspections Anchorage AK"
   description="Professional thermal imaging inspections in Anchorage, AK. Advanced infrared technology detects energy loss, moisture issues, and insulation gaps. Certified thermographers, detailed reports. Book now."
   keywords="thermal imaging Anchorage, energy audit Alaska, infrared inspection Anchorage, heat loss detection Alaska, moisture detection Anchorage, building thermal inspection, HVAC thermal analysis Alaska"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Thermal Imaging Inspections"
+    description="Advanced infrared thermal imaging inspections using state-of-the-art equipment to detect energy loss, moisture issues, and insulation problems invisible to the naked eye."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Thermal Inspections', url: '/services/thermal-inspections' }
+    ]}
+  />
 >
   <!-- Hero Section -->
   <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden pt-24 pb-12">

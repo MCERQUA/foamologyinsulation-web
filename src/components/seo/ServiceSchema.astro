@@ -1,0 +1,76 @@
+---
+export interface Props {
+  serviceName: string;
+  description: string;
+  serviceType?: string;
+  url?: string;
+  areaServed?: string[];
+  offers?: {
+    price?: string;
+    priceCurrency?: string;
+  };
+}
+
+const {
+  serviceName,
+  description,
+  serviceType = 'HomeAndConstructionBusiness',
+  url,
+  areaServed = ['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK'],
+  offers
+} = Astro.props;
+
+const siteUrl = 'https://foamologyinsulation.com';
+const serviceUrl = url || `${siteUrl}${Astro.url.pathname}`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${serviceUrl}#service`,
+  "serviceType": serviceName,
+  "name": serviceName,
+  "description": description,
+  "provider": {
+    "@type": ["LocalBusiness", "ProfessionalService", serviceType],
+    "@id": `${siteUrl}/#localbusiness`,
+    "name": "Foamology Insulation",
+    "image": `${siteUrl}/images/logos/foamology-logo.png`,
+    "telephone": "+1-907-310-3000",
+    "email": "info@foamologyinsulation.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "901 E Klatt Road #6",
+      "addressLocality": "Anchorage",
+      "addressRegion": "AK",
+      "postalCode": "99515",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 61.2181,
+      "longitude": -149.9003
+    },
+    "areaServed": areaServed.map(area => ({
+      "@type": "Place",
+      "name": area
+    })),
+    "url": siteUrl,
+    "priceRange": "$$"
+  },
+  "areaServed": areaServed.map(area => ({
+    "@type": "Place",
+    "name": area
+  })),
+  "url": serviceUrl,
+  ...(offers && {
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": offers.priceCurrency || "USD",
+      "price": offers.price,
+      "availability": "https://schema.org/InStock"
+    }
+  })
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

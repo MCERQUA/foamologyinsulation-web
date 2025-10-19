@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GlassButton from '../../components/ui/GlassButton.tsx';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
+import HowToSchema from '../../components/seo/HowToSchema.astro';
 
 const atticProblems = [
   {
@@ -144,9 +148,57 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Attic Insulation Anchorage Alaska - Spray Foam Attic Insulation R-49+"
+  title="Attic Insulation Anchorage AK"
   description="Professional attic insulation in Anchorage, AK. Spray foam attic insulation R-49+, ice dam prevention, 50% energy savings. Licensed Alaska insulation contractor. Free estimates."
   keywords="attic insulation Anchorage, attic spray foam Alaska, R-49 insulation Anchorage, ice dam prevention Alaska, attic air sealing Anchorage, cathedral ceiling insulation Alaska"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Attic Insulation"
+    description="Professional attic insulation services with R-49+ spray foam insulation designed for Alaska's extreme climate. Complete ice dam prevention, air sealing, and energy savings solutions."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Attic Insulation', url: '/services/attic-insulation' }
+    ]}
+  />
+
+  <HowToSchema
+    slot="head"
+    name="Attic Insulation Installation Process"
+    description="Professional attic insulation installation following Alaska best practices for maximum performance and longevity"
+    steps={[
+      {
+        name: 'Thermal Inspection',
+        text: 'Comprehensive assessment using thermal imaging to identify current heat loss patterns'
+      },
+      {
+        name: 'Preparation & Protection',
+        text: 'Proper preparation of attic space and protection of existing systems'
+      },
+      {
+        name: 'Professional Installation',
+        text: 'Expert application of spray foam insulation to achieve specified R-value'
+      },
+      {
+        name: 'Verification & Documentation',
+        text: 'Post-installation inspection and documentation for peace of mind'
+      }
+    ]}
+  />
 >
   <!-- Hero Section with Parallax Effect -->
   <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-24 pb-12">

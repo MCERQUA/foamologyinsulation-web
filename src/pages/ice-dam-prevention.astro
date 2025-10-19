@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GlassButton from '../components/ui/GlassButton.tsx';
+import ServiceSchema from '../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../components/seo/BreadcrumbSchema.astro';
 
 // FAQ Schema for SEO
 const faqSchema = {
@@ -148,10 +150,28 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Ice Dam Prevention Anchorage Alaska - Stop Ice Dams Before They Start"
+  title="Ice Dam Prevention Anchorage AK"
   description="Professional ice dam prevention in Anchorage, AK. Closed cell spray foam insulation, air sealing & thermal solutions stop ice dams 100%. Save thousands on damage repairs."
   keywords="ice dam prevention Anchorage, ice dam solutions Alaska, prevent ice dams Alaska, insulation ice dam prevention, spray foam ice dam prevention, Alaska ice dam contractor"
+  schemaType="Service"
 >
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Ice Dam Prevention"
+    description="Professional ice dam prevention solutions using closed cell spray foam insulation, comprehensive air sealing, and thermal management designed to eliminate ice dam formation in Alaska's extreme climate."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Ice Dam Prevention', url: '/ice-dam-prevention' }
+    ]}
+  />
+
   <!-- FAQ Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head"></script>
   <!-- Hero Section -->

@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import GlassCard from '../../components/ui/GlassCard.tsx';
 import GlassButton from '../../components/ui/GlassButton.tsx';
 import { Shield, Thermometer, Droplets, Home, CheckCircle, Star } from 'lucide-react';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
 
 const benefits = [
   {
@@ -47,9 +49,28 @@ const applications = [
 ---
 
 <BaseLayout
-  title="Crawl Space Insulation Anchorage | Professional Foundation Insulation"
+  title="Crawl Space Insulation Anchorage AK"
   description="Expert crawl space insulation services in Anchorage, AK. Prevent moisture, improve air quality, and reduce energy costs with professional foundation insulation. Licensed & insured."
   keywords="crawl space insulation Anchorage, foundation insulation Alaska, moisture control Anchorage, crawl space encapsulation, vapor barrier Alaska"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Crawl Space Insulation"
+    description="Professional crawl space and foundation insulation services. Complete moisture protection, air quality improvement, and energy efficiency solutions designed for Alaska's climate."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Crawl Space Insulation', url: '/services/crawl-space-insulation' }
+    ]}
+  />
 >
   <main class="min-h-screen">
     <!-- Hero Section -->

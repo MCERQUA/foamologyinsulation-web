@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GlassButton from '../../components/ui/GlassButton.tsx';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
 
 const weatherizationServices = [
   {
@@ -370,9 +373,33 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Weatherization & Energy Audits Anchorage Alaska - Home Performance"
+  title="Weatherization Anchorage AK"
   description="Comprehensive weatherization and energy audit services in Anchorage, AK. Blower door testing, infrared inspections, building science approach. Reduce energy costs 30%+ with house-as-a-system improvements. Free consultation."
   keywords="weatherization Anchorage, energy audit Alaska, blower door testing Anchorage, home performance Alaska, air sealing Anchorage, infrared inspection Alaska, HVAC efficiency, house as a system, building science Alaska, energy efficiency Anchorage"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Weatherization & Home Performance"
+    description="Comprehensive weatherization services using building science principles and advanced diagnostics. Blower door testing, thermal imaging, and energy audits to identify and solve energy waste, comfort problems, and moisture issues."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Weatherization', url: '/services/weatherization' }
+    ]}
+  />
 >
   <!-- Hero Section -->
   <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden pt-24 pb-12">

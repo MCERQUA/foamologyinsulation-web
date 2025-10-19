@@ -674,3 +674,4 @@ Per project instructions, always push changes to GitHub after completing work.
 
 ### 🚨 FINAL REMINDER: FLOATING NAVBAR PADDING 🚨
 **Every time you create or modify a page, CHECK FOR `pt-24` padding at the top!** This is the #1 most common mistake. The floating navbar will cover content without this padding.
+- push to GITHUB  when updates are completed to the project

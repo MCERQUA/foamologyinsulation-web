@@ -11,15 +11,21 @@ export interface Props {
   keywords?: string;
   ogImage?: string;
   canonicalURL?: string;
+  schemaType?: 'WebPage' | 'Service' | 'FAQPage' | 'AboutPage' | 'ContactPage';
 }
 
-const { 
-  title, 
+const {
+  title,
   description = 'Professional insulation services in Anchorage, AK. Foamology Insulation provides expert spray foam insulation, thermal inspections, and energy-efficient solutions for Alaska homes and businesses.',
   keywords = 'insulation Anchorage Alaska, spray foam insulation Anchorage, insulation contractor Alaska, closed cell spray foam Anchorage, thermal inspections Alaska, energy efficient insulation Anchorage, Alaska insulation services, insulation Palmer Alaska, insulation Wasilla Alaska, insulation Kenai Peninsula',
   ogImage = '/images/logos/foamology-logo.png',
-  canonicalURL = Astro.url.href
+  canonicalURL = Astro.url.href,
+  schemaType = 'WebPage'
 } = Astro.props;
+
+// Get absolute URL for images
+const siteUrl = 'https://foamologyinsulation.com';
+const absoluteOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
 <!DOCTYPE html>
@@ -29,8 +35,8 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
-    <title>{title} | Foamology Insulation - Alaska's Premier Insulation Contractor</title>
-    <meta name="title" content={`${title} | Foamology Insulation - Alaska's Premier Insulation Contractor`} />
+    <title>{title} | Foamology Insulation</title>
+    <meta name="title" content={`${title} | Foamology Insulation`} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="robots" content="index, follow" />
@@ -49,16 +55,16 @@ const {
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={`${title} | Foamology Insulation`} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={absoluteOgImage} />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Foamology Insulation" />
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={`${title} | Foamology Insulation`} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImage} />
+    <meta property="twitter:image" content={absoluteOgImage} />
     
     <!-- Business Information -->
     <meta name="geo.region" content="US-AK" />
@@ -66,16 +72,29 @@ const {
     <meta name="geo.position" content="61.2181;-149.9003" />
     <meta name="ICBM" content="61.2181, -149.9003" />
     
-    <!-- Structured Data -->
+    <!-- Structured Data: Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "Organization",
+      "@id": "https://foamologyinsulation.com/#organization",
       "name": "Foamology Insulation",
-      "image": "/images/logos/foamology-logo.png",
-      "description": "Professional insulation services in Anchorage, Alaska. Specializing in spray foam insulation, thermal inspections, and energy-efficient solutions.",
+      "legalName": "Foamology Insulation",
       "url": "https://foamologyinsulation.com",
-      "telephone": "+19073103000",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://foamologyinsulation.com/#logo",
+        "url": "https://foamologyinsulation.com/images/logos/foamology-logo.png",
+        "contentUrl": "https://foamologyinsulation.com/images/logos/foamology-logo.png",
+        "width": 250,
+        "height": 60
+      },
+      "image": {
+        "@id": "https://foamologyinsulation.com/#logo"
+      },
+      "description": "Professional insulation services in Anchorage, Alaska. Specializing in spray foam insulation, thermal inspections, and energy-efficient solutions.",
+      "email": "info@foamologyinsulation.com",
+      "telephone": "+1-907-310-3000",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "901 E Klatt Road #6",
@@ -84,37 +103,88 @@ const {
         "postalCode": "99515",
         "addressCountry": "US"
       },
-      "owner": {
+      "founder": {
         "@type": "Person",
         "name": "Magnus Pedersen"
+      },
+      "sameAs": [
+        "https://www.facebook.com/61566246782622"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService", "HomeAndConstructionBusiness"],
+      "@id": "https://foamologyinsulation.com/#localbusiness",
+      "name": "Foamology Insulation",
+      "image": "https://foamologyinsulation.com/images/logos/foamology-logo.png",
+      "description": "Professional insulation services in Anchorage, Alaska. Specializing in spray foam insulation, thermal inspections, and energy-efficient solutions for Alaska homes and businesses.",
+      "url": "https://foamologyinsulation.com",
+      "telephone": "+1-907-310-3000",
+      "email": "info@foamologyinsulation.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "901 E Klatt Road #6",
+        "addressLocality": "Anchorage",
+        "addressRegion": "AK",
+        "postalCode": "99515",
+        "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 61.2181,
         "longitude": -149.9003
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 61.2181,
-          "longitude": -149.9003
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anchorage",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "AK",
+            "addressCountry": "US"
+          }
         },
-        "geoRadius": "100000"
-      },
-      "priceRange": "$$",
+        {
+          "@type": "City",
+          "name": "Palmer",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "AK",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Wasilla",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "AK",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Eagle River",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "AK",
+            "addressCountry": "US"
+          }
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
       "sameAs": [
         "https://www.facebook.com/61566246782622"
       ],
@@ -127,7 +197,29 @@ const {
             "itemOffered": {
               "@type": "Service",
               "name": "Closed Cell Spray Foam Insulation",
-              "description": "Premium closed cell spray foam with superior R-value for Alaska's extreme conditions"
+              "description": "Premium closed cell spray foam with R-7.0 per inch for Alaska's extreme conditions",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Open Cell Spray Foam Insulation",
+              "description": "Breathable open cell spray foam for interior sound control applications",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
             }
           },
           {
@@ -135,7 +227,14 @@ const {
             "itemOffered": {
               "@type": "Service",
               "name": "Thermal Inspections",
-              "description": "Comprehensive insulation inspections using advanced thermal imaging technology"
+              "description": "Comprehensive insulation inspections using advanced thermal imaging technology",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
             }
           },
           {
@@ -143,7 +242,14 @@ const {
             "itemOffered": {
               "@type": "Service",
               "name": "Insulation Removal",
-              "description": "Safe removal of old, damaged, or contaminated insulation materials"
+              "description": "Safe removal of old, damaged, or contaminated insulation materials",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
             }
           },
           {
@@ -151,20 +257,134 @@ const {
             "itemOffered": {
               "@type": "Service",
               "name": "Ice Dam Prevention",
-              "description": "Professional ice dam prevention solutions using spray foam insulation and air sealing"
+              "description": "Professional ice dam prevention solutions using spray foam insulation and air sealing",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Attic Insulation",
+              "description": "Professional attic insulation to prevent heat loss and ice dams",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Crawl Space Insulation",
+              "description": "Crawl space encapsulation and insulation for improved air quality and efficiency",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Weatherization Services",
+              "description": "Comprehensive weatherization and energy audits for Alaska homes",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Building Science Consulting",
+              "description": "Expert building science consulting for residential and commercial projects",
+              "provider": {
+                "@id": "https://foamologyinsulation.com/#localbusiness"
+              },
+              "areaServed": {
+                "@type": "State",
+                "name": "Alaska"
+              }
             }
           }
         ]
       }
     }
     </script>
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://foamologyinsulation.com/#website",
+      "url": "https://foamologyinsulation.com",
+      "name": "Foamology Insulation",
+      "description": "Professional insulation services in Anchorage, Alaska",
+      "publisher": {
+        "@id": "https://foamologyinsulation.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://foamologyinsulation.com/blog?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: WebPage (Page-specific) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": schemaType,
+      "@id": `${canonicalURL}#webpage`,
+      "url": canonicalURL,
+      "name": title,
+      "description": description,
+      "isPartOf": {
+        "@id": "https://foamologyinsulation.com/#website"
+      },
+      "about": {
+        "@id": "https://foamologyinsulation.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": absoluteOgImage
+      },
+      "inLanguage": "en-US"
+    })} />
     
     <!-- Preconnect to External Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+    <!-- Page-specific schema markup slot -->
+    <slot name="head" />
   </head>
   <body class="bg-cream text-espresso">
     <!-- Glass Filter SVG -->

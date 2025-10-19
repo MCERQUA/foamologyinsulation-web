@@ -4,6 +4,9 @@ import GlassButton from '../../components/ui/GlassButton.tsx';
 import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
 import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
 import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
 
 const removalServices = [
   {
@@ -108,9 +111,33 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Professional Insulation Removal Anchorage Alaska - Safe & Licensed"
+  title="Insulation Removal Anchorage AK"
   description="Safe insulation removal in Anchorage, AK. Licensed professionals handle contaminated, moldy, asbestos insulation removal. Hazmat certified, proper disposal. Free estimates on all removal services."
   keywords="insulation removal Anchorage, asbestos abatement Alaska, contaminated insulation removal, mold insulation removal Anchorage, rodent insulation cleanup Alaska, hazmat insulation removal"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Insulation Removal"
+    description="Licensed insulation removal services for contaminated, moldy, wet, or hazardous insulation materials. Professional safety protocols, proper disposal methods, and hazmat certification."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Insulation Removal', url: '/services/insulation-removal' }
+    ]}
+  />
 >
   <!-- Hero Section -->
   <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden pt-24 pb-12">

@@ -27,38 +27,58 @@ const {
 // Get current URL for social sharing
 const currentUrl = `https://foamologyinsulation.com${Astro.url.pathname}`;
 
+// Get absolute URL for featured image
+const siteUrl = 'https://foamologyinsulation.com';
+const absoluteFeaturedImage = featuredImage.startsWith('http') ? featuredImage : `${siteUrl}${featuredImage}`;
+
 // Schema.org structured data for SEO
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": `${currentUrl}#article`,
   "headline": title,
   "description": description,
-  "image": featuredImage,
+  "image": {
+    "@type": "ImageObject",
+    "url": absoluteFeaturedImage,
+    "width": 1200,
+    "height": 630
+  },
   "datePublished": pubDate.toISOString(),
   "dateModified": pubDate.toISOString(),
   "author": {
     "@type": author === 'Magnus Pedersen, Owner' ? "Person" : "Organization",
+    "@id": author === 'Magnus Pedersen, Owner' ? `${siteUrl}/#person-magnus` : `${siteUrl}/#organization`,
     "name": author
   },
   "publisher": {
     "@type": "Organization",
+    "@id": `${siteUrl}/#organization`,
     "name": "Foamology Insulation",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "901 E Klatt Road #6",
-      "addressLocality": "Anchorage",
-      "addressRegion": "AK",
-      "postalCode": "99515",
-      "addressCountry": "US"
-    },
+    "url": siteUrl,
     "logo": {
       "@type": "ImageObject",
-      "url": "https://foamologyinsulation.com/logo.png"
+      "@id": `${siteUrl}/#logo`,
+      "url": `${siteUrl}/images/logos/foamology-logo.png`,
+      "contentUrl": `${siteUrl}/images/logos/foamology-logo.png`,
+      "width": 250,
+      "height": 60
     }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": currentUrl
+  },
+  "keywords": tags.join(', '),
+  "articleSection": "Insulation & Energy Efficiency",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": `${siteUrl}/blog#blog`,
+    "name": "Foamology Insulation Blog",
+    "publisher": {
+      "@id": `${siteUrl}/#organization`
+    }
   }
 };
 ---

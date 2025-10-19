@@ -4,6 +4,9 @@ import GlassButton from '../../components/ui/GlassButton.tsx';
 import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
 import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
 import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
 
 const consultingServices = [
   {
@@ -302,9 +305,33 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Building Science Consultant Anchorage Alaska - Energy Code Compliance"
+  title="Building Consultant Anchorage AK"
   description="Professional building science consulting in Anchorage, AK. Design review, construction oversight, energy code compliance, forensic investigation. Expert consulting for architects, contractors, and building owners. Alaska building science expertise."
   keywords="building consultant Anchorage, building science Alaska, energy code compliance Anchorage, construction consulting Alaska, building envelope design, ENERGY STAR Alaska, forensic investigation, expert witness Alaska, building commissioning Anchorage"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Building Science Consulting"
+    description="Expert building science consulting applying building physics principles to design review, construction oversight, energy code compliance, and forensic investigation. Alaska-specific expertise for extreme cold climate conditions."
+    serviceType="ProfessionalService"
+    areaServed={['Anchorage, AK', 'Fairbanks, AK', 'Juneau, AK', 'Mat-Su Valley, AK', 'Kenai Peninsula, AK', 'Statewide Alaska']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Building Consultant', url: '/services/building-consultant' }
+    ]}
+  />
 >
   <!-- Hero Section -->
   <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden pt-24 pb-12">

@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GlassButton from '../../components/ui/GlassButton.tsx';
+import ServiceSchema from '../../components/seo/ServiceSchema.astro';
+import FAQSchema from '../../components/seo/FAQSchema.astro';
+import BreadcrumbSchema from '../../components/seo/BreadcrumbSchema.astro';
+import HowToSchema from '../../components/seo/HowToSchema.astro';
 import atticImage from '@assets/images/attic-spray-foam-insulation-arizona-comfort.png';
 import crawlSpaceImage from '@assets/images/crawl-space-foam-insulation-arizona-comfort.png';
 import wallImage from '@assets/images/wall-ceilings-foam-insulation-arizona-comfort.png';
@@ -70,9 +74,57 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Closed Cell Spray Foam Insulation Anchorage Alaska"
+  title="Closed Cell Spray Foam Insulation AK"
   description="Premium closed cell spray foam insulation in Anchorage, AK. R-7.0 per inch, lifetime warranty, 50% energy savings. Licensed spray foam contractor serving Alaska since 2010. Free estimates."
   keywords="closed cell spray foam Anchorage, spray foam insulation Alaska, R-7 insulation Anchorage, air sealing Alaska, moisture barrier insulation, spray foam contractor Anchorage AK"
+  schemaType="Service"
+>
+  <!-- SEO Schema Markup -->
+  <ServiceSchema
+    slot="head"
+    serviceName="Closed Cell Spray Foam Insulation"
+    description="Premium closed cell spray foam insulation with R-7.0 per inch thermal resistance, complete air sealing, and moisture protection designed specifically for Alaska's extreme climate conditions."
+    serviceType="HomeAndConstructionBusiness"
+    areaServed={['Anchorage, AK', 'Palmer, AK', 'Wasilla, AK', 'Eagle River, AK', 'Kenai Peninsula, AK', 'Mat-Su Valley, AK']}
+  />
+
+  <FAQSchema
+    slot="head"
+    faqs={faqs}
+  />
+
+  <BreadcrumbSchema
+    slot="head"
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Services', url: '/services' },
+      { name: 'Closed Cell Spray Foam', url: '/services/closed-cell-spray-foam' }
+    ]}
+  />
+
+  <HowToSchema
+    slot="head"
+    name="Closed Cell Spray Foam Installation Process"
+    description="Professional spray foam insulation installation following industry best practices and Alaska building codes"
+    steps={[
+      {
+        name: 'Inspection & Assessment',
+        text: 'Thorough evaluation of your property\'s insulation needs and preparation requirements'
+      },
+      {
+        name: 'Surface Preparation',
+        text: 'Clean and prepare all surfaces for optimal spray foam adhesion and coverage'
+      },
+      {
+        name: 'Professional Application',
+        text: 'Expert application using professional equipment for even coverage and proper thickness'
+      },
+      {
+        name: 'Quality Inspection',
+        text: 'Final inspection and cleanup with detailed documentation of completed work'
+      }
+    ]}
+  />
 >
   <!-- Hero Section -->
   <section class="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-cream via-sand to-sand-dark overflow-hidden pt-24 pb-12">
