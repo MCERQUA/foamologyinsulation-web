@@ -14,8 +14,9 @@ export default defineConfig({
     mdx()
   ],
   output: 'static',
-  trailingSlash: 'never', // Prevent 301 redirects from trailing slash inconsistency
+  trailingSlash: 'always', // Match Netlify's default trailing slash behavior
   build: {
-    inlineStylesheets: 'auto'
+    inlineStylesheets: 'auto',
+    format: 'directory' // Generate /page/index.html structure
   }
 });
