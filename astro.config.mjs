@@ -14,6 +14,7 @@ export default defineConfig({
     mdx()
   ],
   output: 'static',
+  trailingSlash: 'never', // Prevent 301 redirects from trailing slash inconsistency
   build: {
     inlineStylesheets: 'auto'
   }
