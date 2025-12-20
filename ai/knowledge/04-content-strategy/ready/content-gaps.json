@@ -1,0 +1,214 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "content-gaps",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_gaps": 20,
+    "critical_gaps": 5,
+    "total_traffic_potential": 8500,
+    "estimated_lead_increase": "60-120 leads/month"
+  },
+  "quick_wins": [
+    {
+      "title": "Add FAQ Schema to Service Pages",
+      "effort_hours": 0.5,
+      "impact": "High",
+      "priority": "Week 1",
+      "description": "Add FAQ schema markup to all 8 existing service pages"
+    },
+    {
+      "title": "Add LocalBusiness Schema",
+      "effort_hours": 0.5,
+      "impact": "High",
+      "priority": "Week 1",
+      "description": "Add LocalBusiness schema to homepage"
+    },
+    {
+      "title": "Create FAQ Page",
+      "effort_hours": 3,
+      "impact": "Very High",
+      "priority": "Week 1",
+      "description": "Comprehensive FAQ page with 30+ questions"
+    },
+    {
+      "title": "Add FAQ Section to Homepage",
+      "effort_hours": 2,
+      "impact": "High",
+      "priority": "Week 1",
+      "description": "Add 5-7 FAQ questions to homepage"
+    },
+    {
+      "title": "Create Service Areas Hub",
+      "effort_hours": 2,
+      "impact": "High",
+      "priority": "Week 1",
+      "description": "Create hub page linking to all location pages"
+    }
+  ],
+  "high_value_opportunities": [
+    {
+      "rank": 1,
+      "title": "Spray Foam Insulation Cost Guide",
+      "url": "/spray-foam-insulation-cost",
+      "traffic_potential": "400-600/month",
+      "lead_potential": "20-40/month",
+      "score": 9.5,
+      "priority": "CRITICAL",
+      "rationale": "Highest commercial intent keyword, no competitor has transparent pricing"
+    },
+    {
+      "rank": 2,
+      "title": "Anchorage Location Page",
+      "url": "/service-areas/anchorage",
+      "traffic_potential": "200-300/month",
+      "lead_potential": "10-20/month",
+      "score": 9.2,
+      "priority": "CRITICAL",
+      "rationale": "Core market, highest population, foundation for local SEO"
+    },
+    {
+      "rank": 3,
+      "title": "Closed Cell vs Open Cell Comparison",
+      "url": "/blog/closed-cell-vs-open-cell-spray-foam",
+      "traffic_potential": "300-500/month",
+      "lead_potential": "10-20/month",
+      "score": 8.9,
+      "priority": "CRITICAL",
+      "rationale": "1,900 monthly searches, decision-stage content"
+    },
+    {
+      "rank": 4,
+      "title": "Wasilla/Mat-Su Location Pages",
+      "url": "/service-areas/wasilla",
+      "traffic_potential": "100-150/month",
+      "lead_potential": "5-15/month",
+      "score": 8.8,
+      "priority": "CRITICAL",
+      "rationale": "Fast-growing market, low competition"
+    },
+    {
+      "rank": 5,
+      "title": "Main FAQ Page",
+      "url": "/faq",
+      "traffic_potential": "400-600/month",
+      "lead_potential": "15-25/month",
+      "score": 8.7,
+      "priority": "HIGH",
+      "rationale": "Featured snippet opportunities, 30+ questions"
+    }
+  ],
+  "location_pages": [
+    {
+      "location": "Anchorage",
+      "url": "/service-areas/anchorage",
+      "priority": "Critical",
+      "traffic_potential": "200-300/month",
+      "lead_potential": "10-20/month",
+      "status": "planned"
+    },
+    {
+      "location": "Wasilla",
+      "url": "/service-areas/wasilla",
+      "priority": "Critical",
+      "traffic_potential": "100-150/month",
+      "lead_potential": "5-15/month",
+      "status": "planned"
+    },
+    {
+      "location": "Palmer",
+      "url": "/service-areas/palmer",
+      "priority": "High",
+      "traffic_potential": "60-100/month",
+      "lead_potential": "3-8/month",
+      "status": "planned"
+    },
+    {
+      "location": "Eagle River",
+      "url": "/service-areas/eagle-river",
+      "priority": "High",
+      "traffic_potential": "30-60/month",
+      "lead_potential": "2-5/month",
+      "status": "planned"
+    },
+    {
+      "location": "Mat-Su Valley Hub",
+      "url": "/service-areas/mat-su-valley",
+      "priority": "Critical",
+      "traffic_potential": "60-100/month",
+      "lead_potential": "3-8/month",
+      "status": "planned"
+    },
+    {
+      "location": "Kenai Peninsula",
+      "url": "/service-areas/kenai-peninsula",
+      "priority": "High",
+      "traffic_potential": "40-80/month",
+      "lead_potential": "2-6/month",
+      "status": "planned"
+    }
+  ],
+  "service_pages": [
+    {
+      "service": "Spray Foam Insulation",
+      "url": "/services/spray-foam",
+      "status": "existing",
+      "needs_expansion": true,
+      "word_count_target": 2000
+    },
+    {
+      "service": "Attic Insulation",
+      "url": "/services/attic-insulation",
+      "status": "existing",
+      "needs_expansion": true,
+      "word_count_target": 2000
+    },
+    {
+      "service": "Air Sealing",
+      "url": "/services/air-sealing",
+      "status": "planned",
+      "needs_expansion": false,
+      "word_count_target": 1600
+    }
+  ],
+  "implementation_roadmap": {
+    "phase_1_critical": {
+      "timeline": "Week 1-2",
+      "pages": 15,
+      "description": "Critical pages for immediate traffic capture",
+      "items": [
+        "Cost Guide Pillar",
+        "Anchorage Location",
+        "Wasilla Location",
+        "Service Areas Hub",
+        "FAQ Page"
+      ]
+    },
+    "phase_2_high": {
+      "timeline": "Week 3-4",
+      "pages": 14,
+      "description": "High-value cluster content and remaining locations",
+      "items": [
+        "Energy Savings Pillar",
+        "Crawl Space Pillar",
+        "Palmer Location",
+        "Eagle River Location",
+        "Ice Dam Pillar"
+      ]
+    },
+    "phase_3_medium": {
+      "timeline": "Week 5-8",
+      "pages": 15,
+      "description": "Remaining pillars and supporting content",
+      "items": [
+        "Home Comfort Pillar",
+        "Alaska Climate Pillar",
+        "Commercial Pillar",
+        "Thermal Inspections Pillar",
+        "Additional Blog Posts"
+      ]
+    }
+  }
+}

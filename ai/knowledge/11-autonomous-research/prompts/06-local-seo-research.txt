@@ -1,0 +1,121 @@
+AUTONOMOUS TASK: Local SEO Deep Dive for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks Markets
+
+OBJECTIVE: Comprehensive local SEO research and strategy for all target markets.
+
+TARGET MARKETS:
+PRIMARY: {{CITY_LIST}}
+SECONDARY: [Identify secondary markets in the region during research]
+
+RESEARCH SCOPE:
+1. Local keyword variations for each city
+2. Local competitors in each market
+3. Local business directories and citations
+4. Local link building opportunities
+5. Local content opportunities
+6. Google Business Profile optimization
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/local-seo/:
+
+1-X. [city]-market-analysis.md - Complete analysis for each primary city
+X+1. secondary-markets.md - Analysis of secondary markets
+X+2. local-keywords-by-city.md - 100+ local keyword variations per city
+X+3. local-competitors.md - Top 5 local competitors in each market
+X+4. citation-opportunities.md - 50+ directories for citations
+X+5. local-link-building.md - Local link building opportunities
+X+6. local-content-ideas.md - Location-specific content for each market
+X+7. google-business-optimization.md - GBP strategy for each location
+X+8. local-seo-strategy.csv - CSV: city, population, market_size, competition, opportunity_score
+
+MARKET ANALYSIS TEMPLATE:
+
+## [City Name] Market Analysis
+
+**Demographics:**
+- Population: [data]
+- Commercial buildings: [estimate]
+- Industrial facilities: [estimate]
+- Key industries: [list]
+
+**spray foam insulation Demand:**
+- Market size estimate
+- Growth trends
+- Seasonal patterns
+- Economic indicators
+
+**Local Competitors:**
+1. [Company 1] - [strengths/weaknesses]
+2. [Company 2] - [strengths/weaknesses]
+[etc...]
+
+**Local Keywords:**
+- [City] spray foam insulation - [volume]
+- spray foam insulation [City] - [volume]
+- [50+ keyword variations]
+
+**Local Search Behavior:**
+- How do businesses search?
+- What questions do they ask?
+- Mobile vs desktop
+
+**Citation Opportunities:**
+- Chamber of Commerce
+- BBB
+- Industry associations
+- Local directories
+- [20+ specific opportunities]
+
+**Local Link Building:**
+- Local business associations
+- Industry groups
+- Supplier partnerships
+- Community involvement
+- [15+ specific opportunities]
+
+**Content Opportunities:**
+- "[City] spray foam insulation Guide"
+- "Best [Service] for [City] Weather"
+- "spray foam insulation in [City]"
+- [20+ ideas per city]
+
+**Google Business Profile:**
+- Primary category: [Main business type]
+- Secondary categories
+- Service areas
+- Hours (note if 24/7 emergency)
+- Photos needed
+- Review strategy
+
+**Local Competition Level:**
+[Rate: Low/Medium/High]
+
+**Market Opportunity:**
+[Rate: Low/Medium/High]
+
+**Priority Ranking:**
+[1-X overall priority]
+
+RESEARCH METHODOLOGY:
+- Google search for "[city] spray foam insulation"
+- Analyze local search results
+- Research city demographics and business data
+- Identify local business associations
+- Find local directories and chambers
+- Study competitor local presence
+- Analyze Google Maps results
+
+OUTPUT FORMAT:
+- Comprehensive markdown for each city
+- Data-driven insights
+- Specific actionable recommendations
+- Prioritize by opportunity
+
+QUALITY STANDARDS:
+- Each market needs 500+ word analysis
+- Minimum 50 keywords per primary city
+- 30 keywords per secondary city
+- 10+ local link opportunities per city
+- 20+ content ideas per city
+- Specific competitor data
+
+This research will drive the entire local SEO strategy. Be exhaustive.

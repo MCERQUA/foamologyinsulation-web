@@ -181,6 +181,79 @@ body {
 
 /* Card styling */
 .card-elegant {
-  @apply bg-soft-white rounded-3xl shadow-soft hover:shadow-medium 
+  @apply bg-soft-white rounded-3xl shadow-soft hover:shadow-medium
          transition-all duration-300;
+}
+
+/* Blog article styles */
+.blog-article table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(74, 63, 54, 0.08);
+}
+
+.blog-article thead {
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+}
+
+.blog-article th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.blog-article td {
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid rgba(187, 222, 251, 0.5);
+  color: #546E7A;
+}
+
+.blog-article tbody tr:nth-child(even) {
+  background: rgba(227, 242, 253, 0.3);
+}
+
+.blog-article tbody tr:hover {
+  background: rgba(227, 242, 253, 0.6);
+}
+
+.blog-article tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blog headings with visual separator */
+.blog-article h2 {
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-article h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2196F3, transparent);
+  border-radius: 2px;
+}
+
+/* FAQ styling */
+.blog-article h3 + p {
+  margin-top: 0.5rem;
+}
+
+/* List styling enhancements */
+.blog-article ul li::marker {
+  color: #2196F3;
+}
+
+.blog-article ol li::marker {
+  color: #2196F3;
+  font-weight: 600;
 }

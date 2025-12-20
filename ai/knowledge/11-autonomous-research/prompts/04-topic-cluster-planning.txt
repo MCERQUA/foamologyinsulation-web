@@ -1,0 +1,79 @@
+AUTONOMOUS TASK: Topic Cluster and Pillar Content Strategy
+
+OBJECTIVE: Design a comprehensive topic cluster architecture for maximum SEO impact and user value.
+
+PREREQUISITES:
+- Read all keyword research files from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+- Read content gap analysis from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/content-gaps/
+- Understand current website structure
+
+RESEARCH SCOPE:
+Create a hub-and-spoke topic cluster model where:
+- Pillar pages cover broad topics (spray foam insulation topics)
+- Cluster pages cover specific subtopics and link back to pillars
+- Internal linking strategy connects everything logically
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/topic-clusters/:
+
+1. pillar-pages-overview.md - List and description of 8-12 main pillar pages
+2. cluster-architecture.md - Visual representation (text-based) of topic clusters
+3. cluster-01-[topic].md - Complete cluster: primary services/topics
+4. cluster-02-[topic].md - Maintenance, repairs, prevention
+5. cluster-03-[topic].md - Certifications, warranties, quality
+6. cluster-04-[topic].md - Location services ({{CITY_LIST}})
+7. cluster-05-[topic].md - Emergency services, storm damage
+8. cluster-06-[topic].md - Buyer guides, cost guides, ROI, comparisons
+9. cluster-07-[topic].md - Industry education, terminology, best practices
+10. cluster-08-[topic].md - Company expertise, certifications, process
+11. internal-linking-strategy.md - How pages link together, anchor text suggestions
+12. topic-cluster-map.csv - CSV: cluster_name, pillar_page, cluster_pages, target_keywords
+
+TOPIC CLUSTER STRUCTURE:
+For each cluster, define:
+1. Pillar Page Title and URL
+2. Target Keywords (3-5 primary)
+3. Content Brief (what it covers)
+4. 8-15 Cluster Pages with:
+   - Page title
+   - Target keyword
+   - Content angle
+   - Word count target
+   - Priority (high/medium/low)
+5. Internal Linking Map
+6. External Authority Sources
+
+EXAMPLE CLUSTER FORMAT:
+
+## Cluster: [Main Topic]
+
+**Pillar Page:** "[Title for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks Businesses]"
+**URL:** /[topic]/
+**Keywords:** [primary keywords related to spray foam insulation]
+
+**Cluster Pages:**
+1. "[Specific Service/Topic]: [Benefits & Details]"
+   - Keyword: [specific keyword]
+   - Angle: Complete guide to [topic]
+   - Links: Back to pillar, to related pages
+   - Priority: High
+
+2. "[Related Topic]: [Unique Angle]"
+   [etc...]
+
+OUTPUT FORMAT:
+- Detailed markdown for each cluster
+- Clear hierarchy and relationships
+- Include keyword mapping
+- Specify internal linking structure
+- Note content dependencies (what needs to be written first)
+
+QUALITY STANDARDS:
+- Minimum 8 comprehensive topic clusters
+- Each pillar should have 8-15 cluster pages
+- Total of 80-120 content pieces mapped
+- Clear SEO strategy for each piece
+- Logical content progression for users
+- Consider buyer journey stages
+
+Think like an SEO expert and content strategist. Build clusters that will dominate search results.

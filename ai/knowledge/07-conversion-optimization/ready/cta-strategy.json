@@ -1,0 +1,132 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "service-page-strategy",
+    "version": "1.0.0"
+  },
+  "cta_strategy": {
+    "primary_cta": {
+      "text": "Get Free Estimate",
+      "action": "Opens quote request form or scrolls to contact form",
+      "placement": "Hero section, above fold",
+      "color": "Contrasting brand color (orange/green)",
+      "size": "Large, prominent"
+    },
+    "secondary_ctas": {
+      "phone": {
+        "text": "Call Now: (907) 310-3000",
+        "placement": "Header (sticky), mid-page, footer",
+        "mobile": "Click-to-call enabled"
+      },
+      "schedule": {
+        "text": "Schedule Assessment",
+        "placement": "After process section, bottom of page"
+      },
+      "learn_more": {
+        "text": "Learn More / See Our Work",
+        "placement": "After testimonials, service descriptions"
+      }
+    }
+  },
+  "cta_placement_per_page_type": {
+    "homepage": {
+      "hero_cta": "Get Free Estimate",
+      "mid_page_ctas": ["Call Now", "View Services", "See Our Work"],
+      "footer_cta": "Contact form + Phone + Map",
+      "total_ctas": 6
+    },
+    "service_pages": {
+      "hero_cta": "Get Free [Service] Estimate",
+      "conversion_points": [
+        {"location": "After hero", "cta": "Get Free Estimate"},
+        {"location": "After benefits", "cta": "Call Now"},
+        {"location": "After process", "cta": "Schedule Assessment"},
+        {"location": "After testimonials", "cta": "See More Reviews"},
+        {"location": "After FAQ", "cta": "Get Free Estimate"},
+        {"location": "Footer", "cta": "Contact Form + Phone"}
+      ],
+      "total_ctas": 6
+    },
+    "location_pages": {
+      "hero_cta": "Get Free Estimate in [City]",
+      "conversion_points": [
+        {"location": "After hero", "cta": "Get Free Estimate"},
+        {"location": "After services list", "cta": "Call Now"},
+        {"location": "After testimonials", "cta": "Schedule Assessment"},
+        {"location": "Footer", "cta": "Contact Form + Map"}
+      ],
+      "total_ctas": 5
+    },
+    "blog_posts": {
+      "inline_ctas": [
+        {"location": "After intro", "cta": "Related service link"},
+        {"location": "Mid-article", "cta": "Get Free Estimate"},
+        {"location": "After conclusion", "cta": "Schedule Assessment"}
+      ],
+      "sidebar_ctas": ["Contact form", "Phone number", "Free resources"],
+      "total_ctas": 4
+    }
+  },
+  "form_strategy": {
+    "short_form": {
+      "location": "Header, sidebar, popup",
+      "fields": ["Name", "Phone", "Email", "Service Interest (dropdown)"],
+      "submit_text": "Get Free Estimate",
+      "purpose": "Quick lead capture"
+    },
+    "detailed_form": {
+      "location": "Service pages, contact page",
+      "fields": [
+        "Name",
+        "Phone",
+        "Email",
+        "Address",
+        "Service type",
+        "Project description",
+        "Preferred contact method",
+        "Best time to call"
+      ],
+      "submit_text": "Request Free Estimate",
+      "purpose": "Qualified lead with details"
+    },
+    "quote_calculator": {
+      "location": "Cost page, calculator page",
+      "fields": [
+        "Square footage",
+        "Building type",
+        "Current insulation status",
+        "Priority level",
+        "Budget range"
+      ],
+      "submit_text": "Get Your Estimate",
+      "purpose": "Interactive engagement + lead capture"
+    }
+  },
+  "trust_signals_placement": {
+    "above_fold": [
+      "Years in business badge",
+      "Licensed & Insured badge",
+      "Star rating from Google"
+    ],
+    "mid_page": [
+      "SPFA certification logo",
+      "BPI certification logo",
+      "Guarantee badge",
+      "Customer testimonial quote"
+    ],
+    "footer": [
+      "BBB rating",
+      "Association memberships",
+      "Insurance verification",
+      "Payment options"
+    ]
+  },
+  "mobile_cta_optimization": {
+    "sticky_header": "Phone number always visible",
+    "floating_cta": "Call button in corner",
+    "touch_targets": "Minimum 44x44px",
+    "form_simplification": "Fewer fields on mobile",
+    "click_to_call": "All phone numbers clickable"
+  }
+}

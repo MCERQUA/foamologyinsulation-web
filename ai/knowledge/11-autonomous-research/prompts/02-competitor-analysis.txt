@@ -1,0 +1,57 @@
+AUTONOMOUS TASK: Deep Competitor Analysis for spray foam insulation Market
+
+OBJECTIVE: Analyze top spray foam insulation competitors in Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks to identify strengths, weaknesses, and opportunities.
+
+RESEARCH SCOPE:
+1. Identify top 15-20 spray foam insulation companies in Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks
+2. Analyze their websites, SEO strategies, and content
+3. Identify their service offerings and specializations
+4. Study their pricing strategies (if available)
+5. Analyze their certifications and partnerships
+6. Review their online presence and reviews
+
+COMPETITORS TO RESEARCH:
+- Search for "spray foam insulation Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks" and analyze top 10 organic results
+- Search for "spray foam insulation [each city]" - top 5 per city
+- Search for specific services (Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation) in these markets
+- Include national brands operating in the region
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/competitor-analysis/:
+
+1. competitor-list.md - Complete list of 15-20 competitors with URLs and locations
+2. website-analysis.md - Detailed analysis of each competitor's website (design, UX, content, CTAs)
+3. seo-analysis.md - SEO strategies, keywords they rank for, meta descriptions, page titles
+4. service-comparison.md - Compare service offerings across all competitors
+5. content-strategy.md - What types of content do they publish? Blogs, case studies, guides?
+6. certifications-partnerships.md - What certifications and manufacturer partnerships do they have?
+7. pricing-strategy.md - Any publicly visible pricing or quote processes
+8. online-reputation.md - Google reviews, BBB ratings, testimonials
+9. competitive-advantages.md - What are their USPs? What makes each one unique?
+10. gaps-opportunities.md - Where is Foamology Insulation better? Where are the opportunities?
+11. competitor-matrix.csv - CSV with columns: company, services, certifications, avg_rating, strengths, weaknesses
+
+METHODOLOGY:
+- Visit each competitor's website thoroughly
+- Use web search to find reviews and mentions
+- Analyze their Google Business Profile
+- Study their social media presence
+- Look for case studies and portfolio work
+- Check for blog content and resources
+- Analyze their conversion elements (CTAs, forms, phone numbers)
+
+OUTPUT FORMAT:
+- Comprehensive markdown reports for each file
+- Include screenshots references where relevant (describe what you found)
+- Provide specific examples and URLs
+- Rate competitors on 1-10 scale for various factors
+- Highlight best practices to emulate and mistakes to avoid
+
+QUALITY STANDARDS:
+- Each competitor must have detailed 200+ word analysis
+- Include specific examples and data points
+- Identify at least 10 unique opportunities for Foamology Insulation
+- Provide actionable recommendations
+- Be objective and analytical
+
+Execute this research exhaustively. Visit every competitor website. Take detailed notes.

@@ -1,0 +1,87 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "created": "2025-12-19T04:26:03Z",
+    "updated": "2025-12-19T04:26:03Z"
+  },
+  "website": {
+    "name": "foamologyinsulation-web",
+    "domain": "comfort-website"
+  },
+  "knowledge_base": {
+    "structure_version": "1.0.0",
+    "initialized": "2025-12-19T04:26:03Z",
+    "status": "initialized"
+  },
+  "aspects": {
+    "01-business-intel": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "02-market-research": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "03-keyword-research": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "04-content-strategy": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "05-technical-seo": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "06-local-seo": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "07-conversion-optimization": {
+      "status": "not_started",
+      "completeness": 0,
+      "raw_files": 0,
+      "processed_files": 0,
+      "ready_files": 0,
+      "last_updated": null
+    },
+    "08-content-created": {
+      "status": "empty",
+      "total_articles": 0,
+      "total_pages": 0,
+      "last_published": null
+    },
+    "09-business-insights": {
+      "status": "empty",
+      "total_insights": 0,
+      "last_generated": null
+    }
+  },
+  "overall_completeness": 0,
+  "readiness_score": 0
+}

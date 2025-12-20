@@ -1,0 +1,521 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "domain": "foamologyinsulation-web",
+    "source": "topic-clusters",
+    "generated": "2025-12-20T00:00:00.000Z"
+  },
+  "pillars": [
+    {
+      "id": "spray-foam-insulation-guide",
+      "title": "Complete Spray Foam Insulation Guide",
+      "url": "/spray-foam-insulation-guide",
+      "primaryKeyword": "spray foam insulation",
+      "searchVolume": 40500,
+      "priority": "CRITICAL",
+      "status": "planned",
+      "description": "Comprehensive guide covering all aspects of spray foam insulation for Alaska homeowners",
+      "keywords": [
+        "spray foam insulation",
+        "spray foam insulation Alaska",
+        "types of spray foam",
+        "spray foam benefits"
+      ],
+      "supportingArticles": [
+        {
+          "id": "closed-cell-spray-foam",
+          "title": "Closed-Cell Spray Foam",
+          "url": "/services/closed-cell-spray-foam",
+          "status": "existing",
+          "estimatedWordCount": 2000
+        },
+        {
+          "id": "open-cell-spray-foam",
+          "title": "Open-Cell Spray Foam",
+          "url": "/services/open-cell-spray-foam",
+          "status": "existing",
+          "estimatedWordCount": 2000
+        },
+        {
+          "id": "closed-cell-vs-open-cell",
+          "title": "Spray Foam Insulation: Is It Worth the Cost?",
+          "url": "/blog/closed-cell-vs-open-cell-spray-foam",
+          "status": "planned",
+          "estimatedWordCount": 2500
+        },
+        {
+          "id": "spray-foam-r-value",
+          "title": "Spray Foam Insulation R-Value: What You MUST Know",
+          "url": "/blog/spray-foam-r-value-guide",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "is-spray-foam-worth-it",
+          "title": "Spray Foam Insulation: Is It REALLY Worth It?",
+          "url": "/blog/is-spray-foam-insulation-worth-it",
+          "status": "planned",
+          "estimatedWordCount": 2000
+        },
+        {
+          "id": "how-long-spray-foam-lasts",
+          "title": "How Long Does Spray Foam Insulation *Really* Last?",
+          "url": "/blog/how-long-does-spray-foam-last",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "spray-foam-vs-fiberglass",
+          "title": "Spray Foam Insulation: Which is Best for YOU?",
+          "url": "/blog/spray-foam-vs-fiberglass",
+          "status": "planned",
+          "estimatedWordCount": 2000
+        },
+        {
+          "id": "spray-foam-vs-cellulose",
+          "title": "Spray Foam Insulation: Cost, Benefits & Savings",
+          "url": "/blog/spray-foam-vs-cellulose",
+          "status": "planned",
+          "estimatedWordCount": 1800
+        }
+      ],
+      "estimatedWordCount": 4000
+    },
+    {
+      "id": "crawl-space-insulation-guide",
+      "title": "Crawl Space & Foundation Insulation Guide",
+      "url": "/crawl-space-insulation-guide",
+      "primaryKeyword": "crawl space insulation",
+      "searchVolume": 8100,
+      "priority": "HIGH",
+      "status": "planned",
+      "description": "Complete guide to crawl space insulation, encapsulation, and foundation solutions for Alaska",
+      "keywords": [
+        "crawl space insulation",
+        "crawl space encapsulation",
+        "foundation insulation Alaska"
+      ],
+      "supportingArticles": [
+        {
+          "id": "crawl-space-encapsulation",
+          "title": "Crawl Space Insulation: Is Encapsulation Worth It?",
+          "url": "/blog/crawl-space-encapsulation-guide",
+          "status": "planned",
+          "estimatedWordCount": 2000
+        },
+        {
+          "id": "vented-vs-sealed-crawl-space",
+          "title": "Crawl Space Insulation: Vented or Sealed?",
+          "url": "/blog/vented-vs-sealed-crawl-space",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "crawl-space-moisture",
+          "title": "Crawl Space Insulation: Stop Moisture Now!",
+          "url": "/blog/crawl-space-moisture-problems",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "rim-joist-insulation",
+          "title": "Crawl Space Insulation: Cost & Best Options",
+          "url": "/blog/rim-joist-insulation",
+          "status": "planned",
+          "estimatedWordCount": 1200
+        },
+        {
+          "id": "cold-floor-solutions",
+          "title": "Crawl Space Insulation: Stop Cold Floors NOW!",
+          "url": "/blog/cold-floors-insulation",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        }
+      ],
+      "estimatedWordCount": 3500
+    },
+    {
+      "id": "energy-savings-insulation",
+      "title": "Energy Efficiency & Savings Guide",
+      "url": "/energy-savings-insulation",
+      "primaryKeyword": "energy savings insulation",
+      "searchVolume": 1200,
+      "priority": "HIGH",
+      "status": "planned",
+      "description": "How insulation saves energy and reduces heating costs for Alaska homeowners",
+      "keywords": [
+        "energy savings insulation",
+        "reduce heating costs Alaska",
+        "insulation ROI"
+      ],
+      "supportingArticles": [
+        {
+          "id": "ahfc-rebates",
+          "title": "AHFC Rebate Guide",
+          "url": "/resources/ahfc-rebates",
+          "status": "planned",
+          "estimatedWordCount": 2200
+        },
+        {
+          "id": "r-value-guide",
+          "title": "R-Value Guide for Alaska",
+          "url": "/resources/r-value-guide",
+          "status": "planned",
+          "estimatedWordCount": 1800
+        },
+        {
+          "id": "energy-savings-calculator",
+          "title": "Energy Savings Calculator",
+          "url": "/energy-savings-calculator",
+          "status": "planned",
+          "estimatedWordCount": 1000
+        },
+        {
+          "id": "insulation-tax-credits",
+          "title": "Federal Tax Credits for Insulation",
+          "url": "/resources/tax-credits",
+          "status": "planned",
+          "estimatedWordCount": 1600
+        }
+      ],
+      "estimatedWordCount": 3000
+    },
+    {
+      "id": "service-areas-hub",
+      "title": "Alaska Service Areas Hub",
+      "url": "/service-areas",
+      "primaryKeyword": "spray foam insulation Alaska",
+      "searchVolume": 500,
+      "priority": "CRITICAL",
+      "status": "planned",
+      "description": "Service area hub page linking to all location-specific landing pages",
+      "keywords": [
+        "spray foam insulation Alaska",
+        "insulation contractors Alaska",
+        "service areas"
+      ],
+      "supportingArticles": [
+        {
+          "id": "anchorage",
+          "title": "Spray Foam Insulation Anchorage",
+          "url": "/service-areas/anchorage",
+          "status": "planned",
+          "estimatedWordCount": 1800
+        },
+        {
+          "id": "wasilla",
+          "title": "Spray Foam Insulation Wasilla",
+          "url": "/service-areas/wasilla",
+          "status": "planned",
+          "estimatedWordCount": 1600
+        },
+        {
+          "id": "palmer",
+          "title": "Spray Foam Insulation Palmer",
+          "url": "/service-areas/palmer",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        },
+        {
+          "id": "mat-su-valley",
+          "title": "Mat-Su Valley Insulation",
+          "url": "/service-areas/mat-su-valley",
+          "status": "planned",
+          "estimatedWordCount": 1600
+        },
+        {
+          "id": "eagle-river",
+          "title": "Spray Foam Eagle River",
+          "url": "/service-areas/eagle-river",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        },
+        {
+          "id": "kenai-peninsula",
+          "title": "Kenai Peninsula Insulation",
+          "url": "/service-areas/kenai-peninsula",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        }
+      ],
+      "estimatedWordCount": 2500
+    },
+    {
+      "id": "ice-dam-prevention-guide",
+      "title": "Ice Dam Prevention Guide",
+      "url": "/ice-dam-prevention-guide",
+      "primaryKeyword": "ice dam prevention",
+      "searchVolume": 590,
+      "priority": "CRITICAL",
+      "status": "planned",
+      "description": "Comprehensive guide to preventing ice dams through proper insulation in Alaska",
+      "keywords": [
+        "ice dam prevention",
+        "prevent ice dams Alaska",
+        "ice dam solutions"
+      ],
+      "supportingArticles": [
+        {
+          "id": "ice-dam-causes",
+          "title": "What Causes Ice Dams",
+          "url": "/blog/ice-dam-causes",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "attic-ventilation",
+          "title": "Attic Ventilation Guide",
+          "url": "/blog/roof-ventilation-ice-dams",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "attic-air-sealing",
+          "title": "Attic Air Sealing",
+          "url": "/blog/attic-air-sealing",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "thermal-imaging-ice-dams",
+          "title": "Thermal Imaging for Ice Dams",
+          "url": "/blog/thermal-imaging-ice-dams",
+          "status": "planned",
+          "estimatedWordCount": 1200
+        }
+      ],
+      "estimatedWordCount": 3000
+    },
+    {
+      "id": "home-comfort-solutions",
+      "title": "Home Comfort Solutions",
+      "url": "/home-comfort-solutions",
+      "primaryKeyword": "home comfort insulation",
+      "searchVolume": 500,
+      "priority": "HIGH",
+      "status": "planned",
+      "description": "Solutions for draft elimination, temperature consistency, and overall home comfort",
+      "keywords": [
+        "home comfort insulation",
+        "stop drafts",
+        "temperature control"
+      ],
+      "supportingArticles": [
+        {
+          "id": "air-sealing-services",
+          "title": "Air Sealing Services",
+          "url": "/services/air-sealing",
+          "status": "planned",
+          "estimatedWordCount": 1600
+        },
+        {
+          "id": "common-air-leak-locations",
+          "title": "Common Air Leak Locations",
+          "url": "/blog/find-air-leaks-home",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        },
+        {
+          "id": "draft-prevention",
+          "title": "Draft Prevention Guide",
+          "url": "/blog/stop-drafts-home",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "blower-door-test",
+          "title": "Blower Door Test Explained",
+          "url": "/blog/blower-door-test",
+          "status": "planned",
+          "estimatedWordCount": 1200
+        }
+      ],
+      "estimatedWordCount": 2500
+    },
+    {
+      "id": "commercial-insulation",
+      "title": "Commercial Insulation Services",
+      "url": "/commercial-insulation",
+      "primaryKeyword": "commercial insulation Alaska",
+      "searchVolume": 100,
+      "priority": "MEDIUM",
+      "status": "planned",
+      "description": "Commercial and industrial insulation solutions for Alaska businesses",
+      "keywords": [
+        "commercial insulation Alaska",
+        "commercial spray foam",
+        "warehouse insulation"
+      ],
+      "supportingArticles": [
+        {
+          "id": "warehouse-insulation",
+          "title": "Warehouse Insulation",
+          "url": "/blog/warehouse-insulation-alaska",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        },
+        {
+          "id": "metal-building-insulation",
+          "title": "Metal Building Insulation",
+          "url": "/blog/metal-building-insulation",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        },
+        {
+          "id": "new-construction",
+          "title": "New Construction Insulation",
+          "url": "/services/new-construction-insulation",
+          "status": "planned",
+          "estimatedWordCount": 1600
+        }
+      ],
+      "estimatedWordCount": 2500
+    },
+    {
+      "id": "alaska-insulation-solutions",
+      "title": "Alaska Climate & Building Solutions",
+      "url": "/alaska-insulation-solutions",
+      "primaryKeyword": "insulation Alaska",
+      "searchVolume": 500,
+      "priority": "HIGH",
+      "status": "planned",
+      "description": "Alaska-specific insulation solutions for extreme cold climate challenges",
+      "keywords": [
+        "insulation Alaska",
+        "cold climate insulation",
+        "extreme weather insulation"
+      ],
+      "supportingArticles": [
+        {
+          "id": "best-insulation-alaska",
+          "title": "Best Insulation for Alaska",
+          "url": "/blog/best-insulation-alaska",
+          "status": "planned",
+          "estimatedWordCount": 1800
+        },
+        {
+          "id": "alaska-building-code",
+          "title": "Alaska Building Code Requirements",
+          "url": "/blog/alaska-insulation-code",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "log-cabin-insulation",
+          "title": "Log Cabin Insulation Alaska",
+          "url": "/blog/log-cabin-insulation-alaska",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        }
+      ],
+      "estimatedWordCount": 3000
+    },
+    {
+      "id": "spray-foam-insulation-cost",
+      "title": "Spray Foam Insulation Cost Guide",
+      "url": "/spray-foam-insulation-cost",
+      "primaryKeyword": "spray foam insulation cost",
+      "searchVolume": 18100,
+      "priority": "CRITICAL",
+      "status": "planned",
+      "description": "Comprehensive pricing guide for spray foam insulation in Alaska",
+      "keywords": [
+        "spray foam insulation cost",
+        "spray foam cost per square foot",
+        "insulation pricing Alaska"
+      ],
+      "supportingArticles": [
+        {
+          "id": "attic-insulation-cost",
+          "title": "Attic Insulation Cost Alaska",
+          "url": "/blog/attic-insulation-cost-alaska",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "crawl-space-insulation-cost",
+          "title": "Crawl Space Insulation Cost",
+          "url": "/blog/crawl-space-insulation-cost",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "closed-cell-vs-open-cell-cost",
+          "title": "Closed Cell vs Open Cell Cost",
+          "url": "/blog/closed-cell-cost-vs-open-cell",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "insulation-financing",
+          "title": "Insulation Financing Options",
+          "url": "/financing",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "insulation-roi-calculator",
+          "title": "Insulation ROI Calculator",
+          "url": "/blog/insulation-payback-calculator",
+          "status": "planned",
+          "estimatedWordCount": 1200
+        }
+      ],
+      "estimatedWordCount": 3500
+    },
+    {
+      "id": "thermal-inspections-energy-audits",
+      "title": "Thermal Inspections & Energy Audits",
+      "url": "/thermal-inspections-energy-audits",
+      "primaryKeyword": "thermal inspection",
+      "searchVolume": 720,
+      "priority": "HIGH",
+      "status": "planned",
+      "description": "Thermal imaging inspections and energy audits for Alaska homes",
+      "keywords": [
+        "thermal inspection",
+        "thermal imaging inspection",
+        "energy audit Alaska"
+      ],
+      "supportingArticles": [
+        {
+          "id": "thermal-imaging-how-it-works",
+          "title": "How Thermal Imaging Works",
+          "url": "/blog/thermal-imaging-insulation",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "thermal-imaging-before-after",
+          "title": "Before/After Thermal Images",
+          "url": "/blog/thermal-imaging-before-after",
+          "status": "planned",
+          "estimatedWordCount": 1200
+        },
+        {
+          "id": "energy-audit-process",
+          "title": "Energy Audit Process",
+          "url": "/blog/home-energy-audit-alaska",
+          "status": "planned",
+          "estimatedWordCount": 1500
+        },
+        {
+          "id": "find-hidden-heat-loss",
+          "title": "Finding Hidden Heat Loss",
+          "url": "/blog/find-heat-loss-home",
+          "status": "planned",
+          "estimatedWordCount": 1400
+        }
+      ],
+      "estimatedWordCount": 2500
+    }
+  ],
+  "statistics": {
+    "total_pillars": 10,
+    "total_supporting_articles": 55,
+    "total_keywords": 250,
+    "estimated_monthly_searches": 85000,
+    "estimated_traffic_potential": "2,350-3,650 monthly visitors",
+    "estimated_leads_potential": "148-265 monthly leads"
+  }
+}

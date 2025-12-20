@@ -1,0 +1,177 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "all-research-categories",
+    "version": "1.0.0"
+  },
+  "executive_summary": {
+    "market_position": "Emerging player with strong digital potential",
+    "primary_opportunity": "Content and digital marketing dominance",
+    "competitive_advantage": "Modern website, thermal imaging, comprehensive services",
+    "estimated_annual_revenue_impact": "$405,000-$2,400,000",
+    "recommended_investment": "$15,000-$30,000 (content/marketing)",
+    "payback_period": "3-6 months"
+  },
+  "recommendations": [
+    {
+      "category": "Content Marketing",
+      "priority": "CRITICAL",
+      "recommendation": "Create comprehensive cost/pricing guide",
+      "rationale": "No competitor has transparent pricing. Highest commercial intent keyword (18,100 monthly searches). First-mover advantage available.",
+      "actions": [
+        "Create /spray-foam-insulation-cost pillar page",
+        "Include Alaska-specific pricing ranges",
+        "Add ROI calculator",
+        "Feature AHFC rebate information"
+      ],
+      "expected_impact": "20-40 leads/month from cost-related searches",
+      "timeline": "Week 1-2"
+    },
+    {
+      "category": "Local SEO",
+      "priority": "CRITICAL",
+      "recommendation": "Launch location-specific landing pages",
+      "rationale": "Eagle River has zero local competition. Anchorage is largest market with medium competition. Local pages drive highest conversion rates.",
+      "actions": [
+        "Create Anchorage location page",
+        "Create Wasilla location page",
+        "Create Eagle River location page",
+        "Create Mat-Su Valley hub page"
+      ],
+      "expected_impact": "30-50 leads/month from local searches",
+      "timeline": "Week 2-4"
+    },
+    {
+      "category": "Video Marketing",
+      "priority": "CRITICAL",
+      "recommendation": "Launch video content strategy",
+      "rationale": "Zero competitors have video content. Video builds trust and engagement. YouTube is second largest search engine.",
+      "actions": [
+        "Create YouTube channel",
+        "Film 5 installation process videos",
+        "Record customer testimonials",
+        "Create thermal imaging explainer"
+      ],
+      "expected_impact": "40-60% increase in organic traffic",
+      "timeline": "Month 1-3"
+    },
+    {
+      "category": "Conversion Optimization",
+      "priority": "HIGH",
+      "recommendation": "Add interactive tools and calculators",
+      "rationale": "No competitor has interactive tools. Calculators capture leads and build trust.",
+      "actions": [
+        "Build energy savings calculator",
+        "Create R-value recommendation tool",
+        "Add project cost estimator",
+        "Require email for detailed results"
+      ],
+      "expected_impact": "30-50% increase in lead capture",
+      "timeline": "Month 2-3"
+    },
+    {
+      "category": "Trust Building",
+      "priority": "HIGH",
+      "recommendation": "Obtain and display industry certifications",
+      "rationale": "Only Turnagain mentions SPFA. Certifications build trust and differentiate.",
+      "actions": [
+        "Pursue SPFA Professional Certification",
+        "Obtain BPI Building Analyst certification",
+        "Display certifications prominently",
+        "Add to Google Business Profile"
+      ],
+      "expected_impact": "10-20% improvement in conversion rate",
+      "timeline": "Month 1-3"
+    },
+    {
+      "category": "Content Strategy",
+      "priority": "HIGH",
+      "recommendation": "Build comprehensive blog content library",
+      "rationale": "Only Chinook has decent blog content. Educational content builds authority and captures top-of-funnel traffic.",
+      "actions": [
+        "Publish 4 blog posts per month",
+        "Focus on comparison articles first",
+        "Create FAQ page with 30+ questions",
+        "Implement topic cluster strategy"
+      ],
+      "expected_impact": "150% increase in organic traffic within 12 months",
+      "timeline": "Ongoing - Month 1-12"
+    },
+    {
+      "category": "Financing/Rebates",
+      "priority": "HIGH",
+      "recommendation": "Feature financing and rebate information prominently",
+      "rationale": "No competitor highlights financing or AHFC rebates. Removes price objection.",
+      "actions": [
+        "Create dedicated financing page",
+        "Create AHFC rebate guide",
+        "Add federal tax credit information",
+        "Include financing messaging in CTAs"
+      ],
+      "expected_impact": "15-20% increase in lead-to-sale conversion",
+      "timeline": "Week 3-4"
+    },
+    {
+      "category": "Geographic Expansion",
+      "priority": "MEDIUM",
+      "recommendation": "Expand to Kenai Peninsula market",
+      "rationale": "Only small operator serves Kenai Peninsula. 85+ opportunity score. Low competition.",
+      "actions": [
+        "Create Kenai Peninsula hub page",
+        "Create Kenai city page",
+        "Create Soldotna city page",
+        "Target local keywords"
+      ],
+      "expected_impact": "15-25% revenue expansion",
+      "timeline": "Month 3-6"
+    }
+  ],
+  "priority_actions": {
+    "immediate": [
+      "Create cost guide pillar page",
+      "Add FAQ schema to all service pages",
+      "Create Anchorage location page",
+      "Optimize Google Business Profile"
+    ],
+    "short_term_30_days": [
+      "Create 6 location pages",
+      "Launch 4 comparison blog posts",
+      "Create AHFC rebate guide",
+      "Start video content production"
+    ],
+    "medium_term_90_days": [
+      "Complete all 10 pillar pages",
+      "Build energy savings calculator",
+      "Obtain SPFA certification",
+      "Publish 12 blog posts"
+    ],
+    "long_term": [
+      "Achieve 75+ page 1 rankings",
+      "Build 50+ Google reviews",
+      "Expand commercial services",
+      "Dominate all local markets"
+    ]
+  },
+  "roi_projections": {
+    "seo_opportunity": {
+      "current_monthly_traffic": 500,
+      "projected_6_month_traffic": "3,000-4,000",
+      "projected_12_month_traffic": "8,000-10,000",
+      "traffic_growth": "+1,400-1,900%"
+    },
+    "content_roi": {
+      "investment": "$29,600-$43,200 (content production value)",
+      "monthly_leads_increase": "75-160",
+      "average_lead_value": "$3,000-$5,000",
+      "monthly_revenue_increase": "$33,750-$200,000",
+      "annual_revenue_impact": "$405,000-$2,400,000"
+    },
+    "local_seo_potential": {
+      "target_markets": 6,
+      "combined_market_size": "$40-60M annually",
+      "realistic_capture_rate": "3-5%",
+      "annual_revenue_potential": "$1.2M-$3M"
+    }
+  }
+}

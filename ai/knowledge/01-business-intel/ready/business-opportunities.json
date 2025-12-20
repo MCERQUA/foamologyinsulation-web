@@ -1,0 +1,203 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "competitor-analysis, content-gaps",
+    "version": "1.0.0"
+  },
+  "executive_summary": {
+    "total_opportunities": 10,
+    "critical_count": 3,
+    "high_priority_count": 5,
+    "estimated_annual_revenue_impact": "$405,000-$2,400,000",
+    "total_monthly_lead_potential": "75-160 leads"
+  },
+  "prioritized_opportunities": [
+    {
+      "rank": 1,
+      "opportunity": "Video Content Marketing",
+      "opportunity_size": "VERY HIGH",
+      "current_state": "Zero competitors have strong video presence",
+      "impact": "40-60% increase in organic traffic within 12 months",
+      "effort": "Medium",
+      "priority": "CRITICAL",
+      "action_items": [
+        "Create YouTube channel for Foamology",
+        "Produce Installation Process video series",
+        "Film customer testimonial videos",
+        "Develop Alaska Home Tips short video series",
+        "Create thermal imaging explainer videos"
+      ],
+      "estimated_investment": "$2,000-5,000"
+    },
+    {
+      "rank": 2,
+      "opportunity": "Thermal Imaging Leadership",
+      "opportunity_size": "HIGH",
+      "current_state": "Only Alas-Co offers thermal diagnostics",
+      "impact": "15-25% higher conversion rate with visual proof",
+      "effort": "Low",
+      "priority": "CRITICAL",
+      "action_items": [
+        "Feature thermal imaging prominently on all pages",
+        "Create thermal inspection video content",
+        "Include thermal reports in every proposal",
+        "Develop Heat Loss Analysis service package"
+      ],
+      "estimated_investment": "$0 (internal capability)"
+    },
+    {
+      "rank": 3,
+      "opportunity": "Educational Content Library",
+      "opportunity_size": "HIGH",
+      "current_state": "Only Chinook Foam has decent blog",
+      "impact": "50%+ increase in organic traffic within 6-12 months",
+      "effort": "Medium",
+      "priority": "CRITICAL",
+      "action_items": [
+        "Create Complete Guide to Spray Foam in Alaska",
+        "Develop Insulation Cost Guide for Alaska Homeowners",
+        "Write Ice Dam Prevention Definitive Guide",
+        "Create Crawlspace Insulation Guide",
+        "Develop comparison guides (spray foam vs alternatives)"
+      ],
+      "estimated_investment": "$0-5,000"
+    },
+    {
+      "rank": 4,
+      "opportunity": "SPFA Certification Display",
+      "opportunity_size": "MEDIUM-HIGH",
+      "current_state": "Only Turnagain mentions SPFA membership",
+      "impact": "10-20% improvement in conversion from trust signals",
+      "effort": "Medium",
+      "priority": "HIGH",
+      "action_items": [
+        "Obtain SPFA Professional Certification",
+        "Pursue BPI Building Analyst certification",
+        "Display all certifications prominently on website",
+        "Add to Google Business Profile"
+      ],
+      "estimated_investment": "$500-1,500"
+    },
+    {
+      "rank": 5,
+      "opportunity": "Financing and Rebate Visibility",
+      "opportunity_size": "MEDIUM-HIGH",
+      "current_state": "No competitor prominently features financing/rebates",
+      "impact": "20-30% increase in lead-to-sale conversion",
+      "effort": "Low",
+      "priority": "HIGH",
+      "action_items": [
+        "Create dedicated financing page",
+        "Explain AHFC rebate programs clearly",
+        "Feature federal tax credit information",
+        "Develop energy savings calculator"
+      ],
+      "estimated_investment": "$0-500"
+    },
+    {
+      "rank": 6,
+      "opportunity": "Quick Quote Response",
+      "opportunity_size": "MEDIUM",
+      "current_state": "Only Turnagain promises 48-hour quotes",
+      "impact": "15-25% more leads captured from speed",
+      "effort": "Low",
+      "priority": "HIGH",
+      "action_items": [
+        "Implement 24-hour quote response goal",
+        "Create online quote request system",
+        "Automate quote follow-up emails",
+        "Promote quick response in marketing"
+      ],
+      "estimated_investment": "$0-500"
+    },
+    {
+      "rank": 7,
+      "opportunity": "Interactive Website Tools",
+      "opportunity_size": "HIGH",
+      "current_state": "No competitor has calculators or interactive tools",
+      "impact": "30-50% increase in time on site, 20% more leads",
+      "effort": "High",
+      "priority": "HIGH",
+      "action_items": [
+        "Build energy savings calculator",
+        "Create R-value recommendation tool",
+        "Develop project cost estimator",
+        "Build service area map with quote request"
+      ],
+      "estimated_investment": "$500-2,000"
+    },
+    {
+      "rank": 8,
+      "opportunity": "Kenai Peninsula Market",
+      "opportunity_size": "MEDIUM",
+      "current_state": "Only Bosela Urethane (small operator) serves area",
+      "impact": "15-25% revenue expansion from new territory",
+      "effort": "Medium",
+      "priority": "MEDIUM",
+      "action_items": [
+        "Add Kenai Peninsula to service area",
+        "Create location-specific landing pages",
+        "Target local SEO for Kenai, Soldotna, Homer",
+        "Develop relationships with Kenai builders"
+      ],
+      "estimated_investment": "$0 (content investment)"
+    },
+    {
+      "rank": 9,
+      "opportunity": "Mat-Su Valley Presence",
+      "opportunity_size": "MEDIUM",
+      "current_state": "Polyseal, Chinook, Energy Savers established but not dominant",
+      "impact": "20-30% market expansion opportunity",
+      "effort": "Medium",
+      "priority": "MEDIUM",
+      "action_items": [
+        "Create Mat-Su/Palmer/Wasilla landing pages",
+        "Target local SEO for Mat-Su Valley",
+        "Network with Mat-Su builders and contractors"
+      ],
+      "estimated_investment": "$0 (content investment)"
+    },
+    {
+      "rank": 10,
+      "opportunity": "Commercial/Light Industrial",
+      "opportunity_size": "MEDIUM",
+      "current_state": "Northern Insulation dominates heavy industrial, light commercial underserved",
+      "impact": "15-25% revenue from commercial diversification",
+      "effort": "High",
+      "priority": "MEDIUM",
+      "action_items": [
+        "Create commercial services page",
+        "Target commercial keywords in SEO",
+        "Develop B2B marketing approach",
+        "Create commercial case studies"
+      ],
+      "estimated_investment": "$0 (content investment)"
+    }
+  ],
+  "total_investment_range": {
+    "minimum": "$5,000",
+    "maximum": "$15,000",
+    "description": "Comprehensive implementation of all opportunities"
+  },
+  "90_day_action_plan": {
+    "month_1": [
+      "Audit current thermal imaging capabilities",
+      "Begin video content planning",
+      "Research SPFA certification process",
+      "Create thermal imaging marketing materials"
+    ],
+    "month_2": [
+      "Launch YouTube channel",
+      "Publish thermal imaging content on website",
+      "Release first educational guide",
+      "Create financing/rebate information page"
+    ],
+    "month_3": [
+      "Create Kenai Peninsula landing page",
+      "Create Mat-Su Valley landing pages",
+      "Launch first interactive tool",
+      "Complete 10+ video content pieces"
+    ]
+  }
+}

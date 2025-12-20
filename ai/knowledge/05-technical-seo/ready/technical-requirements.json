@@ -1,0 +1,91 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "service-page-strategy, content-planning",
+    "version": "1.0.0"
+  },
+  "page_speed_requirements": {
+    "core_web_vitals": {
+      "lcp": {"target": "< 2.5 seconds", "description": "Largest Contentful Paint"},
+      "fid": {"target": "< 100ms", "description": "First Input Delay"},
+      "cls": {"target": "< 0.1", "description": "Cumulative Layout Shift"}
+    },
+    "image_optimization": {
+      "format": "WebP with JPEG fallback",
+      "lazy_loading": "All below-fold images",
+      "sizing": "Responsive with srcset",
+      "compression": "85% quality minimum"
+    },
+    "mobile_first": {
+      "touch_targets": "Minimum 44x44px for CTAs",
+      "click_to_call": "All phone numbers clickable",
+      "accordions": "Collapsible FAQ sections",
+      "responsive_images": "Adaptive sizing for all breakpoints"
+    }
+  },
+  "on_page_seo_checklist": {
+    "title_tag": {
+      "max_length": 60,
+      "requirements": ["Primary keyword", "Location (if local page)", "Brand name"]
+    },
+    "meta_description": {
+      "max_length": 155,
+      "requirements": ["Primary keyword", "Call-to-action", "Value proposition"]
+    },
+    "heading_structure": {
+      "h1": "One per page, includes primary keyword",
+      "h2": "Secondary keywords, section breaks",
+      "h3": "Sub-sections within H2 topics"
+    },
+    "content_requirements": {
+      "primary_keyword_placement": "First 100 words",
+      "keyword_density": "Natural, avoid stuffing",
+      "internal_links": "Minimum 4 per page",
+      "external_links": "1-2 authoritative sources"
+    },
+    "image_requirements": {
+      "alt_text": "Descriptive with keywords where natural",
+      "file_naming": "Keyword-relevant-description.webp",
+      "captions": "Where applicable with keywords"
+    }
+  },
+  "word_count_guidelines": {
+    "pillar_pages": {"minimum": 2500, "target": 3500, "maximum": 5000},
+    "service_pages": {"minimum": 1500, "target": 2000, "maximum": 2500},
+    "location_pages": {"minimum": 1200, "target": 1800, "maximum": 2200},
+    "blog_posts": {"minimum": 1500, "target": 2000, "maximum": 3000},
+    "resource_pages": {"minimum": 1000, "target": 1500, "maximum": 2000},
+    "faq_pages": {"minimum": 2000, "target": 3000, "maximum": 5000}
+  },
+  "page_structure_requirements": {
+    "all_pages": [
+      "Compelling headline with primary keyword",
+      "Above-fold CTA",
+      "Phone number visible",
+      "Mobile-responsive layout",
+      "Fast load time"
+    ],
+    "service_pages": [
+      "Hero section with trust indicators",
+      "Problem/solution section",
+      "Service explanation",
+      "Benefits section (7-10 items)",
+      "Process steps",
+      "Pricing/ROI section",
+      "FAQ section (10-15 questions)",
+      "Social proof (testimonials)",
+      "Related services",
+      "Final CTA section"
+    ],
+    "location_pages": [
+      "Location-specific hero",
+      "Local services list",
+      "Local testimonials",
+      "Google Maps embed",
+      "Service area description",
+      "Local schema markup",
+      "Contact form"
+    ]
+  }
+}

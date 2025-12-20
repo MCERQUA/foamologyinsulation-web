@@ -1,0 +1,115 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "competitor-analysis, content-gaps",
+    "version": "1.0.0"
+  },
+  "industry_overview": {
+    "market": "Alaska Residential & Commercial Insulation",
+    "estimated_market_size": "$40M-$60M annually",
+    "growth_rate": "5-8% annually",
+    "key_drivers": [
+      "Rising energy costs",
+      "Extreme climate conditions",
+      "AHFC rebate programs",
+      "Federal energy efficiency incentives",
+      "Aging housing stock",
+      "New construction growth in Mat-Su Valley"
+    ]
+  },
+  "market_trends": [
+    {
+      "trend": "Energy Cost Increases",
+      "impact": "HIGH",
+      "opportunity": "ROI messaging resonates strongly",
+      "description": "Alaska heating costs continue to rise, making insulation investments more attractive"
+    },
+    {
+      "trend": "AHFC Rebate Awareness",
+      "impact": "HIGH",
+      "opportunity": "Rebate-focused content and services",
+      "description": "Homeowners increasingly aware of Alaska Housing Finance Corporation rebates"
+    },
+    {
+      "trend": "Spray Foam Adoption Growth",
+      "impact": "HIGH",
+      "opportunity": "Educational content about spray foam benefits",
+      "description": "Spray foam becoming preferred solution for Alaska's extreme climate"
+    },
+    {
+      "trend": "DIY vs Professional Shift",
+      "impact": "MEDIUM",
+      "opportunity": "Professional installation value messaging",
+      "description": "Failed DIY attempts driving homeowners to professional services"
+    },
+    {
+      "trend": "Ice Dam Damage Awareness",
+      "impact": "HIGH",
+      "opportunity": "Preventive insulation solutions",
+      "description": "Ice dam damage increasing awareness of proper attic insulation"
+    },
+    {
+      "trend": "Video Content Consumption",
+      "impact": "HIGH",
+      "opportunity": "Video marketing dominance",
+      "description": "Consumers prefer video for home improvement research"
+    },
+    {
+      "trend": "Mat-Su Valley Growth",
+      "impact": "MEDIUM",
+      "opportunity": "Geographic expansion",
+      "description": "Fastest growing region in Alaska, new construction opportunities"
+    },
+    {
+      "trend": "Commercial Energy Efficiency",
+      "impact": "MEDIUM",
+      "opportunity": "Commercial services expansion",
+      "description": "Businesses focusing on energy efficiency for cost savings"
+    }
+  ],
+  "seasonal_patterns": {
+    "peak_season": {
+      "months": ["September", "October", "November"],
+      "description": "Pre-winter rush for insulation projects",
+      "recommended_content": ["Winter preparation guides", "Ice dam prevention", "Emergency insulation services"]
+    },
+    "secondary_peak": {
+      "months": ["March", "April", "May"],
+      "description": "Post-winter assessment and spring projects",
+      "recommended_content": ["Post-winter damage assessment", "Spring insulation projects", "Planning summer upgrades"]
+    },
+    "summer_opportunity": {
+      "months": ["June", "July", "August"],
+      "description": "Ideal installation conditions, less demand",
+      "recommended_content": ["Summer installation benefits", "Beat the rush messaging", "New construction focus"]
+    },
+    "winter_planning": {
+      "months": ["December", "January", "February"],
+      "description": "Research phase, emergency repairs only",
+      "recommended_content": ["Educational content", "Planning guides", "Emergency response"]
+    }
+  ],
+  "digital_marketing_trends": {
+    "video_marketing": {
+      "importance": "CRITICAL",
+      "current_adoption": "NONE among competitors",
+      "opportunity": "First mover advantage in video content"
+    },
+    "interactive_tools": {
+      "importance": "HIGH",
+      "current_adoption": "NONE among competitors",
+      "opportunity": "Energy calculators, cost estimators"
+    },
+    "mobile_first": {
+      "importance": "HIGH",
+      "current_adoption": "LOW among competitors",
+      "opportunity": "Superior mobile experience"
+    },
+    "local_seo": {
+      "importance": "CRITICAL",
+      "current_adoption": "MODERATE",
+      "opportunity": "Location page dominance"
+    }
+  }
+}

@@ -1,0 +1,205 @@
+AUTONOMOUS RESEARCH TASK: Comprehensive SEO Keyword Research
+═══════════════════════════════════════════════════════════
+
+🎯 BUSINESS CONTEXT
+Business Name: Foamology Insulation
+Industry: spray foam insulation
+Target Markets: Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks
+Core Services: Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation
+Output Directory: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+
+═══════════════════════════════════════════════════════════
+
+⚠️  CRITICAL EXECUTION INSTRUCTIONS ⚠️
+
+YOU MUST COMPLETE ALL 7 DELIVERABLES IN THIS TASK.
+DO NOT STOP AFTER CREATING ONLY 1-2 FILES.
+WORK THROUGH THE ENTIRE LIST SYSTEMATICALLY.
+EACH FILE MUST BE COMPREHENSIVE AND COMPLETE.
+
+═══════════════════════════════════════════════════════════
+
+📋 REQUIRED DELIVERABLES (ALL 7 MUST BE CREATED)
+
+✅ 1. primary-keywords.md
+✅ 2. location-keywords.md
+✅ 3. long-tail-keywords.md
+✅ 4. competitor-keywords.md
+✅ 5. seasonal-keywords.md
+✅ 6. keyword-clusters.md
+✅ 7. priority-keywords.csv
+
+═══════════════════════════════════════════════════════════
+
+📝 DETAILED DELIVERABLE SPECIFICATIONS
+
+1️⃣  FILE: primary-keywords.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/primary-keywords.md
+MINIMUM: 50 primary keywords
+REQUIRED SECTIONS:
+  - Overview and methodology
+  - Core service keywords (Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation)
+  - Industry-specific terms
+  - Certification/qualification keywords
+  - Emergency/urgent service keywords
+  - Comparison keywords (vs alternatives)
+  - Commercial intent keywords
+
+FORMAT FOR EACH KEYWORD:
+```markdown
+### [Keyword Phrase]
+- **Search Volume:** [Estimated monthly searches]
+- **Difficulty:** [Low/Medium/High]
+- **Intent:** [Informational/Commercial/Transactional]
+- **Priority:** [High/Medium/Low]
+- **Usage:** [Where/how to use this keyword]
+- **Related Keywords:** [List related terms]
+```
+
+2️⃣  FILE: location-keywords.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/location-keywords.md
+MINIMUM: 100 location-specific keyword combinations
+CITIES: {{CITY_LIST}} + surrounding areas
+REQUIRED SECTIONS:
+  - Overview of local SEO strategy
+  - Primary city keywords (for each city in Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks)
+  - Surrounding areas and neighborhoods
+  - "Near me" variations
+  - Service + location combinations
+  - Local modifiers (best, top, affordable, emergency)
+
+FORMAT:
+```markdown
+## [City Name]
+
+### High-Priority Keywords
+1. [service] in [city]
+2. [service] [city]
+3. best [service] [city]
+...
+
+### Long-tail Local Keywords
+- [specific service] in [neighborhood]
+- [service] near [landmark]
+...
+```
+
+3️⃣  FILE: long-tail-keywords.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/long-tail-keywords.md
+MINIMUM: 200 long-tail keyword phrases
+REQUIRED SECTIONS:
+  - Question keywords (how, what, why, when, where)
+  - "How to" keywords
+  - Comparison keywords (vs, versus, or, compared to)
+  - Problem-solving keywords (fix, repair, replace, remove)
+  - Cost keywords (cost of, price, how much, affordable)
+  - Reviews/ratings keywords
+  - Buyer intent keywords
+
+4️⃣  FILE: competitor-keywords.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/competitor-keywords.md
+MINIMUM: 100 keywords competitors rank for
+REQUIRED SECTIONS:
+  - Competitor research methodology
+  - Top 10 spray foam insulation competitors identified
+  - Keywords they rank for (categorized by intent)
+  - Keywords they DON'T target (opportunities!)
+  - Content gaps in their strategy
+  - Keyword difficulty analysis
+
+5️⃣  FILE: seasonal-keywords.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/seasonal-keywords.md
+MINIMUM: 100 seasonal/emergency keywords
+REQUIRED SECTIONS:
+  - Spring keywords (March-May)
+  - Summer keywords (June-August)
+  - Fall keywords (September-November)
+  - Winter keywords (December-February)
+  - Emergency/urgent keywords (24/7, same-day, emergency)
+  - Weather-related keywords
+  - Holiday/event keywords
+  - Seasonal problems and solutions
+
+6️⃣  FILE: keyword-clusters.md
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/keyword-clusters.md
+MINIMUM: 8-12 topic clusters
+REQUIRED: Organize all keywords from files 1-5 into logical topic clusters
+CLUSTER STRUCTURE:
+```markdown
+## Cluster: [Topic Name]
+
+**Pillar Page Keyword:** [Main keyword]
+**Supporting Keywords (20-30 per cluster):**
+- [Keyword 1] - [Intent]
+- [Keyword 2] - [Intent]
+...
+
+**Content Opportunities:**
+- Pillar page: [Title]
+- Supporting posts: [List 5-10 titles]
+```
+
+7️⃣  FILE: priority-keywords.csv
+LOCATION: /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/priority-keywords.csv
+MINIMUM: 100 keywords
+REQUIRED COLUMNS: keyword, search_volume, difficulty, priority, intent, category, notes
+FORMAT:
+```csv
+keyword,search_volume,difficulty,priority,intent,category,notes
+"insulation removal Phoenix AZ",1200,medium,high,commercial,service,"Primary service page"
+"spray foam insulation cost",2400,high,high,commercial,pricing,"Calculator/guide opportunity"
+```
+
+═══════════════════════════════════════════════════════════
+
+🔍 RESEARCH METHODOLOGY
+
+USE THESE TECHNIQUES:
+1. Web search for keyword trends and volumes
+2. Analyze Google autocomplete suggestions
+3. Research "People Also Ask" questions
+4. Study competitor websites and meta tags
+5. Analyze related searches at bottom of Google SERPs
+6. Consider industry certifications and qualifications
+7. Research industry terminology and jargon
+8. Check Google Keyword Planner estimates (use ranges if exact data unavailable)
+
+═══════════════════════════════════════════════════════════
+
+✨ QUALITY STANDARDS
+
+MINIMUM REQUIREMENTS:
+✓ 500+ total unique keywords across all files
+✓ All keywords relevant to spray foam insulation
+✓ Search volume estimates (or ranges) for all
+✓ Keywords organized by category and intent
+✓ Actionable insights for content planning
+✓ Each file is comprehensive (not just a list)
+✓ Clear connections between keyword clusters
+
+═══════════════════════════════════════════════════════════
+
+🚀 EXECUTION CHECKLIST
+
+BEFORE YOU FINISH, VERIFY YOU HAVE:
+☐ Created file 1/7: primary-keywords.md (50+ keywords)
+☐ Created file 2/7: location-keywords.md (100+ combos)
+☐ Created file 3/7: long-tail-keywords.md (200+ phrases)
+☐ Created file 4/7: competitor-keywords.md (100+ keywords)
+☐ Created file 5/7: seasonal-keywords.md (100+ keywords)
+☐ Created file 6/7: keyword-clusters.md (8-12 clusters)
+☐ Created file 7/7: priority-keywords.csv (100+ rows)
+☐ All files are in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+☐ Total keyword count exceeds 500 unique keywords
+☐ Each file has comprehensive content (not just lists)
+
+═══════════════════════════════════════════════════════════
+
+⚡ FINAL INSTRUCTION
+
+Work systematically through ALL 7 deliverables.
+Complete each file fully before moving to the next.
+Do not skip files or create placeholder content.
+When finished, output: "KEYWORD RESEARCH TASK COMPLETE: 7/7 files created"
+
+═══════════════════════════════════════════════════════════

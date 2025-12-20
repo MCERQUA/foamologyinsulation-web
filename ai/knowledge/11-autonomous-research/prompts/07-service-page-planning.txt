@@ -1,0 +1,225 @@
+AUTONOMOUS TASK: Detailed Service Page Planning and Content Briefs
+
+OBJECTIVE: Create comprehensive, conversion-optimized service page plans for all services.
+
+SERVICES TO COVER:
+Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/service-pages/:
+
+1. service-page-strategy.md - Overall service page architecture and strategy
+2-X. [service]-page-brief.md - Complete content brief for each service
+X+1. service-page-templates.md - Templates and best practices
+X+2. conversion-optimization.md - CTA placement, form strategy, trust signals
+
+SERVICE PAGE CONTENT BRIEF TEMPLATE:
+
+# [Service Name] - Complete Page Brief
+
+## Page Basics
+**URL:** /services/[slug]/
+**Title Tag:** [60 char SEO title]
+**Meta Description:** [155 char description]
+**Primary Keyword:** [main target keyword]
+**Secondary Keywords:** [5-7 related keywords]
+**Word Count Target:** 2,500-3,500 words
+
+## Hero Section
+**Headline:** [Compelling H1 with primary keyword]
+**Subheadline:** [Supporting text, 20-30 words]
+**Hero Image:** [Description of ideal image]
+**Primary CTA:** [Button text and action]
+**Secondary CTA:** [Alternative action]
+**Trust Indicators:** [Certifications, years, guarantees]
+
+## Page Outline
+
+### 1. Introduction (200-300 words)
+- Hook addressing main pain point
+- Brief overview of the service
+- Why Foamology Insulation is the right choice
+- Preview of page content
+
+### 2. What is [Service]? (300-400 words)
+- Technical explanation (accessible language)
+- How the system works
+- Materials and components
+- Lifespan and durability
+
+### 3. Benefits of [Service] (400-500 words)
+- 7-10 key benefits with explanations
+- Focus on ROI, durability, value
+- Specific to Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks climate/conditions
+- Comparison to alternatives
+
+### 4. Ideal Applications (200-300 words)
+- Business types best suited
+- Industry applications
+- Specific use cases
+- When to choose this system
+
+### 5. Our Installation Process (400-500 words)
+- Step-by-step breakdown
+- Timeline estimates
+- Quality assurance
+- Safety protocols
+- Certifications and expertise
+
+### 6. Materials & Options (300-400 words)
+- Certified materials used
+- Options available
+- Customization available
+
+### 7. Warranty & Guarantees (300-400 words)
+- Warranty explanation
+- Material warranties
+- Labor warranties
+- What's covered
+- How to maintain warranty
+
+### 8. Cost & ROI (300-400 words)
+- Factors affecting cost
+- Long-term value
+- Potential savings
+- Maintenance costs
+- Financing options (if applicable)
+
+### 9. Maintenance Requirements (200-300 words)
+- Inspection frequency
+- Common maintenance tasks
+- What to watch for
+- Professional maintenance programs
+
+### 10. Why Choose Foamology Insulation (300-400 words)
+- Certifications and credentials
+- Years of experience
+- Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks expertise
+- Service availability (e.g., 24/7 emergency)
+- Satisfaction guarantee
+- Case study or testimonial
+
+### 11. Frequently Asked Questions (400-500 words)
+- 10-15 specific questions about this service
+- Address common objections
+- Technical details
+- Process questions
+
+### 12. Related Services (100-200 words)
+- Links to complementary services
+- When to consider alternatives
+- Service bundles
+
+## Conversion Elements
+
+**Primary CTAs (3-4 locations):**
+- Hero: "Get Free Estimate"
+- Mid-page: "Schedule Inspection"
+- Bottom: "Call [Phone Number]"
+
+**Lead Capture Forms:**
+- Simple contact form
+- Quote request form
+- Emergency service form (if applicable)
+
+**Trust Signals Throughout:**
+- Certification logos
+- Years in business
+- Warranty badges
+- Emergency service available (if applicable)
+- Licensed & insured
+- Customer reviews/testimonials
+
+**Interactive Elements:**
+- Cost calculator (if applicable)
+- Photo gallery/before-after
+- Video overview (describe needs)
+- Downloadable spec sheet
+
+## SEO Requirements
+
+**Schema Markup:**
+- Service schema
+- LocalBusiness schema
+- Review schema (if testimonials)
+
+**Internal Links:**
+- Link to related services (5-8 links)
+- Link to location pages
+- Link to blog content
+- Link to FAQ
+
+**Image SEO:**
+- 8-12 images needed
+- Alt text for each
+- Descriptive file names
+- Proper sizing
+
+## Competitor Research
+**Top 3 Competitor Pages:**
+1. [URL] - What they do well / What's missing
+2. [URL] - What they do well / What's missing
+3. [URL] - What they do well / What's missing
+
+**How to Beat Them:**
+- More comprehensive information
+- Better certifications/credentials
+- Local expertise emphasis
+- Stronger warranties
+- Better trust signals
+- Superior user experience
+
+## Content Differentiation
+**Unique Angles:**
+- Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks specific considerations
+- Certified contractor status
+- Warranty availability
+- Years of local experience
+- Emergency response availability
+- Specific building types specialized in
+
+## Success Metrics
+**Target Rankings:**
+- "[service] Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks" - Top 3
+- "[service] [city]" - Top 3
+- "[industry] [service]" - Top 10
+
+**Traffic Goals:**
+- 200+ organic visits/month
+- 5-10 quote requests/month
+- 10-20 phone calls/month
+
+## Production Notes
+**Priority:** [High/Medium/Low]
+**Estimated Hours:** [8-12 hours]
+**Writer Expertise Needed:** [Required knowledge level]
+**Review Required:** Technical accuracy check
+**Images Needed:** Professional photos or stock
+**Publish Date:** [Target date]
+
+---
+
+RESEARCH FOR EACH SERVICE:
+- Study manufacturer documentation
+- Research industry best practices
+- Analyze competitor service pages
+- Identify unique selling points
+- Determine optimal page structure
+- Plan conversion funnel
+
+OUTPUT FORMAT:
+- One detailed brief per service page
+- Follow template exactly
+- Include all sections
+- Be specific and actionable
+- Reference source data
+
+QUALITY STANDARDS:
+- Each brief must be 2,000+ words
+- Outline should be detailed enough to write from
+- All SEO requirements specified
+- Conversion strategy clear
+- Competitor analysis complete
+- Realistic success metrics
+
+These briefs will be handed to writers. Make them comprehensive and precise.

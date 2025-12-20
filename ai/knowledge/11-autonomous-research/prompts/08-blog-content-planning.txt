@@ -1,0 +1,260 @@
+AUTONOMOUS TASK: Comprehensive Blog Content Strategy and Post Briefs
+
+OBJECTIVE: Plan 50+ high-value blog posts that drive traffic, educate customers, and support SEO goals.
+
+PREREQUISITES:
+- Read keyword research from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+- Review topic clusters from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/topic-clusters/
+- Understand content gaps from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/content-gaps/
+- Study competitor blog strategies
+
+BLOG CONTENT STRATEGY:
+Create content that serves multiple purposes:
+1. Educational (builds authority and trust)
+2. SEO-driven (ranks for valuable keywords)
+3. Lead generation (moves readers toward conversion)
+4. Seasonal/timely (addresses current needs)
+5. Local relevance (Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks specific)
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/blog-planning/:
+
+1. blog-strategy-overview.md - Overall blog strategy and goals
+2. blog-content-calendar-2025.md - 12-month editorial calendar
+3. educational-posts-briefs.md - 15 educational post briefs
+4. comparison-posts-briefs.md - 10 comparison post briefs (service comparisons)
+5. how-to-guides-briefs.md - 10 how-to post briefs
+6. industry-news-topics.md - 10 industry insight posts
+7. seasonal-content-briefs.md - 8 seasonal posts (weather-related, emergency prep, etc.)
+8. local-market-posts-briefs.md - 10 location-specific posts
+9. case-study-templates.md - 5 case study post briefs
+10. faq-style-posts-briefs.md - 10 question-based posts
+11. maintenance-tips-briefs.md - 8 maintenance advice posts
+12. buyer-guide-posts-briefs.md - 6 buying guide posts
+13. blog-categories-structure.md - Category architecture
+14. blog-promotion-strategy.md - How to promote each post type
+
+BLOG POST CONTENT BRIEF TEMPLATE:
+
+# Blog Post Brief: [Title]
+
+## Post Basics
+**Title:** [SEO-optimized, compelling title]
+**URL Slug:** /blog/[slug]/
+**Category:** [Primary category]
+**Tags:** [5-8 relevant tags]
+**Primary Keyword:** [main target]
+**Secondary Keywords:** [3-5 related]
+**Word Count:** [1,500-2,500 words]
+**Content Type:** [Educational/How-to/Comparison/Case Study]
+**Priority:** [High/Medium/Low]
+**Publish Date:** [Target date]
+
+## SEO & Discovery
+**Meta Title (60 chars):** [Optimized for clicks]
+**Meta Description (155 chars):** [Compelling preview]
+**Target Search Intent:** [Informational/Commercial]
+**Featured Snippet Opportunity:** [Yes/No - type]
+**Search Volume:** [Estimated monthly searches]
+**Keyword Difficulty:** [Low/Medium/High]
+
+## Audience & Purpose
+**Target Reader:** [Business type, decision-maker role, etc.]
+**Reader's Problem:** [What problem does this solve?]
+**Reader's Stage:** [Awareness/Consideration/Decision]
+**What They'll Learn:** [3-5 key takeaways]
+**Desired Action:** [What should reader do next?]
+
+## Content Outline
+
+### Introduction (150-200 words)
+- Hook with relatable problem or question
+- Brief preview of what's covered
+- Why this matters for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks businesses
+
+### Main Content Sections
+[Detailed H2/H3 structure with descriptions]
+
+**H2: [Section Title]**
+- Key points to cover
+- Data or examples to include
+- Length: [word count]
+
+**H2: [Section Title]**
+- Key points to cover
+- Expert insights needed
+- Length: [word count]
+
+[Repeat for all sections]
+
+### Conclusion (150-200 words)
+- Summarize key points
+- Reinforce main value
+- Clear call-to-action
+
+## Content Requirements
+
+**Must Include:**
+- [ ] At least one compelling statistic
+- [ ] Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks specific information
+- [ ] Mention of relevant certifications (where relevant)
+- [ ] Real-world example or scenario
+- [ ] Actionable advice reader can use
+- [ ] Internal links to 3-5 related pages
+- [ ] External links to 2-3 authority sources
+
+**Visual Elements:**
+- Hero image: [Description]
+- 3-5 supporting images: [Types needed]
+- Infographic opportunity: [Yes/No - what]
+- Before/after photos: [If applicable]
+- Diagrams: [What to illustrate]
+
+**Interactive Elements:**
+- Downloadable checklist: [Yes/No]
+- Calculator or tool: [If applicable]
+- Video content: [Opportunity?]
+- FAQ section: [Questions to answer]
+
+## Internal Linking Strategy
+**Link to These Pages:**
+1. [Service page] - Anchor text: "[text]"
+2. [Location page] - Anchor text: "[text]"
+3. [Related blog post] - Anchor text: "[text]"
+4. [Pillar content] - Anchor text: "[text]"
+5. [Contact/Quote page] - Anchor text: "[text]"
+
+**Link from These Pages:**
+- [List pages that should link to this post]
+
+## Conversion Elements
+**Primary CTA:** [e.g., "Schedule Free Inspection"]
+**CTA Placement:** [Top, middle, bottom, sidebar]
+**Lead Magnet:** [Downloadable resource if applicable]
+**Contact Form:** [Yes/No - what type]
+**Phone Number Prominence:** [How to feature contact info]
+
+## Competitor Analysis
+**Top 3 Ranking Posts:**
+1. [URL] - Word count: [X] - What they covered well
+2. [URL] - Word count: [X] - What they missed
+3. [URL] - Word count: [X] - Opportunity to beat them
+
+**How to Outrank:**
+- More comprehensive coverage
+- Better structure and readability
+- More local relevance
+- Better visuals
+- Stronger expertise signals
+- More actionable advice
+
+## Unique Angle
+**What Makes This Different:**
+- [How this post will be unique]
+- [Insider knowledge to include]
+- [Local data or examples]
+- [Certification credibility]
+
+## Research Sources
+**Industry Sources:**
+- [Manufacturer data]
+- [Industry associations]
+- [Local regulations/codes for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks]
+
+**Expert Input Needed:**
+- [Technical details from practitioners]
+- [Common customer questions]
+- [Real project examples]
+
+## Promotion Strategy
+**Primary Channels:**
+- [ ] Organic search (main goal)
+- [ ] Email newsletter
+- [ ] Social media
+- [ ] Local business groups
+- [ ] Industry networks
+
+**Social Media Angles:**
+- LinkedIn: [Professional angle]
+- Facebook: [Community angle]
+- Instagram: [Visual angle if applicable]
+
+**Email Newsletter:**
+- Subject line ideas: [2-3 options]
+- Preview text: [Hook for subscribers]
+
+## Success Metrics
+**30-Day Goals:**
+- [X] organic sessions
+- [X] avg. time on page
+- [X] bounce rate < [X]%
+
+**90-Day Goals:**
+- Ranking position [X] for [keyword]
+- [X] backlinks
+- [X] leads generated
+
+**Long-term Goals:**
+- Top 3 for primary keyword
+- 500+ monthly sessions
+- 10+ conversions/month
+
+## Production Notes
+**Estimated Writing Time:** [4-6 hours]
+**Writer Expertise Required:** [Level needed]
+**Technical Review Needed:** [Yes/No]
+**SME Interview Needed:** [Yes/No - who]
+**Image Budget:** [$X or describe needs]
+**Priority Level:** [High/Medium/Low]
+**Dependencies:** [Must publish after X page]
+
+---
+
+## BLOG POST TOPICS (50+ Ideas)
+
+### Educational Content (15 posts)
+[Generate topics relevant to spray foam insulation and Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation]
+1. "Complete Guide to [Main Service Category]"
+2. "Understanding [Industry-Specific Topic]"
+3. "How Long Do [Products/Services] Last? Lifespan by Type"
+4. "spray foam insulation Terminology: A Complete Glossary"
+5. "The Importance of [Key Service Element]"
+[etc... continue with 10 more educational topics]
+
+### Comparison Posts (10 posts)
+1. "[Service A] vs [Service B]: Which is Right for You?"
+2. "[Option 1] vs [Option 2]: Pros & Cons for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks Businesses"
+[etc... continue with 8 more comparison topics]
+
+### How-To Guides (10 posts)
+1. "How to Inspect [Product/System]: Monthly Checklist"
+2. "How to Choose a spray foam insulation Provider: 10-Step Guide"
+3. "How to Budget for [Major Service]"
+[etc... continue with 7 more how-to topics]
+
+### Seasonal Content (8 posts)
+1. "Preparing Your [System] for Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks Winter"
+2. "Spring Inspection Checklist for [City] Businesses"
+[etc... continue with 6 more seasonal topics]
+
+### Local Content (10 posts)
+1. "spray foam insulation in [City]: Climate Considerations"
+2. "[City] Building Code Guide for [Service Type]"
+[etc... continue with 8 more local topics]
+
+OUTPUT FORMAT:
+- Detailed briefs for each post
+- 12-month editorial calendar
+- Category structure
+- Promotion strategy for each type
+
+QUALITY STANDARDS:
+- Minimum 50 post topics identified
+- 30 complete detailed briefs (following template)
+- 20 brief outlines (shorter version)
+- Logical publishing schedule
+- Mix of content types
+- Clear SEO strategy for each
+- Realistic production timeline
+
+Plan content that will make Foamology Insulation the authority on spray foam insulation in Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks.

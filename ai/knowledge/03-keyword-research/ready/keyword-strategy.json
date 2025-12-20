@@ -1,0 +1,293 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "keywords",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_keywords": 250,
+    "total_monthly_volume": 85000,
+    "market_focus": "Alaska Spray Foam Insulation",
+    "primary_service_area": "Anchorage, Mat-Su Valley, Kenai Peninsula"
+  },
+  "priority_keywords": {
+    "critical": [
+      {
+        "keyword": "spray foam insulation",
+        "monthly_volume": 40500,
+        "difficulty": "High",
+        "intent": "commercial",
+        "target_page": "/spray-foam-insulation-guide"
+      },
+      {
+        "keyword": "spray foam insulation cost",
+        "monthly_volume": 18100,
+        "difficulty": "Medium",
+        "intent": "commercial",
+        "target_page": "/spray-foam-insulation-cost"
+      },
+      {
+        "keyword": "spray foam insulation anchorage",
+        "monthly_volume": 320,
+        "difficulty": "Low",
+        "intent": "local-commercial",
+        "target_page": "/service-areas/anchorage"
+      },
+      {
+        "keyword": "closed cell vs open cell",
+        "monthly_volume": 1900,
+        "difficulty": "Medium",
+        "intent": "informational",
+        "target_page": "/blog/closed-cell-vs-open-cell-spray-foam"
+      },
+      {
+        "keyword": "ice dam prevention",
+        "monthly_volume": 590,
+        "difficulty": "Low",
+        "intent": "commercial",
+        "target_page": "/ice-dam-prevention-guide"
+      },
+      {
+        "keyword": "attic insulation",
+        "monthly_volume": 22200,
+        "difficulty": "High",
+        "intent": "commercial",
+        "target_page": "/services/attic-insulation"
+      },
+      {
+        "keyword": "crawl space insulation",
+        "monthly_volume": 8100,
+        "difficulty": "Medium",
+        "intent": "commercial",
+        "target_page": "/crawl-space-insulation-guide"
+      }
+    ],
+    "high": [
+      {
+        "keyword": "closed cell spray foam",
+        "monthly_volume": 8100,
+        "difficulty": "Medium",
+        "intent": "commercial",
+        "target_page": "/services/closed-cell-spray-foam"
+      },
+      {
+        "keyword": "open cell spray foam",
+        "monthly_volume": 5400,
+        "difficulty": "Medium",
+        "intent": "commercial",
+        "target_page": "/services/open-cell-spray-foam"
+      },
+      {
+        "keyword": "spray foam insulation wasilla",
+        "monthly_volume": 70,
+        "difficulty": "Low",
+        "intent": "local-commercial",
+        "target_page": "/service-areas/wasilla"
+      },
+      {
+        "keyword": "spray foam insulation palmer",
+        "monthly_volume": 50,
+        "difficulty": "Low",
+        "intent": "local-commercial",
+        "target_page": "/service-areas/palmer"
+      },
+      {
+        "keyword": "is spray foam worth it",
+        "monthly_volume": 2900,
+        "difficulty": "Medium",
+        "intent": "informational",
+        "target_page": "/blog/is-spray-foam-insulation-worth-it"
+      },
+      {
+        "keyword": "spray foam vs fiberglass",
+        "monthly_volume": 590,
+        "difficulty": "Medium",
+        "intent": "informational",
+        "target_page": "/blog/spray-foam-vs-fiberglass"
+      },
+      {
+        "keyword": "AHFC rebates",
+        "monthly_volume": 150,
+        "difficulty": "Low",
+        "intent": "informational",
+        "target_page": "/resources/ahfc-rebates"
+      }
+    ],
+    "medium": [
+      {
+        "keyword": "how long does spray foam last",
+        "monthly_volume": 880,
+        "difficulty": "Medium",
+        "intent": "informational",
+        "target_page": "/blog/how-long-does-spray-foam-last"
+      },
+      {
+        "keyword": "spray foam r-value",
+        "monthly_volume": 720,
+        "difficulty": "Medium",
+        "intent": "informational",
+        "target_page": "/resources/r-value-guide"
+      },
+      {
+        "keyword": "commercial insulation alaska",
+        "monthly_volume": 100,
+        "difficulty": "Low",
+        "intent": "commercial",
+        "target_page": "/commercial-insulation"
+      },
+      {
+        "keyword": "thermal imaging inspection",
+        "monthly_volume": 720,
+        "difficulty": "Low",
+        "intent": "commercial",
+        "target_page": "/thermal-inspections-energy-audits"
+      },
+      {
+        "keyword": "energy audit anchorage",
+        "monthly_volume": 110,
+        "difficulty": "Low",
+        "intent": "commercial",
+        "target_page": "/services/energy-audits"
+      }
+    ]
+  },
+  "location_keywords": [
+    {
+      "location": "Anchorage",
+      "primary_keyword": "spray foam insulation anchorage",
+      "volume": 320,
+      "difficulty": "Medium",
+      "priority": "Critical"
+    },
+    {
+      "location": "Wasilla",
+      "primary_keyword": "spray foam insulation wasilla",
+      "volume": 70,
+      "difficulty": "Low",
+      "priority": "Critical"
+    },
+    {
+      "location": "Palmer",
+      "primary_keyword": "spray foam insulation palmer",
+      "volume": 50,
+      "difficulty": "Low",
+      "priority": "High"
+    },
+    {
+      "location": "Eagle River",
+      "primary_keyword": "spray foam eagle river",
+      "volume": 40,
+      "difficulty": "Very Low",
+      "priority": "High"
+    },
+    {
+      "location": "Mat-Su Valley",
+      "primary_keyword": "mat-su insulation",
+      "volume": 60,
+      "difficulty": "Low",
+      "priority": "Critical"
+    },
+    {
+      "location": "Kenai",
+      "primary_keyword": "spray foam insulation kenai",
+      "volume": 40,
+      "difficulty": "Low",
+      "priority": "Medium"
+    },
+    {
+      "location": "Soldotna",
+      "primary_keyword": "spray foam insulation soldotna",
+      "volume": 30,
+      "difficulty": "Very Low",
+      "priority": "Medium"
+    }
+  ],
+  "quick_wins": [
+    {
+      "keyword": "spray foam insulation eagle river",
+      "volume": 40,
+      "difficulty": "Very Low",
+      "rationale": "No local competition, part of Anchorage municipality",
+      "estimated_time_to_rank": "1-3 months"
+    },
+    {
+      "keyword": "spray foam insulation chugiak",
+      "volume": 20,
+      "difficulty": "Very Low",
+      "rationale": "No local competition",
+      "estimated_time_to_rank": "1-3 months"
+    },
+    {
+      "keyword": "ice dam prevention alaska",
+      "volume": 170,
+      "difficulty": "Low",
+      "rationale": "Limited competitor coverage",
+      "estimated_time_to_rank": "2-4 months"
+    },
+    {
+      "keyword": "best insulation for alaska",
+      "volume": 200,
+      "difficulty": "Low",
+      "rationale": "No comprehensive local content exists",
+      "estimated_time_to_rank": "2-4 months"
+    },
+    {
+      "keyword": "AHFC insulation rebates",
+      "volume": 150,
+      "difficulty": "Low",
+      "rationale": "Limited competitor coverage of rebate programs",
+      "estimated_time_to_rank": "1-3 months"
+    }
+  ],
+  "long_term_targets": [
+    {
+      "keyword": "spray foam insulation",
+      "volume": 40500,
+      "difficulty": "High",
+      "strategy": "Build topical authority through comprehensive content",
+      "estimated_time_to_rank": "12-18 months"
+    },
+    {
+      "keyword": "attic insulation",
+      "volume": 22200,
+      "difficulty": "High",
+      "strategy": "Topic cluster approach with supporting content",
+      "estimated_time_to_rank": "12-18 months"
+    },
+    {
+      "keyword": "spray foam insulation cost",
+      "volume": 18100,
+      "difficulty": "Medium",
+      "strategy": "Alaska-specific pricing content differentiator",
+      "estimated_time_to_rank": "6-12 months"
+    }
+  ],
+  "keyword_clusters": {
+    "spray_foam_types": {
+      "keywords": ["closed cell spray foam", "open cell spray foam", "closed cell vs open cell", "2 lb foam", "0.5 lb foam"],
+      "total_volume": 15400,
+      "strategy": "Comprehensive comparison and type-specific pages"
+    },
+    "cost_pricing": {
+      "keywords": ["spray foam insulation cost", "spray foam cost per square foot", "attic insulation cost", "insulation pricing alaska"],
+      "total_volume": 20000,
+      "strategy": "Transparent Alaska-specific pricing guides"
+    },
+    "applications": {
+      "keywords": ["attic insulation", "crawl space insulation", "wall insulation", "basement insulation"],
+      "total_volume": 35000,
+      "strategy": "Application-specific service and content pages"
+    },
+    "local_service": {
+      "keywords": ["insulation contractors anchorage", "spray foam wasilla", "insulation kenai peninsula"],
+      "total_volume": 800,
+      "strategy": "Location-specific landing pages"
+    },
+    "problems_solutions": {
+      "keywords": ["ice dam prevention", "cold floors", "high heating bills", "drafts"],
+      "total_volume": 2500,
+      "strategy": "Problem-focused content connecting to solutions"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "blog-planning, content-calendar",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_posts_planned": 50,
+    "year_1_target": 48,
+    "publishing_rate": "4 posts/month",
+    "categories": [
+      "Spray Foam Education",
+      "Energy Efficiency",
+      "Alaska Climate",
+      "Applications",
+      "Comparisons",
+      "Commercial"
+    ]
+  },
+  "q1_2025": [
+    {
+      "title": "Closed Cell vs Open Cell: Which is Right for Your Alaska Home?",
+      "url": "/blog/closed-cell-vs-open-cell-spray-foam",
+      "category": "Comparisons",
+      "priority": "Critical",
+      "word_count": 2500,
+      "target_date": "2025-01-13",
+      "keywords": ["closed cell vs open cell", "spray foam types"],
+      "status": "planned"
+    },
+    {
+      "title": "Is Spray Foam Insulation Worth It? ROI Analysis",
+      "url": "/blog/is-spray-foam-insulation-worth-it",
+      "category": "Energy Efficiency",
+      "priority": "High",
+      "word_count": 2000,
+      "target_date": "2025-01-31",
+      "keywords": ["is spray foam worth it", "spray foam ROI"],
+      "status": "planned"
+    },
+    {
+      "title": "Spray Foam vs Fiberglass: Complete Comparison",
+      "url": "/blog/spray-foam-vs-fiberglass",
+      "category": "Comparisons",
+      "priority": "High",
+      "word_count": 2000,
+      "target_date": "2025-01-08",
+      "keywords": ["spray foam vs fiberglass"],
+      "status": "planned"
+    },
+    {
+      "title": "How Long Does Spray Foam Insulation Last?",
+      "url": "/blog/how-long-does-spray-foam-last",
+      "category": "Spray Foam Education",
+      "priority": "High",
+      "word_count": 1500,
+      "target_date": "2025-01-24",
+      "keywords": ["spray foam lifespan"],
+      "status": "planned"
+    },
+    {
+      "title": "Signs Your Alaska Home Needs Better Insulation",
+      "url": "/blog/signs-your-home-needs-better-insulation",
+      "category": "Alaska Climate",
+      "priority": "High",
+      "word_count": 1400,
+      "target_date": "2025-02-07",
+      "keywords": ["signs need insulation"],
+      "status": "planned"
+    },
+    {
+      "title": "Why Alaska Homes Need More Insulation Than Lower 48",
+      "url": "/blog/alaska-insulation-needs",
+      "category": "Alaska Climate",
+      "priority": "High",
+      "word_count": 1600,
+      "target_date": "2025-02-14",
+      "keywords": ["Alaska insulation needs"],
+      "status": "planned"
+    },
+    {
+      "title": "The True Cost of Poor Insulation in Alaska",
+      "url": "/blog/poor-insulation-cost-alaska",
+      "category": "Energy Efficiency",
+      "priority": "High",
+      "word_count": 1600,
+      "target_date": "2025-02-21",
+      "keywords": ["poor insulation cost"],
+      "status": "planned"
+    },
+    {
+      "title": "Spray Foam Insulation Myths Debunked",
+      "url": "/blog/spray-foam-myths",
+      "category": "Spray Foam Education",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-02-28",
+      "keywords": ["spray foam myths"],
+      "status": "planned"
+    },
+    {
+      "title": "How Spray Foam Stops Ice Dams",
+      "url": "/blog/spray-foam-ice-dams",
+      "category": "Alaska Climate",
+      "priority": "High",
+      "word_count": 1500,
+      "target_date": "2025-03-07",
+      "keywords": ["spray foam ice dams"],
+      "status": "planned"
+    },
+    {
+      "title": "Best Insulation for Alaska Cold: Expert Guide",
+      "url": "/blog/best-insulation-alaska",
+      "category": "Alaska Climate",
+      "priority": "High",
+      "word_count": 1800,
+      "target_date": "2025-03-14",
+      "keywords": ["best insulation Alaska"],
+      "status": "planned"
+    },
+    {
+      "title": "Crawl Space Moisture Problems: Alaska Solutions",
+      "url": "/blog/crawl-space-moisture-alaska",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-03-21",
+      "keywords": ["crawl space moisture"],
+      "status": "planned"
+    },
+    {
+      "title": "When to Replace Old Insulation in Alaska",
+      "url": "/blog/replace-old-insulation-alaska",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-03-28",
+      "keywords": ["replace old insulation"],
+      "status": "planned"
+    }
+  ],
+  "q2_2025": [
+    {
+      "title": "Spray Foam for Metal Buildings: Alaska Guide",
+      "url": "/blog/spray-foam-metal-building",
+      "category": "Commercial",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-04-04",
+      "status": "planned"
+    },
+    {
+      "title": "How Much Can You Save with Spray Foam?",
+      "url": "/blog/spray-foam-savings",
+      "category": "Energy Efficiency",
+      "priority": "High",
+      "word_count": 1600,
+      "target_date": "2025-04-11",
+      "status": "planned"
+    },
+    {
+      "title": "Spring Insulation Projects: Best Time to Insulate",
+      "url": "/blog/spring-insulation-projects",
+      "category": "Seasonal",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-04-18",
+      "status": "planned"
+    },
+    {
+      "title": "Attic Ventilation and Insulation: Getting it Right",
+      "url": "/blog/attic-ventilation-insulation",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-04-25",
+      "status": "planned"
+    },
+    {
+      "title": "Pole Barn Insulation: Alaska Agricultural Buildings",
+      "url": "/blog/pole-barn-insulation",
+      "category": "Commercial",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-05-09",
+      "status": "planned"
+    },
+    {
+      "title": "Garage Insulation: Heated Garage Solutions",
+      "url": "/blog/garage-insulation-alaska",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-05-16",
+      "status": "planned"
+    },
+    {
+      "title": "Basement Insulation: Alaska Foundation Solutions",
+      "url": "/blog/basement-insulation-alaska",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1400,
+      "target_date": "2025-05-23",
+      "status": "planned"
+    },
+    {
+      "title": "Rim Joist Insulation: Often Overlooked Energy Loss",
+      "url": "/blog/rim-joist-insulation",
+      "category": "Applications",
+      "priority": "Medium",
+      "word_count": 1200,
+      "target_date": "2025-05-30",
+      "status": "planned"
+    }
+  ],
+  "categories": {
+    "spray_foam_education": {
+      "count": 10,
+      "purpose": "Establish expertise in spray foam technology"
+    },
+    "energy_efficiency": {
+      "count": 10,
+      "purpose": "Connect insulation to financial benefits"
+    },
+    "alaska_climate": {
+      "count": 10,
+      "purpose": "Local expertise and differentiation"
+    },
+    "applications": {
+      "count": 8,
+      "purpose": "Practical guides for specific areas"
+    },
+    "comparisons": {
+      "count": 8,
+      "purpose": "Decision-stage content"
+    },
+    "commercial": {
+      "count": 6,
+      "purpose": "B2B lead generation"
+    }
+  },
+  "content_calendar": [
+    {
+      "month": "January 2025",
+      "posts": 4,
+      "focus": "Comparisons and cost content"
+    },
+    {
+      "month": "February 2025",
+      "posts": 4,
+      "focus": "Alaska-specific and education"
+    },
+    {
+      "month": "March 2025",
+      "posts": 4,
+      "focus": "Ice dams and crawl space"
+    },
+    {
+      "month": "April 2025",
+      "posts": 4,
+      "focus": "Spring projects and savings"
+    },
+    {
+      "month": "May 2025",
+      "posts": 4,
+      "focus": "Applications and specialized"
+    },
+    {
+      "month": "June 2025",
+      "posts": 4,
+      "focus": "Retrofit and energy audits"
+    }
+  ]
+}

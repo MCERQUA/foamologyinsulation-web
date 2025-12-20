@@ -1,0 +1,168 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "content-planning",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_content_pieces": 110,
+    "6_month_target": 50,
+    "12_month_target": 110,
+    "monthly_publishing_rate": 8
+  },
+  "q1_2025": [
+    {
+      "week": 1,
+      "date_range": "Jan 6-10, 2025",
+      "content": [
+        {"title": "Spray Foam Insulation Cost Guide", "type": "pillar", "priority": "critical", "word_count": 3500},
+        {"title": "Spray Foam vs Fiberglass Comparison", "type": "pillar", "priority": "critical", "word_count": 3000}
+      ],
+      "total_word_count": 6500
+    },
+    {
+      "week": 2,
+      "date_range": "Jan 13-17, 2025",
+      "content": [
+        {"title": "Closed Cell vs Open Cell", "type": "pillar", "priority": "critical", "word_count": 3200},
+        {"title": "Crawl Space Insulation Guide", "type": "pillar", "priority": "critical", "word_count": 2800}
+      ],
+      "total_word_count": 6000
+    },
+    {
+      "week": 3,
+      "date_range": "Jan 20-24, 2025",
+      "content": [
+        {"title": "Ice Dam Prevention Guide", "type": "pillar", "priority": "critical", "word_count": 2800},
+        {"title": "Attic Insulation Alaska", "type": "pillar", "priority": "critical", "word_count": 2600},
+        {"title": "AHFC Rebates Guide", "type": "resource", "priority": "high", "word_count": 2200}
+      ],
+      "total_word_count": 7600
+    },
+    {
+      "week": 4,
+      "date_range": "Jan 27-31, 2025",
+      "content": [
+        {"title": "Anchorage Location Page", "type": "location", "priority": "critical", "word_count": 1800},
+        {"title": "Wasilla Location Page", "type": "location", "priority": "critical", "word_count": 1600}
+      ],
+      "total_word_count": 3400
+    },
+    {
+      "week": 5,
+      "date_range": "Feb 3-7, 2025",
+      "content": [
+        {"title": "Palmer Location Page", "type": "location", "priority": "high", "word_count": 1400},
+        {"title": "Eagle River Location Page", "type": "location", "priority": "high", "word_count": 1400},
+        {"title": "Closed Cell Spray Foam Service", "type": "service", "priority": "high", "word_count": 1600}
+      ],
+      "total_word_count": 4400
+    },
+    {
+      "week": 6,
+      "date_range": "Feb 10-14, 2025",
+      "content": [
+        {"title": "Open Cell Spray Foam Service", "type": "service", "priority": "high", "word_count": 1600},
+        {"title": "Kenai Location Page", "type": "location", "priority": "high", "word_count": 1400},
+        {"title": "Ice Dam Prevention Service", "type": "service", "priority": "high", "word_count": 1600}
+      ],
+      "total_word_count": 4600
+    },
+    {
+      "week": 7,
+      "date_range": "Feb 17-21, 2025",
+      "content": [
+        {"title": "Soldotna Location Page", "type": "location", "priority": "medium", "word_count": 1400},
+        {"title": "Thermal Inspections Service", "type": "service", "priority": "medium", "word_count": 1400}
+      ],
+      "total_word_count": 2800
+    },
+    {
+      "week": 8,
+      "date_range": "Feb 24-28, 2025",
+      "content": [
+        {"title": "Service Area Map Page", "type": "page", "priority": "medium", "word_count": 800},
+        {"title": "Insulation FAQ Page", "type": "faq", "priority": "high", "word_count": 3000}
+      ],
+      "total_word_count": 3800
+    }
+  ],
+  "q2_2025": [
+    {
+      "month": "March 2025",
+      "content_count": 8,
+      "focus": "Resource pages, trust pages, blog posts",
+      "items": [
+        "About Foamology Insulation",
+        "Why Choose Foamology",
+        "Our Process",
+        "R-Value Guide for Alaska",
+        "Federal Tax Credits Guide",
+        "How Long Does Spray Foam Last",
+        "Is Spray Foam Worth the Cost",
+        "Signs Your Home Needs Insulation"
+      ]
+    },
+    {
+      "month": "April 2025",
+      "content_count": 8,
+      "focus": "Blog posts, resource pages",
+      "items": [
+        "Energy Savings Calculator",
+        "Financing Options",
+        "How Spray Foam Stops Ice Dams",
+        "Best Insulation for Alaska Cold",
+        "Spring Insulation Projects",
+        "Attic Ventilation Guide",
+        "Spray Foam for Metal Buildings",
+        "How Much Can You Save"
+      ]
+    },
+    {
+      "month": "May 2025",
+      "content_count": 8,
+      "focus": "Blog posts, downloadable resources",
+      "items": [
+        "Free Insulation Buying Guide",
+        "Insulation Comparison Chart",
+        "Before You Call Checklist",
+        "Pole Barn Insulation",
+        "Garage Insulation Guide",
+        "Basement Insulation Guide",
+        "Rim Joist Insulation",
+        "Soundproofing Benefits"
+      ]
+    }
+  ],
+  "content_type_breakdown": {
+    "pillar_pages": {"count": 10, "word_count_avg": 3000},
+    "service_pages": {"count": 10, "word_count_avg": 1600},
+    "location_pages": {"count": 12, "word_count_avg": 1500},
+    "blog_posts": {"count": 50, "word_count_avg": 1500},
+    "resource_pages": {"count": 8, "word_count_avg": 1500},
+    "trust_pages": {"count": 6, "word_count_avg": 1000}
+  },
+  "seasonal_content_calendar": {
+    "fall": {
+      "months": ["September", "October", "November"],
+      "theme": "Winter Preparation",
+      "content_focus": ["Ice dam prevention", "Winter prep guides", "Heating cost reduction", "Pre-winter insulation projects"]
+    },
+    "winter": {
+      "months": ["December", "January", "February"],
+      "theme": "Emergency & Planning",
+      "content_focus": ["Emergency insulation repair", "Planning spring projects", "Educational content", "Cost/ROI content"]
+    },
+    "spring": {
+      "months": ["March", "April", "May"],
+      "theme": "Post-Winter Assessment",
+      "content_focus": ["Damage assessment", "Spring projects", "Energy audit promotion", "Crawl space solutions"]
+    },
+    "summer": {
+      "months": ["June", "July", "August"],
+      "theme": "Ideal Installation Season",
+      "content_focus": ["New construction", "Major renovation projects", "Commercial projects", "Beat the fall rush"]
+    }
+  }
+}

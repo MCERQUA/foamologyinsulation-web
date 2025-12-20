@@ -1,0 +1,135 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "competitor-analysis",
+    "version": "1.0.0"
+  },
+  "competitive_landscape_summary": {
+    "market_stage": "Fragmented - Consolidation Opportunity",
+    "total_active_competitors": 18,
+    "tier_1_competitors": 6,
+    "tier_2_competitors": 7,
+    "tier_3_competitors": 5,
+    "market_opportunity": "VERY HIGH - Digital dominance opportunity"
+  },
+  "competitor_tiers": {
+    "tier_1_market_leaders": [
+      {
+        "name": "Polyseal Insulation / MCGA Alaska",
+        "position_strength": 9,
+        "digital_strength": 7,
+        "reputation_strength": 8,
+        "primary_advantage": "Award-winning quality, 19 years experience"
+      },
+      {
+        "name": "Urethane Alaska LLC",
+        "position_strength": 10,
+        "digital_strength": 4,
+        "reputation_strength": 8,
+        "primary_advantage": "48 years legacy, BBB A+ rated"
+      },
+      {
+        "name": "Northern Insulation Solutions",
+        "position_strength": 7,
+        "digital_strength": 6,
+        "reputation_strength": 6,
+        "primary_advantage": "Commercial/industrial focus"
+      },
+      {
+        "name": "Alas-Co General Construction",
+        "position_strength": 8,
+        "digital_strength": 5,
+        "reputation_strength": 9,
+        "primary_advantage": "Highest review count (95), thermal testing"
+      },
+      {
+        "name": "Chinook Foam & Coating",
+        "position_strength": 6,
+        "digital_strength": 8,
+        "reputation_strength": 6,
+        "primary_advantage": "Best educational content, remote Alaska"
+      },
+      {
+        "name": "Turnagain Spray Foam",
+        "position_strength": 4,
+        "digital_strength": 7,
+        "reputation_strength": 10,
+        "primary_advantage": "Perfect 5.0 rating, fast response"
+      }
+    ],
+    "tier_2_established_players": [
+      "Weatherize Alaska",
+      "Advanced Spray Foam Systems",
+      "Alpha Spray Foam",
+      "Energy Savers of Alaska",
+      "Arctic Mechanical",
+      "Anchorage Spray Foam & Insulation",
+      "Bosela Urethane"
+    ],
+    "tier_3_emerging_or_niche": [
+      "New entrants",
+      "Small operators",
+      "Part-time contractors"
+    ]
+  },
+  "digital_gap_analysis": {
+    "video_content": {
+      "gap_score": 10,
+      "current_leaders": "None",
+      "opportunity": "First mover advantage available"
+    },
+    "educational_content": {
+      "gap_score": 8,
+      "current_leaders": "Chinook Foam (only competitor with decent blog)",
+      "opportunity": "Become definitive Alaska insulation resource"
+    },
+    "interactive_tools": {
+      "gap_score": 10,
+      "current_leaders": "None",
+      "opportunity": "Energy calculators, cost estimators"
+    },
+    "transparent_pricing": {
+      "gap_score": 10,
+      "current_leaders": "None",
+      "opportunity": "Cost guides, pricing pages"
+    },
+    "certification_visibility": {
+      "gap_score": 9,
+      "current_leaders": "Turnagain (SPFA mention only)",
+      "opportunity": "Display all certifications prominently"
+    }
+  },
+  "competitive_weaknesses_to_exploit": [
+    {
+      "weakness": "No competitor has strong video content",
+      "opportunity": "40-60% increase in organic traffic with video",
+      "effort": "Medium",
+      "timeline": "3-6 months"
+    },
+    {
+      "weakness": "Limited educational content market-wide",
+      "opportunity": "Dominate informational search queries",
+      "effort": "Medium",
+      "timeline": "6-12 months"
+    },
+    {
+      "weakness": "No interactive tools anywhere",
+      "opportunity": "Energy calculators, cost estimators",
+      "effort": "High",
+      "timeline": "3-6 months"
+    },
+    {
+      "weakness": "No transparent pricing content",
+      "opportunity": "Alaska-specific cost guides",
+      "effort": "Low",
+      "timeline": "1-2 months"
+    },
+    {
+      "weakness": "Poor mobile experiences across competitors",
+      "opportunity": "Mobile-first advantage",
+      "effort": "Low",
+      "timeline": "Already achieved"
+    }
+  ]
+}

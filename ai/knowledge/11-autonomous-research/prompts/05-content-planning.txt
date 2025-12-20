@@ -1,0 +1,129 @@
+AUTONOMOUS TASK: Comprehensive Content Plan and Editorial Calendar
+
+OBJECTIVE: Create a detailed, prioritized content plan with complete briefs for every piece of content.
+
+PREREQUISITES:
+- Read all topic cluster files from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/topic-clusters/
+- Read content gap analysis from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/content-gaps/
+- Review keyword research from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+- Understand business priorities
+
+RESEARCH SCOPE:
+Create detailed content briefs for 100+ pieces of content, prioritized and scheduled.
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/content-planning/:
+
+1. content-master-plan.md - Overview of entire content strategy
+2. q1-2025-content-calendar.md - Detailed calendar for first quarter
+3. q2-2025-content-calendar.md - Second quarter planning
+4. priority-tier-1-content.md - Top 20 most important pieces (detailed briefs)
+5. priority-tier-2-content.md - Next 30 pieces (medium briefs)
+6. priority-tier-3-content.md - Next 50 pieces (brief outlines)
+7. service-page-briefs.md - Complete briefs for all main service pages
+8. location-page-briefs.md - Briefs for all location landing pages
+9. blog-content-briefs.md - 30 detailed blog post briefs
+10. resource-page-briefs.md - Guides, checklists, calculators
+11. FAQ-content-brief.md - Comprehensive FAQ page structure
+12. content-calendar.csv - CSV: title, type, priority, target_date, keywords, word_count, status
+
+CONTENT BRIEF TEMPLATE:
+For each piece of content, include:
+
+**Title:** [SEO-optimized title]
+**URL Slug:** /path/to/page/
+**Content Type:** [Service Page/Blog Post/Guide/Landing Page]
+**Target Keywords:** [Primary + 3-5 secondary keywords]
+**Search Intent:** [Informational/Commercial/Transactional]
+**Word Count:** [Target word count]
+**Priority:** [High/Medium/Low]
+**Difficulty:** [Easy/Medium/Hard to create]
+**Target Publish Date:** [Date]
+
+**Purpose/Goal:**
+[What is this content meant to achieve?]
+
+**Target Audience:**
+[Who is this for? Business type, decision-maker level, etc.]
+
+**Outline:**
+1. Introduction (hook, problem, preview)
+2. Main Section 1
+3. Main Section 2
+4. [etc... detailed outline with H2/H3 structure]
+5. Conclusion (summary, CTA)
+
+**Key Points to Cover:**
+- [Point 1]
+- [Point 2]
+- [etc.]
+
+**Questions to Answer:**
+- [Question 1]
+- [Question 2]
+- [etc.]
+
+**Competitor Content to Reference:**
+- [URL 1] - What they did well
+- [URL 2] - What they missed
+
+**Internal Links:**
+- Link to [page 1]
+- Link to [page 2]
+
+**External Authority Links:**
+- [Industry resource]
+- [Manufacturer info]
+
+**CTAs:**
+- Primary: [Main call-to-action]
+- Secondary: [Alternative action]
+
+**Images/Media Needed:**
+- [Hero image description]
+- [Diagram of X]
+- [Before/after photos]
+
+**SEO Requirements:**
+- Meta Title: [60 chars]
+- Meta Description: [155 chars]
+- Schema Markup: [Type needed]
+
+**Success Metrics:**
+- Target: [X organic visits/month]
+- Target: [X conversions/month]
+
+CONTENT PRIORITIES:
+
+**Immediate (Next 30 days):**
+- All main service pages
+- Homepage optimization
+- Contact/quote pages
+- Top 5 location pages
+
+**Short-term (60-90 days):**
+- Pillar content for main clusters
+- Top 10 blog posts
+- FAQ page
+- About/certifications
+
+**Medium-term (90-180 days):**
+- Complete all cluster content
+- Location expansion
+- Resource library
+- Case studies
+
+OUTPUT FORMAT:
+- Detailed markdown files
+- Organized by priority
+- CSV calendar for project management
+- Include estimated hours for each piece
+
+QUALITY STANDARDS:
+- Minimum 100 detailed content briefs
+- Each brief must be actionable (writer can start immediately)
+- Clear keyword targeting and SEO requirements
+- Realistic timelines and priorities
+- Consider resource constraints
+
+Create content briefs so detailed that any writer can execute them perfectly. Leave nothing to chance.

@@ -1,0 +1,74 @@
+{
+  "internal_links": [
+    {
+      "anchor_text": "open-cell spray foam",
+      "target_url": "/services/open-cell-spray-foam",
+      "section": "Open-Cell vs Closed-Cell Spray Foam",
+      "context": "**Open-cell foam** is softer, less dense, and more affordable. It's excellent for soundproofing and works well in interior applications where moisture isn't a concern.",
+      "reason": "Direct mention of open-cell spray foam in the comparison table section. This is the perfect place to link to the dedicated service page where readers can learn more about this specific service offering."
+    },
+    {
+      "anchor_text": "closed-cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Open-Cell vs Closed-Cell Spray Foam",
+      "context": "**Closed-cell foam** is denser, stronger, and provides nearly double the R-value per inch. It acts as its own vapor barrier and adds structural strength to walls and roof decks.",
+      "reason": "Direct mention of closed-cell spray foam in the comparison table section. Natural companion link to the open-cell link, helping readers explore both service options."
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation",
+      "section": "Cost by Project Type",
+      "context": "**Attic Insulation:** $3,500 - $7,000\n- Open-cell attic: $3,500 - $5,000\n- Closed-cell attic: $4,500 - $7,000",
+      "reason": "The article discusses attic insulation costs. Linking to the dedicated attic insulation service page provides readers with more detailed information about this specific application."
+    },
+    {
+      "anchor_text": "crawl space insulation and encapsulation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "Top 5 Spray Foam Applications (Highest ROI)",
+      "context": "**2. Crawl Space — Essential for Moisture Control**\nCrawl space encapsulation with spray foam creates a conditioned space at the same temperature as your home.",
+      "reason": "The article specifically mentions crawl space encapsulation as the #2 highest ROI application. This is a strong relevance signal for linking to the crawl space service page."
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal",
+      "section": "7 Benefits of Spray Foam Beyond Energy Savings",
+      "context": "While fiberglass may need replacement after 15-20 years, properly installed spray foam lasts 80-100 years—essentially the lifetime of your home.",
+      "reason": "When discussing the need to replace old fiberglass insulation, it's natural to link to the insulation removal service since that's required before installing spray foam."
+    },
+    {
+      "anchor_text": "thermal inspections",
+      "target_url": "/services/thermal-inspections",
+      "section": "How to Choose a Spray Foam Contractor",
+      "context": "The quality of your spray foam installation depends entirely on your contractor. Proper installation is the difference between decades of savings and expensive remediation.",
+      "reason": "After installation, thermal inspections can verify the quality and effectiveness of spray foam. This is a natural complementary service to mention when discussing contractor selection and installation quality."
+    },
+    {
+      "anchor_text": "weatherization services",
+      "target_url": "/services/weatherization",
+      "section": "Spray Foam Insulation ROI: Your 3-7 Year Payback Period",
+      "context": "The [EPA's Energy Star program](https://www.energystar.gov/) notes that combining proper insulation with air sealing can save up to 20% on monthly energy bills.",
+      "reason": "The article discusses combining insulation with air sealing for maximum energy savings. Weatherization services encompass this comprehensive approach, making it a relevant link."
+    },
+    {
+      "anchor_text": "building consultant services",
+      "target_url": "/services/building-consultant",
+      "section": "The Bottom Line: Is Spray Foam Worth the Cost?",
+      "context": "If spray foam insulation sounds right for your home, the next step is getting a professional assessment. A qualified contractor can evaluate your specific situation, recommend the right foam type, and provide an accurate estimate based on your home's needs.",
+      "reason": "When readers are ready to move forward, they need professional assessment. The building consultant service is perfect for this evaluation phase before making a final decision."
+    },
+    {
+      "anchor_text": "about our company",
+      "target_url": "/about",
+      "section": "How to Choose a Spray Foam Contractor",
+      "context": "Remember: spray foam problems are expensive to fix. Removal and reinstallation can cost more than the original installation. Investing in a quality contractor protects your investment.",
+      "reason": "After discussing the importance of choosing a quality contractor, readers may want to learn about Foamology's qualifications, experience, and certifications on the About page."
+    },
+    {
+      "anchor_text": "view our project gallery",
+      "target_url": "/gallery",
+      "section": "7 Benefits of Spray Foam Beyond Energy Savings",
+      "context": "### 1. Superior Air Sealing\n\nSpray foam is the only insulation that provides a true air barrier.",
+      "reason": "When discussing the benefits and quality of spray foam installation, the project gallery provides visual proof of professional work and finished results, helping readers see the quality they can expect."
+    }
+  ]
+}

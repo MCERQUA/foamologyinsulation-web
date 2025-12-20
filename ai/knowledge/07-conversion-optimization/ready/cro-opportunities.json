@@ -1,0 +1,152 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "service-pages, content-gaps",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "current_conversion_rate": "2-3%",
+    "target_conversion_rate": "5-8%",
+    "estimated_improvement": "100-200%",
+    "primary_conversion_goals": [
+      "Quote requests",
+      "Phone calls",
+      "Email inquiries"
+    ]
+  },
+  "conversion_opportunities": [
+    {
+      "opportunity": "Add Transparent Pricing Content",
+      "impact": "HIGH",
+      "effort": "MEDIUM",
+      "priority": "CRITICAL",
+      "description": "No competitor has transparent pricing. Cost guide will capture high-intent searches.",
+      "implementation": [
+        "Create spray foam insulation cost page",
+        "Include Alaska-specific pricing ranges",
+        "Add cost calculators",
+        "Feature ROI projections"
+      ],
+      "expected_result": "20-30% increase in quote requests"
+    },
+    {
+      "opportunity": "Add Interactive Energy Savings Calculator",
+      "impact": "HIGH",
+      "effort": "HIGH",
+      "priority": "HIGH",
+      "description": "No competitor has interactive tools. Calculator builds trust and captures leads.",
+      "implementation": [
+        "Build energy savings calculator tool",
+        "Require email for detailed results",
+        "Include customized recommendations",
+        "CTA to schedule assessment"
+      ],
+      "expected_result": "30-50% increase in lead capture"
+    },
+    {
+      "opportunity": "Improve Above-Fold CTAs",
+      "impact": "HIGH",
+      "effort": "LOW",
+      "priority": "HIGH",
+      "description": "Ensure clear CTAs visible without scrolling on all pages.",
+      "implementation": [
+        "Add 'Get Free Estimate' button in hero",
+        "Display phone number prominently",
+        "Include 3 trust indicators above fold",
+        "Use contrasting CTA colors"
+      ],
+      "expected_result": "15-25% increase in conversions"
+    },
+    {
+      "opportunity": "Add Financing/Rebate Information",
+      "impact": "MEDIUM-HIGH",
+      "effort": "LOW",
+      "priority": "HIGH",
+      "description": "Remove financial objections by highlighting payment options.",
+      "implementation": [
+        "Create dedicated financing page",
+        "Feature AHFC rebates prominently",
+        "Add federal tax credit information",
+        "Include 'As low as $X/month' messaging"
+      ],
+      "expected_result": "15-20% increase in lead-to-sale conversion"
+    },
+    {
+      "opportunity": "Video Content Integration",
+      "impact": "HIGH",
+      "effort": "MEDIUM",
+      "priority": "HIGH",
+      "description": "Video builds trust and engagement. No competitor has video content.",
+      "implementation": [
+        "Create installation process video",
+        "Add customer testimonial videos",
+        "Embed videos on service pages",
+        "Create YouTube channel"
+      ],
+      "expected_result": "40-60% increase in time on site, 20% more leads"
+    },
+    {
+      "opportunity": "Add Testimonials to Service Pages",
+      "impact": "MEDIUM",
+      "effort": "LOW",
+      "priority": "MEDIUM",
+      "description": "Social proof on service pages increases trust and conversion.",
+      "implementation": [
+        "Add 2-3 testimonials per service page",
+        "Include customer photos where available",
+        "Feature star ratings",
+        "Add 'Read more reviews' link"
+      ],
+      "expected_result": "10-15% increase in conversions"
+    },
+    {
+      "opportunity": "Exit Intent Popup",
+      "impact": "MEDIUM",
+      "effort": "LOW",
+      "priority": "MEDIUM",
+      "description": "Capture visitors before they leave with special offer.",
+      "implementation": [
+        "Implement exit intent detection",
+        "Offer free energy assessment",
+        "Use time-limited messaging",
+        "A/B test different offers"
+      ],
+      "expected_result": "5-10% recovery of abandoning visitors"
+    },
+    {
+      "opportunity": "Chat/Quick Quote Feature",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM",
+      "priority": "MEDIUM",
+      "description": "Enable instant engagement for visitors with questions.",
+      "implementation": [
+        "Add live chat or chatbot",
+        "Create quick quote form",
+        "Enable SMS text option",
+        "Ensure mobile-friendly"
+      ],
+      "expected_result": "15-25% increase in lead capture"
+    }
+  ],
+  "page_specific_improvements": {
+    "homepage": [
+      "Add 5-7 FAQ questions with schema",
+      "Feature video testimonial",
+      "Add service area map",
+      "Include stats/numbers (years in business, projects completed)"
+    ],
+    "service_pages": [
+      "Add comparison tables",
+      "Include before/after photos",
+      "Add FAQ section with schema",
+      "Feature related services sidebar"
+    ],
+    "location_pages": [
+      "Add local testimonials",
+      "Include Google Maps embed",
+      "Feature local case studies",
+      "Add neighborhood-specific content"
+    ]
+  }
+}

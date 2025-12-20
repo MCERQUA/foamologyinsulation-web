@@ -1,0 +1,16 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "created": "2025-12-19T04:26:03Z",
+    "updated": "2025-12-19T04:26:03Z",
+    "description": "Knowledge graph mapping relationships between research aspects, keywords, content, and insights"
+  },
+  "nodes": [],
+  "edges": [],
+  "statistics": {
+    "total_nodes": 0,
+    "total_edges": 0,
+    "node_types": {},
+    "edge_types": {}
+  }
+}

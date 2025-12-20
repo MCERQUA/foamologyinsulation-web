@@ -1,0 +1,192 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "local-seo",
+    "version": "1.0.0"
+  },
+  "service_area_hub": {
+    "url": "/service-areas",
+    "title": "Service Areas | Foamology Insulation Alaska",
+    "description": "Foamology Insulation serves Anchorage, Mat-Su Valley, Kenai Peninsula and surrounding Alaska communities with professional spray foam insulation services.",
+    "word_count_target": 2000,
+    "status": "planned"
+  },
+  "primary_location_pages": [
+    {
+      "city": "Anchorage",
+      "url": "/service-areas/anchorage",
+      "title": "Spray Foam Insulation Anchorage AK | Foamology Insulation",
+      "meta_description": "Professional spray foam insulation services in Anchorage, Alaska. Closed cell, open cell, attic & crawl space insulation. Free estimates. Call (907) 310-3000.",
+      "primary_keyword": "spray foam insulation anchorage",
+      "keyword_volume": 320,
+      "word_count_target": 1800,
+      "priority": "Critical",
+      "status": "planned",
+      "content_sections": [
+        "Hero with Anchorage-specific headline",
+        "Why Anchorage homes need spray foam",
+        "Services we provide in Anchorage",
+        "Neighborhoods we serve",
+        "Local testimonials",
+        "Anchorage-specific climate challenges",
+        "Google Maps embed",
+        "FAQ section with local schema"
+      ]
+    },
+    {
+      "city": "Wasilla",
+      "url": "/service-areas/wasilla",
+      "title": "Spray Foam Insulation Wasilla AK | Mat-Su Valley Contractor",
+      "meta_description": "Wasilla spray foam insulation contractor. Serving Mat-Su Valley homeowners with professional insulation services. Free estimates. Call (907) 310-3000.",
+      "primary_keyword": "spray foam insulation wasilla",
+      "keyword_volume": 70,
+      "word_count_target": 1600,
+      "priority": "Critical",
+      "status": "planned",
+      "content_sections": [
+        "Hero with Wasilla/Mat-Su focus",
+        "Why Mat-Su homes need insulation",
+        "New construction services",
+        "Shop and garage insulation",
+        "Local testimonials",
+        "Service area map"
+      ]
+    },
+    {
+      "city": "Palmer",
+      "url": "/service-areas/palmer",
+      "title": "Spray Foam Insulation Palmer AK | Mat-Su Valley Service",
+      "meta_description": "Palmer spray foam insulation services. Agricultural buildings, homes, and commercial insulation. Serving Palmer and surrounding areas. Call (907) 310-3000.",
+      "primary_keyword": "spray foam insulation palmer",
+      "keyword_volume": 50,
+      "word_count_target": 1400,
+      "priority": "High",
+      "status": "planned",
+      "content_sections": [
+        "Palmer-specific hero",
+        "Agricultural building insulation",
+        "Greenhouse insulation",
+        "Residential services",
+        "Local testimonials"
+      ]
+    },
+    {
+      "city": "Eagle River",
+      "url": "/service-areas/eagle-river",
+      "title": "Spray Foam Insulation Eagle River AK | Local Contractor",
+      "meta_description": "Eagle River spray foam insulation contractor. Serving Eagle River and Chugiak with professional insulation services. Free estimates. Call (907) 310-3000.",
+      "primary_keyword": "spray foam insulation eagle river",
+      "keyword_volume": 40,
+      "word_count_target": 1400,
+      "priority": "High",
+      "status": "planned",
+      "content_sections": [
+        "Eagle River-specific hero",
+        "Mountain community insulation needs",
+        "Snow load considerations",
+        "Military housing experience",
+        "Service area including Chugiak"
+      ]
+    },
+    {
+      "city": "Mat-Su Valley Hub",
+      "url": "/service-areas/mat-su-valley",
+      "title": "Mat-Su Valley Insulation | Wasilla, Palmer & Big Lake",
+      "meta_description": "Mat-Su Valley spray foam insulation services. Serving Wasilla, Palmer, Big Lake, Houston and surrounding communities. Free estimates. Call (907) 310-3000.",
+      "primary_keyword": "mat-su insulation",
+      "keyword_volume": 60,
+      "word_count_target": 1600,
+      "priority": "Critical",
+      "status": "planned",
+      "content_sections": [
+        "Mat-Su Valley overview",
+        "Cities we serve",
+        "New construction boom",
+        "Links to city-specific pages",
+        "Regional testimonials"
+      ]
+    },
+    {
+      "city": "Kenai Peninsula Hub",
+      "url": "/service-areas/kenai-peninsula",
+      "title": "Kenai Peninsula Insulation | Kenai, Soldotna & Homer",
+      "meta_description": "Kenai Peninsula spray foam insulation. Serving Kenai, Soldotna, Homer and peninsula communities. Professional insulation contractor. Call (907) 310-3000.",
+      "primary_keyword": "kenai peninsula insulation",
+      "keyword_volume": 50,
+      "word_count_target": 1400,
+      "priority": "High",
+      "status": "planned",
+      "content_sections": [
+        "Kenai Peninsula overview",
+        "Cities we serve on peninsula",
+        "Coastal climate considerations",
+        "Links to city-specific pages"
+      ]
+    }
+  ],
+  "secondary_location_pages": [
+    {
+      "city": "Kenai",
+      "url": "/service-areas/kenai",
+      "priority": "Medium",
+      "word_count_target": 1400,
+      "status": "planned"
+    },
+    {
+      "city": "Soldotna",
+      "url": "/service-areas/soldotna",
+      "priority": "Medium",
+      "word_count_target": 1400,
+      "status": "planned"
+    },
+    {
+      "city": "Homer",
+      "url": "/service-areas/homer",
+      "priority": "Lower",
+      "word_count_target": 1200,
+      "status": "planned"
+    },
+    {
+      "city": "Chugiak",
+      "url": "/service-areas/chugiak",
+      "priority": "Lower",
+      "word_count_target": 1200,
+      "status": "planned"
+    },
+    {
+      "city": "Big Lake",
+      "url": "/service-areas/big-lake",
+      "priority": "Lower",
+      "word_count_target": 1200,
+      "status": "planned"
+    },
+    {
+      "city": "Girdwood",
+      "url": "/service-areas/girdwood",
+      "priority": "Lower",
+      "word_count_target": 1200,
+      "status": "planned"
+    }
+  ],
+  "location_page_template": {
+    "required_elements": [
+      "H1 with city name and primary service",
+      "Local phone number with click-to-call",
+      "Address (if physical location)",
+      "Google Maps embed with service area",
+      "City-specific content (500+ words unique)",
+      "Local testimonials or reviews",
+      "Service list relevant to area",
+      "FAQ section with LocalBusiness schema",
+      "Contact form",
+      "Internal links to service pages"
+    ],
+    "schema_markup": [
+      "LocalBusiness",
+      "GeoCoordinates (for service area center)",
+      "FAQPage",
+      "Service"
+    ]
+  }
+}

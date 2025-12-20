@@ -1,0 +1,251 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost#article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost"
+      },
+      "headline": "Spray Foam Insulation: Is It Worth the Cost? [2025 Complete Guide]",
+      "description": "Is spray foam insulation worth the higher cost? Discover the ROI, energy savings (30-50%), payback period (3-7 years), and when it makes sense. Expert analysis.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/blog/spray-foam-cost-guide-featured.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "datePublished": "2025-12-20",
+      "dateModified": "2025-12-20",
+      "author": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "url": "https://foamologyinsulation.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://foamologyinsulation.com/images/logo.png",
+          "width": 300,
+          "height": 60
+        }
+      },
+      "articleSection": "Home Improvement",
+      "keywords": "spray foam insulation, spray foam insulation cost, is spray foam worth it, spray foam ROI, open cell vs closed cell, attic insulation",
+      "wordCount": 3944,
+      "about": {
+        "@type": "Thing",
+        "name": "Spray Foam Insulation"
+      },
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "U.S. Department of Energy",
+          "url": "https://www.energy.gov"
+        },
+        {
+          "@type": "Organization",
+          "name": "EPA",
+          "url": "https://www.epa.gov"
+        },
+        {
+          "@type": "Organization",
+          "name": "Energy Star",
+          "url": "https://www.energystar.gov"
+        },
+        {
+          "@type": "Organization",
+          "name": "Spray Polyurethane Foam Alliance",
+          "url": "https://www.sprayfoam.org"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does spray foam insulation cost per square foot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam insulation costs $1.00-$4.50 per square foot installed, depending on foam type. Open-cell spray foam ranges from $1.00-$3.00 per square foot, while closed-cell foam costs $1.50-$4.50 per square foot. The average whole-house project runs $2,000-$8,000 depending on home size and foam type selected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is spray foam insulation worth the extra cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for most homeowners who plan to stay in their homes for 5+ years. Spray foam pays for itself in 3-7 years through 30-50% energy savings and lasts 80-100 years. The higher upfront cost delivers dramatically better performance than traditional insulation, including complete air sealing that fiberglass can't provide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does spray foam insulation last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam insulation lasts 80-100 years, essentially the lifetime of your home. Unlike fiberglass (15-20 years) or cellulose (20-30 years), spray foam doesn't sag, settle, or lose R-value over time. Once installed, it maintains full effectiveness indefinitely when undisturbed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is spray foam insulation safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam is completely safe once fully cured (24-72 hours after installation). During installation, chemical exposure risks exist, which is why professional installation and temporary evacuation are required. After curing, the foam becomes inert and poses no health risks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam insulation increase home value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam doesn't directly increase appraised home value (insulation isn't part of formal appraisals), but it makes homes more attractive to buyers through energy efficiency and comfort. Homes with lower energy bills and better comfort often sell faster and may command higher prices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Open cell vs closed cell: which should I choose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose closed-cell foam for attics, crawl spaces, basements, and anywhere moisture control matters. Its higher R-value (R-6-7/inch) and vapor barrier properties make it ideal. Choose open-cell foam for interior walls and soundproofing where cost savings are important and moisture isn't a concern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I install spray foam insulation myself?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For small projects (gaps around windows, rim joists), DIY spray foam kits work adequately. For whole-house insulation, professional installation is essential. Spray foam requires specialized equipment, proper chemical mixing ratios, safety gear, and expertise to install correctly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I save on energy bills with spray foam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Homeowners typically save 30-50% on heating and cooling costs with spray foam insulation. For a home spending $2,000+ annually on energy, that's $600-$1,000 in annual savings. Over 10 years, savings typically reach $6,000-$10,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam prevent mold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed-cell spray foam helps prevent mold by creating a vapor barrier that blocks moisture infiltration. However, spray foam must be installed on dry surfaces—spraying over existing moisture can trap it behind the foam, potentially causing hidden mold growth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I stay out of the house after spray foam installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stay out for 24-72 hours after spray foam installation, depending on foam type. One-component foam typically requires 8-24 hours. Two-component foam (most professional installations) requires 24-72 hours. Wait until no chemical smell is present and foam is fully cured."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Is Spray Foam Worth the Cost?",
+          "item": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost#howto",
+      "name": "How to Decide if Spray Foam Insulation is Worth It",
+      "description": "A step-by-step guide to evaluating whether spray foam insulation is the right investment for your home.",
+      "totalTime": "PT15M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "2000-8000"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Calculate your current energy costs",
+          "text": "Review your annual heating and cooling costs. Most homeowners spend $2,000+ per year on energy, with 30-50% going to heating and cooling."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Estimate potential savings",
+          "text": "Spray foam typically reduces heating/cooling costs by 30-50%. Calculate 40% of your current costs as expected annual savings."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Get installation quotes",
+          "text": "Request quotes from SPFA-certified contractors. Expect $1.50-$4.50 per square foot for closed-cell, $1.00-$3.00 for open-cell."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Calculate payback period",
+          "text": "Divide the total installation cost by your annual savings. Most homeowners see payback in 3-7 years."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Consider your timeline",
+          "text": "If you plan to stay in your home 5+ years, spray foam is usually worth it. If selling within 3 years, consider traditional insulation."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Choose the right foam type",
+          "text": "Select closed-cell for attics, crawl spaces, and moisture-prone areas. Choose open-cell for interior walls and soundproofing needs."
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-is-it-worth-the-cost#product",
+      "name": "Professional Spray Foam Insulation Installation",
+      "description": "Expert spray foam insulation installation for residential and commercial properties, delivering 30-50% energy savings with an 80-100 year lifespan.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Foamology Insulation"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "1.00",
+        "highPrice": "4.50",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "offerCount": 2
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127"
+      }
+    }
+  ]
+}

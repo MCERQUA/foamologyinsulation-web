@@ -1,0 +1,72 @@
+AUTONOMOUS TASK: Content Gap Analysis and Opportunities
+
+OBJECTIVE: Identify content gaps in the current Foamology Insulation website and opportunities based on keyword research and competitor analysis.
+
+PREREQUISITES:
+- Read the keyword research files from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/
+- Read the competitor analysis files from /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/competitor-analysis/
+- Analyze the current Foamology Insulation website structure
+
+RESEARCH SCOPE:
+1. What content exists on the current website?
+2. What content is missing compared to competitors?
+3. What questions are potential customers asking that we don't answer?
+4. What keywords have we identified that have no corresponding content?
+5. What are the high-value content opportunities?
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/content-gaps/:
+
+1. current-content-inventory.md - Complete inventory of all existing pages and content
+2. missing-pages.md - List of essential pages that don't exist yet
+3. missing-topics.md - Topics and questions not currently covered
+4. keyword-content-map.md - Map keywords to existing content and identify gaps
+5. competitor-content-gaps.md - Content competitors have that we don't
+6. high-value-opportunities.md - Top 20 content opportunities ranked by impact
+7. quick-wins.md - Easy content to create that will have immediate impact
+8. resource-content-ideas.md - Blog posts, guides, checklists, calculators, tools
+9. service-page-gaps.md - What's missing from each service page?
+10. local-content-gaps.md - Location-specific content opportunities
+11. content-gap-matrix.csv - CSV with: content_type, keyword, difficulty, impact, priority
+
+ANALYSIS FRAMEWORK:
+For each content gap, identify:
+- What keyword(s) it targets
+- Current search volume and competition
+- What competitors are doing
+- Why it's valuable for Foamology Insulation
+- Difficulty to create (low/medium/high)
+- Potential traffic impact
+- Where it fits in the buyer journey
+
+CONTENT TYPES TO CONSIDER:
+- Service pages (main and sub-services)
+- Location landing pages
+- Educational blog posts
+- Comparison guides (service comparisons)
+- How-to guides
+- Case studies
+- FAQs
+- Glossary/terminology
+- Checklists and resources
+- Videos and visual content
+- Tools and calculators
+- Certification explanations
+- Warranty information
+- Emergency response guides
+
+OUTPUT FORMAT:
+- Detailed analysis in markdown
+- Prioritize opportunities (high/medium/low)
+- Include specific recommendations
+- Reference keywords and competitor examples
+- Estimate effort required
+
+QUALITY STANDARDS:
+- Identify minimum 50 specific content gaps
+- Each gap must have clear business justification
+- Provide specific examples from competitors
+- Include keyword targeting for each piece
+- Organize by priority and difficulty
+
+Be thorough. Leave no stone unturned. This analysis will drive the entire content strategy.

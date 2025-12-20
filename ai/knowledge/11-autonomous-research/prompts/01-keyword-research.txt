@@ -1,0 +1,46 @@
+AUTONOMOUS TASK: Comprehensive SEO Keyword Research for Foamology Insulation spray foam insulation
+
+OBJECTIVE: Conduct exhaustive keyword research for spray foam insulation services in Anchorage, Mat-Su Valley, Kenai Peninsula Borough, Wasilla, Palmer, Eagle River, Soldotna, Homer, Seward, Fairbanks markets.
+
+RESEARCH SCOPE:
+1. Primary service keywords (Spray Foam Insulation, Crawl Space Insulation, Thermal Inspections, Insulation Removal, Ice Dam Prevention, Air Sealing, Weatherization, Commercial Insulation)
+2. Location-based keywords ({{CITY_LIST}} + surrounding areas)
+3. Long-tail keywords (questions, comparisons, buyer intent)
+4. Competitor keywords (what competitors rank for)
+5. Seasonal keywords (emergency repairs, storm damage, etc.)
+
+DELIVERABLES:
+Create the following files in /home/josh/Josh-AI/websites/foamologyinsulation-web/ai/knowledge/11-autonomous-research/keywords/:
+
+1. primary-keywords.md - Top 50 primary spray foam insulation keywords with search volume estimates
+2. location-keywords.md - 100+ location-specific keyword combinations for all cities
+3. long-tail-keywords.md - 200+ long-tail keyword phrases (questions, comparisons, "how to", etc.)
+4. competitor-keywords.md - Keywords competitors are ranking for (research top 10 competitors)
+5. seasonal-keywords.md - Seasonal and emergency-related keywords
+6. keyword-clusters.md - Organize all keywords into logical topic clusters
+7. priority-keywords.csv - CSV format with columns: keyword, search_volume, difficulty, priority, category
+
+METHODOLOGY:
+- Use web search to research keyword trends and search volumes
+- Analyze Google autocomplete suggestions
+- Research "People Also Ask" questions
+- Study competitor websites and meta tags
+- Consider spray foam insulation distinctions
+- Include certification keywords (relevant certifications/warranties)
+- Research industry-specific terminology
+
+OUTPUT FORMAT:
+- All files in Markdown format (except CSV)
+- Include search intent (informational, commercial, transactional)
+- Rate keyword difficulty (low, medium, high)
+- Provide usage recommendations
+- Cross-reference related keywords
+
+QUALITY STANDARDS:
+- Minimum 500 total unique keywords
+- All keywords must be relevant to spray foam insulation
+- Include search volume estimates or ranges
+- Organize logically by category and intent
+- Provide actionable insights for content planning
+
+Execute this research thoroughly and systematically. Do not skip any sections. Be comprehensive.

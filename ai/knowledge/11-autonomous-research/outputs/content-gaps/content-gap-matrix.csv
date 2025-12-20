@@ -1,0 +1,57 @@
+content_type,keyword,current_status,search_volume,competition,difficulty,conversion_intent,traffic_impact,priority,recommended_page,estimated_effort_hours,notes
+Location Page,spray foam insulation Anchorage,none,300,medium,4,high,high,critical,/service-areas/anchorage,4,Highest priority location page
+Location Page,spray foam insulation Wasilla,none,100,low,3,high,high,critical,/service-areas/wasilla,2,Use Anchorage template
+Location Page,spray foam insulation Palmer,none,80,low,3,high,medium,critical,/service-areas/palmer,2,Use Anchorage template
+Location Page,Mat-Su Valley insulation,none,150,low,3,high,medium,high,/service-areas/mat-su-valley,2,Hub page for Mat-Su area
+Location Page,spray foam Eagle River,none,50,low,2,high,medium,high,/service-areas/eagle-river,2,Close to Anchorage market
+Location Page,Kenai Peninsula insulation,none,60,very low,2,high,medium,medium,/service-areas/kenai-peninsula,2,Secondary market hub
+Pricing Page,spray foam insulation cost,none,18100,high,7,very high,very high,critical,/spray-foam-insulation-cost,6,Top commercial intent keyword
+Pricing Page,spray foam cost per square foot,none,3600,high,6,very high,high,critical,/spray-foam-insulation-cost,included,Same page as above
+Pricing Page,attic insulation cost,none,1900,medium,5,very high,high,high,/cost/attic-insulation-cost,4,Service-specific pricing
+Comparison Article,closed cell vs open cell,none,1900,medium,5,high,high,critical,/blog/closed-cell-vs-open-cell,4,Decision-stage content
+Comparison Article,spray foam vs fiberglass,none,590,medium,5,high,high,high,/blog/spray-foam-vs-fiberglass,4,Key comparison buyers make
+Comparison Article,spray foam vs cellulose,none,390,medium,5,high,medium,high,/blog/spray-foam-vs-cellulose,3,Alternative comparison
+Comparison Article,spray foam vs blown in,none,320,medium,5,high,medium,medium,/blog/spray-foam-vs-blown-in,3,Common alternative
+FAQ Page,spray foam questions,none,2000,low,3,medium,high,critical,/faq,4,Captures question queries
+FAQ Schema,service page FAQs,missing,n/a,n/a,1,medium,medium,high,All service pages,0.5 per page,Quick technical SEO win
+Educational Blog,is spray foam worth it,none,2900,medium,5,high,high,critical,/blog/is-spray-foam-insulation-worth-it,4,ROI focused content
+Educational Blog,how long does spray foam last,none,880,medium,4,medium,medium,high,/blog/how-long-does-spray-foam-last,3,Durability questions
+Educational Blog,spray foam safety,none,480,medium,4,medium,medium,high,/blog/is-spray-foam-safe,3,Addresses objections
+Educational Blog,best insulation for Alaska,none,170,low,3,high,medium,high,/blog/best-insulation-for-alaska,4,Local authority content
+Educational Blog,spray foam installation process,none,150,low,3,medium,medium,high,/what-to-expect,4,Customer journey content
+Resource Page,AHFC rebates,none,50,very low,2,very high,medium,high,/resources/ahfc-rebates,4,Critical for Alaska market
+Resource Page,federal tax credits,none,100,low,3,high,medium,medium,/resources/tax-credits,3,Energy efficiency incentives
+Resource Page,R-value guide,none,500,medium,4,medium,medium,medium,/resources/r-value-guide,4,Technical resource
+Interactive Tool,energy savings calculator,none,500,very low,2,high,high,high,/energy-savings-calculator,8,Lead generation tool
+Interactive Tool,R-value recommendation,none,200,very low,2,medium,medium,medium,/tools/r-value-tool,6,Engagement tool
+Case Study,case studies hub,none,100,low,2,high,high,high,/case-studies,6,Social proof content
+Case Study,individual case study,none,n/a,n/a,2,high,medium,high,/case-studies/[project],3 each,Need 5-6 case studies
+Trust Page,reviews testimonials,partial,100,low,2,high,medium,high,/reviews,3,Aggregate reviews page
+Trust Page,certifications,none,50,low,2,medium,low,medium,/certifications,2,Industry credentials
+Trust Page,our guarantee,none,30,low,2,high,low,medium,/our-guarantee,2,Warranty information
+Commercial Page,commercial insulation Alaska,none,100,low,3,very high,medium,high,/commercial,4,B2B opportunity
+Commercial Page,warehouse insulation,none,2400,medium,5,very high,high,medium,/commercial/warehouse-insulation,4,Specific commercial service
+Commercial Page,metal building insulation,none,2400,medium,5,very high,high,medium,/commercial/metal-building-insulation,4,Specific commercial service
+Service Page Enhancement,closed cell spray foam FAQ,missing,n/a,n/a,1,medium,medium,high,/services/closed-cell-spray-foam,1,Add FAQ section
+Service Page Enhancement,crawl space FAQ,missing,n/a,n/a,1,medium,medium,high,/services/crawl-space-insulation,1,Add FAQ section
+Service Page Enhancement,attic insulation expansion,partial,22200,medium,6,high,very high,high,/services/attic-insulation,3,Expand content depth
+Service Page Enhancement,weatherization AHFC,missing,100,low,3,high,medium,high,/services/weatherization,3,Add rebate information
+Specialty Service,air sealing services,none,480,low,3,high,medium,medium,/services/air-sealing,4,Complementary service
+Specialty Service,rim joist insulation,none,590,low,3,high,medium,medium,/services/rim-joist-insulation,3,Specific application
+Specialty Service,garage insulation,none,3600,medium,5,high,high,medium,/services/garage-insulation,4,Common request
+Specialty Service,pole barn insulation,none,1600,medium,5,high,medium,lower,/services/pole-barn-insulation,3,Niche market
+Video Content,YouTube channel,none,varies,very low,2,medium,high,high,YouTube,ongoing,Uncontested opportunity
+Video Content,installation process video,none,varies,very low,2,medium,high,high,YouTube,4,Trust building
+Video Content,testimonial videos,none,varies,very low,2,high,medium,high,YouTube,3 each,Social proof
+Blog Post,winter prep checklist,none,260,low,3,medium,medium,medium,/blog/winter-prep-checklist,2,Seasonal content
+Blog Post,signs of poor insulation,none,320,low,3,high,medium,medium,/blog/signs-you-need-insulation,2,Problem awareness
+Blog Post,prevent frozen pipes,none,390,low,3,high,medium,medium,/blog/prevent-frozen-pipes,2,Problem solution
+Blog Post,reduce heating costs,none,210,medium,4,high,medium,medium,/blog/reduce-heating-costs,2,Problem solution
+Blog Post,cold floors solution,none,720,low,3,high,medium,medium,/blog/cold-floors-winter,2,Problem solution
+Local Schema,LocalBusiness schema,missing,n/a,n/a,1,medium,medium,critical,Site-wide,1,Technical SEO foundation
+Local Schema,Service schema,partial,n/a,n/a,1,medium,low,high,Service pages,0.5 per page,Enhanced rich snippets
+Local Schema,Review schema,missing,n/a,n/a,1,medium,medium,high,About/Reviews,1,Star ratings in search
+GBP Optimization,Google Business Profile,needs work,n/a,n/a,2,high,high,critical,GBP listing,3,Local SEO foundation
+Download Resource,pre-winter checklist PDF,none,n/a,n/a,2,medium,low,medium,Lead magnet,3,Lead generation
+Download Resource,installation prep guide,none,n/a,n/a,2,high,low,high,Lead magnet,3,Customer preparation
+Download Resource,AHFC rebate worksheet,none,n/a,n/a,2,high,low,high,Lead magnet,2,Rebate assistance

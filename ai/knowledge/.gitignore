@@ -1,0 +1,23 @@
+# Ignore raw research data (can be large)
+*/raw/*.html
+*/raw/*.csv
+*/raw/*.zip
+*/raw/*.tar.gz
+
+# Ignore SQLite databases (rebuild from JSON)
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Keep structure
+!.gitkeep

@@ -1,0 +1,105 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "local-seo",
+    "version": "1.0.0"
+  },
+  "business_info": {
+    "name": "Foamology Insulation",
+    "address": "901 E Klatt Road #6, Anchorage, AK 99515",
+    "phone": "(907) 310-3000",
+    "website": "https://foamologyinsulation.com",
+    "hours": "Monday-Friday 7AM-5PM, Saturday By Appointment"
+  },
+  "primary_categories": {
+    "main": "Insulation Contractor",
+    "secondary": [
+      "Spray Foam Insulation Contractor",
+      "Home Improvement Store",
+      "Contractor"
+    ]
+  },
+  "service_areas": {
+    "primary_radius": "50 miles from Anchorage",
+    "cities_served": [
+      "Anchorage",
+      "Eagle River",
+      "Chugiak",
+      "Wasilla",
+      "Palmer",
+      "Big Lake",
+      "Houston",
+      "Kenai",
+      "Soldotna",
+      "Homer",
+      "Seward",
+      "Girdwood"
+    ]
+  },
+  "gmb_optimization_checklist": {
+    "profile_completeness": [
+      {"item": "Business name (exact match)", "status": "required", "priority": "critical"},
+      {"item": "Address verification", "status": "required", "priority": "critical"},
+      {"item": "Phone number (local)", "status": "required", "priority": "critical"},
+      {"item": "Website URL", "status": "required", "priority": "critical"},
+      {"item": "Hours of operation", "status": "required", "priority": "high"},
+      {"item": "Business description (750 chars)", "status": "required", "priority": "high"},
+      {"item": "Primary category", "status": "required", "priority": "critical"},
+      {"item": "Additional categories", "status": "recommended", "priority": "medium"}
+    ],
+    "photos_videos": [
+      {"item": "Logo", "status": "required", "priority": "critical"},
+      {"item": "Cover photo", "status": "required", "priority": "high"},
+      {"item": "Exterior photos", "status": "recommended", "priority": "medium"},
+      {"item": "Interior/work photos", "status": "recommended", "priority": "high"},
+      {"item": "Team photos", "status": "recommended", "priority": "medium"},
+      {"item": "Before/after project photos", "status": "highly recommended", "priority": "high"}
+    ],
+    "services_products": [
+      {"service": "Spray Foam Insulation", "description": "Professional spray foam insulation installation"},
+      {"service": "Closed Cell Spray Foam", "description": "High-density closed cell insulation"},
+      {"service": "Open Cell Spray Foam", "description": "Cost-effective open cell insulation"},
+      {"service": "Attic Insulation", "description": "Complete attic insulation solutions"},
+      {"service": "Crawl Space Insulation", "description": "Crawl space and foundation insulation"},
+      {"service": "Ice Dam Prevention", "description": "Insulation to prevent ice dams"},
+      {"service": "Thermal Inspections", "description": "Infrared thermal imaging inspections"},
+      {"service": "Insulation Removal", "description": "Safe removal of old insulation"},
+      {"service": "Commercial Insulation", "description": "Commercial and industrial insulation"},
+      {"service": "Weatherization", "description": "Complete home weatherization services"}
+    ],
+    "posts_strategy": {
+      "frequency": "2-3 posts per week",
+      "types": [
+        {"type": "What's New", "frequency": "Weekly", "content": "Project updates, seasonal tips"},
+        {"type": "Offers", "frequency": "Monthly", "content": "Seasonal promotions, rebate reminders"},
+        {"type": "Events", "frequency": "As needed", "content": "Open houses, community events"},
+        {"type": "Products", "frequency": "Bi-weekly", "content": "Service highlights"}
+      ]
+    }
+  },
+  "review_strategy": {
+    "target_reviews": 50,
+    "current_reviews": 0,
+    "target_rating": 4.8,
+    "review_request_process": [
+      "Request review at project completion",
+      "Send follow-up email with direct review link",
+      "Respond to all reviews within 24 hours",
+      "Thank reviewers and mention specific project details"
+    ],
+    "response_templates": {
+      "positive": "Thank you [Name] for the wonderful review! We enjoyed working on your [project type] project in [location] and are glad you're happy with the results. We appreciate you choosing Foamology Insulation!",
+      "negative": "Thank you for your feedback, [Name]. We take all concerns seriously and would like to make this right. Please contact us directly at (907) 310-3000 so we can discuss your experience and find a solution."
+    }
+  },
+  "local_pack_ranking_factors": [
+    {"factor": "GMB profile completeness", "weight": "High", "status": "Action required"},
+    {"factor": "Review quantity and quality", "weight": "High", "status": "Build reviews"},
+    {"factor": "Local citations (NAP consistency)", "weight": "Medium", "status": "Audit needed"},
+    {"factor": "On-page local signals", "weight": "High", "status": "Location pages needed"},
+    {"factor": "Proximity to searcher", "weight": "High", "status": "N/A"},
+    {"factor": "Website quality and content", "weight": "Medium", "status": "Good"},
+    {"factor": "Link signals", "weight": "Medium", "status": "Build local links"}
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "topic-clusters, content-planning",
+    "version": "1.0.0"
+  },
+  "linking_strategy": {
+    "hub_and_spoke_model": {
+      "description": "Pillar pages as hubs linking to supporting cluster content",
+      "minimum_internal_links": 4,
+      "target_internal_links": 6,
+      "anchor_text_strategy": "Keyword-rich but varied"
+    },
+    "link_priorities": [
+      "Link to relevant pillar page (primary)",
+      "Link to related service page (conversion)",
+      "Links to 2-3 related blog posts (engagement)",
+      "Link to contact/quote page (conversion)",
+      "Link to location page if locally relevant"
+    ]
+  },
+  "page_linking_requirements": {
+    "pillar_pages": {
+      "link_to": ["All supporting cluster pages", "Service pages", "Homepage"],
+      "link_from": ["Homepage", "All cluster pages", "Service pages"],
+      "minimum_outbound": 10,
+      "minimum_inbound": 15
+    },
+    "service_pages": {
+      "link_to": ["Relevant pillar", "3-4 related services", "Contact page", "Location pages"],
+      "link_from": ["Pillar pages", "Related services", "Blog posts"],
+      "minimum_outbound": 5,
+      "minimum_inbound": 8
+    },
+    "location_pages": {
+      "link_to": ["Service hub", "All services", "Contact page", "Relevant blog posts"],
+      "link_from": ["Service hub", "Service pages", "Homepage footer"],
+      "minimum_outbound": 4,
+      "minimum_inbound": 5
+    },
+    "blog_posts": {
+      "link_to": ["Parent pillar", "Related service", "Related blog posts", "Contact/quote"],
+      "link_from": ["Pillar pages", "Related blog posts"],
+      "minimum_outbound": 4,
+      "minimum_inbound": 3
+    }
+  },
+  "content_hierarchy_links": {
+    "level_0_homepage": {
+      "links_to": ["All pillar pages", "Service hub", "Location hub", "About", "Contact"],
+      "in_navigation": true
+    },
+    "level_1_pillars": {
+      "links_to": ["All cluster pages", "Related services", "Homepage"],
+      "in_navigation": "Main menu"
+    },
+    "level_2_services": {
+      "links_to": ["Parent pillar", "Related services", "Location pages"],
+      "in_navigation": "Services dropdown"
+    },
+    "level_3_locations": {
+      "links_to": ["Location hub", "All services", "Relevant blog posts"],
+      "in_navigation": "Service Areas dropdown"
+    },
+    "level_4_blog": {
+      "links_to": ["Parent pillar", "Related service", "Related posts"],
+      "in_navigation": "Blog section"
+    }
+  },
+  "anchor_text_guidelines": {
+    "primary_links": "Use exact-match or close-match keyword anchors",
+    "secondary_links": "Varied natural language anchors",
+    "navigation_links": "Page titles or descriptive labels",
+    "cta_links": "Action-oriented phrases (Get Quote, Learn More)",
+    "avoid": ["Over-optimization with same anchor", "Generic 'click here' anchors"]
+  },
+  "cross_linking_clusters": {
+    "spray_foam_cluster": {
+      "pillar": "/spray-foam-insulation-guide",
+      "cross_links": ["closed-cell-spray-foam", "open-cell-spray-foam", "spray-foam-cost", "is-spray-foam-worth-it"]
+    },
+    "energy_savings_cluster": {
+      "pillar": "/energy-savings-insulation",
+      "cross_links": ["ahfc-rebates", "r-value-guide", "energy-savings-calculator", "tax-credits"]
+    },
+    "location_cluster": {
+      "pillar": "/service-areas",
+      "cross_links": ["anchorage", "wasilla", "palmer", "eagle-river", "mat-su-valley", "kenai-peninsula"]
+    },
+    "ice_dam_cluster": {
+      "pillar": "/ice-dam-prevention-guide",
+      "cross_links": ["attic-insulation", "attic-air-sealing", "thermal-imaging", "roof-ventilation"]
+    }
+  }
+}

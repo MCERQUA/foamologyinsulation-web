@@ -1,0 +1,180 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "all-research-categories",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_actions": 50,
+    "immediate_actions": 10,
+    "30_day_actions": 15,
+    "90_day_actions": 15,
+    "ongoing_actions": 10
+  },
+  "immediate_actions_week_1": [
+    {
+      "action": "Create Spray Foam Insulation Cost Guide",
+      "priority": "CRITICAL",
+      "estimated_hours": 12,
+      "impact": "Very High",
+      "description": "Comprehensive pricing page with Alaska-specific costs, ROI calculator, financing options"
+    },
+    {
+      "action": "Add FAQ Schema to All Service Pages",
+      "priority": "CRITICAL",
+      "estimated_hours": 4,
+      "impact": "High",
+      "description": "Add structured data markup to existing 8 service pages"
+    },
+    {
+      "action": "Create Anchorage Location Page",
+      "priority": "CRITICAL",
+      "estimated_hours": 6,
+      "impact": "High",
+      "description": "Dedicated landing page for Anchorage market with local content"
+    },
+    {
+      "action": "Optimize Google Business Profile",
+      "priority": "CRITICAL",
+      "estimated_hours": 2,
+      "impact": "High",
+      "description": "Complete all sections, add services, photos, and posts"
+    },
+    {
+      "action": "Add LocalBusiness Schema to Homepage",
+      "priority": "HIGH",
+      "estimated_hours": 1,
+      "impact": "High",
+      "description": "Add structured data for local business"
+    },
+    {
+      "action": "Create Service Areas Hub Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium",
+      "description": "Hub page linking to all location pages with service area map"
+    },
+    {
+      "action": "Add FAQ Section to Homepage",
+      "priority": "HIGH",
+      "estimated_hours": 2,
+      "impact": "Medium",
+      "description": "Add 5-7 common questions with schema"
+    },
+    {
+      "action": "Create Main FAQ Page",
+      "priority": "HIGH",
+      "estimated_hours": 6,
+      "impact": "High",
+      "description": "Comprehensive FAQ page with 30+ questions and schema"
+    },
+    {
+      "action": "Create Wasilla Location Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium",
+      "description": "Dedicated landing page for Wasilla/Mat-Su market"
+    },
+    {
+      "action": "Begin Review Collection Process",
+      "priority": "HIGH",
+      "estimated_hours": 1,
+      "impact": "High",
+      "description": "Set up review request workflow for completed projects"
+    }
+  ],
+  "week_2_actions": [
+    {
+      "action": "Create Closed Cell vs Open Cell Blog Post",
+      "priority": "CRITICAL",
+      "estimated_hours": 6,
+      "impact": "High"
+    },
+    {
+      "action": "Create Palmer Location Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium"
+    },
+    {
+      "action": "Create Eagle River Location Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium"
+    },
+    {
+      "action": "Create Mat-Su Valley Hub Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium"
+    },
+    {
+      "action": "Create AHFC Rebates Guide",
+      "priority": "HIGH",
+      "estimated_hours": 6,
+      "impact": "High"
+    }
+  ],
+  "week_3_4_actions": [
+    {
+      "action": "Create Spray Foam vs Fiberglass Blog Post",
+      "priority": "HIGH",
+      "estimated_hours": 6,
+      "impact": "High"
+    },
+    {
+      "action": "Create Is Spray Foam Worth It Blog Post",
+      "priority": "HIGH",
+      "estimated_hours": 6,
+      "impact": "High"
+    },
+    {
+      "action": "Create Financing Page",
+      "priority": "HIGH",
+      "estimated_hours": 4,
+      "impact": "Medium"
+    },
+    {
+      "action": "Create Kenai Peninsula Hub Page",
+      "priority": "MEDIUM",
+      "estimated_hours": 4,
+      "impact": "Medium"
+    },
+    {
+      "action": "Create Ice Dam Prevention Pillar Page",
+      "priority": "CRITICAL",
+      "estimated_hours": 8,
+      "impact": "High"
+    }
+  ],
+  "month_2_actions": [
+    "Complete all 10 pillar pages",
+    "Create remaining location pages",
+    "Publish 8 blog posts",
+    "Set up YouTube channel",
+    "Film first 3 videos",
+    "Create testimonials page",
+    "Add testimonials to service pages",
+    "Implement exit intent popup"
+  ],
+  "month_3_actions": [
+    "Build energy savings calculator",
+    "Complete video content series",
+    "Pursue SPFA certification",
+    "Publish 8 more blog posts",
+    "Create case studies page",
+    "Optimize underperforming content",
+    "Build local citations"
+  ],
+  "ongoing_actions": [
+    "Publish 4 blog posts per month",
+    "Request reviews after every project",
+    "Post to GMB 2-3 times per week",
+    "Monitor and respond to reviews",
+    "Track keyword rankings weekly",
+    "Analyze traffic and conversion monthly",
+    "Update seasonal content quarterly",
+    "Audit and refresh content annually"
+  ]
+}

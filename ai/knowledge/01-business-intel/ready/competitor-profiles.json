@@ -1,0 +1,183 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "competitor-analysis",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_competitors": 18,
+    "market_scope": "Alaska (Anchorage, Mat-Su Valley, Kenai Peninsula)",
+    "research_date": "2025-12-19",
+    "market_leaders": ["Urethane Alaska LLC", "Alas-Co General Construction", "Polyseal Insulation"]
+  },
+  "top_competitors": [
+    {
+      "name": "Polyseal Insulation / MCGA Alaska",
+      "website": "https://polysealinsulation.com/",
+      "location": "2360 S Old Glenn Hwy, Palmer, AK 99645",
+      "phone": "(877) 277-7554",
+      "years_in_business": 19,
+      "rating": 4.6,
+      "reviews": 45,
+      "strengths": [
+        "Award-winning quality (SprayFoam 2023 National Awards)",
+        "Multi-service offering (spray foam + foundation lifting)",
+        "19 years experience",
+        "Statewide service coverage"
+      ],
+      "weaknesses": [
+        "Wide service range may dilute focus",
+        "Blog on subdomain limits SEO"
+      ],
+      "market_position": "Tier 1 - Market Leader",
+      "threat_level": "High"
+    },
+    {
+      "name": "Urethane Alaska LLC",
+      "website": "https://www.urethanealaska.com/",
+      "location": "8643 Corbin Dr, Anchorage, AK 99507",
+      "phone": "(907) 349-6232",
+      "years_in_business": 48,
+      "rating": 4.2,
+      "reviews": 30,
+      "strengths": [
+        "Longest operating in market (48 years since 1977)",
+        "BBB A+ rated",
+        "Unique fireproofing services",
+        "Premium manufacturer partnerships (Huntsman)"
+      ],
+      "weaknesses": [
+        "Limited marketing",
+        "No content strategy",
+        "Outdated digital presence"
+      ],
+      "market_position": "Tier 1 - Legacy Leader",
+      "threat_level": "Medium"
+    },
+    {
+      "name": "Northern Insulation Solutions",
+      "website": "https://northerninsulationak.com/",
+      "location": "10330 Old Seward Hwy, Anchorage, AK 99515",
+      "phone": "(907) 891-8626",
+      "years_in_business": 5,
+      "rating": 4.0,
+      "reviews": 12,
+      "strengths": [
+        "Multiple manufacturer partnerships",
+        "Commercial/industrial focus",
+        "Remote Alaska capability",
+        "Claims largest mechanical insulation company"
+      ],
+      "weaknesses": [
+        "Not BBB accredited",
+        "Founded 2020 contradicts experience claims",
+        "Limited residential focus"
+      ],
+      "market_position": "Tier 1 - Commercial Focus",
+      "threat_level": "High"
+    },
+    {
+      "name": "Alas-Co General Construction",
+      "website": "https://www.alasco.net/",
+      "location": "8500 Arlon St, Anchorage, AK 99507",
+      "phone": "(907) 522-2297",
+      "years_in_business": 40,
+      "rating": 4.8,
+      "reviews": 95,
+      "strengths": [
+        "Longest BBB history (since 1993)",
+        "Thermal testing capabilities",
+        "4.9 Angi rating",
+        "AGC member"
+      ],
+      "weaknesses": [
+        "Older website",
+        "Less spray foam focused",
+        "General contractor positioning"
+      ],
+      "market_position": "Tier 2 - General Contractor",
+      "threat_level": "Medium"
+    },
+    {
+      "name": "Turnagain Spray Foam",
+      "website": "https://www.turnagainsprayfoam.com/",
+      "location": "700 W 58th Ave J, Anchorage, AK 99518",
+      "phone": "(907) 444-1827",
+      "years_in_business": 1,
+      "rating": 5.0,
+      "reviews": 8,
+      "strengths": [
+        "Perfect 5.0 ratings",
+        "48-hour quote turnaround",
+        "SPFA member",
+        "Low VOC products"
+      ],
+      "weaknesses": [
+        "Very new company (started Jan 2025)",
+        "Limited track record",
+        "Small team"
+      ],
+      "market_position": "Emerging Competitor",
+      "threat_level": "Medium-Growing"
+    },
+    {
+      "name": "Chinook Foam & Coating",
+      "website": "https://www.chinookinsulation.com/",
+      "location": "3881 Goose Bay Drive, Wasilla, AK 99623",
+      "phone": "(907) 982-7428",
+      "years_in_business": 10,
+      "rating": 4.0,
+      "reviews": 15,
+      "strengths": [
+        "Best educational content",
+        "Remote Alaska niche",
+        "Comprehensive blog",
+        "Bush Alaska specialist"
+      ],
+      "weaknesses": [
+        "No BBB accreditation",
+        "Wasilla location may limit Anchorage perception",
+        "Limited reviews"
+      ],
+      "market_position": "Tier 1 - Content Leader",
+      "threat_level": "Medium"
+    }
+  ],
+  "competitive_insights": {
+    "market_leaders": [
+      "Urethane Alaska (48 years - legacy authority)",
+      "Alas-Co General (40 years - highest reviews)",
+      "Polyseal Insulation (awards + aggressive marketing)"
+    ],
+    "service_gaps": [
+      "No competitor has strong video content presence",
+      "Limited thermal imaging positioning",
+      "No competitor prominently displays SPFA/BPI certifications",
+      "No interactive tools (calculators, estimators)",
+      "Financing/rebate information underutilized"
+    ],
+    "certification_gaps": [
+      "Only Turnagain mentions SPFA membership",
+      "No BPI certification visibility",
+      "Manufacturer certifications underutilized"
+    ],
+    "pricing_insights": [
+      "No competitor has transparent pricing content",
+      "Cost guides represent major opportunity",
+      "Alaska-specific pricing guides absent from market"
+    ]
+  },
+  "location_concentration": {
+    "anchorage": 10,
+    "mat_su_valley": 5,
+    "kenai_peninsula": 2,
+    "statewide_remote": 4
+  },
+  "service_type_breakdown": {
+    "spray_foam_specialists": 9,
+    "multi_insulation_contractors": 5,
+    "mechanical_industrial": 2,
+    "specialty_crawlspace_icedam": 2
+  }
+}

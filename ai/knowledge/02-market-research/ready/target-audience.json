@@ -1,0 +1,192 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "blog-planning, content-planning",
+    "version": "1.0.0"
+  },
+  "primary_personas": [
+    {
+      "id": "sarah-the-saver",
+      "name": "Alaska Homeowner",
+      "alias": "Sarah the Saver",
+      "percentage_of_leads": 55,
+      "demographics": {
+        "age_range": "35-55",
+        "location": "Anchorage, Wasilla, Palmer",
+        "household_income": "$75,000-$150,000",
+        "home_age": "10+ years old",
+        "ownership": "Homeowner"
+      },
+      "pain_points": [
+        "High heating bills (especially winter)",
+        "Cold floors and drafts",
+        "Ice dams damaging roof",
+        "Uncertainty about insulation options",
+        "Budget concerns about improvements"
+      ],
+      "content_needs": [
+        "Cost comparisons and ROI calculators",
+        "Energy savings projections",
+        "Rebate and financing information",
+        "DIY vs professional guidance",
+        "Winter preparation checklists"
+      ],
+      "preferred_content_format": [
+        "Detailed guides (1,500-2,500 words)",
+        "Before/after visual content",
+        "Cost breakdown tables",
+        "Video explanations"
+      ],
+      "search_intent": [
+        "How much does spray foam cost",
+        "Best insulation for Alaska",
+        "AHFC rebates insulation",
+        "Reduce heating costs"
+      ],
+      "conversion_triggers": [
+        "Clear pricing information",
+        "Energy savings calculations",
+        "AHFC rebate assistance",
+        "Financing options"
+      ]
+    },
+    {
+      "id": "mike-the-manager",
+      "name": "Property Manager",
+      "alias": "Mike the Manager",
+      "percentage_of_leads": 15,
+      "demographics": {
+        "age_range": "30-50",
+        "location": "Anchorage or Mat-Su Valley",
+        "property_count": "5-50+ rental properties",
+        "focus": "ROI and tenant retention"
+      },
+      "pain_points": [
+        "Tenant complaints about comfort",
+        "High maintenance costs",
+        "Energy efficiency requirements",
+        "Aging building stock",
+        "Budget justification for improvements"
+      ],
+      "content_needs": [
+        "ROI analysis for commercial properties",
+        "Multi-unit insulation strategies",
+        "Compliance and code information",
+        "Case studies with hard numbers",
+        "Bulk project planning guides"
+      ],
+      "preferred_content_format": [
+        "Data-driven case studies",
+        "ROI calculators",
+        "Comparison charts",
+        "PDF downloadable resources"
+      ],
+      "search_intent": [
+        "Commercial insulation ROI",
+        "Multi-family insulation",
+        "Rental property energy efficiency",
+        "Building code compliance"
+      ],
+      "conversion_triggers": [
+        "ROI calculations",
+        "Commercial case studies",
+        "Bulk pricing information",
+        "Minimal disruption installation"
+      ]
+    },
+    {
+      "id": "dan-the-developer",
+      "name": "New Home Builder",
+      "alias": "Dan the Developer",
+      "percentage_of_leads": 15,
+      "demographics": {
+        "age_range": "30-55",
+        "location": "Southcentral Alaska",
+        "activity": "Building new construction or major renovations",
+        "partners": "Working with architects/contractors"
+      },
+      "pain_points": [
+        "Meeting Alaska building codes",
+        "Energy efficiency requirements",
+        "Competitive differentiation",
+        "Long-term value proposition",
+        "Insulation timing in construction"
+      ],
+      "content_needs": [
+        "Building code requirements",
+        "New construction best practices",
+        "Material specifications",
+        "Warranty information",
+        "Integration with other systems"
+      ],
+      "preferred_content_format": [
+        "Technical specifications",
+        "Code requirement guides",
+        "Installation process content",
+        "Contractor-focused resources"
+      ],
+      "search_intent": [
+        "New construction insulation Alaska",
+        "Alaska building code insulation",
+        "Spray foam specifications",
+        "Best insulation new home"
+      ],
+      "conversion_triggers": [
+        "Technical specifications",
+        "Contractor partnerships",
+        "Warranty information",
+        "Installation timeline flexibility"
+      ]
+    },
+    {
+      "id": "taylor-the-newcomer",
+      "name": "First-Time Alaska Buyer",
+      "alias": "Taylor the Newcomer",
+      "percentage_of_leads": 15,
+      "demographics": {
+        "age_range": "25-40",
+        "location": "Recently relocated to Alaska",
+        "experience": "First-time homeowner or recent buyer",
+        "knowledge_level": "Limited knowledge of Alaska climate challenges"
+      },
+      "pain_points": [
+        "Unfamiliar with Alaska winter requirements",
+        "Inherited poor insulation from previous owner",
+        "Learning curve on home maintenance",
+        "Surprised by energy costs",
+        "Not sure where to start"
+      ],
+      "content_needs": [
+        "Alaska 101 insulation basics",
+        "What to check when buying",
+        "Prioritization guides",
+        "Budget-friendly starting points",
+        "Seasonal preparation guides"
+      ],
+      "preferred_content_format": [
+        "Beginner-friendly guides",
+        "Checklists and step-by-step content",
+        "Video walkthroughs",
+        "Infographics"
+      ],
+      "search_intent": [
+        "Insulation for cold climate",
+        "How to winterize home Alaska",
+        "Signs need better insulation",
+        "First winter Alaska home"
+      ],
+      "conversion_triggers": [
+        "Clear explanations",
+        "Beginner-friendly approach",
+        "Urgency around winter",
+        "Easy first steps"
+      ]
+    }
+  ],
+  "geographic_focus": {
+    "primary_markets": ["Anchorage", "Wasilla", "Palmer", "Eagle River"],
+    "secondary_markets": ["Kenai", "Soldotna", "Homer", "Chugiak"],
+    "tertiary_markets": ["Big Lake", "Girdwood", "Houston", "Seward"]
+  }
+}

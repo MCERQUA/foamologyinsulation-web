@@ -1,0 +1,247 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "keywords",
+    "version": "1.0.0"
+  },
+  "intent_categories": {
+    "commercial_intent": {
+      "description": "Ready to purchase or hire services",
+      "priority": "CRITICAL",
+      "conversion_rate": "5-10%",
+      "keywords": [
+        {
+          "keyword": "spray foam insulation anchorage",
+          "volume": 320,
+          "target_page": "/service-areas/anchorage",
+          "page_type": "location"
+        },
+        {
+          "keyword": "insulation contractors near me",
+          "volume": 500,
+          "target_page": "/service-areas",
+          "page_type": "service-hub"
+        },
+        {
+          "keyword": "spray foam installation",
+          "volume": 1200,
+          "target_page": "/services/spray-foam-insulation",
+          "page_type": "service"
+        },
+        {
+          "keyword": "attic insulation service",
+          "volume": 800,
+          "target_page": "/services/attic-insulation",
+          "page_type": "service"
+        },
+        {
+          "keyword": "crawl space insulation service",
+          "volume": 400,
+          "target_page": "/services/crawl-space-insulation",
+          "page_type": "service"
+        },
+        {
+          "keyword": "thermal inspection anchorage",
+          "volume": 50,
+          "target_page": "/services/thermal-inspections",
+          "page_type": "service"
+        }
+      ]
+    },
+    "commercial_investigation": {
+      "description": "Researching options, comparing solutions",
+      "priority": "HIGH",
+      "conversion_rate": "2-5%",
+      "keywords": [
+        {
+          "keyword": "spray foam insulation cost",
+          "volume": 18100,
+          "target_page": "/spray-foam-insulation-cost",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "closed cell vs open cell",
+          "volume": 1900,
+          "target_page": "/blog/closed-cell-vs-open-cell-spray-foam",
+          "page_type": "blog"
+        },
+        {
+          "keyword": "spray foam vs fiberglass",
+          "volume": 590,
+          "target_page": "/blog/spray-foam-vs-fiberglass",
+          "page_type": "blog"
+        },
+        {
+          "keyword": "is spray foam worth it",
+          "volume": 2900,
+          "target_page": "/blog/is-spray-foam-insulation-worth-it",
+          "page_type": "blog"
+        },
+        {
+          "keyword": "best insulation for alaska",
+          "volume": 200,
+          "target_page": "/blog/best-insulation-for-alaska",
+          "page_type": "blog"
+        }
+      ]
+    },
+    "informational_intent": {
+      "description": "Learning, researching, early-stage awareness",
+      "priority": "MEDIUM",
+      "conversion_rate": "0.5-2%",
+      "keywords": [
+        {
+          "keyword": "what is spray foam insulation",
+          "volume": 3600,
+          "target_page": "/spray-foam-insulation-guide",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "how does spray foam work",
+          "volume": 880,
+          "target_page": "/spray-foam-insulation-guide",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "spray foam r-value",
+          "volume": 720,
+          "target_page": "/resources/r-value-guide",
+          "page_type": "resource"
+        },
+        {
+          "keyword": "how long does spray foam last",
+          "volume": 880,
+          "target_page": "/blog/how-long-does-spray-foam-last",
+          "page_type": "blog"
+        },
+        {
+          "keyword": "ice dam causes",
+          "volume": 320,
+          "target_page": "/ice-dam-prevention-guide",
+          "page_type": "pillar"
+        }
+      ]
+    },
+    "local_intent": {
+      "description": "Location-specific service searches",
+      "priority": "CRITICAL",
+      "conversion_rate": "8-15%",
+      "keywords": [
+        {
+          "keyword": "spray foam insulation anchorage",
+          "volume": 320,
+          "target_page": "/service-areas/anchorage",
+          "page_type": "location"
+        },
+        {
+          "keyword": "spray foam insulation wasilla",
+          "volume": 70,
+          "target_page": "/service-areas/wasilla",
+          "page_type": "location"
+        },
+        {
+          "keyword": "spray foam insulation palmer",
+          "volume": 50,
+          "target_page": "/service-areas/palmer",
+          "page_type": "location"
+        },
+        {
+          "keyword": "insulation eagle river",
+          "volume": 40,
+          "target_page": "/service-areas/eagle-river",
+          "page_type": "location"
+        },
+        {
+          "keyword": "spray foam kenai",
+          "volume": 40,
+          "target_page": "/service-areas/kenai",
+          "page_type": "location"
+        }
+      ]
+    },
+    "problem_aware": {
+      "description": "Searching for solutions to specific problems",
+      "priority": "HIGH",
+      "conversion_rate": "3-8%",
+      "keywords": [
+        {
+          "keyword": "cold floors insulation",
+          "volume": 260,
+          "target_page": "/home-comfort-solutions",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "ice dam prevention",
+          "volume": 590,
+          "target_page": "/ice-dam-prevention-guide",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "reduce heating costs",
+          "volume": 480,
+          "target_page": "/energy-savings-insulation",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "drafty house solution",
+          "volume": 170,
+          "target_page": "/home-comfort-solutions",
+          "page_type": "pillar"
+        },
+        {
+          "keyword": "crawl space moisture",
+          "volume": 320,
+          "target_page": "/crawl-space-insulation-guide",
+          "page_type": "pillar"
+        }
+      ]
+    }
+  },
+  "featured_snippet_opportunities": [
+    {
+      "query": "What is closed cell spray foam",
+      "current_holder": "Various",
+      "format": "definition paragraph",
+      "target_page": "/services/closed-cell-spray-foam"
+    },
+    {
+      "query": "Closed cell vs open cell spray foam",
+      "current_holder": "Various",
+      "format": "comparison table",
+      "target_page": "/blog/closed-cell-vs-open-cell-spray-foam"
+    },
+    {
+      "query": "How much does spray foam insulation cost",
+      "current_holder": "HomeAdvisor",
+      "format": "price range list",
+      "target_page": "/spray-foam-insulation-cost"
+    },
+    {
+      "query": "How long does spray foam insulation last",
+      "current_holder": "Forbes",
+      "format": "direct answer",
+      "target_page": "/blog/how-long-does-spray-foam-last"
+    },
+    {
+      "query": "Signs you need better insulation",
+      "current_holder": "Various",
+      "format": "numbered list",
+      "target_page": "/blog/signs-your-home-needs-better-insulation"
+    },
+    {
+      "query": "How to prevent ice dams",
+      "current_holder": "Various",
+      "format": "step list",
+      "target_page": "/ice-dam-prevention-guide"
+    }
+  ],
+  "content_mapping_summary": {
+    "pillar_pages": 10,
+    "service_pages": 12,
+    "location_pages": 12,
+    "blog_posts_planned": 50,
+    "resource_pages": 8,
+    "total_target_keywords": 250
+  }
+}

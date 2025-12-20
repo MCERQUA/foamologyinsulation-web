@@ -1,0 +1,133 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "service-page-strategy",
+    "version": "1.0.0"
+  },
+  "required_schemas": {
+    "LocalBusiness": {
+      "required_on": ["Homepage", "About page", "All location pages"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Foamology Insulation",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "901 E Klatt Road #6",
+          "addressLocality": "Anchorage",
+          "addressRegion": "AK",
+          "postalCode": "99515"
+        },
+        "telephone": "(907) 310-3000",
+        "url": "https://foamologyinsulation.com",
+        "areaServed": ["Anchorage", "Mat-Su Valley", "Kenai Peninsula Borough"]
+      }
+    },
+    "Service": {
+      "required_on": ["All service pages"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "[Service Name]",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Foamology Insulation"
+        },
+        "areaServed": ["Anchorage", "Mat-Su Valley", "Kenai Peninsula Borough"],
+        "description": "[Service description]"
+      }
+    },
+    "FAQPage": {
+      "required_on": ["FAQ page", "Service pages with FAQ sections", "Blog posts with FAQ"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "[Question text]",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[Answer text]"
+            }
+          }
+        ]
+      }
+    },
+    "Article": {
+      "required_on": ["All blog posts"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "[Article title]",
+        "author": {
+          "@type": "Organization",
+          "name": "Foamology Insulation"
+        },
+        "datePublished": "[ISO date]",
+        "dateModified": "[ISO date]"
+      }
+    },
+    "HowTo": {
+      "required_on": ["Process guides", "How-to blog posts"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "[How-to title]",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "[Step name]",
+            "text": "[Step description]"
+          }
+        ]
+      }
+    },
+    "Review_AggregateRating": {
+      "required_on": ["Homepage", "Reviews page", "About page"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Foamology Insulation",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "[number]"
+        }
+      }
+    },
+    "Breadcrumb": {
+      "required_on": ["All pages except homepage"],
+      "template": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://foamologyinsulation.com/"
+          }
+        ]
+      }
+    }
+  },
+  "page_type_schema_map": {
+    "homepage": ["LocalBusiness", "AggregateRating", "FAQPage"],
+    "service_pages": ["Service", "LocalBusiness", "FAQPage", "Breadcrumb"],
+    "location_pages": ["LocalBusiness", "GeoCoordinates", "Breadcrumb"],
+    "blog_posts": ["Article", "FAQPage", "HowTo", "Breadcrumb"],
+    "review_pages": ["AggregateRating", "Review", "Breadcrumb"],
+    "faq_pages": ["FAQPage", "Breadcrumb"],
+    "cost_pages": ["Product", "Offer", "FAQPage", "Breadcrumb"]
+  },
+  "implementation_priority": [
+    {"schema": "LocalBusiness", "priority": "Week 1", "pages": "Homepage + layout"},
+    {"schema": "FAQPage", "priority": "Week 1", "pages": "All service pages"},
+    {"schema": "Service", "priority": "Week 1", "pages": "All service pages"},
+    {"schema": "Breadcrumb", "priority": "Week 1", "pages": "All pages"},
+    {"schema": "Article", "priority": "Week 2", "pages": "All blog posts"},
+    {"schema": "Review", "priority": "Week 2", "pages": "About, Reviews pages"}
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "service-pages",
+    "version": "1.0.0"
+  },
+  "overview": {
+    "total_services": 15,
+    "existing_pages": 8,
+    "planned_pages": 7,
+    "priority_distribution": {
+      "critical": 4,
+      "high": 6,
+      "medium": 5
+    }
+  },
+  "existing_services": [
+    {
+      "title": "Spray Foam Insulation",
+      "url": "/services/spray-foam-insulation",
+      "priority": "Critical",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 1200,
+      "target_word_count": 2000
+    },
+    {
+      "title": "Closed-Cell Spray Foam",
+      "url": "/services/closed-cell-spray-foam",
+      "priority": "High",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 1000,
+      "target_word_count": 1600
+    },
+    {
+      "title": "Open-Cell Spray Foam",
+      "url": "/services/open-cell-spray-foam",
+      "priority": "High",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 1000,
+      "target_word_count": 1600
+    },
+    {
+      "title": "Crawl Space Insulation",
+      "url": "/services/crawl-space-insulation",
+      "priority": "Critical",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 1000,
+      "target_word_count": 1600
+    },
+    {
+      "title": "Attic Insulation",
+      "url": "/services/attic-insulation",
+      "priority": "Critical",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 1000,
+      "target_word_count": 1600
+    },
+    {
+      "title": "Thermal Inspections",
+      "url": "/services/thermal-inspections",
+      "priority": "High",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 800,
+      "target_word_count": 1400
+    },
+    {
+      "title": "Insulation Removal",
+      "url": "/services/insulation-removal",
+      "priority": "Medium",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 700,
+      "target_word_count": 1400
+    },
+    {
+      "title": "Weatherization",
+      "url": "/services/weatherization",
+      "priority": "Medium",
+      "status": "existing",
+      "needs_expansion": true,
+      "current_word_count": 700,
+      "target_word_count": 1400
+    }
+  ],
+  "planned_services": [
+    {
+      "title": "Ice Dam Prevention",
+      "url": "/services/ice-dam-prevention",
+      "priority": "High",
+      "status": "planned",
+      "target_word_count": 1600,
+      "traffic_potential": 150,
+      "primary_keyword": "ice dam prevention service"
+    },
+    {
+      "title": "Air Sealing",
+      "url": "/services/air-sealing",
+      "priority": "High",
+      "status": "planned",
+      "target_word_count": 1600,
+      "traffic_potential": 100,
+      "primary_keyword": "air sealing Alaska"
+    },
+    {
+      "title": "Commercial Insulation",
+      "url": "/services/commercial-insulation",
+      "priority": "Medium",
+      "status": "planned",
+      "target_word_count": 1600,
+      "traffic_potential": 60,
+      "primary_keyword": "commercial insulation Anchorage"
+    },
+    {
+      "title": "Energy Audits",
+      "url": "/services/energy-audits",
+      "priority": "Medium",
+      "status": "planned",
+      "target_word_count": 1400,
+      "traffic_potential": 80,
+      "primary_keyword": "energy audit Alaska"
+    },
+    {
+      "title": "New Construction Insulation",
+      "url": "/services/new-construction-insulation",
+      "priority": "Medium",
+      "status": "planned",
+      "target_word_count": 1600,
+      "traffic_potential": 50,
+      "primary_keyword": "new construction insulation Alaska"
+    },
+    {
+      "title": "Wall Insulation",
+      "url": "/services/wall-insulation",
+      "priority": "Medium",
+      "status": "planned",
+      "target_word_count": 1400,
+      "traffic_potential": 100,
+      "primary_keyword": "wall insulation Alaska"
+    },
+    {
+      "title": "Retrofit Insulation",
+      "url": "/services/retrofit-insulation",
+      "priority": "Low",
+      "status": "planned",
+      "target_word_count": 1400,
+      "traffic_potential": 50,
+      "primary_keyword": "retrofit insulation Alaska"
+    }
+  ],
+  "service_page_requirements": {
+    "structure": [
+      "Hero section with service-specific headline",
+      "Problem/solution introduction",
+      "Service explanation with technical details",
+      "Benefits section (7-10 items with icons)",
+      "Process/timeline section",
+      "Pricing/ROI section",
+      "FAQ section (10-15 questions)",
+      "Testimonials (2-3 relevant)",
+      "Related services links",
+      "Final CTA section"
+    ],
+    "seo_requirements": [
+      "Title tag with primary keyword (< 60 chars)",
+      "Meta description with keyword and CTA (< 155 chars)",
+      "H1 with primary keyword",
+      "H2s with secondary keywords",
+      "Internal links (5+)",
+      "FAQ schema markup",
+      "Service schema markup"
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "all-research-categories",
+    "version": "1.0.0"
+  },
+  "current_state": {
+    "estimated_monthly_organic_traffic": 500,
+    "estimated_monthly_organic_leads": 10,
+    "indexed_pages": 15,
+    "page_1_rankings": 5,
+    "conversion_rate": "2-3%"
+  },
+  "projected_results": {
+    "3_month": {
+      "monthly_traffic": 1500,
+      "monthly_leads": 40,
+      "page_1_rankings": 30,
+      "indexed_pages": 60,
+      "conversion_rate": "3-4%"
+    },
+    "6_month": {
+      "monthly_traffic": "3,000-4,000",
+      "monthly_leads": "75-160",
+      "page_1_rankings": 75,
+      "indexed_pages": 125,
+      "conversion_rate": "5-6%",
+      "featured_snippets": 15
+    },
+    "12_month": {
+      "monthly_traffic": "8,000-10,000",
+      "monthly_leads": "150-250",
+      "page_1_rankings": 100,
+      "indexed_pages": 150,
+      "conversion_rate": "6-8%",
+      "featured_snippets": 25
+    }
+  },
+  "revenue_projections": {
+    "assumptions": {
+      "average_project_value": "$3,000-$8,000",
+      "average_lead_value": "$5,000",
+      "lead_to_appointment_rate": "40%",
+      "appointment_to_close_rate": "50%",
+      "overall_conversion_rate": "20%"
+    },
+    "monthly_revenue_from_seo": {
+      "3_month": {
+        "leads": 40,
+        "conversions": 8,
+        "revenue": "$24,000-$64,000"
+      },
+      "6_month": {
+        "leads": 100,
+        "conversions": 20,
+        "revenue": "$60,000-$160,000"
+      },
+      "12_month": {
+        "leads": 200,
+        "conversions": 40,
+        "revenue": "$120,000-$320,000"
+      }
+    },
+    "annual_revenue_impact": {
+      "conservative": "$405,000",
+      "moderate": "$1,200,000",
+      "aggressive": "$2,400,000"
+    }
+  },
+  "content_investment_value": {
+    "pillar_pages": {
+      "quantity": 10,
+      "hours_per_page": 10,
+      "value_per_hour": 100,
+      "total_value": "$10,000"
+    },
+    "service_pages": {
+      "quantity": 10,
+      "hours_per_page": 5,
+      "value_per_hour": 100,
+      "total_value": "$5,000"
+    },
+    "location_pages": {
+      "quantity": 12,
+      "hours_per_page": 4,
+      "value_per_hour": 100,
+      "total_value": "$4,800"
+    },
+    "blog_posts": {
+      "quantity": 30,
+      "hours_per_post": 4,
+      "value_per_hour": 100,
+      "total_value": "$12,000"
+    },
+    "resource_pages": {
+      "quantity": 8,
+      "hours_per_page": 5,
+      "value_per_hour": 100,
+      "total_value": "$4,000"
+    },
+    "total_content_value": "$35,800"
+  },
+  "quick_wins_roi": {
+    "investment": "46 hours (4 weeks)",
+    "hourly_rate_value": "$100",
+    "investment_value": "$4,600",
+    "expected_monthly_return": {
+      "additional_traffic": "300-500",
+      "additional_leads": "15-25",
+      "conversions": "3-5",
+      "revenue": "$9,000-$40,000"
+    },
+    "payback_period": "1 month",
+    "annual_roi": "2,000-8,700%"
+  },
+  "competitive_advantage_value": {
+    "video_content_first_mover": {
+      "opportunity_window": "12-18 months",
+      "traffic_impact": "40-60%",
+      "value": "HIGH - No competitor has video"
+    },
+    "pricing_transparency": {
+      "opportunity_window": "6-12 months",
+      "conversion_impact": "20-30%",
+      "value": "HIGH - No competitor has pricing content"
+    },
+    "interactive_tools": {
+      "opportunity_window": "12+ months",
+      "lead_capture_impact": "30-50%",
+      "value": "HIGH - No competitor has calculators"
+    }
+  },
+  "risk_factors": {
+    "algorithm_updates": {
+      "likelihood": "Medium",
+      "impact": "High",
+      "mitigation": "Diverse content types, quality focus"
+    },
+    "competitor_response": {
+      "likelihood": "High",
+      "impact": "Medium",
+      "mitigation": "Speed advantage, unique content"
+    },
+    "resource_constraints": {
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Prioritized approach, phased implementation"
+    }
+  }
+}

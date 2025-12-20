@@ -1,0 +1,109 @@
+{
+  "_metadata": {
+    "domain": "foamologyinsulation-web",
+    "generated": "2025-12-20T00:00:00.000Z",
+    "source": "competitor-analysis",
+    "version": "1.0.0"
+  },
+  "company_profile": {
+    "name": "Foamology Insulation",
+    "address": "901 E Klatt Road #6, Anchorage, AK 99515",
+    "phone": "(907) 310-3000",
+    "owner": "Magnus Pedersen",
+    "service_areas": ["Anchorage", "Mat-Su Valley", "Kenai Peninsula"]
+  },
+  "current_position": {
+    "market_stage": "Growth Phase",
+    "website_quality_score": 8,
+    "seo_score": 7,
+    "content_quality": "Building",
+    "residential_focus_percent": 70,
+    "commercial_focus_percent": 25,
+    "review_status": "Building reputation"
+  },
+  "competitive_advantages": [
+    {
+      "advantage": "Thermal Imaging Leadership",
+      "description": "First mover advantage - only Alas-Co offers thermal diagnostics",
+      "impact": "15-25% higher conversion rate with visual proof",
+      "priority": "HIGH"
+    },
+    {
+      "advantage": "Modern Website",
+      "description": "Superior digital experience vs dated competitor sites",
+      "impact": "Captures digitally-savvy customers",
+      "priority": "HIGH"
+    },
+    {
+      "advantage": "Comprehensive Services",
+      "description": "Full-service: spray foam, thermal inspections, ice dam prevention, removal",
+      "impact": "One-stop solution positioning",
+      "priority": "MEDIUM"
+    },
+    {
+      "advantage": "Content Opportunity",
+      "description": "Can build best-in-class educational content library",
+      "impact": "50%+ increase in organic traffic",
+      "priority": "CRITICAL"
+    },
+    {
+      "advantage": "Video Content Gap",
+      "description": "Zero competitors have strong video presence",
+      "impact": "40-60% increase in organic traffic",
+      "priority": "HIGH"
+    }
+  ],
+  "market_opportunities": [
+    {
+      "opportunity": "Eagle River/Chugiak Market",
+      "opportunity_score": 95,
+      "rationale": "No local competitors, part of Anchorage municipality",
+      "estimated_time_to_rank": "1-3 months"
+    },
+    {
+      "opportunity": "Kenai Peninsula Expansion",
+      "opportunity_score": 85,
+      "rationale": "Only Bosela Urethane serves area (small operator)",
+      "estimated_time_to_rank": "2-4 months"
+    },
+    {
+      "opportunity": "Educational Content Dominance",
+      "opportunity_score": 90,
+      "rationale": "Only Chinook has decent blog, major gap",
+      "estimated_time_to_rank": "3-6 months"
+    },
+    {
+      "opportunity": "Commercial/Light Industrial",
+      "opportunity_score": 80,
+      "rationale": "Northern Insulation focused on heavy industrial, light commercial underserved",
+      "estimated_time_to_rank": "3-6 months"
+    }
+  ],
+  "weaknesses_to_exploit": [
+    {
+      "competitor": "Weatherize Alaska",
+      "weakness": "Mixed reviews, quality complaints",
+      "strategy": "Position as reliable, communicative alternative"
+    },
+    {
+      "competitor": "Northern Insulation",
+      "weakness": "Not BBB accredited despite size claims",
+      "strategy": "Pursue BBB accreditation, trust messaging"
+    },
+    {
+      "competitor": "Energy Savers / Anchorage Spray Foam",
+      "weakness": "Dated websites",
+      "strategy": "Highlight modern customer experience"
+    },
+    {
+      "competitor": "All Competitors",
+      "weakness": "No video content",
+      "strategy": "Become video content leader"
+    },
+    {
+      "competitor": "All Competitors",
+      "weakness": "No certification visibility",
+      "strategy": "Obtain and prominently display SPFA/BPI certs"
+    }
+  ]
+}
