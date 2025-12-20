@@ -9,20 +9,28 @@ featuredImage: '/images/blog/spray-foam-cost-guide-featured.jpg'
 featuredImageAlt: 'Professional spray foam insulation being applied in an Alaska home'
 ---
 
+import StatsCard from '../../components/blog/StatsCard.tsx';
+import InfoBox from '../../components/blog/InfoBox.tsx';
+import CTABlock from '../../components/blog/CTABlock.tsx';
+
+<InfoBox variant="info" title="Quick Answer">
 **Is spray foam insulation worth the higher upfront cost?** The short answer is yes—for most homeowners who plan to stay in their homes for five years or more. While spray foam costs 2-8 times more than traditional fiberglass insulation, it delivers 30-50% energy savings, pays for itself in 3-7 years, and lasts 80-100 years. That's a lifetime of returns on a one-time investment.
+</InfoBox>
 
-## Key Statistics at a Glance
-
-- **30-50%** Energy Savings
-- **3-7 years** Payback Period
-- **80-100 years** Lifespan
-- **R-6 to R-7** Per Inch (Closed-Cell)
-
----
+<StatsCard
+  client:load
+  title="Key Statistics at a Glance"
+  stats={[
+    { value: "30-50%", label: "Energy Savings", description: "Reduction in heating & cooling costs" },
+    { value: "3-7 yrs", label: "Payback Period", description: "Time to recoup investment" },
+    { value: "80-100", label: "Year Lifespan", description: "Virtually lifetime durability" },
+    { value: "R-6 to R-7", label: "Per Inch", description: "Closed-cell R-value" }
+  ]}
+/>
 
 But spray foam isn't the right choice for every situation. If you're selling your home soon, have a tight budget, or just need to insulate a small area, traditional insulation might make more financial sense.
 
-In this comprehensive guide, we'll break down the real costs of spray foam insulation in 2025, calculate your potential return on investment, compare it to alternatives like fiberglass, and help you decide whether spray foam is worth it for your specific situation. We'll cover both the impressive benefits and the legitimate concerns, so you can make an informed decision.
+In this comprehensive guide, we'll break down the real costs of spray foam insulation in 2025, calculate your potential return on investment, compare it to alternatives like fiberglass, and help you decide whether spray foam is worth it for your specific situation.
 
 ## What Is Spray Foam Insulation and How Does It Work?
 
@@ -36,19 +44,21 @@ According to the [U.S. Department of Energy](https://www.energy.gov/energysaver/
 
 There are two types of spray foam insulation, each with distinct characteristics and best-use applications:
 
-| Feature | Open-Cell Spray Foam | Closed-Cell Spray Foam |
+| Feature | [Open-Cell](/services/open-cell-spray-foam) | [Closed-Cell](/services/closed-cell-spray-foam) |
 |---------|---------------------|------------------------|
 | **R-Value per Inch** | R-3.5 to R-3.7 | R-6.0 to R-7.0 |
 | **Cost per Sq Ft** | $1.00 - $3.00 | $1.50 - $4.50 |
-| **Density** | 0.5 lbs per cubic foot | 1.75+ lbs per cubic foot |
+| **Density** | 0.5 lbs/cu ft | 1.75+ lbs/cu ft |
 | **Expansion Rate** | 150x liquid volume | 50x liquid volume |
 | **Vapor Barrier** | No (breathable) | Yes (moisture resistant) |
 | **Best Applications** | Interior walls, soundproofing | Attics, crawl spaces, basements |
 | **Structural Benefit** | Minimal | Significant (adds rigidity) |
 
-**Open-cell foam** is softer, less dense, and more affordable. It's excellent for soundproofing and works well in interior applications where moisture isn't a concern.
+<InfoBox variant="tip" title="Pro Tip: Choosing the Right Foam">
+**Open-cell foam** is softer, less dense, and more affordable—excellent for soundproofing and interior applications where moisture isn't a concern.
 
-**Closed-cell foam** is denser, stronger, and provides nearly double the R-value per inch. It acts as its own vapor barrier and adds structural strength to walls and roof decks. Research from the [National Association of Home Builders](https://www.nahb.org/) shows that walls with closed-cell spray foam have racking strength up to 300% greater than walls without it.
+**Closed-cell foam** is denser, stronger, and provides nearly double the R-value per inch. It acts as its own vapor barrier and adds structural strength. Research from the [National Association of Home Builders](https://www.nahb.org/) shows walls with closed-cell spray foam have racking strength up to **300% greater** than walls without it.
+</InfoBox>
 
 ## Spray Foam Insulation Cost: 2025 Price Guide
 
@@ -66,24 +76,24 @@ The average spray foam project costs between **$1,453 and $4,335**, with most ho
 
 ### Cost by Project Type
 
-**[Attic Insulation](/services/attic-insulation):** $3,500 - $7,000
+**[Attic Insulation](/services/attic-insulation): $3,500 - $7,000**
 - Open-cell attic: $3,500 - $5,000
 - Closed-cell attic: $4,500 - $7,000
 - Includes roof deck application for conditioned attic space
 
-**Whole House (2,000 sq ft):** $4,000 - $8,000+
+**Whole House (2,000 sq ft): $4,000 - $8,000+**
 - New construction: $1 - $4 per square foot
 - Existing homes: $3 - $5 per square foot (higher due to access challenges)
 
-**[Crawl Space](/services/crawl-space-insulation):** $2,000 - $4,000
+**[Crawl Space](/services/crawl-space-insulation): $2,000 - $4,000**
 - Includes wall insulation and encapsulation
 - Moisture control benefits add value
 
-### Why Is Spray Foam More Expensive Than Fiberglass?
+### Why Is Spray Foam More Expensive?
 
-Many homeowners wonder why spray foam costs 2-8 times more than fiberglass batts. According to [Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/), installation costs run 100-300% higher than traditional insulation for several reasons:
+According to [Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/), installation costs run 100-300% higher than traditional insulation:
 
-1. **Specialized Equipment:** Spray foam requires heated hoses, proportioners, and spray guns costing $10,000+
+1. **Specialized Equipment:** Heated hoses, proportioners, and spray guns costing $10,000+
 2. **Professional Installation:** Chemical handling requires trained, certified installers
 3. **High-Quality Materials:** Isocyanates and polyol resins are more expensive than fiberglass
 4. **Labor-Intensive Process:** Proper application takes skill and time
@@ -95,30 +105,25 @@ The real value of spray foam insulation becomes clear when you calculate the ret
 
 ### Energy Savings Breakdown
 
-Spray foam delivers impressive energy savings compared to traditional insulation:
-
 - **30-50% reduction** in heating and cooling costs
 - **$300 - $1,000** annual savings for typical homes
 - **$15,000 - $50,000** lifetime savings over 80+ year lifespan
-- **20-40% better performance** than fiberglass at equal R-values ([Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/))
+- **20-40% better performance** than fiberglass at equal R-values
 
-The [EPA's Energy Star program](https://www.energystar.gov/saveathome/seal_insulate/identify-problems-you-want-fix/diy-checks-inspections/insulation-r-values) notes that combining proper insulation with [weatherization services](/services/weatherization) can save up to 20% on monthly energy bills. Spray foam provides both in a single application—something traditional insulation can't match.
+The [EPA's Energy Star program](https://www.energystar.gov/saveathome/seal_insulate/identify-problems-you-want-fix/diy-checks-inspections/insulation-r-values) notes that combining proper insulation with [weatherization services](/services/weatherization) can save up to 20% on monthly energy bills. Spray foam provides both in a single application.
 
-### Calculating Your ROI
+<InfoBox variant="success" title="Sample ROI Calculation">
+- **Current monthly energy bill:** $300
+- **Expected savings with spray foam:** 40%
+- **Monthly savings:** $120
+- **Annual savings:** $1,440
+- **Spray foam investment:** $5,000
+- **Payback period: 3.5 years**
 
-> **Sample ROI Calculation:**
-> - Current monthly energy bill: $300
-> - Expected savings with spray foam: 40%
-> - Monthly savings: $120
-> - Annual savings: $1,440
-> - Spray foam investment: $5,000
-> - **Payback period: 3.5 years**
->
-> After the payback period, you continue saving $1,440+ per year for the life of your home. Over 10 years, that's $14,400 in savings. Over 20 years: $28,800.
+After the payback period, you continue saving $1,440+ per year for the life of your home. Over 10 years, that's $14,400 in savings. Over 20 years: **$28,800**.
+</InfoBox>
 
 ### Additional Value Beyond Energy Savings
-
-Your spray foam investment delivers value beyond lower utility bills:
 
 **HVAC Benefits:**
 - Reduced cycling extends equipment life
@@ -132,7 +137,7 @@ Your spray foam investment delivers value beyond lower utility bills:
 
 ## Spray Foam vs Fiberglass Insulation: Which Is Better?
 
-The spray foam vs fiberglass debate comes down to your priorities: maximum performance or minimum cost. Here's the complete comparison:
+The spray foam vs fiberglass debate comes down to your priorities: maximum performance or minimum cost.
 
 | Factor | Spray Foam | Fiberglass |
 |--------|-----------|------------|
@@ -148,11 +153,9 @@ The spray foam vs fiberglass debate comes down to your priorities: maximum perfo
 
 Here's why spray foam outperforms fiberglass even when R-values are similar: **air sealing**.
 
-According to [Energy Star](https://www.energystar.gov/saveathome/seal_insulate/identify-problems-you-want-fix/diy-checks-inspections/insulation-r-values), as much as 40% of a building's energy is lost due to air infiltration—air leaking through gaps, cracks, and unsealed penetrations. Fiberglass batts don't stop air movement; air passes right through the material. Spray foam creates a complete air barrier that eliminates this energy waste.
+According to [Energy Star](https://www.energystar.gov/saveathome/seal_insulate/identify-problems-you-want-fix/diy-checks-inspections/insulation-r-values), as much as **40% of a building's energy is lost due to air infiltration**—air leaking through gaps, cracks, and unsealed penetrations. Fiberglass batts don't stop air movement; air passes right through the material. Spray foam creates a complete air barrier that eliminates this energy waste.
 
-[Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/) found that given equal R-values, foam insulation delivers 20-40% better overall performance than traditional fiberglass or cellulose. That's the air sealing advantage in action.
-
-[This Old House](https://www.thisoldhouse.com/insulation/21017266/how-to-choose-and-use-foam-insulation) explains that spray foam "completely fills spaces between studs, joists, and rafters" while creating "effective air barriers, sealing open seams." Fiberglass simply can't match this level of coverage.
+[Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/) found that given equal R-values, foam insulation delivers **20-40% better overall performance** than traditional fiberglass or cellulose.
 
 ## 7 Benefits of Spray Foam Beyond Energy Savings
 
@@ -160,15 +163,15 @@ While energy savings drive most spray foam decisions, the benefits extend far be
 
 ### 1. Superior Air Sealing
 
-Spray foam is the only insulation that provides a true air barrier. According to [ASHRAE Standard 90.1](https://www.ashrae.org/), buildings must limit air leakage to maintain energy efficiency. Spray foam achieves exceptional airtightness—the 2024 NAHB New American Home using spray foam achieved a blower door test result of 0.35, an exceptional score that's virtually impossible with other insulation types.
+Spray foam is the only insulation that provides a true air barrier. According to [ASHRAE Standard 90.1](https://www.ashrae.org/), buildings must limit air leakage to maintain energy efficiency. The 2024 NAHB New American Home using spray foam achieved a blower door test result of 0.35—an exceptional score virtually impossible with other insulation types.
 
 ### 2. Moisture and Mold Prevention
 
-Closed-cell spray foam acts as a vapor barrier, preventing moisture infiltration that leads to mold growth. Unlike fiberglass that absorbs water and loses effectiveness when wet, closed-cell foam is impermeable to moisture. [Building Science Corporation](https://buildingscience.com/documents/guides-and-manuals/gm-2102-residential-spray-foam-guide) notes that closed-cell foam over 2" thick controls vapor diffusion in all climates.
+Closed-cell spray foam acts as a vapor barrier, preventing moisture infiltration that leads to mold growth. [Building Science Corporation](https://buildingscience.com/documents/guides-and-manuals/gm-2102-residential-spray-foam-guide) notes that closed-cell foam over 2" thick controls vapor diffusion in all climates.
 
 ### 3. Structural Reinforcement
 
-[NAHB Research](https://www.nahb.org/) demonstrates that walls installed with closed-cell spray foam have racking strength up to 300% greater than walls without foam. This added rigidity helps homes withstand severe weather, high winds, and seismic events.
+[NAHB Research](https://www.nahb.org/) demonstrates that walls installed with closed-cell spray foam have racking strength up to **300% greater** than walls without foam. This added rigidity helps homes withstand severe weather, high winds, and seismic events.
 
 ### 4. Sound Dampening
 
@@ -188,31 +191,32 @@ By creating an air barrier, spray foam reduces infiltration of outdoor pollutant
 
 ## Spray Foam Disadvantages: What You Need to Know
 
-Honest evaluation requires discussing spray foam's drawbacks. Understanding these concerns helps you make an informed decision:
+Honest evaluation requires discussing spray foam's drawbacks:
 
 ### Higher Upfront Cost
 
-There's no escaping the fact that spray foam costs significantly more initially. [Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/) notes that installation costs 100-300% more than traditional insulation. For budget-conscious homeowners, this can be a dealbreaker, even with long-term savings.
+[Consumer Reports](https://www.consumerreports.org/home-garden/home-insulation/how-to-shop-for-home-insulation-a8427447189/) notes that installation costs **100-300% more** than traditional insulation. For budget-conscious homeowners, this can be a dealbreaker.
 
 ### Professional Installation Required
 
-Spray foam isn't a DIY project for whole-house applications. The [EPA](https://archive.epa.gov/epa/saferchoice/spray-polyurethane-foam-spf-insulation-and-how-use-it-more-safely.html) emphasizes that installation requires specialized equipment and certified contractors due to chemical safety concerns.
+The [EPA](https://archive.epa.gov/epa/saferchoice/spray-polyurethane-foam-spf-insulation-and-how-use-it-more-safely.html) emphasizes that installation requires specialized equipment and certified contractors due to chemical safety concerns.
 
 ### Re-Entry Time During Installation
 
-According to [EPA guidelines](https://archive.epa.gov/epa/saferchoice/spray-polyurethane-foam-spf-insulation-and-how-use-it-more-safely.html), safe re-entry times vary:
+According to EPA guidelines, safe re-entry times vary:
 - One-component foam: 8-24 hours
 - Two-component foam: 24-72 hours
 
 You'll need to vacate your home during installation and curing.
 
-### Common Problems and How to Avoid Them
+<InfoBox variant="warning" title="Common Problems and How to Avoid Them">
+Most spray foam problems stem from improper installation:
 
-> **Most spray foam problems stem from improper installation:**
-> 1. **Off-Ratio Mixing:** Hire experienced contractors with properly calibrated equipment
-> 2. **Improper Thickness:** Multiple thin passes, not one thick application
-> 3. **Moisture Trapping:** Ensure surfaces are dry before application
-> 4. **Persistent Odors:** Verify material freshness and proper mixing
+1. **Off-Ratio Mixing:** Hire experienced contractors with properly calibrated equipment
+2. **Improper Thickness:** Multiple thin passes, not one thick application
+3. **Moisture Trapping:** Ensure surfaces are dry before application
+4. **Persistent Odors:** Verify material freshness and proper mixing
+</InfoBox>
 
 ### When Spray Foam May NOT Be Worth It
 
@@ -241,8 +245,7 @@ Maximizing spray foam's value means prioritizing the highest-impact applications
 
 The quality of your spray foam installation depends entirely on your contractor. Proper installation is the difference between decades of savings and expensive remediation. Learn more [about our company](/about) and our commitment to quality.
 
-### Contractor Selection Checklist
-
+<InfoBox variant="tip" title="Contractor Selection Checklist">
 - Licensed and insured — Verify current status
 - [SPFA Professional Certification](https://www.sprayfoam.org/) — Industry standard
 - 5+ years experience — Spray foam requires skill
@@ -251,62 +254,63 @@ The quality of your spray foam installation depends entirely on your contractor.
 - Detailed written estimate — Itemized costs, not lump sum
 - Clear communication — Explains process and re-entry times
 - Properly calibrated equipment — Ask about maintenance
+</InfoBox>
 
 Remember: spray foam problems are expensive to fix. Removal and reinstallation can cost more than the original installation. Investing in a quality contractor protects your investment. Consider a [thermal inspection](/services/thermal-inspections) after installation to verify quality.
 
-## Frequently Asked Questions About Spray Foam Insulation
+## Frequently Asked Questions
 
 ### How much does spray foam insulation cost per square foot?
 
-Spray foam insulation costs $1.00-$4.50 per square foot installed, depending on foam type. Open-cell spray foam ranges from $1.00-$3.00 per square foot, while closed-cell foam costs $1.50-$4.50 per square foot. The average whole-house project runs $2,000-$8,000 depending on home size and foam type selected.
+Spray foam insulation costs $1.00-$4.50 per square foot installed, depending on foam type. Open-cell ranges from $1.00-$3.00, while closed-cell costs $1.50-$4.50 per square foot. The average whole-house project runs $2,000-$8,000.
 
 ### Is spray foam insulation worth the extra cost?
 
-Yes, for most homeowners who plan to stay in their homes for 5+ years. Spray foam pays for itself in 3-7 years through 30-50% energy savings and lasts 80-100 years. The higher upfront cost delivers dramatically better performance than traditional insulation, including complete air sealing that fiberglass can't provide.
+Yes, for most homeowners who plan to stay 5+ years. Spray foam pays for itself in 3-7 years through 30-50% energy savings and lasts 80-100 years. The higher upfront cost delivers dramatically better performance, including complete air sealing that fiberglass can't provide.
 
 ### How long does spray foam insulation last?
 
-Spray foam insulation lasts 80-100 years, essentially the lifetime of your home. Unlike fiberglass (15-20 years) or cellulose (20-30 years), spray foam doesn't sag, settle, or lose R-value over time. Once installed, it maintains full effectiveness indefinitely when undisturbed.
+Spray foam insulation lasts 80-100 years—essentially the lifetime of your home. Unlike fiberglass (15-20 years) or cellulose (20-30 years), spray foam doesn't sag, settle, or lose R-value over time.
 
 ### Is spray foam insulation safe?
 
-Yes, spray foam is completely safe once fully cured (24-72 hours after installation). During installation, chemical exposure risks exist, which is why professional installation and temporary evacuation are required. After curing, the foam becomes inert and poses no health risks.
+Yes, spray foam is completely safe once fully cured (24-72 hours after installation). During installation, chemical exposure risks exist, which is why professional installation and temporary evacuation are required. After curing, the foam becomes inert.
 
 ### Does spray foam insulation increase home value?
 
-Spray foam doesn't directly increase appraised home value (insulation isn't part of formal appraisals), but it makes homes more attractive to buyers through energy efficiency and comfort. Homes with lower energy bills and better comfort often sell faster and may command higher prices.
+Spray foam doesn't directly increase appraised home value, but it makes homes more attractive to buyers through energy efficiency and comfort. Homes with lower energy bills often sell faster and may command higher prices.
 
 ### Open cell vs closed cell: which should I choose?
 
-Choose **closed-cell foam** for attics, crawl spaces, basements, and anywhere moisture control matters. Its higher R-value (R-6-7/inch) and vapor barrier properties make it ideal. Choose **open-cell foam** for interior walls and soundproofing where cost savings are important and moisture isn't a concern.
+Choose **closed-cell foam** for attics, crawl spaces, basements, and anywhere moisture control matters. Its higher R-value (R-6-7/inch) and vapor barrier properties make it ideal. Choose **open-cell foam** for interior walls and soundproofing where cost savings are important.
 
 ### Can I install spray foam insulation myself?
 
-For small projects (gaps around windows, rim joists), DIY spray foam kits work adequately. For whole-house insulation, professional installation is essential. Spray foam requires specialized equipment, proper chemical mixing ratios, safety gear, and expertise to install correctly.
+For small projects (gaps around windows, rim joists), DIY spray foam kits work adequately. For whole-house insulation, professional installation is essential due to specialized equipment and safety requirements.
 
 ### How much can I save on energy bills with spray foam?
 
-Homeowners typically save 30-50% on heating and cooling costs with spray foam insulation. For a home spending $2,000+ annually on energy, that's $600-$1,000 in annual savings. Over 10 years, savings typically reach $6,000-$10,000.
+Homeowners typically save 30-50% on heating and cooling costs. For a home spending $2,000+ annually on energy, that's $600-$1,000 in annual savings. Over 10 years, savings typically reach $6,000-$10,000.
 
 ### Does spray foam prevent mold?
 
-Closed-cell spray foam helps prevent mold by creating a vapor barrier that blocks moisture infiltration. However, spray foam must be installed on dry surfaces—spraying over existing moisture can trap it behind the foam, potentially causing hidden mold growth.
+Closed-cell spray foam helps prevent mold by creating a vapor barrier that blocks moisture infiltration. However, spray foam must be installed on dry surfaces—spraying over existing moisture can trap it behind the foam.
 
-### How long should I stay out of the house after spray foam installation?
+### How long should I stay out of the house after installation?
 
-Stay out for 24-72 hours after spray foam installation, depending on foam type. One-component foam typically requires 8-24 hours. Two-component foam (most professional installations) requires 24-72 hours. Wait until no chemical smell is present and foam is fully cured.
+Stay out for 24-72 hours after spray foam installation, depending on foam type. One-component foam typically requires 8-24 hours; two-component foam (most professional installations) requires 24-72 hours.
 
 ## The Bottom Line: Is Spray Foam Worth the Cost?
 
 After examining the costs, ROI, benefits, and potential drawbacks, here's the conclusion: **spray foam insulation is worth the cost for most homeowners who plan to stay in their homes for 5+ years.**
 
-### The Value Equation
-
+<InfoBox variant="success" title="The Value Equation">
 - **Investment:** $2,000-$8,000 for typical projects
 - **Annual savings:** $300-$1,000 on energy bills
 - **Payback period:** 3-7 years
 - **Lifespan:** 80-100 years
 - **Net lifetime savings:** $15,000-$50,000+
+</InfoBox>
 
 Beyond the financial return, spray foam delivers benefits that traditional insulation simply can't match: complete air sealing, moisture control, structural reinforcement, soundproofing, and pest resistance. Once installed, it maintains full effectiveness for generations.
 
@@ -314,13 +318,14 @@ Beyond the financial return, spray foam delivers benefits that traditional insul
 
 If spray foam insulation sounds right for your home, the next step is getting a professional assessment. A qualified contractor can evaluate your specific situation, recommend the right foam type, and provide an accurate estimate based on your home's needs. Contact our [building consultant services](/services/building-consultant) for expert guidance.
 
----
-
-**Get a Free Spray Foam Assessment**
-
-Find out if spray foam is right for your home. Our experts will evaluate your situation and provide an honest recommendation.
-
-[Request Free Estimate](/contact)
+<CTABlock
+  client:load
+  title="Get a Free Spray Foam Assessment"
+  description="Find out if spray foam is right for your home. Our experts will evaluate your situation and provide an honest recommendation."
+  buttonText="Request Free Estimate"
+  buttonLink="/contact"
+  variant="primary"
+/>
 
 ---
 
