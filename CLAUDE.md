@@ -33,6 +33,36 @@ The website uses a **floating navbar** positioned at `top-6`. Every page, hero s
 
 ---
 
+### ⚠️ PROJECT-LOCAL TOOLS ONLY ⚠️
+
+**ALL skills, commands, agents, and tools for this website MUST be stored in the project folder ONLY!**
+
+**DO:**
+- ✅ Create skills in `foamologyinsulation-web/.claude/skills/`
+- ✅ Create slash commands in `foamologyinsulation-web/.claude/commands/`
+- ✅ Store scripts in `foamologyinsulation-web/scripts/`
+- ✅ Keep project-specific tools within this repo
+
+**DO NOT:**
+- ❌ Create system-wide skills in `~/.claude/skills/`
+- ❌ Add to Josh-AI's main CLAUDE.md for this project
+- ❌ Create tools in `/home/josh/Josh-AI/tools/` for this website
+- ❌ Mix website-specific code with the global Josh-AI system
+
+**Why:** We have multiple websites. Each website has its own unique tools and workflows. Keeping them project-local prevents conflicts and keeps each site self-contained.
+
+**Project Structure:**
+```
+foamologyinsulation-web/
+├── .claude/
+│   ├── commands/       # Project slash commands (e.g., /publish-blog)
+│   └── skills/         # Project-specific skills
+├── scripts/            # Project automation scripts
+└── CLAUDE.md           # THIS file - project instructions
+```
+
+---
+
 ## Project Overview
 
 This is a **spray foam insulation company website** built for Foamology Insulation (Alaska-based), owned by **Magnus Pedersen**. Business address: **901 E Klatt Road #6, Anchorage, AK 99515**. It's a modern, static site using **Astro v5**, **React**, and **Tailwind CSS** with glass morphism effects and a component-based architecture.
@@ -53,6 +83,56 @@ rm -rf node_modules package-lock.json
 npm install
 npm run dev
 ```
+
+## Blog Publishing System
+
+The website has an automated blog publishing system that converts completed research blog posts to live MDX files.
+
+### Blog Research Location
+All blog research is stored in `ai/knowledge/10-Blog-research/`. Each blog has its own folder containing:
+- `article-final.html` - The completed HTML article
+- `final-review-approved.json` - Review status and metadata
+- `article-design/` - Generated images for the article
+- Research files (keyword research, topic research, etc.)
+
+### Publishing a Blog Post
+
+**Option 1: Slash Command**
+```
+/publish-blog <folder-name>
+```
+
+**Option 2: Python Script**
+```bash
+# List available blogs
+python3 scripts/blog-publisher.py
+
+# Publish a specific blog
+python3 scripts/blog-publisher.py crawl-space-insulation-stop-cold-floors-now
+```
+
+### What the Publisher Does
+
+1. **Validates** - Checks `final-review-approved.json` for `status: "APPROVED"`
+2. **Extracts metadata** - Title, description, tags, read time, images
+3. **Converts HTML to MDX** - Proper JSX syntax, component imports
+4. **Copies images** - From research folder to `public/images/blog/{slug}/`
+5. **Localizes content** - Converts Arizona/Phoenix references to Alaska/Anchorage
+6. **Creates MDX file** - Saves to `src/content/blog/{slug}.mdx`
+
+### Blog Components Available
+
+The converted MDX can use these components:
+- `<StatsCard>` - Key statistics display
+- `<InfoBox>` - Info/tip/warning callout boxes
+- `<CTABlock>` - Call-to-action blocks
+
+### After Publishing
+
+1. Review the MDX file for any conversion issues
+2. Run `npm run dev` to preview locally
+3. Test all internal and external links
+4. Git commit and push to deploy
 
 ## Architecture Overview
 
