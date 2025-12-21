@@ -29,7 +29,7 @@ const GlassNavbar: React.FC = () => {
       else activeItem = 'Home';
     } else if (currentPath.startsWith('/services')) {
       activeItem = 'Solutions';
-    } else if (currentPath.startsWith('/about') || currentPath.startsWith('/gallery')) {
+    } else if (currentPath.startsWith('/about') || currentPath.startsWith('/gallery') || currentPath.startsWith('/tools')) {
       activeItem = 'About';
     } else if (currentPath.startsWith('/blog')) {
       activeItem = 'Blog';
@@ -53,6 +53,7 @@ const GlassNavbar: React.FC = () => {
   const aboutItems = [
     { label: 'About Us', href: '/about' },
     { label: 'Gallery', href: '/gallery' },
+    { label: 'Tools & Calculators', href: '/tools/' },
   ];
 
   const navItems = [

@@ -103,6 +103,16 @@ export const componentRegistry = {
     }
   },
 
+  // Tools Components
+  tools: {
+    SprayFoamCalculator: {
+      path: '@components/tools/SprayFoamCalculator',
+      description: 'Glass-styled spray foam estimation calculator with touch-friendly number pad. Calculates wall/ceiling square footage and board feet for metal buildings, sheds, crawl spaces, attics, garages, and pole barns.',
+      props: [],
+      features: ['6 building types', 'Gable end calculations', 'Board feet calculation', 'Mobile-optimized', 'Glass morphism design']
+    }
+  },
+
   // Service Pages
   services: {
     SprayFoam: {

@@ -86,6 +86,13 @@
   ],
   "week_2_actions": [
     {
+      "action": "Build Spray Foam Estimation Calculator",
+      "priority": "HIGH",
+      "estimated_hours": 8,
+      "impact": "High",
+      "description": "Interactive tool for calculating wall/ceiling square footage, board feet, and job estimates. Supports metal buildings, sheds, crawl spaces, attics. Owner requested - uses it daily for quoting. SEO value: 'spray foam calculator' keywords."
+    },
+    {
       "action": "Create Closed Cell vs Open Cell Blog Post",
       "priority": "CRITICAL",
       "estimated_hours": 6,

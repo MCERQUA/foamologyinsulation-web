@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SprayFoamCalculator from '../../components/tools/SprayFoamCalculator';
+---
+
+<BaseLayout
+  title="Spray Foam Calculator | Estimate Square Footage & Board Feet | Foamology"
+  description="Free spray foam insulation calculator. Calculate wall and ceiling square footage, board feet, and material needs for metal buildings, sheds, crawl spaces, attics, and more."
+>
+  <main class="min-h-screen" style="background: linear-gradient(180deg, #E3F2FD 0%, #BBDEFB 50%, #90CAF9 100%);">
+    <!-- Mobile-first layout -->
+    <div class="pt-20 pb-8 px-4">
+      <!-- Back button - Desktop only -->
+      <div class="hidden md:block container mx-auto max-w-lg mb-4">
+        <a href="/tools/" class="inline-flex items-center gap-2 text-espresso/60 hover:text-espresso transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Tools
+        </a>
+      </div>
+
+      <!-- Title - Hidden on small screens when calculator is visible -->
+      <div class="text-center mb-6 md:mb-8">
+        <h1 class="text-2xl md:text-3xl font-bold text-charcoal">
+          Spray Foam Calculator
+        </h1>
+        <p class="text-sm md:text-base text-espresso/60 mt-1">
+          Tap a field, enter dimensions, calculate
+        </p>
+      </div>
+
+      <!-- Calculator -->
+      <SprayFoamCalculator client:load />
+
+      <!-- Help Section -->
+      <div class="max-w-md mx-auto mt-8 rounded-2xl p-6" style="background: rgba(255,255,255,0.9); border: 1px solid rgba(200,184,158,0.2); box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+        <h3 class="font-bold text-charcoal mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5 text-terra-cotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          How to Use
+        </h3>
+        <ol class="space-y-3 text-sm text-espresso/70">
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-terra-cotta/20 text-terra-cotta font-bold text-xs flex items-center justify-center">1</span>
+            <span>Select your building type (Metal Building, Shed, Crawl Space, etc.)</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-terra-cotta/20 text-terra-cotta font-bold text-xs flex items-center justify-center">2</span>
+            <span>Tap a dimension field (Length, Width, Wall Height, Peak Height)</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-terra-cotta/20 text-terra-cotta font-bold text-xs flex items-center justify-center">3</span>
+            <span>Enter the measurement in feet using the number pad</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-terra-cotta/20 text-terra-cotta font-bold text-xs flex items-center justify-center">4</span>
+            <span>Select foam thickness for walls and ceiling</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-terra-cotta/20 text-terra-cotta font-bold text-xs flex items-center justify-center">5</span>
+            <span>Press CALCULATE to see your square footage and board feet</span>
+          </li>
+        </ol>
+
+        <div class="mt-6 pt-4 border-t border-espresso/10">
+          <h4 class="font-semibold text-charcoal mb-2 text-sm">What is Board Feet?</h4>
+          <p class="text-xs text-espresso/60">
+            Board feet (BF) measures the volume of spray foam. It's calculated as: Square Feet x Thickness (inches). For example, 100 sqft at 3" thick = 300 board feet. This helps estimate material costs.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="max-w-md mx-auto mt-6 text-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm transition-all duration-300 hover:scale-105"
+          style="background: linear-gradient(135deg, #4CAF50, #388E3C); box-shadow: 0 8px 20px rgba(76, 175, 80, 0.25);"
+        >
+          Get a Professional Quote
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        <p class="text-xs text-espresso/50 mt-2">
+          Free thermal imaging inspection in Anchorage & Mat-Su Valley
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  /* Prevent pull-to-refresh on mobile */
+  main {
+    overscroll-behavior: none;
+  }
+</style>
