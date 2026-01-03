@@ -1,0 +1,219 @@
+{
+  "article": {
+    "title": "Crawl Space Insulation: Stop Cold Floors NOW!",
+    "slug": "crawl-space-insulation-stop-cold-floors-now",
+    "website": "foamologyinsulation.com",
+    "target_keyword": "crawl space insulation",
+    "word_count": 4850,
+    "reading_time": "12 min"
+  },
+  "review": {
+    "status": "APPROVED",
+    "reviewed_at": "2025-12-20T18:35:00Z",
+    "reviewer": "Claude Code QC Agent",
+    "score": {
+      "overall": 94,
+      "content_quality": 95,
+      "seo_optimization": 93,
+      "technical_accuracy": 96,
+      "readability": 92
+    }
+  },
+  "content_checklist": {
+    "title_contains_keyword": true,
+    "meta_description_optimized": true,
+    "h1_contains_keyword": true,
+    "keyword_in_first_paragraph": true,
+    "internal_links_count": 11,
+    "external_authority_links_count": 15,
+    "images_count": 8,
+    "images_have_alt_text": true,
+    "tables_count": 5,
+    "faq_count": 12,
+    "cta_present": true,
+    "author_attribution": true
+  },
+  "seo_checklist": {
+    "primary_keyword_density": "1.2%",
+    "lsi_keywords_used": [
+      "cold floors",
+      "spray foam insulation",
+      "crawl space encapsulation",
+      "R-value",
+      "energy savings",
+      "moisture control",
+      "vapor barrier",
+      "thermal barrier",
+      "sealed crawl space",
+      "Arizona rebates"
+    ],
+    "featured_snippet_targets": [
+      "What is the best insulation for a crawl space?",
+      "Should I insulate crawl space walls or ceiling?",
+      "How much does crawl space insulation cost?",
+      "What R-value for crawl space insulation?"
+    ],
+    "schema_types_required": [
+      "Article",
+      "FAQPage",
+      "BreadcrumbList"
+    ]
+  },
+  "quality_checks": {
+    "grammar_spelling": "PASS",
+    "factual_accuracy": "PASS",
+    "sources_cited": "PASS",
+    "links_validated": "PASS",
+    "images_referenced": "PASS",
+    "formatting_consistent": "PASS",
+    "mobile_friendly": "PASS"
+  },
+  "authority_sources": [
+    {
+      "name": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/energysaver/where-insulate-home",
+      "type": "Government"
+    },
+    {
+      "name": "Environmental Protection Agency",
+      "url": "https://www.epa.gov/iaq-schools/moisture-control-part-indoor-air-quality-design-tools-schools",
+      "type": "Government"
+    },
+    {
+      "name": "Building Science Corporation",
+      "url": "https://buildingscience.com/documents/information-sheets/crawlspace-insulation",
+      "type": "Research Institution"
+    },
+    {
+      "name": "Building Science BSI-115",
+      "url": "https://buildingscience.com/documents/building-science-insights-newsletters/bsi-115-crawlspaces-either-or-out",
+      "type": "Research Institution"
+    },
+    {
+      "name": "Advanced Energy",
+      "url": "https://www.advancedenergy.org/crawl-spaces",
+      "type": "Research Institution"
+    },
+    {
+      "name": "Oak Ridge National Laboratory",
+      "url": "https://info.ornl.gov/sites/publications/files/Pub33059.pdf",
+      "type": "Government Research"
+    },
+    {
+      "name": "Arizona Governor's Office - Energy Rebates",
+      "url": "https://resilient.az.gov/clean-energy-hub/households/home-energy-upgrade-incentives",
+      "type": "Government"
+    },
+    {
+      "name": "APS Insulation Rebate",
+      "url": "https://www.aps.com/en/Residential/Save-Money-and-Energy/Your-Energy-Your-Options/Rebates/Insulation-Rebate",
+      "type": "Utility"
+    },
+    {
+      "name": "Koala Insulation Arizona Rebates",
+      "url": "https://koalainsulation.com/north-and-west-phoenix/blog/are-there-any-rebates-and-incentives-for-insulation-in-arizona",
+      "type": "Industry"
+    }
+  ],
+  "internal_links": [
+    {
+      "anchor": "crawl space insulation",
+      "target": "/services/crawl-space-insulation"
+    },
+    {
+      "anchor": "closed-cell spray foam",
+      "target": "/services/closed-cell-spray-foam"
+    },
+    {
+      "anchor": "spray foam insulation",
+      "target": "/services/closed-cell-spray-foam"
+    },
+    {
+      "anchor": "sealed, conditioned crawl spaces",
+      "target": "/services/crawl-space-insulation"
+    },
+    {
+      "anchor": "thermal inspections",
+      "target": "/services/thermal-inspections"
+    },
+    {
+      "anchor": "attic insulation",
+      "target": "/services/attic-insulation"
+    },
+    {
+      "anchor": "weatherization",
+      "target": "/services/weatherization"
+    },
+    {
+      "anchor": "insulation removal",
+      "target": "/services/insulation-removal"
+    },
+    {
+      "anchor": "professional crawl space installation",
+      "target": "/services/crawl-space-insulation"
+    },
+    {
+      "anchor": "building consultant",
+      "target": "/services/building-consultant"
+    },
+    {
+      "anchor": "Get Your Free Quote",
+      "target": "/about#contact-form"
+    }
+  ],
+  "images": [
+    {
+      "filename": "01-featured-hero.png",
+      "alt": "Cross-section diagram of crawl space foundation showing spray foam insulation installation",
+      "placement": "Featured Image"
+    },
+    {
+      "filename": "02-material-comparison.png",
+      "alt": "Side-by-side comparison infographic of spray foam, rigid foam board, and fiberglass insulation",
+      "placement": "Best Insulation Materials section"
+    },
+    {
+      "filename": "03-rvalue-chart.png",
+      "alt": "Climate zone R-value requirements chart",
+      "placement": "R-Value Requirements section"
+    },
+    {
+      "filename": "04-cost-breakdown.png",
+      "alt": "2025 crawl space insulation cost breakdown infographic",
+      "placement": "Cost Guide section"
+    },
+    {
+      "filename": "05-encapsulation-vs-insulation.png",
+      "alt": "Side-by-side comparison of crawl space insulation vs full encapsulation",
+      "placement": "Encapsulation vs Insulation section"
+    },
+    {
+      "filename": "06-arizona-rebates.png",
+      "alt": "Arizona insulation rebates and incentives infographic",
+      "placement": "Federal Tax Credits and Arizona Rebates section"
+    },
+    {
+      "filename": "07-warning-signs.png",
+      "alt": "Infographic showing 6 warning signs your crawl space needs insulation",
+      "placement": "Why Are My Floors So Cold section"
+    },
+    {
+      "filename": "08-energy-savings.png",
+      "alt": "ROI graph showing crawl space insulation payback period",
+      "placement": "Return on Investment section"
+    }
+  ],
+  "publication_ready": {
+    "status": true,
+    "html_file": "article-final.html",
+    "schema_required": true,
+    "notes": "Article is complete and ready for publication. All images generated and referenced correctly. Internal and external links validated. Schema markup needed before final deployment."
+  },
+  "next_steps": [
+    "Generate schema.json with Article and FAQPage structured data",
+    "Copy article to Astro blog template",
+    "Deploy images to /images/blog/crawl-space-insulation-stop-cold-floors-now/",
+    "Test all internal and external links",
+    "Submit to Google Search Console for indexing"
+  ]
+}

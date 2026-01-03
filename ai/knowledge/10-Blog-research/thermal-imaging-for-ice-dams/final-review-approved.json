@@ -1,0 +1,112 @@
+{
+  "articleTitle": "Thermal Imaging for Ice Dams: The Ultimate Guide to Detection and Prevention",
+  "slug": "thermal-imaging-for-ice-dams",
+  "website": "foamologyinsulation.com",
+  "reviewStatus": "APPROVED",
+  "reviewDate": "2025-12-20T00:00:00Z",
+  "reviewedBy": "Claude Code QC System",
+
+  "completedPhases": {
+    "phase1_keyword_research": {
+      "status": "complete",
+      "files": ["keyword-research/keyword-report.md"],
+      "primaryKeyword": "thermal imaging ice dams",
+      "secondaryKeywords": ["ice dam prevention", "spray foam insulation", "Alaska ice dams", "heat loss detection"]
+    },
+    "phase2_topic_research": {
+      "status": "complete",
+      "files": ["topic-research/topic-research-report.md", "research-summary.md"]
+    },
+    "phase3_faq_research": {
+      "status": "complete",
+      "files": ["faq-research/faq-report.md"],
+      "faqCount": 10
+    },
+    "phase4_authority_links": {
+      "status": "complete",
+      "files": ["authority-link-research/authority-sources.md", "authority-link-research/validated-links.md"],
+      "authoritySourceCount": 12
+    },
+    "phase5_internal_links": {
+      "status": "complete",
+      "files": ["internal-link-research/internal-links.json", "internal-links.json"]
+    },
+    "phase6_article_outline": {
+      "status": "complete",
+      "files": ["article-outline-planner/article-outline.md", "article-plan.md"]
+    },
+    "phase7_article_draft": {
+      "status": "complete",
+      "files": ["drafts/draft-v1.md", "article-draft.md", "drafts/article-v1.html", "article-final.html"],
+      "wordCount": 5362
+    },
+    "phase8_visual_design": {
+      "status": "complete",
+      "files": ["article-design/visual-plan.md"],
+      "images": [
+        "article-design/images/02-ice-dam-formation-diagram.png",
+        "article-design/images/04-heat-loss-locations.png",
+        "article-design/images/06-cost-comparison-chart.png",
+        "article-design/images/07-process-steps.png",
+        "article-design/images/08-temperature-threshold.png"
+      ],
+      "imageCount": 5
+    },
+    "phase9_schema_markup": {
+      "status": "complete",
+      "files": ["schema-markup/schema.json"],
+      "schemaTypes": ["Article", "FAQPage", "HowTo", "BreadcrumbList", "LocalBusiness"]
+    }
+  },
+
+  "qualityChecks": {
+    "seoOptimization": {
+      "passed": true,
+      "notes": "Title tag, meta description, H1/H2 hierarchy, keyword density all optimized"
+    },
+    "contentQuality": {
+      "passed": true,
+      "notes": "5,362 words, comprehensive coverage, authoritative sources cited"
+    },
+    "technicalAccuracy": {
+      "passed": true,
+      "notes": "Building science principles correctly explained, R-value tables accurate"
+    },
+    "internalLinking": {
+      "passed": true,
+      "notes": "Links to services (closed-cell, open-cell, attic, thermal inspections, ice dam prevention)"
+    },
+    "externalAuthority": {
+      "passed": true,
+      "notes": "Citations from DOE, ENERGY STAR, University of Minnesota Extension, Building Science Corporation"
+    },
+    "schemaMarkup": {
+      "passed": true,
+      "notes": "Full @graph with Article, FAQPage (10 questions), HowTo (5 steps), BreadcrumbList, LocalBusiness"
+    },
+    "visualAssets": {
+      "passed": true,
+      "notes": "5 custom infographics covering ice dam formation, heat loss locations, cost comparison, process steps, temperature thresholds"
+    },
+    "mobileResponsive": {
+      "passed": true,
+      "notes": "CSS includes responsive breakpoints for mobile devices"
+    }
+  },
+
+  "articleMetrics": {
+    "wordCount": 5362,
+    "readingTime": "15 minutes",
+    "faqCount": 10,
+    "internalLinks": 8,
+    "externalLinks": 12,
+    "imageCount": 5,
+    "schemaTypesCount": 5
+  },
+
+  "publishingReady": true,
+  "recommendedPublishDate": "2025-12-20",
+  "canonicalUrl": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams",
+
+  "finalNotes": "Article is publication-ready. Comprehensive guide covering thermal imaging diagnostics and spray foam solutions for ice dam prevention. Strong local SEO focus on Alaska market. All quality checks passed."
+}

@@ -1,0 +1,291 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage#article",
+      "headline": "Spray Foam Insulation Anchorage: The Complete Alaska Homeowner's Guide",
+      "description": "Alaska's trusted spray foam insulation guide. Learn costs, benefits, and why closed-cell foam is essential for Anchorage homes. Save 30-40% on heating.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage/images/01-alaska-energy-efficiency-hero.jpg",
+        "width": 1024,
+        "height": 576
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "url": "https://foamologyinsulation.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://foamologyinsulation.com/logo.png"
+        }
+      },
+      "datePublished": "2025-12-20",
+      "dateModified": "2025-12-20",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage"
+      },
+      "articleSection": "Insulation",
+      "keywords": "spray foam insulation Alaska, spray foam insulation Anchorage, spray foam contractors Anchorage, closed cell spray foam Alaska, ice dam prevention Alaska",
+      "wordCount": 4197,
+      "about": {
+        "@type": "Thing",
+        "name": "Spray Foam Insulation"
+      },
+      "mentions": [
+        {
+          "@type": "Place",
+          "name": "Anchorage, Alaska"
+        },
+        {
+          "@type": "Place",
+          "name": "Alaska"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is spray foam insulation suitable for Alaska's extreme cold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam insulation is specifically designed to perform in extreme cold conditions. Closed cell spray foam maintains its R-value and structural integrity even at -40°F or colder. The air sealing properties are particularly valuable in Alaska, where preventing heat loss from air infiltration is critical for energy efficiency and comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does spray foam insulation cost in Anchorage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the Anchorage area, closed cell spray foam typically costs $1.20-$1.80 per board foot installed. For a typical 1,000 square foot area with 3 inches of closed cell foam, expect to pay $2,200-$5,500. Whole-house projects generally range from $7,000-$15,000 depending on size and scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which type of spray foam is best for Alaska homes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed cell spray foam is strongly recommended for all exterior applications in Alaska homes, including walls, attics, crawl spaces, and foundations. Its higher R-value per inch, vapor barrier properties, and moisture resistance make it the clear choice for Alaska's extreme climate. Open cell foam has limited use for interior soundproofing applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will spray foam reduce my heating bills?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, homeowners typically see 30-40% reduction in heating costs after spray foam installation. For an Anchorage home spending $2,800 annually on heating, that translates to $840 or more in yearly savings. These savings come from both the high R-value insulation and the complete air sealing that prevents heat loss through gaps and cracks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does spray foam insulation last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam insulation lasts 80-100 years with proper installation—essentially the lifetime of most homes. Unlike fiberglass which can sag, settle, and lose R-value over time, spray foam maintains its performance permanently. It requires no maintenance and doesn't need replacement like traditional insulation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is spray foam safe once it's installed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam is completely safe after the 24-48 hour curing period. Once fully cured, the foam is chemically inert and does not off-gas harmful substances. The EPA confirms that properly installed and cured spray foam poses no ongoing health concerns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam prevent ice dams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam is one of the most effective solutions for preventing ice dams. When properly applied to the attic floor or roof deck, it creates a complete air barrier that eliminates the heat loss causing ice dams. Combined with adequate R-value (R-49+), spray foam addresses both the insulation and air sealing needed to prevent ice dam formation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can spray foam be installed in Alaska's cold weather?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, experienced Alaska contractors install spray foam year-round. However, ideal application temperatures are 60-90°F, so cold weather installations may require temporary heating of the workspace. Professional contractors know how to manage these conditions for successful winter installations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam act as a vapor barrier?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed cell spray foam acts as an effective vapor barrier when installed at thicknesses greater than 1.5 inches. This prevents moisture-laden indoor air from migrating into wall cavities where it could condense on cold surfaces. Open cell spray foam does NOT act as a vapor barrier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What R-value does spray foam provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed cell spray foam provides R-6.5 to R-7 per inch of thickness—nearly double the R-value of fiberglass at R-3.2 per inch. Open cell spray foam provides R-3.5 to R-4 per inch. For reference, 3 inches of closed cell foam delivers approximately R-21, meeting Alaska's wall insulation minimums."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there rebates for spray foam insulation in Alaska?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, significant rebates are available. Federal HOME Efficiency Rebates offer $2,000-$8,000 depending on energy savings achieved (Alaska received $74 million in funding). Point-of-sale rebates through HEEHRA provide up to $1,600 for insulation. Federal tax credits offer up to $1,200 annually."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam meet Alaska building codes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam meets and exceeds Alaska building code requirements when properly installed. It easily achieves the R-21 wall, R-38 ceiling, and R-10 foundation minimums specified in the Building Energy Efficiency Standard (BEES)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can spray foam be added to existing homes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam is excellent for retrofitting existing homes. It can be installed in walls, attics, crawl spaces, rim joists, and around foundations. For retrofits, the 2/3 to 1/3 ratio should be maintained—at least 2/3 of total R-value on the exterior of sheathing to prevent moisture issues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam prevent mold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed cell spray foam is waterproof and does not absorb moisture, eliminating the conditions that allow mold growth. It doesn't provide a food source for mold. Additionally, the air sealing prevents humid indoor air from reaching cold surfaces where condensation could form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do I need to stay out of my house after spray foam installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most manufacturers recommend 24-48 hours for full curing before re-occupancy. During this time, the chemical reaction completes and any installation fumes dissipate. Your contractor will provide specific guidance based on the products used and ventilation conditions."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage#howto",
+      "name": "How to Choose Spray Foam Insulation for Your Alaska Home",
+      "description": "Step-by-step guide for selecting the right spray foam insulation for Alaska's extreme climate.",
+      "totalTime": "PT30M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "2200-15000"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Assess Your Insulation Needs",
+          "text": "Evaluate your home's current insulation, identify problem areas like drafty rooms or ice dams, and determine which areas need insulation (attic, walls, crawl space)."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Choose Closed Cell for Exterior Applications",
+          "text": "For Alaska's extreme climate, select closed cell spray foam for all exterior applications including walls, attics, and foundations. Closed cell provides R-6.5 to R-7 per inch and acts as a vapor barrier."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Calculate R-Value Requirements",
+          "text": "Determine the R-value needed to meet Alaska building codes: R-21 minimum for walls, R-38 minimum for ceilings, R-10 minimum for foundations. Calculate foam thickness needed (3 inches closed cell = R-21)."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Research Available Rebates",
+          "text": "Contact AHFC at 1-877-AKRebate to learn about federal rebates ($2,000-$8,000), point-of-sale rebates (up to $1,600), and tax credits (up to $1,200 annually)."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Select a Qualified Contractor",
+          "text": "Choose a licensed, bonded, and insured contractor with SPFA certification and Alaska-specific experience. Ask about their experience with AHFC/BEES requirements and rebate documentation."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Schedule Installation and Vacate",
+          "text": "Coordinate installation timing, plan to vacate for 24-48 hours during and after installation, and ensure proper ventilation during the curing period."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Spray Foam Insulation Anchorage",
+          "item": "https://foamologyinsulation.com/blog/spray-foam-insulation-anchorage"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://foamologyinsulation.com/#localbusiness",
+      "name": "Foamology Insulation",
+      "description": "Professional spray foam insulation services in Anchorage, Alaska. Licensed, bonded, and insured insulation contractor specializing in closed cell and open cell spray foam for residential and commercial properties.",
+      "url": "https://foamologyinsulation.com",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anchorage",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alaska"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Eagle River"
+        },
+        {
+          "@type": "City",
+          "name": "Wasilla"
+        },
+        {
+          "@type": "City",
+          "name": "Palmer"
+        }
+      ],
+      "priceRange": "$$",
+      "serviceType": [
+        "Spray Foam Insulation",
+        "Closed Cell Spray Foam",
+        "Open Cell Spray Foam",
+        "Attic Insulation",
+        "Crawl Space Insulation",
+        "Ice Dam Prevention"
+      ]
+    }
+  ]
+}

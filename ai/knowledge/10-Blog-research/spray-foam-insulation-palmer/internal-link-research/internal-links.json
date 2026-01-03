@@ -1,0 +1,82 @@
+{
+  "article": "spray-foam-insulation-palmer",
+  "title": "Spray Foam Insulation in Palmer, Alaska: The Complete Guide for Extreme Climate Protection",
+  "total_links": 10,
+  "internal_links": [
+    {
+      "anchor_text": "closed-cell foam is the superior choice for our climate",
+      "target_url": "/services/closed-cell-spray-foam/",
+      "section": "Introduction",
+      "paragraph": 1,
+      "reason": "Natural reference to closed-cell foam service offering. Readers want to learn more about this superior choice mentioned in intro."
+    },
+    {
+      "anchor_text": "spray foam eliminates by creating a seamless, airtight barrier",
+      "target_url": "/services/",
+      "section": "Introduction",
+      "paragraph": 1,
+      "reason": "Links to main services page introducing the concept of spray foam as a complete solution. Good entry point to explore all service options."
+    },
+    {
+      "anchor_text": "Closed-cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam/",
+      "section": "Closed Cell vs. Open Cell Spray Foam: Which is Right for Alaska?",
+      "paragraph": 8,
+      "reason": "Specific service page for closed-cell foam. This section heavily discusses closed-cell benefits and is the perfect place to link to the dedicated service page."
+    },
+    {
+      "anchor_text": "open-cell foam",
+      "target_url": "/services/open-cell-spray-foam/",
+      "section": "Closed Cell vs. Open Cell Spray Foam: Which is Right for Alaska?",
+      "paragraph": 10,
+      "reason": "Contrasts open-cell against closed-cell. Even though not recommended, linking to the service page provides transparency and shows all options are available."
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation/",
+      "section": "How Spray Foam Prevents Ice Dams in Alaska",
+      "paragraph": 5,
+      "reason": "Article discusses attic insulation preventing ice dams. Natural place to link to dedicated attic insulation service page. Appears twice - best to use first mention."
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention/",
+      "section": "How Spray Foam Prevents Ice Dams in Alaska",
+      "paragraph": 8,
+      "reason": "Direct reference to ice dam prevention service. Article explains ice dam problem in detail - readers naturally want to learn more about solutions."
+    },
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation/",
+      "section": "What to Expect During Professional Spray Foam Installation",
+      "paragraph": 6,
+      "reason": "Article mentions crawlspace as one of the installation areas. Links to dedicated crawlspace service page for readers interested in that specific application."
+    },
+    {
+      "anchor_text": "thermal inspection",
+      "target_url": "/services/thermal-inspections/",
+      "section": "Frequently Asked Questions About Spray Foam Insulation in Palmer",
+      "paragraph": 18,
+      "reason": "FAQ mentions thermal inspections as part of professional assessment. Readers seeking professional evaluation naturally want to learn more about this service."
+    },
+    {
+      "anchor_text": "weatherization",
+      "target_url": "/services/weatherization/",
+      "section": "Alaska Rebates and Tax Credits for Spray Foam Insulation",
+      "paragraph": 3,
+      "reason": "Rebate section mentions weatherization assistance. Natural transition for readers exploring complete winterization and energy efficiency solutions."
+    },
+    {
+      "anchor_text": "gallery to see examples of our work",
+      "target_url": "/gallery/",
+      "section": "Make Your Palmer Home Winter-Ready with Spray Foam Insulation",
+      "paragraph": 3,
+      "reason": "Closing section invites readers to view work examples. Direct call to action linking to gallery shows completed projects and builds trust."
+    }
+  ],
+  "notes": {
+    "strategy": "Links focus on service pages directly mentioned or closely related to article content. Prioritized natural anchor text that appears organically in article rather than forcing new anchor text. Gallery link appears in existing CTA.",
+    "seo_benefit": "Distributes internal link equity to key service pages, improves site structure navigation, reduces bounce rate by providing clear pathways to related services.",
+    "placement_tips": "Most links should use Markdown [text](url) syntax in the article. Gallery link can use existing CTA button. Ensure links open in same tab for blog content (internal links)."
+  }
+}

@@ -66,5 +66,45 @@
     "Thermal inspection services",
     "Energy efficiency focused",
     "Serving Anchorage and surrounding areas"
-  ]
+  ],
+  "local_context": {
+    "state": "Alaska",
+    "state_code": "AK",
+    "climate_zone": "7-8",
+    "climate_type": "Subarctic/Extreme Cold",
+    "heating_degree_days": "10000-14000",
+    "primary_concern": "Heat retention and extreme cold",
+    "code_requirements": {
+      "attic_r_value": "R-49+",
+      "wall_r_value": "R-20+",
+      "floor_r_value": "R-38+",
+      "crawl_space_walls": "R-20+"
+    },
+    "rebate_programs": [
+      "Alaska Housing Finance Corporation (AHFC)",
+      "Alaska Energy Authority (AEA)",
+      "Chugach Electric Association",
+      "Matanuska Electric Association (MEA)",
+      "Federal 25C Tax Credit"
+    ],
+    "unique_challenges": [
+      "Ice dams",
+      "Permafrost (interior/north)",
+      "8-9 month heating season",
+      "Extreme temperature differentials",
+      "High fuel oil costs",
+      "Snow and moisture management"
+    ],
+    "excluded_content": {
+      "states": ["Arizona", "Texas", "Florida", "California", "Nevada"],
+      "programs": ["APS", "SRP", "EFFICIENCY ARIZONA"],
+      "terms": ["desert climate", "cooling costs", "Zone 2", "Zone 3", "Zone 4"]
+    },
+    "required_comparisons": [
+      "Compare Alaska Zone 7-8 to warmer zones (2-4)",
+      "Explain why Alaska needs higher R-values",
+      "Discuss ice dams as Alaska-specific issue",
+      "Reference long heating season (8-9 months vs 5-6 national avg)"
+    ]
+  }
 }

@@ -1,0 +1,268 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#article",
+      "isPartOf": {
+        "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements"
+      },
+      "author": {
+        "@type": "Organization",
+        "@id": "https://foamologyinsulation.com/#organization",
+        "name": "Foamology Insulation",
+        "url": "https://foamologyinsulation.com"
+      },
+      "headline": "Alaska Building Code Requirements: Complete Guide to Insulation Standards",
+      "datePublished": "2024-12-20",
+      "dateModified": "2024-12-20",
+      "mainEntityOfPage": {
+        "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements"
+      },
+      "wordCount": 4200,
+      "publisher": {
+        "@id": "https://foamologyinsulation.com/#organization"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/blog/alaska-building-code-requirements.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "thumbnailUrl": "https://foamologyinsulation.com/images/blog/alaska-building-code-requirements-thumb.jpg",
+      "keywords": [
+        "insulation Alaska",
+        "Alaska building code",
+        "Alaska R-value requirements",
+        "BEES Alaska",
+        "Alaska climate zone 7",
+        "Alaska climate zone 8",
+        "spray foam insulation Alaska",
+        "Alaska vapor barrier requirements",
+        "Alaska energy code",
+        "AkWarm energy rating"
+      ],
+      "articleSection": [
+        "Building Codes",
+        "Insulation",
+        "Energy Efficiency",
+        "Alaska Construction"
+      ],
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Building Insulation",
+          "sameAs": "https://en.wikipedia.org/wiki/Building_insulation"
+        },
+        {
+          "@type": "Thing",
+          "name": "Building Code",
+          "sameAs": "https://en.wikipedia.org/wiki/Building_code"
+        },
+        {
+          "@type": "Place",
+          "name": "Alaska",
+          "sameAs": "https://en.wikipedia.org/wiki/Alaska"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".intro",
+          ".key-takeaway"
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements",
+      "url": "https://foamologyinsulation.com/blog/alaska-building-code-requirements",
+      "name": "Alaska Building Code Insulation Requirements: Complete R-Value Guide [2024]",
+      "description": "Learn Alaska's building code insulation requirements for climate zones 7 & 8. Get R-values for walls, attics, floors & foundations. BEES compliance guide.",
+      "isPartOf": {
+        "@id": "https://foamologyinsulation.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/blog/alaska-building-code-requirements.jpg"
+      },
+      "breadcrumb": {
+        "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Alaska Building Code Requirements",
+          "item": "https://foamologyinsulation.com/blog/alaska-building-code-requirements"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://foamologyinsulation.com/#organization",
+      "name": "Foamology Insulation",
+      "url": "https://foamologyinsulation.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/logo.png",
+        "width": 300,
+        "height": 100
+      },
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "customer service",
+        "areaServed": "US-AK",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://foamologyinsulation.com/#website",
+      "url": "https://foamologyinsulation.com",
+      "name": "Foamology Insulation",
+      "publisher": {
+        "@id": "https://foamologyinsulation.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What R-value insulation do I need for my attic in Alaska?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alaska homes require R-49 to R-60 attic insulation depending on existing conditions. If your attic is currently uninsulated, ENERGY STAR recommends R-60. If you already have 3-4 inches of insulation, adding insulation to reach R-49 is typically recommended. The code minimum for Climate Zones 7 and 8 is R-49."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Alaska have a mandatory statewide building code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alaska does not have a mandatory statewide energy code for all construction. However, any residential construction that receives financing from the Alaska Housing Finance Corporation must meet the Building Energy Efficiency Standards (BEES). Since approximately 68% of new residential construction adheres to BEES, these standards have become the de facto industry benchmark across the state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What climate zone is Anchorage or Fairbanks in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anchorage is located in Climate Zone 7, which covers most of Alaska. Fairbanks is in Climate Zone 8, which includes interior Alaska boroughs that experience more extreme cold conditions. The North Slope Borough has its own BEES-specific Climate Zone 9 designation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a vapor barrier in Alaska?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, vapor barriers are required in Alaska construction. The minimum requirement is 6 mil polyethylene sheeting (0.06 perm rating or lower) installed on the heated side of insulation. All seams must be properly lapped and sealed, and all penetrations for pipes, wires, and ducts must be sealed. The extreme temperature differentials in Alaska create intense vapor drive that can cause severe moisture damage without proper vapor control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I save on heating with proper insulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "According to the Alaska Housing Finance Corporation, insulation, air sealing, and other energy efficiency improvements can reduce heating costs by 30% or more. For spray foam insulation specifically, homeowners commonly see energy savings of 15-35% on heating bills. Given Alaska's high energy costs, proper insulation typically provides excellent return on investment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is spray foam insulation worth the investment in Alaska?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam insulation offers significant advantages for Alaska's extreme climate. It provides superior air sealing (up to 40% of energy loss comes from air leakage), high R-value per inch (R-6+ for closed-cell), acts as a vapor barrier (closed-cell), and maintains performance in subzero conditions. While initial costs are higher than traditional insulation, the combination of energy savings and longevity (80-100 years) typically provides strong return on investment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is BEES and do I need to comply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BEES stands for Building Energy Efficiency Standards, developed by the Alaska Housing Finance Corporation. Compliance is mandatory for any residential construction that receives AHFC financing. The current BEES is based on the 2018 IECC with Alaska-specific amendments and requires a minimum 5-star energy rating. Even for privately financed projects, BEES represents best practices for Alaska construction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What documentation do I need for insulation compliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Insulation compliance documentation must include the type of insulation, manufacturer, and installed R-value for each element of the building envelope. For blown-in or sprayed insulation, additional requirements include initial installed thickness, settled thickness, settled R-value, installed density, coverage area, and number of bags installed. This documentation is typically provided on the installer's certification and verified during inspection."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#howto",
+      "name": "How to Comply with Alaska Building Code Insulation Requirements",
+      "description": "Step-by-step guide to meeting Alaska's insulation requirements for residential construction.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Determine Your Climate Zone",
+          "text": "Identify whether your property is in Climate Zone 6, 7, 8, or 9 to understand which R-value requirements apply."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Review R-Value Requirements",
+          "text": "Check the minimum R-values for each building component: R-49 for attics, R-20+5 or R-13+10 for walls, R-38 for floors in Zones 7 & 8."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Plan Vapor Barrier Installation",
+          "text": "Ensure 6 mil polyethylene vapor barrier is installed on the warm side of insulation with all seams properly sealed."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Select Appropriate Insulation",
+          "text": "Choose insulation type based on application. Consider spray foam for superior air sealing and higher R-value per inch."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Document Installation",
+          "text": "Obtain proper documentation including insulation type, manufacturer, installed R-value, thickness, and coverage area."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Verify Compliance",
+          "text": "Have installation verified through energy rating (AkWarm), professional certification, or municipal inspection."
+        }
+      ],
+      "totalTime": "P1D"
+    },
+    {
+      "@type": "Table",
+      "@id": "https://foamologyinsulation.com/blog/alaska-building-code-requirements#rvalue-table",
+      "name": "Alaska R-Value Requirements by Climate Zone",
+      "about": "Minimum insulation R-values required by Alaska building codes for different climate zones"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams#article",
+      "headline": "Thermal Imaging for Ice Dams: The Ultimate Guide to Detection and Prevention",
+      "description": "Discover how thermal imaging detects ice dam causes in Alaska homes. Learn how spray foam insulation and air sealing prevent costly roof damage and save on energy bills.",
+      "image": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams/images/02-ice-dam-formation-diagram.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "url": "https://foamologyinsulation.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://foamologyinsulation.com/logo.png"
+        }
+      },
+      "datePublished": "2025-12-20",
+      "dateModified": "2025-12-20",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams"
+      },
+      "about": [
+        {"@type": "Thing", "name": "Ice Dam Prevention"},
+        {"@type": "Thing", "name": "Thermal Imaging"},
+        {"@type": "Thing", "name": "Spray Foam Insulation"},
+        {"@type": "Thing", "name": "Home Insulation"}
+      ],
+      "keywords": "ice dam prevention, thermal imaging ice dams, spray foam insulation, Alaska ice dams, heat loss detection, attic insulation, infrared thermography, building envelope",
+      "articleSection": "Home Improvement",
+      "wordCount": 5362
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What causes ice dams on roofs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ice dams form when heat escaping from your home warms the attic and roof deck, melting snow on the upper portions of your roof. This meltwater flows down toward the eaves, which remain cold because they extend beyond your home's heated envelope. When the water reaches these cold eaves, it refreezes, creating a dam of ice that causes water to back up under shingles and leak into your home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you prevent ice dams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Permanent ice dam prevention requires a three-part approach: 1) Air seal the attic to close all gaps that allow warm air to enter; 2) Add insulation to achieve R-49 to R-60; 3) Ensure proper ventilation from soffit to ridge. Spray foam insulation is particularly effective because it creates both the air barrier and thermal barrier simultaneously."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam insulation prevent ice dams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, spray foam is highly effective for ice dam prevention. Closed-cell spray foam provides R-7 per inch of insulation value while simultaneously creating an air barrier that stops warm air from entering the attic. When applied to the roof deck (unvented attic approach), spray foam eliminates the temperature differential that causes ice dams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can thermal imaging detect insulation problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Thermal imaging cameras detect temperature variations that reveal insulation deficiencies. Missing insulation appears as hot spots where heat escapes, while areas with adequate insulation maintain consistent temperatures. Thermal imaging also reveals settling or compression in existing insulation, gaps around penetrations, and thermal bridging through framing members."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does thermal imaging inspection cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Professional thermal imaging inspections typically range from $200-$500 for a comprehensive assessment. This investment provides detailed documentation of heat loss locations and prioritized recommendations for fixes. Compared to the cost of ice dam damage ($900-$6,200 per incident) or annual removal ($650-$2,400), thermal imaging is a modest investment in preventive diagnosis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does ice dam removal cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Professional ice dam removal typically costs $650-$2,400 per incident, depending on severity and method used. Steam removal (the safest method) runs $800-$2,400. These costs recur annually in homes that don't address the underlying heat loss problem—making prevention far more economical than repeated removal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is insulation or ventilation more important for ice dam prevention?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Air sealing is actually most important, followed by insulation, with ventilation third. Air leakage is the primary way heat enters most attics. Adding insulation without air sealing often provides limited benefit because warm air still bypasses the insulation through gaps and cracks. For optimal results, all three work together."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What temperature causes ice dams to form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ice dams form when the attic temperature exceeds 30°F while outdoor temperatures remain below 22°F. This creates a temperature differential along the roof surface, with the area over the attic rising above freezing while the eaves stay below freezing. The 8-10°F difference enables the thaw-freeze cycle that creates ice dams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time for thermal imaging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Winter is optimal because the temperature difference between indoors and outdoors is greatest. The inspection requires at least 15-20°F difference between interior and exterior temperatures. The best times are early morning before sunrise or late evening after sunset, avoiding solar heating interference. Alaska winters provide excellent conditions from November through March."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ice dam prevention worth the cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—the math strongly favors prevention. Annual ice dam removal costs $650-$2,400, damage repairs cost $900-$6,200 per incident, and energy waste adds 15-30% to heating bills. A one-time investment in proper air sealing and insulation ($3,000-$12,000) eliminates these recurring costs. Most homeowners recoup their investment within 3-5 years through combined energy savings and avoided damage costs."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams#howto",
+      "name": "How to Prevent Ice Dams with Professional Thermal Imaging and Insulation",
+      "description": "A step-by-step guide to permanently preventing ice dams through thermal imaging diagnosis and proper insulation installation.",
+      "image": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams/images/07-process-steps.png",
+      "totalTime": "PT4H",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "3000-12000"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Schedule Thermal Imaging Inspection",
+          "text": "Contact a certified professional for a thermal imaging inspection. The inspection reveals exactly where heat is escaping from your home, including missing insulation, air leaks, and thermal bridging. Best performed during winter months with at least 15-20°F temperature differential.",
+          "image": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams/images/04-heat-loss-locations.png"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Review Assessment and Recommendations",
+          "text": "Receive a detailed report with thermal images, priority ranking of problems, solution options, and cost estimates. This assessment provides the roadmap for effective ice dam prevention tailored to your home."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Complete Air Sealing",
+          "text": "Seal all attic floor penetrations including electrical, plumbing, and HVAC penetrations. Close gaps at top plates, around chimney chases with fire-rated materials, and at attic access points. Air sealing is the most critical step for ice dam prevention."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Install Proper Insulation",
+          "text": "Add insulation to achieve R-49 to R-60 for Alaska climate zones. For unvented attic approach, apply closed-cell spray foam to roof deck underside. For vented attic, install baffles and add insulation to attic floor."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Verify with Post-Installation Thermal Imaging",
+          "text": "Confirm heat loss has been eliminated with follow-up thermal imaging. Compare before/after results to verify the work solved the problem and document the improvement."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Thermal Imaging for Ice Dams",
+          "item": "https://foamologyinsulation.com/blog/thermal-imaging-for-ice-dams"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://foamologyinsulation.com#business",
+      "name": "Foamology Insulation",
+      "description": "Professional spray foam insulation and thermal imaging services for Alaska homeowners. Specializing in ice dam prevention, attic insulation, and building envelope solutions.",
+      "url": "https://foamologyinsulation.com",
+      "telephone": "(907) 310-3000",
+      "email": "info@foamologyinsulation.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "901 E Klatt Road #6",
+        "addressLocality": "Anchorage",
+        "addressRegion": "AK",
+        "postalCode": "99515",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anchorage",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Alaska"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Mat-Su Valley"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kenai Peninsula Borough"
+        }
+      ],
+      "serviceType": [
+        "Spray Foam Insulation",
+        "Thermal Imaging Inspection",
+        "Attic Insulation",
+        "Ice Dam Prevention",
+        "Air Sealing"
+      ]
+    }
+  ]
+}

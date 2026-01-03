@@ -41,42 +41,48 @@
           "title": "Spray Foam Insulation: Is It Worth the Cost?",
           "url": "/blog/closed-cell-vs-open-cell-spray-foam",
           "status": "planned",
-          "estimatedWordCount": 2500
+          "estimatedWordCount": 2500,
+          "queueOrder": 36
         },
         {
           "id": "spray-foam-r-value",
           "title": "Spray Foam Insulation R-Value: What You MUST Know",
           "url": "/blog/spray-foam-r-value-guide",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 32
         },
         {
           "id": "is-spray-foam-worth-it",
           "title": "Spray Foam Insulation: Is It REALLY Worth It?",
           "url": "/blog/is-spray-foam-insulation-worth-it",
           "status": "planned",
-          "estimatedWordCount": 2000
+          "estimatedWordCount": 2000,
+          "queueOrder": 31
         },
         {
           "id": "how-long-spray-foam-lasts",
           "title": "How Long Does Spray Foam Insulation *Really* Last?",
           "url": "/blog/how-long-does-spray-foam-last",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 27
         },
         {
           "id": "spray-foam-vs-fiberglass",
           "title": "Spray Foam Insulation: Which is Best for YOU?",
           "url": "/blog/spray-foam-vs-fiberglass",
           "status": "planned",
-          "estimatedWordCount": 2000
+          "estimatedWordCount": 2000,
+          "queueOrder": 19
         },
         {
           "id": "spray-foam-vs-cellulose",
           "title": "Spray Foam Insulation: Cost, Benefits & Savings",
           "url": "/blog/spray-foam-vs-cellulose",
           "status": "planned",
-          "estimatedWordCount": 1800
+          "estimatedWordCount": 1800,
+          "queueOrder": 41
         }
       ],
       "estimatedWordCount": 4000
@@ -101,35 +107,40 @@
           "title": "Crawl Space Insulation: Is Encapsulation Worth It?",
           "url": "/blog/crawl-space-encapsulation-guide",
           "status": "planned",
-          "estimatedWordCount": 2000
+          "estimatedWordCount": 2000,
+          "queueOrder": 15
         },
         {
           "id": "vented-vs-sealed-crawl-space",
           "title": "Crawl Space Insulation: Vented or Sealed?",
           "url": "/blog/vented-vs-sealed-crawl-space",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 3
         },
         {
           "id": "crawl-space-moisture",
           "title": "Crawl Space Insulation: Stop Moisture Now!",
           "url": "/blog/crawl-space-moisture-problems",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 25
         },
         {
           "id": "rim-joist-insulation",
           "title": "Crawl Space Insulation: Cost & Best Options",
           "url": "/blog/rim-joist-insulation",
           "status": "planned",
-          "estimatedWordCount": 1200
+          "estimatedWordCount": 1200,
+          "queueOrder": 30
         },
         {
           "id": "cold-floor-solutions",
           "title": "Crawl Space Insulation: Stop Cold Floors NOW!",
           "url": "/blog/cold-floors-insulation",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 37
         }
       ],
       "estimatedWordCount": 3500
@@ -154,28 +165,32 @@
           "title": "AHFC Rebate Guide",
           "url": "/resources/ahfc-rebates",
           "status": "planned",
-          "estimatedWordCount": 2200
+          "estimatedWordCount": 2200,
+          "queueOrder": 34
         },
         {
           "id": "r-value-guide",
           "title": "R-Value Guide for Alaska",
           "url": "/resources/r-value-guide",
-          "status": "planned",
-          "estimatedWordCount": 1800
+          "status": "researching",
+          "estimatedWordCount": 1800,
+          "queueOrder": 29
         },
         {
           "id": "energy-savings-calculator",
           "title": "Energy Savings Calculator",
           "url": "/energy-savings-calculator",
           "status": "planned",
-          "estimatedWordCount": 1000
+          "estimatedWordCount": 1000,
+          "queueOrder": 14
         },
         {
           "id": "insulation-tax-credits",
           "title": "Federal Tax Credits for Insulation",
           "url": "/resources/tax-credits",
           "status": "planned",
-          "estimatedWordCount": 1600
+          "estimatedWordCount": 1600,
+          "queueOrder": 42
         }
       ],
       "estimatedWordCount": 3000
@@ -200,42 +215,48 @@
           "title": "Spray Foam Insulation Anchorage",
           "url": "/service-areas/anchorage",
           "status": "planned",
-          "estimatedWordCount": 1800
+          "estimatedWordCount": 1800,
+          "queueOrder": 9
         },
         {
           "id": "wasilla",
           "title": "Spray Foam Insulation Wasilla",
           "url": "/service-areas/wasilla",
           "status": "planned",
-          "estimatedWordCount": 1600
+          "estimatedWordCount": 1600,
+          "queueOrder": 44
         },
         {
           "id": "palmer",
           "title": "Spray Foam Insulation Palmer",
           "url": "/service-areas/palmer",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 18
         },
         {
           "id": "mat-su-valley",
           "title": "Mat-Su Valley Insulation",
           "url": "/service-areas/mat-su-valley",
           "status": "planned",
-          "estimatedWordCount": 1600
+          "estimatedWordCount": 1600,
+          "queueOrder": 35
         },
         {
           "id": "eagle-river",
-          "title": "Spray Foam Eagle River",
+          "title": "Spray Foam Insulation Alaska: Instant Savings!",
           "url": "/service-areas/eagle-river",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 39
         },
         {
           "id": "kenai-peninsula",
           "title": "Kenai Peninsula Insulation",
           "url": "/service-areas/kenai-peninsula",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 5
         }
       ],
       "estimatedWordCount": 2500
@@ -260,28 +281,33 @@
           "title": "What Causes Ice Dams",
           "url": "/blog/ice-dam-causes",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 21
         },
         {
           "id": "attic-ventilation",
           "title": "Attic Ventilation Guide",
           "url": "/blog/roof-ventilation-ice-dams",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 12
         },
         {
           "id": "attic-air-sealing",
           "title": "Attic Air Sealing",
           "url": "/blog/attic-air-sealing",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 22
         },
         {
           "id": "thermal-imaging-ice-dams",
           "title": "Thermal Imaging for Ice Dams",
           "url": "/blog/thermal-imaging-ice-dams",
-          "status": "planned",
-          "estimatedWordCount": 1200
+          "status": "researching",
+          "estimatedWordCount": 1200,
+          "queueOrder": 4,
+          "sessionId": "thermal-imaging-for-ice-dams-1766256720118-fbuj5wdvy"
         }
       ],
       "estimatedWordCount": 3000
@@ -306,28 +332,32 @@
           "title": "Air Sealing Services",
           "url": "/services/air-sealing",
           "status": "planned",
-          "estimatedWordCount": 1600
+          "estimatedWordCount": 1600,
+          "queueOrder": 17
         },
         {
           "id": "common-air-leak-locations",
-          "title": "Common Air Leak Locations",
+          "title": "Home Comfort Insulation: Cozy Home, Lower Bills",
           "url": "/blog/find-air-leaks-home",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 1
         },
         {
           "id": "draft-prevention",
           "title": "Draft Prevention Guide",
           "url": "/blog/stop-drafts-home",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 11
         },
         {
           "id": "blower-door-test",
           "title": "Blower Door Test Explained",
           "url": "/blog/blower-door-test",
           "status": "planned",
-          "estimatedWordCount": 1200
+          "estimatedWordCount": 1200,
+          "queueOrder": 23
         }
       ],
       "estimatedWordCount": 2500
@@ -352,21 +382,24 @@
           "title": "Warehouse Insulation",
           "url": "/blog/warehouse-insulation-alaska",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 26
         },
         {
           "id": "metal-building-insulation",
           "title": "Metal Building Insulation",
           "url": "/blog/metal-building-insulation",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 2
         },
         {
           "id": "new-construction",
           "title": "New Construction Insulation",
           "url": "/services/new-construction-insulation",
           "status": "planned",
-          "estimatedWordCount": 1600
+          "estimatedWordCount": 1600,
+          "queueOrder": 28
         }
       ],
       "estimatedWordCount": 2500
@@ -391,21 +424,25 @@
           "title": "Best Insulation for Alaska",
           "url": "/blog/best-insulation-alaska",
           "status": "planned",
-          "estimatedWordCount": 1800
+          "estimatedWordCount": 1800,
+          "queueOrder": 43
         },
         {
           "id": "alaska-building-code",
           "title": "Alaska Building Code Requirements",
           "url": "/blog/alaska-insulation-code",
-          "status": "planned",
-          "estimatedWordCount": 1500
+          "status": "researching",
+          "estimatedWordCount": 1500,
+          "queueOrder": 8,
+          "sessionId": "alaska-building-code-requirements-1766256728792-pt5rhhlfh"
         },
         {
           "id": "log-cabin-insulation",
           "title": "Log Cabin Insulation Alaska",
           "url": "/blog/log-cabin-insulation-alaska",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 10
         }
       ],
       "estimatedWordCount": 3000
@@ -430,35 +467,40 @@
           "title": "Attic Insulation Cost Alaska",
           "url": "/blog/attic-insulation-cost-alaska",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 40
         },
         {
           "id": "crawl-space-insulation-cost",
           "title": "Crawl Space Insulation Cost",
           "url": "/blog/crawl-space-insulation-cost",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 38
         },
         {
           "id": "closed-cell-vs-open-cell-cost",
           "title": "Closed Cell vs Open Cell Cost",
           "url": "/blog/closed-cell-cost-vs-open-cell",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 24
         },
         {
           "id": "insulation-financing",
           "title": "Insulation Financing Options",
           "url": "/financing",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 33
         },
         {
           "id": "insulation-roi-calculator",
           "title": "Insulation ROI Calculator",
           "url": "/blog/insulation-payback-calculator",
           "status": "planned",
-          "estimatedWordCount": 1200
+          "estimatedWordCount": 1200,
+          "queueOrder": 6
         }
       ],
       "estimatedWordCount": 3500
@@ -483,28 +525,32 @@
           "title": "How Thermal Imaging Works",
           "url": "/blog/thermal-imaging-insulation",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 20
         },
         {
           "id": "thermal-imaging-before-after",
           "title": "Before/After Thermal Images",
           "url": "/blog/thermal-imaging-before-after",
           "status": "planned",
-          "estimatedWordCount": 1200
+          "estimatedWordCount": 1200,
+          "queueOrder": 16
         },
         {
           "id": "energy-audit-process",
           "title": "Energy Audit Process",
           "url": "/blog/home-energy-audit-alaska",
           "status": "planned",
-          "estimatedWordCount": 1500
+          "estimatedWordCount": 1500,
+          "queueOrder": 7
         },
         {
           "id": "find-hidden-heat-loss",
           "title": "Finding Hidden Heat Loss",
           "url": "/blog/find-heat-loss-home",
           "status": "planned",
-          "estimatedWordCount": 1400
+          "estimatedWordCount": 1400,
+          "queueOrder": 13
         }
       ],
       "estimatedWordCount": 2500

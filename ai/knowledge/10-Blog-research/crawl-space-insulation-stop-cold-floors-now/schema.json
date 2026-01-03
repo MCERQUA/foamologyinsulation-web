@@ -1,0 +1,324 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#article",
+      "headline": "Crawl Space Insulation: Stop Cold Floors NOW! [2025 Complete Guide]",
+      "description": "Eliminate cold floors with proper crawl space insulation. Learn about spray foam vs fiberglass, R-values, costs ($1-$5/sq ft), and Arizona rebates up to $4,500. Expert guide from Foamology Insulation.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/blog/crawl-space-insulation-stop-cold-floors-now/01-featured-hero.png",
+        "width": 1200,
+        "height": 675
+      },
+      "datePublished": "2025-12-20T00:00:00Z",
+      "dateModified": "2025-12-20T00:00:00Z",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://foamologyinsulation.com/#organization",
+        "name": "Foamology Insulation Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://foamologyinsulation.com/#organization",
+        "name": "Foamology Insulation",
+        "url": "https://foamologyinsulation.com",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://foamologyinsulation.com/#logo",
+          "url": "https://foamologyinsulation.com/images/logos/foamology-logo.png",
+          "contentUrl": "https://foamologyinsulation.com/images/logos/foamology-logo.png",
+          "width": 250,
+          "height": 60
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/"
+      },
+      "keywords": "crawl space insulation, cold floors, spray foam insulation, crawl space encapsulation, Phoenix insulation, Arizona energy rebates, R-value requirements, crawl space vapor barrier, insulation cost, energy savings",
+      "articleSection": "Insulation & Energy Efficiency",
+      "wordCount": 4850,
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://foamologyinsulation.com/blog#blog",
+        "name": "Foamology Insulation Blog",
+        "publisher": {
+          "@id": "https://foamologyinsulation.com/#organization"
+        }
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Crawl Space Insulation"
+        },
+        {
+          "@type": "Thing",
+          "name": "Spray Foam Insulation"
+        },
+        {
+          "@type": "Thing",
+          "name": "Energy Efficiency"
+        },
+        {
+          "@type": "Thing",
+          "name": "Home Improvement"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "U.S. Department of Energy",
+          "url": "https://www.energy.gov"
+        },
+        {
+          "@type": "Organization",
+          "name": "Environmental Protection Agency",
+          "url": "https://www.epa.gov"
+        },
+        {
+          "@type": "Organization",
+          "name": "Building Science Corporation",
+          "url": "https://buildingscience.com"
+        },
+        {
+          "@type": "Organization",
+          "name": "Oak Ridge National Laboratory",
+          "url": "https://www.ornl.gov"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does crawl space insulation cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Crawl space insulation costs $1.00 to $4.50 per square foot, depending on material and complexity. For a typical 1,000 square foot crawl space, expect to pay $2,600 to $5,000 for professional installation. Spray foam costs $2-$5 per square foot; rigid foam costs $1-$4 per square foot. Factor in potential removal of old insulation ($0.75-$2/sq ft) if needed. Federal tax credits and Arizona rebates can reduce costs by $2,700-$4,500."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will insulating my crawl space stop cold floors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—when done correctly. The key is insulating crawl space walls, not the ceiling. Wall insulation creates a conditioned space that stays closer to indoor temperature, eliminating the thermal bridge causing cold floors. You must also seal foundation vents and air leaks. Fiberglass batts between joists typically fail to solve cold floor problems because they sag, allow air infiltration, and don't address the underlying issue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best insulation for a crawl space?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed-cell spray foam is the best insulation for crawl spaces. It offers the highest R-value per inch (R-6 to R-7), resists moisture completely, provides air sealing, and lasts 20+ years. Rigid foam board is a good alternative at lower cost, offering R-4 to R-6.5 per inch and DIY-friendly installation. Avoid fiberglass batts in crawl spaces—they absorb moisture, sag, promote mold, and consistently fail within 5-15 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I insulate my crawl space ceiling or walls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Insulate the walls, not the ceiling. Building Science Corporation research proves that sealed crawl spaces with wall insulation outperform vented crawl spaces with ceiling insulation in energy efficiency, moisture control, and durability. Wall insulation creates a conditioned space that protects pipes and ducts while eliminating thermal bridging through floor joists. The International Residential Code endorses this approach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is crawl space encapsulation vs insulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Insulation controls temperature (thermal barrier), while encapsulation controls moisture (vapor barrier + sealed space). Insulation stops cold floors; encapsulation prevents mold and moisture damage. Most homes benefit from both—comprehensive encapsulation with wall insulation provides optimal results. Insulation alone won't solve moisture problems, and encapsulation alone won't stop cold floors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does crawl space insulation save money on energy bills?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—significantly. Properly insulated crawl spaces reduce heating and cooling costs by 15-30%, according to DOE and EPA research. For a typical Arizona home spending $2,000-$3,000 annually on energy, that's $300-$900 in savings per year. Most projects pay for themselves within 3-7 years through energy savings alone, not counting improved comfort and home value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does crawl space insulation last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam insulation lasts 20+ years—often the lifetime of the home—when properly installed. Rigid foam board lasts 20-40 years. Fiberglass batts in crawl spaces typically fail within 5-15 years due to moisture absorption and sagging. Longevity depends on moisture control: insulation combined with proper vapor barriers and humidity control lasts far longer than insulation alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I DIY crawl space insulation or should I hire a professional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DIY works for vapor barrier installation and rigid foam board on accessible walls if you have construction skills, adequate clearance (3+ feet), and no moisture problems. Spray foam requires professional installation—specialized equipment, safety protocols, and expertise are essential. For comprehensive encapsulation or any crawl space with existing moisture or mold issues, professional installation is strongly recommended."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What R-value do I need for crawl space insulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "R-value requirements depend on climate zone. For Arizona (Zone 2-3), code minimum is R-10 for crawl space walls. Optimal performance requires R-13 to R-19. Cold climates (Zones 5-7) need R-15 to R-30 or more. Check local building codes for specific requirements. Higher R-values provide better comfort but offer diminishing returns beyond a certain point—R-19 to R-25 is typically optimal for most climates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a vapor barrier with crawl space insulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes—in almost all cases. A vapor barrier (6-20 mil polyethylene) prevents ground moisture from rising into your crawl space, where it can damage insulation and promote mold. The International Residential Code requires vapor barriers in unvented crawl spaces. Thicker barriers (10-20 mil) last longer and resist punctures. The barrier should cover the entire floor, overlap seams 6-12 inches, and extend up foundation walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I remove old insulation before installing new?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remove old insulation if it's wet, moldy, pest-infested, sagging, or falling. Spray foam requires clean surfaces, so old ceiling insulation must be removed. If existing insulation is dry and in good condition, and you're adding wall insulation to a previously vented crawl space, the old ceiling insulation can sometimes remain. When in doubt, removal is often worth the extra cost for a fresh start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prevent mold in my insulated crawl space?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prevent mold by controlling moisture: install a heavy-duty vapor barrier on the ground, use moisture-resistant insulation (spray foam or rigid foam), seal all vents and air leaks, maintain humidity below 60% with a dehumidifier, and fix any water intrusion sources (gutters, grading, foundation cracks). Avoid fiberglass batts, which trap moisture. Regular inspections help catch problems early."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Crawl Space Insulation: Stop Cold Floors NOW!",
+          "item": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#howto",
+      "name": "How to Insulate Your Crawl Space to Stop Cold Floors",
+      "description": "Step-by-step guide to creating a sealed, conditioned crawl space with proper insulation for maximum energy efficiency and comfort.",
+      "totalTime": "PT4H",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "2600-5000"
+      },
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Closed-cell spray foam or rigid foam board insulation"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Heavy-duty vapor barrier (12-20 mil polyethylene)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Sealing tape for vapor barrier seams"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Dehumidifier (optional)"
+        }
+      ],
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Utility knife"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Construction adhesive"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Mechanical fasteners"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Safety equipment (gloves, mask, eye protection)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Seal Foundation Vents",
+          "text": "Close and seal all exterior foundation vents permanently to prevent outside air from entering the crawl space.",
+          "url": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#walls-vs-ceiling"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Install Vapor Barrier",
+          "text": "Cover the entire crawl space floor with a heavy-duty (12-20 mil) polyethylene vapor barrier. Overlap seams by 6-12 inches and extend the barrier up foundation walls.",
+          "url": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#encapsulation-vs-insulation"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Insulate Perimeter Walls",
+          "text": "Apply closed-cell spray foam or rigid foam board to foundation walls and rim joists. Target R-10 to R-19 depending on your climate zone.",
+          "url": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#best-insulation-materials"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Control Humidity",
+          "text": "Add a dehumidifier or supply small amounts of conditioned air from your HVAC system to maintain humidity below 60% in the crawl space.",
+          "url": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#problems-watch-for"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/#webpage",
+      "url": "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/",
+      "name": "Crawl Space Insulation: Stop Cold Floors NOW! [2025 Complete Guide]",
+      "description": "Eliminate cold floors with proper crawl space insulation. Learn about spray foam vs fiberglass, R-values, costs ($1-$5/sq ft), and Arizona rebates up to $4,500.",
+      "isPartOf": {
+        "@id": "https://foamologyinsulation.com/#website"
+      },
+      "about": {
+        "@id": "https://foamologyinsulation.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/blog/crawl-space-insulation-stop-cold-floors-now/01-featured-hero.png"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://foamologyinsulation.com/blog/crawl-space-insulation-stop-cold-floors-now/"
+          ]
+        }
+      ]
+    }
+  ]
+}

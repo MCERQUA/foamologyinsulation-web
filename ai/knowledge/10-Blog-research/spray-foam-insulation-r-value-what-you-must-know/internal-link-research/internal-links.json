@@ -1,0 +1,101 @@
+{
+  "article_title": "Spray Foam Insulation R-Value: What You MUST Know",
+  "internal_links": [
+    {
+      "anchor_text": "closed-cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Spray Foam R-Value Per Inch: The Complete Breakdown",
+      "paragraph": 3,
+      "reason": "Direct service page for closed-cell spray foam - primary service mentioned in R-value discussion"
+    },
+    {
+      "anchor_text": "open-cell spray foam",
+      "target_url": "/services/open-cell-spray-foam",
+      "section": "Spray Foam R-Value Per Inch: The Complete Breakdown",
+      "paragraph": 5,
+      "reason": "Direct service page for open-cell spray foam - alternative type discussed"
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation",
+      "section": "R-Value Requirements by Application Area",
+      "paragraph": 1,
+      "reason": "Attic-specific R-value requirements reference dedicated attic service page"
+    },
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "R-Value Requirements by Application Area",
+      "paragraph": 4,
+      "reason": "Crawl space R-value discussion links to crawl space service page"
+    },
+    {
+      "anchor_text": "professional spray foam contractor",
+      "target_url": "/services",
+      "section": "DIY vs Professional Installation",
+      "paragraph": 2,
+      "reason": "CTA for professional installation links to services overview"
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention",
+      "section": "R-Value Requirements by Climate Zone",
+      "paragraph": 3,
+      "reason": "Cold climate insulation connects to ice dam prevention content"
+    },
+    {
+      "anchor_text": "thermal inspections",
+      "target_url": "/services/thermal-inspections",
+      "section": "Why R-Value Isn't the Whole Story",
+      "paragraph": 2,
+      "reason": "Identifying air leakage through thermal imaging supports R-value discussion"
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal",
+      "section": "Spray Foam vs Fiberglass R-Value Comparison",
+      "paragraph": 4,
+      "reason": "When upgrading from fiberglass, removal may be needed"
+    },
+    {
+      "anchor_text": "weatherization services",
+      "target_url": "/services/weatherization",
+      "section": "Why R-Value Isn't the Whole Story",
+      "paragraph": 4,
+      "reason": "Comprehensive building envelope improvements beyond R-value"
+    },
+    {
+      "anchor_text": "building consultant",
+      "target_url": "/services/building-consultant",
+      "section": "R-Value Requirements by Climate Zone",
+      "paragraph": 5,
+      "reason": "Expert guidance on code compliance and R-value requirements"
+    },
+    {
+      "anchor_text": "Contact us for a free R-value assessment",
+      "target_url": "/contact",
+      "section": "Conclusion",
+      "paragraph": 1,
+      "reason": "Primary CTA linking to contact/quote page"
+    },
+    {
+      "anchor_text": "view our completed projects",
+      "target_url": "/gallery",
+      "section": "Conclusion",
+      "paragraph": 1,
+      "reason": "Social proof linking to gallery of completed work"
+    }
+  ],
+  "total_internal_links": 12,
+  "link_distribution": {
+    "service_pages": 8,
+    "resource_pages": 2,
+    "conversion_pages": 2
+  },
+  "notes": [
+    "All links go to verified existing pages on foamologyinsulation-web",
+    "Links distributed throughout article for natural reading flow",
+    "Balance of service pages, resources, and conversion CTAs",
+    "Anchor text uses natural language phrases from article context"
+  ]
+}

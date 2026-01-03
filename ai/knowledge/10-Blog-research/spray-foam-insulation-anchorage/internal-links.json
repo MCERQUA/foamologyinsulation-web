@@ -1,0 +1,105 @@
+{
+  "article_slug": "spray-foam-insulation-anchorage",
+  "internal_links": [
+    {
+      "anchor_text": "Foamology Insulation",
+      "target_url": "/",
+      "section": "Introduction",
+      "paragraph": 2,
+      "reason": "Brand mention links to homepage"
+    },
+    {
+      "anchor_text": "closed cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Open Cell vs Closed Cell Spray Foam",
+      "paragraph": 1,
+      "reason": "Detailed service page for closed cell foam"
+    },
+    {
+      "anchor_text": "open cell spray foam",
+      "target_url": "/services/open-cell-spray-foam",
+      "section": "Open Cell vs Closed Cell Spray Foam",
+      "paragraph": 2,
+      "reason": "Detailed service page for open cell foam"
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention",
+      "section": "How Spray Foam Prevents Ice Dams in Alaska",
+      "paragraph": 1,
+      "reason": "Dedicated ice dam prevention page"
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation",
+      "section": "Spray Foam Applications for Alaska Homes",
+      "paragraph": 1,
+      "reason": "Dedicated attic insulation service page"
+    },
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "Spray Foam Applications for Alaska Homes",
+      "paragraph": 2,
+      "reason": "Dedicated crawl space insulation service page"
+    },
+    {
+      "anchor_text": "weatherization",
+      "target_url": "/services/weatherization",
+      "section": "Alaska Energy Rebates and Tax Credits",
+      "paragraph": 1,
+      "reason": "Connects to weatherization services and rebate programs"
+    },
+    {
+      "anchor_text": "thermal inspections",
+      "target_url": "/services/thermal-inspections",
+      "section": "Choosing a Spray Foam Contractor in Anchorage",
+      "paragraph": 3,
+      "reason": "Connects blower door testing mention to thermal inspection services"
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal",
+      "section": "Spray Foam Applications for Alaska Homes",
+      "paragraph": 4,
+      "reason": "For retrofit projects requiring old insulation removal"
+    },
+    {
+      "anchor_text": "our services",
+      "target_url": "/services",
+      "section": "Choosing a Spray Foam Contractor in Anchorage",
+      "paragraph": 4,
+      "reason": "CTA to main services page"
+    },
+    {
+      "anchor_text": "about Foamology",
+      "target_url": "/about",
+      "section": "Why Choose Foamology Insulation",
+      "paragraph": 1,
+      "reason": "Links to company about page for credibility"
+    },
+    {
+      "anchor_text": "project gallery",
+      "target_url": "/gallery",
+      "section": "Why Choose Foamology Insulation",
+      "paragraph": 2,
+      "reason": "Show real project examples"
+    }
+  ],
+  "total_internal_links": 12,
+  "pages_linked": [
+    "/",
+    "/services",
+    "/services/closed-cell-spray-foam",
+    "/services/open-cell-spray-foam",
+    "/services/attic-insulation",
+    "/services/crawl-space-insulation",
+    "/services/weatherization",
+    "/services/thermal-inspections",
+    "/services/insulation-removal",
+    "/ice-dam-prevention",
+    "/about",
+    "/gallery"
+  ],
+  "notes": "All links verified against existing Foamology website structure. Links naturally integrate with article content and provide valuable navigation for users seeking specific services."
+}

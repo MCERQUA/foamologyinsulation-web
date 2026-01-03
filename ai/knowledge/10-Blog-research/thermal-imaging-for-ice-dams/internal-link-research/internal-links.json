@@ -1,0 +1,112 @@
+{
+  "internal_links": [
+    {
+      "anchor_text": "spray foam insulation",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Spray Foam Solution",
+      "context": "First mention of spray foam as solution",
+      "reason": "Primary service page for closed-cell spray foam"
+    },
+    {
+      "anchor_text": "closed-cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Spray Foam Solution - Why Spray Foam Outperforms",
+      "context": "Discussion of closed-cell properties",
+      "reason": "Links to service page with detailed information"
+    },
+    {
+      "anchor_text": "open-cell spray foam",
+      "target_url": "/services/open-cell-spray-foam",
+      "section": "Spray Foam Solution",
+      "context": "Comparison of foam types",
+      "reason": "Secondary foam option service page"
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation",
+      "section": "Primary Cause: Heat Loss",
+      "context": "Discussion of attic insulation inadequacy",
+      "reason": "Links to attic insulation service page"
+    },
+    {
+      "anchor_text": "thermal imaging inspection",
+      "target_url": "/services/thermal-inspections",
+      "section": "How Thermal Imaging Detects",
+      "context": "Discussion of thermal imaging as diagnostic tool",
+      "reason": "Links to thermal inspection service page"
+    },
+    {
+      "anchor_text": "thermal inspections",
+      "target_url": "/services/thermal-inspections",
+      "section": "Professional Process",
+      "context": "Step 1 of the professional process",
+      "reason": "Service page for thermal inspection offering"
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention",
+      "section": "Introduction",
+      "context": "First mention of ice dam prevention topic",
+      "reason": "Dedicated ice dam prevention page on site"
+    },
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "Common Heat Loss Problems",
+      "context": "If discussing whole-home approach",
+      "reason": "Related service for complete home insulation"
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal",
+      "section": "Traditional Attic",
+      "context": "Removing old insulation before new installation",
+      "reason": "Service page for old insulation removal"
+    },
+    {
+      "anchor_text": "weatherization",
+      "target_url": "/services/weatherization",
+      "section": "Air Sealing",
+      "context": "Comprehensive weatherization approach",
+      "reason": "Full weatherization service offering"
+    },
+    {
+      "anchor_text": "building consultant",
+      "target_url": "/services/building-consultant",
+      "section": "Professional Process - Assessment",
+      "context": "Professional assessment and recommendations",
+      "reason": "Consulting services for building envelope"
+    },
+    {
+      "anchor_text": "our gallery",
+      "target_url": "/gallery",
+      "section": "Spray Foam Solution or Conclusion",
+      "context": "View completed projects",
+      "reason": "Gallery page showing real project examples"
+    },
+    {
+      "anchor_text": "contact us",
+      "target_url": "/about",
+      "section": "Conclusion/CTA",
+      "context": "Call to action for free estimate",
+      "reason": "About page with contact information"
+    }
+  ],
+  "existing_pages": [
+    "/services/closed-cell-spray-foam",
+    "/services/open-cell-spray-foam",
+    "/services/attic-insulation",
+    "/services/crawl-space-insulation",
+    "/services/thermal-inspections",
+    "/services/insulation-removal",
+    "/services/weatherization",
+    "/services/building-consultant",
+    "/ice-dam-prevention",
+    "/gallery",
+    "/about",
+    "/services",
+    "/solutions"
+  ],
+  "recommended_link_count": 8,
+  "notes": "Focus on primary service pages (spray foam, thermal inspections, attic insulation) and the ice dam prevention landing page. Avoid over-linking - use 1-2 links per major section."
+}

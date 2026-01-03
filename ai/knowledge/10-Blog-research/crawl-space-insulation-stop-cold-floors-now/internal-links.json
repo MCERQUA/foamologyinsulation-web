@@ -1,0 +1,103 @@
+{
+  "article": "crawl-space-insulation-stop-cold-floors-now",
+  "total_links": 11,
+  "internal_links": [
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "Introduction",
+      "paragraph_context": "Lead-in discussion about crawl space insulation solutions",
+      "reason": "Natural reference to the core service being discussed; establishes context for readers seeking more service details"
+    },
+    {
+      "anchor_text": "closed-cell spray foam",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "Best Insulation Materials for Crawl Spaces - Closed-Cell Spray Foam",
+      "paragraph_context": "Detailed explanation of closed-cell spray foam as gold standard for crawl spaces",
+      "reason": "Readers interested in this specific material type will want to explore the dedicated service page for spray foam"
+    },
+    {
+      "anchor_text": "spray foam insulation",
+      "target_url": "/services/closed-cell-spray-foam",
+      "section": "How Crawl Space Insulation Stops Cold Floors",
+      "paragraph_context": "Discussion of spray foam's air sealing properties and thermal barrier creation",
+      "reason": "Reinforces spray foam as the premium solution; directs interested readers to service page"
+    },
+    {
+      "anchor_text": "sealed, conditioned crawl spaces",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "The Modern Approach: Sealed, Conditioned Crawl Spaces",
+      "paragraph_context": "Comprehensive explanation of modern best practices combining multiple elements",
+      "reason": "Direct reference to the complete service offering; readers wanting implementation details can explore further"
+    },
+    {
+      "anchor_text": "thermal inspections",
+      "target_url": "/services/thermal-inspections",
+      "section": "Crawl Space Insulation Problems: What to Watch For",
+      "paragraph_context": "Discussion of monitoring crawl space conditions and identifying problems",
+      "reason": "Complements the content by offering diagnostic services to assess crawl space conditions before work begins"
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation",
+      "section": "What R-Value Do I Need for Crawl Space Insulation",
+      "paragraph_context": "Building code and R-value requirements discussion mentioning different climate zones",
+      "reason": "Cross-reference to related insulation service; many homeowners addressing crawl spaces also have attic insulation needs"
+    },
+    {
+      "anchor_text": "weatherization",
+      "target_url": "/services/weatherization",
+      "section": "Crawl Space Encapsulation vs Insulation",
+      "paragraph_context": "Discussion of moisture control, air sealing, and comprehensive home conditioning",
+      "reason": "Encapsulation and air sealing are core components of weatherization services"
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention",
+      "section": "Arizona-Specific Rebates and Incentives",
+      "paragraph_context": "Reference to climate-specific considerations and seasonal challenges",
+      "reason": "While focused on Arizona heat, connects to broader weather-related home protection services Foamology offers"
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal",
+      "section": "Should I Remove Old Insulation Before Installing New?",
+      "paragraph_context": "Discussion of when and why old insulation must be removed before new installation",
+      "reason": "Many crawl space projects require removal of failed fiberglass; directly supports the sales funnel"
+    },
+    {
+      "anchor_text": "professional crawl space installation",
+      "target_url": "/services/crawl-space-insulation",
+      "section": "Can I DIY Crawl Space Insulation or Should I Hire a Professional?",
+      "paragraph_context": "Explanation of when professional installation is essential vs DIY options",
+      "reason": "Positions professional installation as the recommended solution; drives conversion for service inquiries"
+    },
+    {
+      "anchor_text": "building consultant",
+      "target_url": "/services/building-consultant",
+      "section": "Stop Cold Floors Today: Your Next Steps",
+      "paragraph_context": "Final CTA discussing professional assessment and consultation",
+      "reason": "Natural progression from article information to expert consultation; supports lead generation for consulting services"
+    }
+  ],
+  "implementation_notes": {
+    "total_opportunities": 11,
+    "distribution": {
+      "early_sections": 2,
+      "mid_sections": 6,
+      "final_sections": 3
+    },
+    "service_pages_linked": [
+      "/services/crawl-space-insulation",
+      "/services/closed-cell-spray-foam",
+      "/services/thermal-inspections",
+      "/services/attic-insulation",
+      "/services/weatherization",
+      "/services/insulation-removal",
+      "/services/building-consultant",
+      "/ice-dam-prevention"
+    ],
+    "link_strategy": "Mix of primary service (crawl-space-insulation) with complementary services to create comprehensive conversion path from information gathering to consultation",
+    "seo_benefit": "Distributes internal link equity throughout site; improves crawlability and establishes topical authority across all service categories"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know#article",
+      "headline": "Spray Foam Insulation R-Value: What You MUST Know [2025 Complete Guide]",
+      "description": "Complete guide to spray foam R-values: per-inch ratings for open-cell (R-3.6) and closed-cell (R-6.5), climate zone requirements, thickness calculations, and why R-value isn't the whole story. Expert guide with 2025 IECC code updates.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know/article-design/images/01-r-value-comparison-chart.jpg",
+        "width": 1024,
+        "height": 1024
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "@id": "https://foamologyinsulation.com/#organization"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Foamology Insulation",
+        "@id": "https://foamologyinsulation.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://foamologyinsulation.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-12-20",
+      "dateModified": "2025-12-20",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know"
+      },
+      "keywords": "spray foam insulation r-value, spray foam r value per inch, closed cell spray foam r-value, open cell spray foam r-value, insulation r-value chart",
+      "articleSection": "Insulation Guides",
+      "wordCount": 4489
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the R-value of spray foam per inch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed-cell spray foam provides R-6.0 to R-7.0 per inch (aged R-value), while open-cell spray foam provides R-3.5 to R-3.9 per inch. These values come from Building Science Corporation's residential spray foam guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which has higher R-value: open-cell or closed-cell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed-cell spray foam has nearly double the R-value per inch (R-6 to R-7) compared to open-cell (R-3.5 to R-3.9). However, both provide effective air sealing, so the real-world performance difference is often smaller than the numbers suggest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How thick should spray foam be in an attic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Attic thickness depends on your climate zone. To meet 2021 IECC requirements of R-49 to R-60: Closed-cell needs 7.5 to 10 inches, Open-cell needs 13 to 17 inches, or a Flash-and-batt hybrid with 2 inches closed-cell plus R-36-47 fiberglass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does spray foam lose R-value over time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimal loss occurs — a fraction of a percent over the life of the insulation. The R-values advertised by manufacturers are 'aged' values that already account for initial thermal drift. Spray foam maintains its performance for 50-80 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is higher R-value always better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Beyond the minimum thickness for air sealing (2 inches closed-cell, 3 inches open-cell), you reach diminishing returns. Air sealing typically provides more energy benefit than additional R-value in most applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What R-value do I need for my climate zone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Requirements range from R-30 (warm climates, Zone 1) to R-60+ (cold climates, Zones 4-8) for attic insulation, and R-13 to R-20+ for walls. Check the 2021 IECC requirements for your specific climate zone and application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does spray foam R-value compare to fiberglass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spray foam provides R-3.5 to R-7.0 per inch versus fiberglass at R-3.2 to R-3.8 per inch. More importantly, spray foam also provides complete air sealing, which fiberglass cannot. This air sealing often matters more than the R-value difference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is spray foam worth the higher cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most applications, yes. Energy savings of 30-50% (compared to 20-30% for fiberglass) typically provide a 3-7 year payback. Spray foam also lasts 50-80 years compared to 10-25 years for fiberglass, provides structural benefits, and requires no replacement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum thickness for effective air sealing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed-cell spray foam requires a minimum of 2 inches to create an effective air barrier. Open-cell spray foam requires 3 inches minimum. Below these thicknesses, air can still pass through the foam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I achieve R-49 with spray foam alone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. R-49 requires approximately 7.5 inches of closed-cell or 13 inches of open-cell spray foam. Flash-and-batt hybrid systems (2 inches closed-cell plus fiberglass batts) offer a cost-effective alternative while maintaining air-sealing benefits."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know#howto",
+      "name": "How to Calculate Required Spray Foam Thickness",
+      "description": "Simple formula to calculate the spray foam thickness needed to achieve your target R-value",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Determine Required R-Value",
+          "text": "Check your climate zone requirements. Attics typically need R-49 to R-60, walls need R-13 to R-20+."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Identify Foam Type R-Value",
+          "text": "Closed-cell provides R-6.5 per inch. Open-cell provides R-3.7 per inch."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Apply the Formula",
+          "text": "Required Thickness = Target R-Value ÷ R-Value Per Inch. For example, R-30 ÷ 6.5 = 4.6 inches of closed-cell."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Consider Hybrid Options",
+          "text": "For cost savings, use 2 inches closed-cell (R-13) plus fiberglass batts to reach higher R-values like R-49."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://foamologyinsulation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://foamologyinsulation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Spray Foam Insulation R-Value Guide",
+          "item": "https://foamologyinsulation.com/blog/spray-foam-insulation-r-value-what-you-must-know"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://foamologyinsulation.com/#organization",
+      "name": "Foamology Insulation",
+      "url": "https://foamologyinsulation.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://foamologyinsulation.com/images/logo.png"
+      },
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      }
+    }
+  ]
+}
