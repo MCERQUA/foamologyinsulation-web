@@ -30,21 +30,12 @@ const ImageWithCaption: React.FC<ImageWithCaptionProps> = ({
           boxShadow: '0 8px 32px rgba(74, 63, 54, 0.12)'
         }}
       >
-        <picture>
-          {/* Try WebP first if available */}
-          {src.endsWith('.jpg') && (
-            <source
-              srcSet={src.replace('.jpg', '.webp')}
-              type="image/webp"
-            />
-          )}
-          <img
-            src={src}
-            alt={alt}
-            className="w-full h-auto"
-            loading="lazy"
-          />
-        </picture>
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-auto"
+          loading="lazy"
+        />
 
         {/* Subtle overlay for better caption visibility */}
         {caption && (
