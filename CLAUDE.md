@@ -67,6 +67,47 @@ foamologyinsulation-web/
 
 This is a **spray foam insulation company website** built for Foamology Insulation (Alaska-based), owned by **Magnus Pedersen**. Business address: **901 E Klatt Road #6, Anchorage, AK 99515**. It's a modern, static site using **Astro v5**, **React**, and **Tailwind CSS** with glass morphism effects and a component-based architecture.
 
+---
+
+## Product Knowledge - CRITICAL FOR CONTENT CREATION
+
+### Primary Product: UPC 2.0 HFO High Lift Closed-Cell Spray Foam
+
+**Foamology uses UPC 2.0 HFO High Lift** - a premium third-generation closed-cell spray foam. This MUST be reflected in all content creation.
+
+| Specification | Value |
+|---------------|-------|
+| **R-Value per Inch** | **R-7.9** (industry-leading) |
+| Density | 2.0 lb/ft³ |
+| Max Pass Thickness | 4 inches |
+| Global Warming Potential | GWP = 1 (ultra-low, environmentally friendly) |
+| Closed Cell Content | 93%+ |
+| Blowing Agent | HFO (Hydrofluoroolefin) - no CFCs/HCFCs |
+
+**Key Messaging Points:**
+- "R-7.9 per inch" (NOT the generic R-6 to R-7 range)
+- "Industry-leading thermal performance"
+- "Third-generation HFO technology"
+- "Ultra-low environmental impact (GWP of 1)"
+- "13-20% higher R-value than standard closed-cell"
+
+**R-Value Comparison (use in content):**
+| Insulation Type | R-Value per Inch |
+|-----------------|------------------|
+| **Foamology's UPC 2.0 HFO High Lift** | **R-7.9** |
+| Standard Closed-Cell Spray Foam | R-6 to R-7 |
+| Open-Cell Spray Foam | R-3.6 to R-3.8 |
+| Fiberglass Batts | R-3.2 to R-3.8 |
+
+**When writing blog posts or content about closed-cell spray foam:**
+- Always mention R-7.9 for Foamology-specific claims
+- Use industry ranges (R-6-7) only for educational/comparison context
+- Highlight the environmental benefits of HFO technology
+
+Full product documentation: `ai/knowledge/01-business-info/products/upc-2-hfo-high-lift.md`
+
+---
+
 ## Common Commands
 
 ### Development
