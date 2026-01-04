@@ -1,0 +1,91 @@
+{
+  "article": "master-ice-dam-prevention-thermal-imaging-guide",
+  "internal_links": [
+    {
+      "anchor_text": "thermal imaging inspection",
+      "target_url": "/services/thermal-inspections/",
+      "section": "How Thermal Imaging Detects Ice Dam Problems",
+      "context": "A thermal imaging inspection reveals exactly where your home is losing heat",
+      "reason": "Direct service page for thermal inspections mentioned throughout article"
+    },
+    {
+      "anchor_text": "closed-cell spray foam insulation",
+      "target_url": "/services/closed-cell-spray-foam/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "closed-cell spray foam insulation offers several advantages for ice dam prevention",
+      "reason": "Service page for spray foam insulation solution mentioned as best option"
+    },
+    {
+      "anchor_text": "attic insulation",
+      "target_url": "/services/attic-insulation/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "adequate attic insulation prevents ice dams",
+      "reason": "Primary service page for attic insulation services"
+    },
+    {
+      "anchor_text": "ice dam prevention",
+      "target_url": "/ice-dam-prevention/",
+      "section": "Introduction",
+      "context": "This guide covers the science behind ice dams and proven prevention strategies",
+      "reason": "Dedicated ice dam prevention landing page on the site"
+    },
+    {
+      "anchor_text": "crawl space insulation",
+      "target_url": "/services/crawl-space-insulation/",
+      "section": "Related services",
+      "context": "Complete home insulation includes crawl spaces and attics",
+      "reason": "Related service that improves overall home energy efficiency"
+    },
+    {
+      "anchor_text": "open-cell spray foam",
+      "target_url": "/services/open-cell-spray-foam/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "Different spray foam options for various applications",
+      "reason": "Alternative spray foam option for appropriate applications"
+    },
+    {
+      "anchor_text": "weatherization services",
+      "target_url": "/services/weatherization/",
+      "section": "Part 1: Air Sealing",
+      "context": "Air sealing is part of comprehensive weatherization",
+      "reason": "Service page covering air sealing and weatherization"
+    },
+    {
+      "anchor_text": "spray foam R-value",
+      "target_url": "/blog/spray-foam-insulation-r-value/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "R-7 per inch for closed-cell spray foam",
+      "reason": "Detailed blog post about spray foam R-values"
+    },
+    {
+      "anchor_text": "thermal imaging for ice dams",
+      "target_url": "/blog/thermal-imaging-for-ice-dams/",
+      "section": "How Thermal Imaging Detects Ice Dam Problems",
+      "context": "Learn more about thermal imaging technology",
+      "reason": "Existing blog post on thermal imaging for ice dams"
+    },
+    {
+      "anchor_text": "Alaska building code requirements",
+      "target_url": "/blog/alaska-building-code-requirements/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "Building codes specify minimum insulation levels",
+      "reason": "Blog post covering local building code insulation requirements"
+    },
+    {
+      "anchor_text": "building consultant services",
+      "target_url": "/services/building-consultant/",
+      "section": "Professional vs. DIY Solutions",
+      "context": "Professional assessment and planning",
+      "reason": "Service page for professional building consultation"
+    },
+    {
+      "anchor_text": "insulation removal",
+      "target_url": "/services/insulation-removal/",
+      "section": "Part 2: Proper Insulation Requirements",
+      "context": "Sometimes old insulation must be removed before upgrading",
+      "reason": "Service page for removing old or damaged insulation"
+    }
+  ],
+  "link_count": 12,
+  "generated": "2026-01-03"
+}
